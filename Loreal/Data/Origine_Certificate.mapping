@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Mapping alwaysAddRootElement="true">
+   <DataModel root-path="">\\Loreal\Data\Origine_Certificate.datamodel</DataModel>
+   <Rules>
+      <Rule copySubtree="false"
+            name="/Origine_Certificate/Header"
+            xpath="/ns:smartxsf/ns:data/ns:window/ns:section/ns:sbody/ns:text/ns:p"/>
+      <Rule copySubtree="true"
+            name="/Origine_Certificate/Header/name"
+            xpath="@name"/>
+      <Rule copySubtree="true"
+            name="/Origine_Certificate/Header/sym"
+            xpath="ns:sym"/>
+      <Rule copySubtree="true"
+            name="/Origine_Certificate/page_id"
+            xpath="/ns:smartxsf/ns:data/ns:window/@page-id"/>
+      <Rule copySubtree="false"
+            name="/Origine_Certificate/section_tableau/Ligne"
+            xpath="/ns:smartxsf/ns:data/ns:window/ns:section/ns:sbody/ns:section/ns:sbody/ns:text"/>
+      <Rule copySubtree="false"
+            name="/Origine_Certificate/section_tableau/Ligne/Donner"
+            xpath="ns:p"/>
+      <Rule copySubtree="true"
+            name="/Origine_Certificate/section_tableau/Ligne/Donner/name"
+            xpath="@name"/>
+      <Rule copySubtree="false"
+            name="/Origine_Certificate/section_tableau/Ligne/Donner/sym"
+            xpath="ns:sym"/>
+      <Rule copySubtree="true"
+            name="/Origine_Certificate/section_tableau/Ligne/Donner/sym/name"
+            xpath="@name"/>
+      <Rule copySubtree="true"
+            name="/Origine_Certificate/section_tableau/Ligne/name"
+            xpath="@name"/>
+      <Rule copySubtree="true"
+            name="/Origine_Certificate/section_tableau/name"
+            xpath="/ns:smartxsf/ns:data/ns:window/ns:section/ns:sbody/ns:section/@name"/>
+      <Rule copySubtree="false"
+            name="/Origine_Certificate/section_tableau/Total"
+            xpath="/ns:smartxsf/ns:data/ns:window/ns:section/ns:sbody/ns:section/ns:sfoot"/>
+      <Rule copySubtree="false"
+            name="/Origine_Certificate/section_tableau/Total/text"
+            xpath="ns:text"/>
+      <Rule copySubtree="false"
+            name="/Origine_Certificate/section_tableau/Total/text/Donner"
+            xpath="ns:p"/>
+      <Rule copySubtree="true"
+            name="/Origine_Certificate/section_tableau/Total/text/Donner/name"
+            xpath="@name"/>
+      <Rule copySubtree="true"
+            name="/Origine_Certificate/section_tableau/Total/text/Donner/sym"
+            xpath="ns:sym"/>
+      <Rule copySubtree="true"
+            name="/Origine_Certificate/section_tableau/Total/text/name"
+            xpath="@name"/>
+   </Rules>
+   <Params/>
+   <Namespaces>
+      <Namespace prefix="ns">urn:sap-com:SmartForms:2000:xsf</Namespace>
+      <Namespace prefix="xml">http://www.w3.org/XML/1998/namespace</Namespace>
+   </Namespaces>
+</Mapping>

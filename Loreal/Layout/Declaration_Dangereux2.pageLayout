@@ -1,0 +1,22 @@
+<PageLayout xmlns="urn:kwsoft:mtext:tonic:dom">
+ <PageSize name="A4"></PageSize>
+ <RendererMetadata></RendererMetadata>
+ <Region name="Body">
+  <Left distance="51023.0mpt" anchorSide="same"></Left>
+  <Top distance="46204.0mpt" anchorSide="same"></Top>
+  <Right distance="41103.0mpt" anchorSide="same"></Right>
+  <Bottom distance="31182.0mpt" anchorSide="same"></Bottom>
+ </Region>
+ <Region name="header">
+  <Left distance="51022.0mpt" anchorSide="same"></Left>
+  <Top distance="13606.0mpt" anchorSide="same"></Top>
+  <Right distance="41104.0mpt" anchorSide="same"></Right>
+  <Bottom distance="790866.0mpt" anchorSide="same"></Bottom>
+ </Region>
+ <Region name="side" contentRotation="90">
+  <Left distance="13322.0mpt" anchorSide="same"></Left>
+  <Top distance="315496.0mpt" anchorSide="same"></Top>
+  <Right distance="544252.0mpt" anchorSide="same"></Right>
+  <Bottom distance="37134.0mpt" anchorSide="same"></Bottom>
+ </Region>
+</PageLayout>

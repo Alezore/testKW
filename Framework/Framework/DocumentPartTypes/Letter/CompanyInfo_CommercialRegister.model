@@ -1,0 +1,44 @@
+<ContainerPart xmlns="urn:kwsoft:mtext:tonic:dom">
+ <DataDefinition></DataDefinition>
+ <Container>
+  <Par>
+   <Translations>
+    <Translation>
+     <Language language="en" country="US" variant=""></Language>
+     <Span>
+      <Text>District Court Freiburg</Text>
+     </Span>
+    </Translation>
+   </Translations>
+   <Span>
+    <Text>RG: Amtsgericht Freiburg</Text>
+   </Span>
+  </Par>
+  <Par>
+   <Translations>
+    <Translation>
+     <Language language="en" country="US" variant=""></Language>
+     <Span>
+      <Text>Commercial register: 2020</Text>
+     </Span>
+    </Translation>
+   </Translations>
+   <Span>
+    <Text>Handelsregister: 2020</Text>
+   </Span>
+  </Par>
+  <Par>
+   <Translations>
+    <Translation>
+     <Language language="en" country="US" variant=""></Language>
+     <Span>
+      <Text>TIN: DE 142 109 668</Text>
+     </Span>
+    </Translation>
+   </Translations>
+   <Span>
+    <Text>US.-Id.-Nr: DE 142 109 668</Text>
+   </Span>
+  </Par>
+ </Container>
+</ContainerPart>

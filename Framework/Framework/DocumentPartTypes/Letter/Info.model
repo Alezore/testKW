@@ -1,0 +1,150 @@
+<SectionPart xmlns="urn:kwsoft:mtext:tonic:dom">
+ <DataDefinition>
+  <ParamDef name="User" ref="\\Framework\Data\Partner.datamodel">
+   <Description></Description>
+  </ParamDef>
+ </DataDefinition>
+ <StaticContainer>
+  <Style parentName="ContactInformation"></Style>
+  <Container>
+   <Par>
+    <Translations>
+     <Translation>
+      <Language language="en" country="US" variant=""></Language>
+      <Span>
+       <Style>
+        <FontStyle>bold</FontStyle>
+       </Style>
+       <Text>Opening hours:</Text>
+      </Span>
+     </Translation>
+    </Translations>
+    <Style>
+     <SpaceAfter resolution="combine">0.44cm</SpaceAfter>
+    </Style>
+    <Span>
+     <Style>
+      <FontStyle>bold</FontStyle>
+     </Style>
+     <Text>Öffnungszeiten:</Text>
+    </Span>
+   </Par>
+   <Par>
+    <Translations>
+     <Translation>
+      <Language language="en" country="US" variant=""></Language>
+      <Span>
+       <Text>Mo - Th	8:00 am - 6:00 pm</Text>
+      </Span>
+     </Translation>
+    </Translations>
+    <Style>
+     <Tabs>
+      <Tab position="2.0cm" tabType="left" underlineStyle="default"></Tab>
+     </Tabs>
+    </Style>
+    <Span>
+     <Text>Mo - Do	8:00 - 18:00 Uhr</Text>
+    </Span>
+   </Par>
+   <Par>
+    <Translations>
+     <Translation>
+      <Language language="en" country="US" variant=""></Language>
+      <Span>
+       <Text>Fr	8:00 am - 4:00 pm</Text>
+      </Span>
+     </Translation>
+    </Translations>
+    <Style>
+     <Tabs>
+      <Tab position="2.0cm" tabType="left" underlineStyle="default"></Tab>
+     </Tabs>
+     <SpaceAfter resolution="combine">0.44cm</SpaceAfter>
+    </Style>
+    <Span>
+     <Text>Freitag	8:00 - 16:00 Uhr</Text>
+    </Span>
+   </Par>
+   <Par>
+    <Translations>
+     <Translation>
+      <Language language="en" country="US" variant=""></Language>
+      <Span>
+       <Style>
+        <FontStyle>bold</FontStyle>
+       </Style>
+       <Text>Your contact:</Text>
+      </Span>
+     </Translation>
+    </Translations>
+    <Style>
+     <Tabs>
+      <Tab position="0.0cm" tabType="left" underlineStyle="default"></Tab>
+     </Tabs>
+    </Style>
+    <Span>
+     <Style>
+      <FontStyle>bold</FontStyle>
+     </Style>
+     <Text>Es betreut Sie:</Text>
+    </Span>
+   </Par>
+   <Par>
+    <Style>
+     <Tabs>
+      <Tab position="0.0cm" tabType="left" underlineStyle="default"></Tab>
+     </Tabs>
+    </Style>
+    <Span>
+     <Style>
+      <FontStyle>bold</FontStyle>
+     </Style>
+     <Data>$User.Firstname</Data>
+     <Text> </Text>
+     <Data>$User.Lastname</Data>
+    </Span>
+   </Par>
+   <Par>
+    <Translations>
+     <Translation>
+      <Language language="en" country="US" variant=""></Language>
+      <Span>
+       <Style>
+        <FontStyle></FontStyle>
+       </Style>
+       <Text>Phone: </Text>
+       <Data>$User.Phone</Data>
+      </Span>
+     </Translation>
+    </Translations>
+    <Style>
+     <Tabs>
+      <Tab position="0.0cm" tabType="left" underlineStyle="default"></Tab>
+     </Tabs>
+    </Style>
+    <Span>
+     <Style>
+      <FontStyle></FontStyle>
+     </Style>
+     <Text>Tel.: </Text>
+     <Data>$User.Phone</Data>
+    </Span>
+   </Par>
+   <Par>
+    <Style>
+     <Tabs>
+      <Tab position="0.0cm" tabType="left" underlineStyle="default"></Tab>
+     </Tabs>
+    </Style>
+    <Span>
+     <Style>
+      <FontStyle></FontStyle>
+     </Style>
+     <Data>$User.Email</Data>
+     <Text></Text>
+    </Span>
+   </Par>
+  </Container>
+ </StaticContainer>
+</SectionPart>

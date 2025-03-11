@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Mapping alwaysAddRootElement="true">
+   <DataModel root-path="">\\Loreal\Data\Declaration_Dangereux.datamodel</DataModel>
+   <Rules>
+      <Rule copySubtree="false"
+            name="/Declaration_Dangereux/window"
+            xpath="/ns:smartxsf/ns:data/ns:window"/>
+      <Rule copySubtree="true"
+            name="/Declaration_Dangereux/window/page"
+            xpath="@page"/>
+      <Rule copySubtree="true"
+            name="/Declaration_Dangereux/window/page_id"
+            xpath="@page-id"/>
+      <Rule copySubtree="false"
+            name="/Declaration_Dangereux/window/tableau"
+            xpath="ns:section/ns:sbody/ns:text"/>
+      <Rule copySubtree="false"
+            name="/Declaration_Dangereux/window/tableau/colone"
+            xpath="ns:p"/>
+      <Rule copySubtree="false"
+            name="/Declaration_Dangereux/window/tableau/colone/donné"
+            xpath="ns:sym"/>
+      <Rule copySubtree="true"
+            name="/Declaration_Dangereux/window/tableau/colone/donné/name"
+            xpath="@name"/>
+      <Rule copySubtree="false"
+            name="/Declaration_Dangereux/window/tableau/colone/name"
+            xpath="@name"/>
+      <Rule copySubtree="false"
+            name="/Declaration_Dangereux/window/text"
+            xpath="ns:text"/>
+      <Rule copySubtree="true"
+            name="/Declaration_Dangereux/window/text/name"
+            xpath="@name"/>
+      <Rule copySubtree="false"
+            name="/Declaration_Dangereux/window/text/noeuddonné"
+            xpath="ns:p"/>
+      <Rule copySubtree="true"
+            name="/Declaration_Dangereux/window/text/noeuddonné/donné"
+            xpath="ns:sym"/>
+      <Rule copySubtree="true"
+            name="/Declaration_Dangereux/window/text/noeuddonné/name"
+            xpath="@name"/>
+   </Rules>
+   <Params/>
+   <Namespaces>
+      <Namespace prefix="ns">urn:sap-com:SmartForms:2000:xsf</Namespace>
+      <Namespace prefix="xml">http://www.w3.org/XML/1998/namespace</Namespace>
+   </Namespaces>
+</Mapping>

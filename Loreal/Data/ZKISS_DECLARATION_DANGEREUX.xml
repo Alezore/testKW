@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<smartxsf xmlns="urn:sap-com:SmartForms:2000:xsf">
+<header>
+<general>
+<version>1.14.2</version>
+<form>ZKISS_DECLARATION_DANGEREUX</form>
+<language>FR</language>
+<device>PRINTER</device>
+<output-device>FY14</output-device>
+<device-type>HPLJ4000</device-type>
+<tddataset>SMART</tddataset>
+<tdsuffix1>FY14</tdsuffix1>
+<tdsuffix2>COLLINS1</tdsuffix2>
+<tdimmed>X</tdimmed>
+<tdlifetime>8</tdlifetime>
+<tdcopies>001</tdcopies>
+</general>
+<archive mode="1" mode-modify-enabled="yes" system-id="P48"/>
+<page name="_PAGE1" id="001"/>
+</header>
+<data xml:space="preserve" style="SYSTEM">
+<window name="MAIN" type="main" page="_PAGE1" page-id="001">
+<text name="MAIL" style="SYSTEM" lang="FR">
+<p name="L">
+</p>
+<p name="L">
+</p>
+<p name="L">
+</p>
+<p name="L">
+</p>
+<p name="L">
+</p>
+</text>
+<text name="HEADER" style="SYSTEM" lang="FR">
+<p name="L"/>
+<p name="L"/>
+<p name="L"/>
+<p name="L">
+<sym name="IS_HEADER-SPRAS">FR</sym>
+</p>
+<p name="L">
+<sym name="IS_HEADER-1_NAME1">PRESTIGE &amp; COLLECTIONS INTERNATIONAL</sym>
+</p>
+<p name="L">
+<sym name="IS_HEADER-1_STRAS">62, quai Charles Pasqua</sym>
+</p>
+<p name="L">
+<sym name="IS_HEADER-1_PSTLZ">92300</sym>
+</p>
+<p name="L">
+<sym name="IS_HEADER-1_ORT01">LEVALLOIS PERRET</sym>
+</p>
+<p name="L">
+<sym name="IS_HEADER-1_LANDX">France</sym>
+</p>
+<p name="L">
+<sym name="IS_HEADER-1_STCEG">DE306383104</sym>
+</p>
+<p name="L">
+<sym name="IS_HEADER-2A_TKNUM">1481191</sym>
+</p>
+<p name="L">
+<sym name="IS_HEADER-2B_DATBG">11.02.2025</sym>
+</p>
+<p name="L">
+<sym name="IS_HEADER-4_VBELN">44163049</sym>
+</p>
+<p name="L">
+<sym name="IS_HEADER-6_NAME1">L OREAL USA LUXURY PRODUCTS</sym>
+</p>
+<p name="L">
+<sym name="IS_HEADER-6_STRAS">77 DEANS RHODE HALL ROAD</sym>
+</p>
+<p name="L">
+<sym name="IS_HEADER-6_PSTLZ">08852</sym>
+</p>
+<p name="L">
+<sym name="IS_HEADER-6_ORT01">NEW JERSEY - MONMOUTH JUNCTION</sym>
+</p>
+<p name="L">
+<sym name="IS_HEADER-6_LANDX">USA</sym>
+</p>
+<p name="L">
+</p>
+<p name="L">
+</p>
+<p name="L">
+</p>
+<p name="L">
+</p>
+<p name="L">
+</p>
+<p name="L">
+<sym name="IS_HEADER-9_1">24 HOURS EMERGENCY PHONE: * (24h) 00 33 298 331 010 – CEDRE / UTMD 27 *</sym>
+</p>
+<p name="L">
+</p>
+<p name="L">
+<sym name="IS_HEADER-9_3">OVERPACK USED</sym>
+</p>
+<p name="L">
+</p>
+<p name="L">
+</p>
+<p name="L">
+</p>
+<p name="L">
+</p>
+<p name="L">
+<sym name="IS_HEADER-15_SIGNI">ACLU9684109</sym>
+</p>
+<p name="L">
+<sym name="IS_HEADER-16_EXTI1">Seal Number 1 : 187417</sym>
+</p>
+<p name="L">
+</p>
+<p name="L">
+<sym name="IS_HEADER-17_BEZEI">container</sym>
+</p>
+<p name="L">
+</p>
+<p name="L">
+</p>
+<p name="L">
+</p>
+<p name="L">
+<sym name="IS_HEADER-22C_ORT01">Roye</sym>
+</p>
+<p name="L">
+<sym name="IS_HEADER-22C_DATUM">11.02.2025</sym>
+</p>
+<p name="L">
+<sym name="IS_HEADER-22A_NAME2">Fapagau &amp; Compagnie</sym>
+</p>
+<p name="L">
+</p>
+<p name="L">
+</p>
+<p name="L">
+<sym name="IS_HEADER-UN3088">X</sym>
+</p>
+<p name="L">
+</p>
+<p name="L">
+</p>
+<p name="L">
+</p>
+</text>
+<section name="ITEMS" style="SYSTEM">
+<sbody>
+<text name="ITEM" style="SYSTEM" lang="FR">
+<p name="L"/>
+<p name="L">
+<sym name="IS_ITEM-14_SHIPPING_MARKS">UN1266/PERFUMERY PRODUCTS</sym>
+</p>
+<p name="L">
+</p>
+<p name="L">
+</p>
+<p name="L">
+</p>
+</text>
+<text name="ITEM" style="SYSTEM" lang="FR">
+<p name="L"/>
+<p name="L">
+<sym name="IS_ITEM-14_SHIPPING_MARKS">Class 3, II</sym>
+</p>
+<p name="L">
+</p>
+<p name="L">
+</p>
+<p name="L">
+</p>
+</text>
+<text name="ITEM" style="SYSTEM" lang="FR">
+<p name="L"/>
+<p name="L">
+<sym name="IS_ITEM-14_SHIPPING_MARKS">LIMITED QUANTITY, EMS : F-E/S-D, Stowage : Category A</sym>
+</p>
+<p name="L">
+</p>
+<p name="L">
+</p>
+<p name="L">
+</p>
+</text>
+<text name="ITEM" style="SYSTEM" lang="FR">
+<p name="L"/>
+<p name="L">
+<sym name="IS_ITEM-14_SHIPPING_MARKS">720 fibreboard boxes with 172.800 Sprays (F.P. : 18.0 °C cc)</sym>
+</p>
+<p name="L">
+<sym name="IS_ITEM-14_BRGEW">      2091,816</sym>
+</p>
+<p name="L">
+<sym name="IS_ITEM-14_NTGEW">      1382,400</sym>
+</p>
+<p name="L">
+<sym name="IS_ITEM-14_VOLUM">12,960 M3</sym>
+</p>
+</text>
+<text name="ITEM" style="SYSTEM" lang="FR">
+<p name="L"/>
+<p name="L">
+<sym name="IS_ITEM-14_SHIPPING_MARKS">1423 fibreboard boxes with 31.415 Sprays (F.P. : 13.0 °C cc)</sym>
+</p>
+<p name="L">
+<sym name="IS_ITEM-14_BRGEW">     11325,631</sym>
+</p>
+<p name="L">
+<sym name="IS_ITEM-14_NTGEW">     10370,312</sym>
+</p>
+<p name="L">
+<sym name="IS_ITEM-14_VOLUM">14,613 M3</sym>
+</p>
+</text>
+<text name="ITEM" style="SYSTEM" lang="FR">
+<p name="L"/>
+<p name="L">
+<sym name="IS_ITEM-14_SHIPPING_MARKS">Sub total UN1266 - Class 3, II  : 2143 fibreboard boxes with 204215 inner packaging</sym>
+</p>
+<p name="L">
+<sym name="IS_ITEM-14_BRGEW">13417,447</sym>
+</p>
+<p name="L">
+<sym name="IS_ITEM-14_NTGEW">11752,712</sym>
+</p>
+<p name="L">
+<sym name="IS_ITEM-14_VOLUM">27,573 M3</sym>
+</p>
+</text>
+<text name="ITEM" style="SYSTEM" lang="FR">
+<p name="L"/>
+<p name="L">
+</p>
+<p name="L">
+</p>
+<p name="L">
+</p>
+<p name="L">
+</p>
+</text>
+<text name="ITEM" style="SYSTEM" lang="FR">
+<p name="L"/>
+<p name="L">
+<sym name="IS_ITEM-14_SHIPPING_MARKS">UN1993/FLAMMABLE LIQUID, N.O.S. (ISODODECANE, ETHANOL)</sym>
+</p>
+<p name="L">
+</p>
+<p name="L">
+</p>
+<p name="L">
+</p>
+</text>
+<text name="ITEM" style="SYSTEM" lang="FR">
+<p name="L"/>
+<p name="L">
+<sym name="IS_ITEM-14_SHIPPING_MARKS">Class 3, III</sym>
+</p>
+<p name="L">
+</p>
+<p name="L">
+</p>
+<p name="L">
+</p>
+</text>
+<text name="ITEM" style="SYSTEM" lang="FR">
+<p name="L"/>
+<p name="L">
+<sym name="IS_ITEM-14_SHIPPING_MARKS">LIMITED QUANTITY, EMS : F-E, S-E, Stowage : Category A</sym>
+</p>
+<p name="L">
+</p>
+<p name="L">
+</p>
+<p name="L">
+</p>
+</text>
+<text name="ITEM" style="SYSTEM" lang="FR">
+<p name="L"/>
+<p name="L">
+<sym name="IS_ITEM-14_SHIPPING_MARKS">21 fibreboard boxes with 1.269 Bottle or Container (F.P. : 33.0 °C cc)</sym>
+</p>
+<p name="L">
+<sym name="IS_ITEM-14_BRGEW">       185,282</sym>
+</p>
+<p name="L">
+<sym name="IS_ITEM-14_NTGEW">       175,122</sym>
+</p>
+<p name="L">
+<sym name="IS_ITEM-14_VOLUM">0,180 M3</sym>
+</p>
+</text>
+<text name="ITEM" style="SYSTEM" lang="FR">
+<p name="L"/>
+<p name="L">
+<sym name="IS_ITEM-14_SHIPPING_MARKS">46 fibreboard boxes with 2.859 Pump Bottle (F.P. : 38.0 °C cc)</sym>
+</p>
+<p name="L">
+<sym name="IS_ITEM-14_BRGEW">       398,448</sym>
+</p>
+<p name="L">
+<sym name="IS_ITEM-14_NTGEW">       381,090</sym>
+</p>
+<p name="L">
+<sym name="IS_ITEM-14_VOLUM">0,463 M3</sym>
+</p>
+</text>
+<text name="ITEM" style="SYSTEM" lang="FR">
+<p name="L"/>
+<p name="L">
+<sym name="IS_ITEM-14_SHIPPING_MARKS">Sub total UN1993 - Class 3, III  : 67 fibreboard boxes with 4128 inner packaging</sym>
+</p>
+<p name="L">
+<sym name="IS_ITEM-14_BRGEW">583,730</sym>
+</p>
+<p name="L">
+<sym name="IS_ITEM-14_NTGEW">556,212</sym>
+</p>
+<p name="L">
+<sym name="IS_ITEM-14_VOLUM">0,643 M3</sym>
+</p>
+</text>
+<text name="ITEM" style="SYSTEM" lang="FR">
+<p name="L"/>
+<p name="L">
+</p>
+<p name="L">
+</p>
+<p name="L">
+</p>
+<p name="L">
+</p>
+</text>
+</sbody>
+</section>
+</window>
+</data>
+</smartxsf>

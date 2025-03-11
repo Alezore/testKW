@@ -1,0 +1,107 @@
+<DocumentPart xmlns="urn:kwsoft:mtext:tonic:dom" scriptResource="\\Framework\Scripts\LoadAll.js" resolveLoopOnEdit="false">
+ <DataDefinition>
+  <ParamDef name="Message" ref="\\Framework\Data\Message.datamodel">
+   <Description></Description>
+   <Output text-prefix="" text-suffix=""></Output>
+  </ParamDef>
+  <ParamDef name="Language" provided="true">
+   <Description></Description>
+   <Input text-prefix="" text-suffix=""></Input>
+   <Output text-prefix="" text-suffix=""></Output>
+   <Subtype></Subtype>
+   <Validation validation-type="any_value" operator="any" allow-empty-value="true">
+    <Values></Values>
+   </Validation>
+  </ParamDef>
+ </DataDefinition>
+ <ModificationRights>
+  <Allowed>
+   <ModificationRight role="_EVERYONE_" operations="INPUT"></ModificationRight>
+  </Allowed>
+  <Denied></Denied>
+ </ModificationRights>
+ <DocumentPart resolveLoopOnEdit="false">
+  <VisibleIf><![CDATA[($Metadata.TestMode.isEmpty() && ( $Metadata.OutputMode.isEmpty() || $Metadata.OutputMode != "OMS" /* $system.Destination == "preview"*/)) || $Metadata.TestMode == "TEMPLATE"]]></VisibleIf>
+  <DataDefinition></DataDefinition>
+  <DocumentPartRef uri="\\Framework\Framework\InstanceControl.model">
+   <Extensions>
+    <DocumentExtension id="Instance Content">
+     <DocumentExtensionDef id="Message Content"></DocumentExtensionDef>
+    </DocumentExtension>
+   </Extensions>
+   <Param name="Instance">$Message.Instances.Instance.instance(0)</Param>
+   <Param name="InstanceOutputSettings">$Message.Instances.Instance.instance(0)</Param>
+   <Param name="InstancePrimary">$Message.Instances.Instance.instance(0)</Param>
+   <Param name="Message">$Message</Param>
+   <Param name="Language">$Message.Language</Param>
+  </DocumentPartRef>
+ </DocumentPart>
+ <DocumentPart>
+  <VisibleIf><![CDATA[else]]></VisibleIf>
+  <DataDefinition></DataDefinition>
+  <DocumentPart>
+   <ForEach alias="$InstanceInLoop"><![CDATA[$Message.Instances.Instance]]></ForEach>
+   <DataDefinition></DataDefinition>
+   <DocumentPart>
+    <VisibleIf><![CDATA[$InstanceInLoop.Type.valueOf() != "PRIMARY_INSTANCE" /***** Vorblatt für weitere Instanz *****/]]></VisibleIf>
+    <DataDefinition></DataDefinition>
+    <DocumentPartRef uri="\\Framework\Framework\InstanceControl.model">
+     <Extensions>
+      <DocumentExtension id="Instance Content">
+       <DocumentPartRef uri="DocumentControls\DocumentPartTypes\Letter.model">
+        <Extensions>
+         <ContainerExtension id="Letter Content">
+          <ContainerPartRef uri="Framework/DefaultContents/CoverLetter/LetterContentOtherInstances.model">
+           <Param name="Instance">$InstanceInLoop</Param>
+           <Param name="InstancePrimary">$Message.Instances.Instance.instance(0)</Param>
+          </ContainerPartRef>
+         </ContainerExtension>
+        </Extensions>
+        <Param name="Instance">$InstanceInLoop</Param>
+        <Param name="Recipient">$InstanceInLoop.Recipient</Param>
+        <Param name="Sender">$InstanceInLoop.Sender</Param>
+        <Param name="Language">$Message.Language</Param>
+       </DocumentPartRef>
+      </DocumentExtension>
+     </Extensions>
+     <Param name="Instance">$InstanceInLoop</Param>
+     <Param name="InstanceOutputSettings">$InstanceInLoop</Param>
+     <Param name="InstancePrimary">$Message.Instances.Instance.instance(0)</Param>
+     <Param name="Message">$Message</Param>
+     <Param name="Language">$Message.Language</Param>
+    </DocumentPartRef>
+   </DocumentPart>
+   <DocumentPartRef uri="\\Framework\Framework\InstanceControl.model">
+    <Extensions>
+     <DocumentExtension id="Instance Content">
+      <DocumentExtensionDef id="Message Content"></DocumentExtensionDef>
+     </DocumentExtension>
+    </Extensions>
+    <Param name="Instance">$Message.Instances.Instance.instance(0)</Param>
+    <Param name="InstanceOutputSettings">$InstanceInLoop</Param>
+    <Param name="InstancePrimary">$Message.Instances.Instance.instance(0)</Param>
+    <Param name="Message">$Message</Param>
+    <Param name="Language">$Message.Language</Param>
+   </DocumentPartRef>
+  </DocumentPart>
+ </DocumentPart>
+ <DocumentPart>
+  <DataDefinition></DataDefinition>
+  <UIContribution>
+   <GuideArea>
+    <Folder title="Dokument finalisieren" title-en_US="Finalize the document">
+     <ActionLink title="PDF Vorschau" title-en_US="PDF Preview" inputAreaGroupID="">
+      <Script><![CDATA[$context.save(); 
+$context.export('export-application/pdf');]]></Script>
+     </ActionLink>
+     <ActionLink title="Versenden" title-en_US="Send" inputAreaGroupID="">
+      <VisibleIf><![CDATA[$Metadata.State.valueOf() !== 'Finished']]></VisibleIf>
+      <Script><![CDATA[load("Scripts/Actions.js");
+finalizeDocument($context, $Metadata);]]></Script>
+     </ActionLink>
+    </Folder>
+   </GuideArea>
+   <InputArea></InputArea>
+  </UIContribution>
+ </DocumentPart>
+</DocumentPart>

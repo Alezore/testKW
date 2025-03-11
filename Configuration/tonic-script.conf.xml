@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ScriptConf xmlns="urn:kwsoft:mtext:tonic:script-conf">
+   <Script name="\\Framework\Scripts\DataNodeExtensions.js" inBrowser="inject"/>
+</ScriptConf>

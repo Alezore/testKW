@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Mapping alwaysAddRootElement="false">
+   <DataModel root-path="">\\Framework\Data\Partner.datamodel</DataModel>
+   <SourceRoot xpath="/ns:taskcontrol/ns:message/ns:instance/ns:recipient/ns:partner"/>
+   <Rules>
+      <Rule copySubtree="false" name="/Partner" xpath="/"/>
+      <Rule copySubtree="true" name="/Partner/Address" xpath="ns1:address"/>
+      <Rule copySubtree="true"
+            name="/Partner/AddressSupplement"
+            xpath="ns1:addresssupplement"/>
+      <Rule copySubtree="true" name="/Partner/Birthday" xpath="ns1:birthday"/>
+      <Rule copySubtree="true" name="/Partner/BirthName" xpath="ns1:birthname"/>
+      <Rule copySubtree="true" name="/Partner/City" xpath="ns1:city"/>
+      <Rule copySubtree="true"
+            name="/Partner/CompanyName1"
+            xpath="ns1:companyname1"/>
+      <Rule copySubtree="true"
+            name="/Partner/CompanyName2"
+            xpath="ns1:companyname2"/>
+      <Rule copySubtree="true" name="/Partner/Country" xpath="ns1:country"/>
+      <Rule copySubtree="true"
+            name="/Partner/CountryCode"
+            xpath="ns1:countrycode"/>
+      <Rule copySubtree="true" name="/Partner/Email" xpath="ns1:email"/>
+      <Rule copySubtree="true" name="/Partner/Fax" xpath="ns1:fax"/>
+      <Rule copySubtree="true" name="/Partner/Firstname" xpath="ns1:firstname"/>
+      <Rule copySubtree="true" name="/Partner/HouseNo" xpath="ns1:houseno"/>
+      <Rule copySubtree="true" name="/Partner/Lastname" xpath="ns1:lastname"/>
+      <Rule copySubtree="true" name="/Partner/PartnerID" xpath="ns1:partnerid"/>
+      <Rule copySubtree="true" name="/Partner/Phone" xpath="ns1:phone"/>
+      <Rule copySubtree="true"
+            name="/Partner/PlaceOfBirth"
+            xpath="ns1:placeofbirth"/>
+      <Rule copySubtree="true" name="/Partner/Region" xpath="ns1:region"/>
+      <Rule copySubtree="true" name="/Partner/Role" xpath="ns1:role"/>
+      <Rule copySubtree="true"
+            name="/Partner/Salutation"
+            xpath="ns1:salutation"/>
+      <Rule copySubtree="true"
+            name="/Partner/SalutatoryAddress"
+            xpath="ns1:salutatoryaddress"/>
+      <Rule copySubtree="true" name="/Partner/State" xpath="ns1:state"/>
+      <Rule copySubtree="true" name="/Partner/Street" xpath="ns1:street"/>
+      <Rule copySubtree="true" name="/Partner/Title" xpath="ns1:title"/>
+      <Rule copySubtree="true" name="/Partner/UserID" xpath="ns1:userid"/>
+      <Rule copySubtree="true" name="/Partner/Zip" xpath="ns1:zip"/>
+   </Rules>
+   <Params/>
+   <Namespaces>
+      <Namespace prefix="ns">http://www.kwsoft.de/xmlns/v1.0/taskcontrol</Namespace>
+      <Namespace prefix="ns1">http://www.kwsoft.de/xmlns/common/v1.0/partner</Namespace>
+   </Namespaces>
+</Mapping>

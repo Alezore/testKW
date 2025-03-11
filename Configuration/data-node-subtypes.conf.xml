@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataNodeSubtypes>
+   <DataNodeSubtype data-type="NUMBER" name="crazynumberformat">
+      <Settings>
+         <Validation allow-empty-value="true"
+                     dialog-field=""
+                     label=""
+                     operator="ANY"
+                     validation-type="ANY_VALUE">
+            <Values/>
+         </Validation>
+         <Format>
+            <Output currency-format="BEFORE_WITH_SPACE"
+                    currency-symbol="€"
+                    decimal-separator="58"
+                    formatting-type="NUMBER"
+                    fractional-digits="4"
+                    leading-zeros="4"
+                    text-prefix="jip"
+                    text-suffix="nope"
+                    thousand-separator="35"
+                    use-current-locale="false"/>
+         </Format>
+      </Settings>
+   </DataNodeSubtype>
+   <DataNodeSubtype data-type="TEXT" name="validity">
+      <Settings>
+         <Validation allow-empty-value="true"
+                     dialog-field=""
+                     label=""
+                     operator="ANY"
+                     validation-type="LIST">
+            <Values/>
+         </Validation>
+      </Settings>
+   </DataNodeSubtype>
+</DataNodeSubtypes>

@@ -1,0 +1,65 @@
+<ContainerPart xmlns="urn:kwsoft:mtext:tonic:dom">
+ <DataDefinition>
+  <ParamDef name="Subject1" provided="true">
+   <Description></Description>
+   <Input text-prefix="" text-suffix=""></Input>
+   <Output text-prefix="" text-suffix=""></Output>
+   <Validation validation-type="any_value" operator="any" allow-empty-value="true">
+    <Values></Values>
+   </Validation>
+  </ParamDef>
+  <ParamDef name="Subject2" provided="true">
+   <Description></Description>
+   <Input text-prefix="" text-suffix=""></Input>
+   <Output text-prefix="" text-suffix=""></Output>
+   <Validation validation-type="any_value" operator="any" allow-empty-value="true">
+    <Values></Values>
+   </Validation>
+  </ParamDef>
+  <ParamDef name="Subject3" provided="true">
+   <Description></Description>
+   <Input text-prefix="" text-suffix=""></Input>
+   <Output text-prefix="" text-suffix=""></Output>
+   <Validation validation-type="any_value" operator="any" allow-empty-value="true">
+    <Values></Values>
+   </Validation>
+  </ParamDef>
+ </DataDefinition>
+ <Container id="subject">
+  <Style parentName="Subject"></Style>
+  <ContainerPart>
+   <VisibleIf><![CDATA[$Subject1 && !$Subject1.isEmpty()]]></VisibleIf>
+   <DataDefinition></DataDefinition>
+   <Par>
+    <Style parentName="Subject1"></Style>
+    <Span>
+     <Data>$Subject1</Data>
+     <Text></Text>
+    </Span>
+   </Par>
+  </ContainerPart>
+  <ContainerPart>
+   <VisibleIf><![CDATA[$Subject2 && !$Subject2.isEmpty()]]></VisibleIf>
+   <DataDefinition></DataDefinition>
+   <Par>
+    <Style parentName="Subject2"></Style>
+    <Span>
+     <Data>$Subject2</Data>
+     <Text></Text>
+    </Span>
+   </Par>
+  </ContainerPart>
+  <ContainerPart>
+   <VisibleIf><![CDATA[$Subject3 && !$Subject3.isEmpty()]]></VisibleIf>
+   <DataDefinition></DataDefinition>
+   <Par>
+    <Style parentName="Subject2"></Style>
+    <Span>
+     <Data>$Subject3</Data>
+     <Text></Text>
+    </Span>
+   </Par>
+  </ContainerPart>
+  <ContainerExtensionDef id="Subject"></ContainerExtensionDef>
+ </Container>
+</ContainerPart>

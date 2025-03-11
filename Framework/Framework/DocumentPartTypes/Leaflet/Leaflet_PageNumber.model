@@ -1,0 +1,31 @@
+<ContainerPart xmlns="urn:kwsoft:mtext:tonic:dom">
+ <DataDefinition></DataDefinition>
+ <Par>
+  <Translations>
+   <Translation>
+    <Language language="en" country="US" variant=""></Language>
+    <Span>
+     <Text>Information sheet page </Text>
+     <PageNumber scope="logicaldocument"></PageNumber>
+     <Text> of </Text>
+     <PageCount scope="logicaldocument"></PageCount>
+    </Span>
+   </Translation>
+   <Translation>
+    <Language language="it" country="IT" variant=""></Language>
+    <Span>
+     <Text>Foglio informativo pagina </Text>
+     <PageNumber scope="logicaldocument"></PageNumber>
+     <Text> di </Text>
+     <PageCount scope="logicaldocument"></PageCount>
+    </Span>
+   </Translation>
+  </Translations>
+  <Span>
+   <Text>Informationsblatt Seite </Text>
+   <PageNumber scope="logicaldocument"></PageNumber>
+   <Text> von </Text>
+   <PageCount scope="logicaldocument"></PageCount>
+  </Span>
+ </Par>
+</ContainerPart>

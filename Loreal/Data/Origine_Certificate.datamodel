@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataModel>
+   <Node data-type="TEXT"
+         hierarchical="FLAT"
+         multiple="false"
+         name="page_id"
+         searchable="false">
+      <Settings>
+         <Validation allow-empty-value="true"
+                     dialog-field=""
+                     label=""
+                     operator="ANY"
+                     validation-type="ANY_VALUE"/>
+         <Script/>
+      </Settings>
+   </Node>
+   <Node multiple="true" name="Header">
+      <Settings>
+         <Script/>
+      </Settings>
+      <Node data-type="TEXT"
+            hierarchical="FLAT"
+            multiple="false"
+            name="name"
+            searchable="false">
+         <Settings>
+            <Validation allow-empty-value="true"
+                        dialog-field=""
+                        label=""
+                        operator="ANY"
+                        validation-type="ANY_VALUE"/>
+            <Script/>
+         </Settings>
+      </Node>
+      <Node multiple="false" name="sym">
+         <Settings>
+            <Script/>
+         </Settings>
+         <Node data-type="TEXT"
+               hierarchical="FLAT"
+               multiple="false"
+               name="name"
+               searchable="false">
+            <Settings>
+               <Validation allow-empty-value="true"
+                           dialog-field=""
+                           label=""
+                           operator="ANY"
+                           validation-type="ANY_VALUE"/>
+               <Script/>
+            </Settings>
+         </Node>
+      </Node>
+   </Node>
+   <Node multiple="false" name="section_tableau">
+      <Settings>
+         <Script/>
+      </Settings>
+      <Node data-type="TEXT"
+            hierarchical="FLAT"
+            multiple="false"
+            name="name"
+            searchable="false">
+         <Settings>
+            <Validation allow-empty-value="true"
+                        dialog-field=""
+                        label=""
+                        operator="ANY"
+                        validation-type="ANY_VALUE"/>
+            <Script/>
+         </Settings>
+      </Node>
+      <Node multiple="true" name="Ligne">
+         <Settings>
+            <Script/>
+         </Settings>
+         <Node data-type="TEXT"
+               hierarchical="FLAT"
+               multiple="false"
+               name="name"
+               searchable="false">
+            <Settings>
+               <Validation allow-empty-value="true"
+                           dialog-field=""
+                           label=""
+                           operator="ANY"
+                           validation-type="ANY_VALUE"/>
+               <Script/>
+            </Settings>
+         </Node>
+         <Node multiple="true" name="Donner">
+            <Settings>
+               <Script/>
+            </Settings>
+            <Node data-type="TEXT"
+                  hierarchical="FLAT"
+                  multiple="false"
+                  name="name"
+                  searchable="false">
+               <Settings>
+                  <Validation allow-empty-value="true"
+                              dialog-field=""
+                              label=""
+                              operator="ANY"
+                              validation-type="ANY_VALUE"/>
+                  <Script/>
+               </Settings>
+            </Node>
+            <Node multiple="false" name="sym">
+               <Settings>
+                  <Script/>
+               </Settings>
+               <Node data-type="TEXT"
+                     hierarchical="FLAT"
+                     multiple="false"
+                     name="name"
+                     searchable="false">
+                  <Settings>
+                     <Validation allow-empty-value="true"
+                                 dialog-field=""
+                                 label=""
+                                 operator="ANY"
+                                 validation-type="ANY_VALUE"/>
+                     <Script/>
+                  </Settings>
+               </Node>
+            </Node>
+         </Node>
+      </Node>
+      <Node multiple="false" name="Total">
+         <Settings>
+            <Script/>
+         </Settings>
+         <Node multiple="false" name="text">
+            <Settings>
+               <Script/>
+            </Settings>
+            <Node data-type="TEXT"
+                  hierarchical="FLAT"
+                  multiple="false"
+                  name="name"
+                  searchable="false">
+               <Settings>
+                  <Validation allow-empty-value="true"
+                              dialog-field=""
+                              label=""
+                              operator="ANY"
+                              validation-type="ANY_VALUE"/>
+                  <Script/>
+               </Settings>
+            </Node>
+            <Node multiple="true" name="Donner">
+               <Settings>
+                  <Script/>
+               </Settings>
+               <Node data-type="TEXT"
+                     hierarchical="FLAT"
+                     multiple="false"
+                     name="name"
+                     searchable="false">
+                  <Settings>
+                     <Validation allow-empty-value="true"
+                                 dialog-field=""
+                                 label=""
+                                 operator="ANY"
+                                 validation-type="ANY_VALUE"/>
+                     <Script/>
+                  </Settings>
+               </Node>
+               <Node multiple="false" name="sym">
+                  <Settings>
+                     <Script/>
+                  </Settings>
+                  <Node data-type="TEXT"
+                        hierarchical="FLAT"
+                        multiple="false"
+                        name="name"
+                        searchable="false">
+                     <Settings>
+                        <Validation allow-empty-value="true"
+                                    dialog-field=""
+                                    label=""
+                                    operator="ANY"
+                                    validation-type="ANY_VALUE"/>
+                        <Script/>
+                     </Settings>
+                  </Node>
+               </Node>
+            </Node>
+         </Node>
+      </Node>
+   </Node>
+</DataModel>

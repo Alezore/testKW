@@ -1,0 +1,13 @@
+<configuration
+	xmlns="http://www.kwsoft.de/controlcenter/serverConfiguration"
+	name="DME server">
+	<description />
+	<mtextclient>
+		<defaults>REST</defaults>
+		<communication>
+			<Url>https://pilotelcl.test.omscloud.eu:443</Url>
+		</communication>
+	</mtextclient>
+	<notifications>false</notifications>
+</configuration>
+

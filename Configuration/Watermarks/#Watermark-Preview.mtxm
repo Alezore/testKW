@@ -1,0 +1,19 @@
+.MODEL type=WATERMARK
+.GRF .RGB TEXT 0/0/0
+.GRF .TCW 10275/3010/45 2540/0
+.GRF .RGB TEXT 153/153/153
+.GRF .FTN ARIAL
+.GRF .TSP L/L
+.GRF .TXL <F>PREVIEW
+.DSC .GRF .TXL <F>  Vorschau   Vorschau   Vorschau  Vorschau Vorschau Vorschau  Vorschau   Vorschau   Vorschau   Vorschau
+.DSC .GRF .TXL <F>   Vorschau   Vorschau   Vorschau  Vorschau Vorschau Vorschau  Vorschau   Vorschau   Vorschau   Vorschau
+.DSC .GRF .TXL <F> Vorschau   Vorschau   Vorschau  Vorschau Vorschau Vorschau  Vorschau   Vorschau   Vorschau   Vorschau
+.DSC .GRF .TXL <F>  Vorschau   Vorschau   Vorschau  Vorschau Vorschau Vorschau  Vorschau   Vorschau   Vorschau   Vorschau
+.DSC .GRF .TXL <F> Vorschau   Vorschau   Vorschau  Vorschau Vorschau Vorschau  Vorschau   Vorschau   Vorschau   Vorschau
+.DSC .GRF .TXL <F>   Vorschau   Vorschau   Vorschau  Vorschau Vorschau Vorschau  Vorschau   Vorschau   Vorschau   Vorschau
+.DSC .GRF .TXL <F> Vorschau   Vorschau   Vorschau  Vorschau Vorschau Vorschau  Vorschau   Vorschau   Vorschau   Vorschau
+.DSC .GRF .TXL <F>    Vorschau   Vorschau   Vorschau  Vorschau Vorschau Vorschau  Vorschau   Vorschau   Vorschau   Vorschau
+.DSC .GRF .TXL <F> Vorschau   Vorschau   Vorschau  Vorschau Vorschau Vorschau  Vorschau   Vorschau   Vorschau   Vorschau
+.DSC .GRF .TXL <F>Vorschau   Vorschau   Vorschau  Vorschau Vorschau Vorschau  Vorschau   Vorschau   Vorschau   Vorschau
+.DSC .GRF .TXL <F>  Vorschau   Vorschau   Vorschau  Vorschau Vorschau Vorschau  Vorschau   Vorschau   Vorschau   Vorschau
+.DSC .GRF .TXL <F>   Vorschau   Vorschau   Vorschau  Vorschau Vorschau Vorschau  Vorschau   Vorschau   Vorschau   Vorschau

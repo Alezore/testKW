@@ -1,0 +1,100 @@
+<PageLayouts xmlns="urn:kwsoft:mtext:tonic:dom">
+ <Front>
+  <PageSize name="A4"></PageSize>
+  <Landscape>false</Landscape>
+  <RendererMetadata></RendererMetadata>
+  <Region name="logo">
+   <Left distance="431713.0mpt" anchorSide="same"></Left>
+   <Top distance="36282.0mpt" anchorSide="same"></Top>
+   <Right distance="67751.0mpt" anchorSide="same"></Right>
+   <Bottom distance="740127.0mpt" anchorSide="same"></Bottom>
+  </Region>
+  <Region name="heading">
+   <Left distance="68314.0mpt" anchorSide="same"></Left>
+   <Top distance="36282.0mpt" anchorSide="same"></Top>
+   <Right distance="209198.0mpt" anchorSide="same"></Right>
+   <Bottom distance="777828.0mpt" anchorSide="same"></Bottom>
+  </Region>
+  <Region name="footer">
+   <Left distance="68313.0mpt" anchorSide="same"></Left>
+   <Top distance="790864.0mpt" anchorSide="same"></Top>
+   <Right distance="67752.0mpt" anchorSide="same"></Right>
+   <Bottom distance="28348.0mpt" anchorSide="same"></Bottom>
+  </Region>
+  <Region name="marginalnotes" role="Artifact" contentRotation="90">
+   <Left distance="18425.0mpt" anchorSide="same"></Left>
+   <Top distance="580653.0mpt" anchorSide="same"></Top>
+   <Right distance="531496.0mpt" anchorSide="same"></Right>
+   <Bottom distance="28347.0mpt" anchorSide="same"></Bottom>
+  </Region>
+  <Region name="Body">
+   <Left distance="68314.0mpt" anchorSide="same"></Left>
+   <Top distance="117921.0mpt" anchorSide="same"></Top>
+   <Right distance="67751.0mpt" anchorSide="same"></Right>
+   <Bottom distance="55843.0mpt" anchorSide="same"></Bottom>
+  </Region>
+ </Front>
+ <Back>
+  <PageSize name="A4"></PageSize>
+  <Landscape>false</Landscape>
+  <RendererMetadata></RendererMetadata>
+  <Region name="logo">
+   <Left distance="68314.0mpt" anchorSide="same"></Left>
+   <Top distance="36282.0mpt" anchorSide="same"></Top>
+   <Right distance="431150.0mpt" anchorSide="same"></Right>
+   <Bottom distance="740127.0mpt" anchorSide="same"></Bottom>
+  </Region>
+  <Region name="heading">
+   <Left distance="209760.0mpt" anchorSide="same"></Left>
+   <Top distance="36282.0mpt" anchorSide="same"></Top>
+   <Right distance="67752.0mpt" anchorSide="same"></Right>
+   <Bottom distance="777828.0mpt" anchorSide="same"></Bottom>
+  </Region>
+  <Region name="footer_backpage">
+   <Left distance="68313.0mpt" anchorSide="same"></Left>
+   <Top distance="790864.0mpt" anchorSide="same"></Top>
+   <Right distance="67752.0mpt" anchorSide="same"></Right>
+   <Bottom distance="28348.0mpt" anchorSide="same"></Bottom>
+  </Region>
+  <Region name="Body">
+   <Left distance="68314.0mpt" anchorSide="same"></Left>
+   <Top distance="117921.0mpt" anchorSide="same"></Top>
+   <Right distance="67751.0mpt" anchorSide="same"></Right>
+   <Bottom distance="55843.0mpt" anchorSide="same"></Bottom>
+  </Region>
+ </Back>
+ <DefaultPageLayout>
+  <PageSize name="A4"></PageSize>
+  <RendererMetadata></RendererMetadata>
+  <Region name="Body">
+   <Left distance="68314.0mpt" anchorSide="same"></Left>
+   <Top distance="117921.0mpt" anchorSide="same"></Top>
+   <Right distance="67751.0mpt" anchorSide="same"></Right>
+   <Bottom distance="55843.0mpt" anchorSide="same"></Bottom>
+  </Region>
+  <Region name="logo">
+   <Left distance="431713.0mpt" anchorSide="same"></Left>
+   <Top distance="36282.0mpt" anchorSide="same"></Top>
+   <Right distance="67751.0mpt" anchorSide="same"></Right>
+   <Bottom distance="740127.0mpt" anchorSide="same"></Bottom>
+  </Region>
+  <Region name="heading">
+   <Left distance="68314.0mpt" anchorSide="same"></Left>
+   <Top distance="36282.0mpt" anchorSide="same"></Top>
+   <Right distance="209198.0mpt" anchorSide="same"></Right>
+   <Bottom distance="777828.0mpt" anchorSide="same"></Bottom>
+  </Region>
+  <Region name="footer">
+   <Left distance="68313.0mpt" anchorSide="same"></Left>
+   <Top distance="790864.0mpt" anchorSide="same"></Top>
+   <Right distance="67752.0mpt" anchorSide="same"></Right>
+   <Bottom distance="28348.0mpt" anchorSide="same"></Bottom>
+  </Region>
+  <Region name="marginalnotes" role="Artifact" contentRotation="90">
+   <Left distance="18425.0mpt" anchorSide="same"></Left>
+   <Top distance="580653.0mpt" anchorSide="same"></Top>
+   <Right distance="531496.0mpt" anchorSide="same"></Right>
+   <Bottom distance="28347.0mpt" anchorSide="same"></Bottom>
+  </Region>
+ </DefaultPageLayout>
+</PageLayouts>

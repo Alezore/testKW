@@ -1,0 +1,27 @@
+.DSC 
+.DSC Erstellt am: 04.02.2014 12:45:56
+.DSC Erstellt von: Hille
+.DSC Projekt: Configuration
+.DSC Pfad: #Collection_CoverSheet.mtxm
+.DSC 
+.DSC Anpassungen für TONIC
+.DSC 
+.DSC .........................................................................................
+.MODEL type=NORMAL
+.DSC Die Variablen werden durch den M/OMS-Stapel gesetzt
+.PAR spaceBefore=1cm font=Font(Standard,20)
+<U><F>M/OMS Stapel<N><G>
+.PAR spaceBefore=1cm tabs=(L 5cm) font=Font(Standard,12)
+<F>Name<N>;*STACK_NAME
+.PAR spaceBefore=0.2cm tabs=(L 5cm) font=Font(Standard,12)
+<F>Beschreibung<N>;*STACK_DSC
+.PAR tabs=(L 5cm)
+<F>Stapellauf-ID<N>;*RUN_ID
+.PAR tabs=(L 5cm)
+<F>Start-Zeit<N>;*START_TIME_DATE
+.PAR spaceBefore=1cm tabs=(L 5cm)
+<F>Land<N>;*LKZ
+.PAR spaceBefore=0.2cm tabs=(L 5cm)
+<F>Anzahl Dokumente<N>;*PRINTFILE_DOCUMENT_COUNT
+.PAR spaceBefore=0.2cm tabs=(L 5cm)
+<F>Anzahl Blätter<N>;*PRINTFILE_SHEET_COUNT

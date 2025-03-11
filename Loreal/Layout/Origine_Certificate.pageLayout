@@ -1,0 +1,58 @@
+<PageLayout xmlns="urn:kwsoft:mtext:tonic:dom">
+ <PageSize name="A4"></PageSize>
+ <RendererMetadata></RendererMetadata>
+ <Region name="Title">
+  <Left distance="145134.0mpt" anchorSide="same"></Left>
+  <Top distance="25228.0mpt" anchorSide="same"></Top>
+  <Right distance="145134.0mpt" anchorSide="same"></Right>
+  <Bottom distance="763654.0mpt" anchorSide="same"></Bottom>
+ </Region>
+ <Region name="page n°">
+  <Left distance="517039.0mpt" anchorSide="same"></Left>
+  <Top distance="59244.0mpt" anchorSide="same"></Top>
+  <Right distance="17575.0mpt" anchorSide="same"></Right>
+  <Bottom distance="763653.0mpt" anchorSide="same"></Bottom>
+ </Region>
+ <Region name="Delivery_Address">
+  <Left distance="1.0cm" anchorSide="same"></Left>
+  <Top distance="97228.0mpt" anchorSide="same"></Top>
+  <Right distance="299540.0mpt" anchorSide="same"></Right>
+  <Bottom distance="668126.0mpt" anchorSide="same"></Bottom>
+ </Region>
+ <Region name="Invoicing_Address">
+  <Left distance="363401.0mpt" anchorSide="same"></Left>
+  <Top distance="97227.0mpt" anchorSide="same"></Top>
+  <Right distance="25512.0mpt" anchorSide="same"></Right>
+  <Bottom distance="668127.0mpt" anchorSide="same"></Bottom>
+ </Region>
+ <Region name="Client">
+  <Left distance="1.0cm" anchorSide="same"></Left>
+  <Top distance="189637.0mpt" anchorSide="same"></Top>
+  <Right distance="444958.0mpt" anchorSide="same"></Right>
+  <Bottom distance="633260.0mpt" anchorSide="same"></Bottom>
+ </Region>
+ <Region name="Invoice_Number">
+  <Left distance="154771.0mpt" anchorSide="same"></Left>
+  <Top distance="189637.0mpt" anchorSide="same"></Top>
+  <Right distance="265040.0mpt" anchorSide="same"></Right>
+  <Bottom distance="633260.0mpt" anchorSide="same"></Bottom>
+ </Region>
+ <Region name="From">
+  <Left distance="334235.0mpt" anchorSide="same"></Left>
+  <Top distance="189637.0mpt" anchorSide="same"></Top>
+  <Right distance="138584.0mpt" anchorSide="same"></Right>
+  <Bottom distance="633260.0mpt" anchorSide="same"></Bottom>
+ </Region>
+ <Region name="Currency">
+  <Left distance="460629.0mpt" anchorSide="same"></Left>
+  <Top distance="189637.0mpt" anchorSide="same"></Top>
+  <Right distance="12190.0mpt" anchorSide="same"></Right>
+  <Bottom distance="633260.0mpt" anchorSide="same"></Bottom>
+ </Region>
+ <Region name="Body">
+  <Left distance="1.0cm" anchorSide="same"></Left>
+  <Top distance="213732.0mpt" anchorSide="same"></Top>
+  <Right distance="1.0cm" anchorSide="same"></Right>
+  <Bottom distance="1.0cm" anchorSide="same"></Bottom>
+ </Region>
+</PageLayout>

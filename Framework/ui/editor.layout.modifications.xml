@@ -1,0 +1,49 @@
+<UIModification  xmlns="urn:kwsoft:mtext:tonic:ui">
+	<ActionModifications>
+		<ActionModification
+			enabledIf="$Metadata.State.valueOf() !== 'Finished'"
+			visibleIf="true"
+			name="Finalize"
+			code="ActionCode:EXECUTE_SCRIPT"
+			title="Finalisieren"
+			title-en_EN="Finalize"
+			title-fr_FR="Finaliser"
+			description="Dokument speichern, an OMS senden und schließen"
+			description-en_EN="Save document, send to OMS and close"
+			description-fr_FR="Sauvegarder le document,l'envoyer à l'OMS et fermer"
+			icon="white_editor_menuprint.png"
+			>
+		<Script><![CDATA[
+			load("Scripts/Actions.js");
+			finalizeDocument($context, $Metadata);
+		]]></Script>
+		</ActionModification>
+		<ActionModification
+			enabledIf="$Metadata.State.valueOf() !== 'Finished'"
+			visibleIf="$Metadata.State.valueOf() !== 'Finished' &amp;&amp; true"
+			name="CustomSave"
+			code="ActionCode:EXECUTE_SCRIPT"
+			shortcut="'CTRL S'"
+			title="Speichern"
+			title-en_EN="Save"
+			description="Dokument speichern"
+			description-en_EN="Save document"
+			icon="white_editor_menusave.png"
+			>
+		<Script><![CDATA[
+			$context.beginBulkUpdate();
+			$context.setDataValue($Metadata.OutputMode,'');
+			$context.setDataValue($Metadata.State,'Saved');
+			$context.setDataValue($Metadata.Assignee,$CurrentUser.guid);
+			$context.endBulkUpdate();
+			$context.save();
+		]]></Script>
+		</ActionModification>
+		<ActionModification
+			visibleIf="false"
+			enabledIf="false"
+			code="ActionCode:DOCUMENT_SAVE"
+			>
+		</ActionModification>
+	</ActionModifications>
+</UIModification>

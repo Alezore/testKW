@@ -1,0 +1,92 @@
+<DocumentPart xmlns="urn:kwsoft:mtext:tonic:dom" logicalDocument="true">
+ <DataDefinition>
+  <ParamDef name="Title" provided="true">
+   <Description></Description>
+   <Output text-prefix="" text-suffix=""></Output>
+   <Script></Script>
+   <Validation validation-type="any_value" operator="any" allow-empty-value="true">
+    <Values></Values>
+   </Validation>
+  </ParamDef>
+  <ParamDef name="DoNotArchive" data-type="boolean" provided="true">
+   <Description></Description>
+   <Input true-value="true" false-value="false"></Input>
+   <Output true-value="true" false-value="false"></Output>
+   <Script><![CDATA[false]]></Script>
+   <Validation validation-type="any_value" operator="any" allow-empty-value="true">
+    <Values></Values>
+   </Validation>
+  </ParamDef>
+  <ParamDef name="SendAsAttachment" data-type="boolean" provided="true">
+   <Description></Description>
+   <Input true-value="true" false-value="false"></Input>
+   <Output true-value="true" false-value="false"></Output>
+   <Script></Script>
+   <Validation validation-type="any_value" operator="any" allow-empty-value="true">
+    <Values></Values>
+   </Validation>
+  </ParamDef>
+  <ParamDef name="AttachmentName" provided="true">
+   <Description></Description>
+   <Script></Script>
+   <Validation validation-type="any_value" operator="any" allow-empty-value="true">
+    <Values></Values>
+   </Validation>
+  </ParamDef>
+  <ParamDef name="InstanceOutputSettings" ref="\\Framework\Data\Instance.datamodel" provided="true">
+   <Description></Description>
+   <Script></Script>
+  </ParamDef>
+ </DataDefinition>
+ <Section>
+  <OutputSettingsRef uri="Framework\OutputSettings.outputSettings"></OutputSettingsRef>
+  <Style parentName="Leaflet"></Style>
+  <StaticContainer>
+   <Style>
+    <RegionRef>logo-leaflet</RegionRef>
+   </Style>
+   <Image uri="mtx:Graphics/Logo.jpg">
+    <Style>
+     <FillContainerWidth>true</FillContainerWidth>
+     <HorizontalAlignment>last</HorizontalAlignment>
+    </Style>
+   </Image>
+  </StaticContainer>
+  <StaticContainer>
+   <Style>
+    <RegionRef>heading</RegionRef>
+   </Style>
+   <Par>
+    <Span>
+     <Data>$Title</Data>
+    </Span>
+   </Par>
+  </StaticContainer>
+  <SectionPartRef uri="Framework\LayoutComponents\MarginalNotes.model"></SectionPartRef>
+  <Container>
+   <ContainerExtensionDef id="Leaflet Content"></ContainerExtensionDef>
+  </Container>
+  <StaticContainer>
+   <Style>
+    <RegionRef>last_page</RegionRef>
+   </Style>
+   <Par>
+    <Span>
+     <Text></Text>
+    </Span>
+   </Par>
+  </StaticContainer>
+  <StaticContainer>
+   <Style>
+    <RegionRef>footerbackpage</RegionRef>
+   </Style>
+   <ContainerPartRef uri="\\Framework\Framework\DocumentPartTypes\Leaflet\Leaflet_PageNumber.model"></ContainerPartRef>
+  </StaticContainer>
+  <StaticContainer>
+   <Style>
+    <RegionRef>footer</RegionRef>
+   </Style>
+   <ContainerPartRef uri="\\Framework\Framework\DocumentPartTypes\Leaflet\Leaflet_PageNumber.model"></ContainerPartRef>
+  </StaticContainer>
+ </Section>
+</DocumentPart>

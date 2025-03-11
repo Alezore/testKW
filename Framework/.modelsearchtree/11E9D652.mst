@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<query inherit="true">
+   <virtualfolder name="Metadata.Models.Selection_1{Selection_2}"/>
+   <queryAnd>
+      <queryAtom name="Metadata.Models.Type" operator="NotEqual" value="Framework"/>
+   </queryAnd>
+</query>

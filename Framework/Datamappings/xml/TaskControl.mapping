@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Mapping alwaysAddRootElement="false">
+   <DataModel root-path="">\\Framework\Data\TaskControl.datamodel</DataModel>
+   <Rules>
+      <Rule copySubtree="false" name="/TaskControl" xpath="/taskcontrol"/>
+      <Rule copySubtree="false" name="/TaskControl/Message" xpath="message"/>
+      <Rule copySubtree="false"
+            name="/TaskControl/Message/Instances/Instance"
+            xpath="instance"/>
+      <Rule copySubtree="true"
+            name="/TaskControl/Message/Instances/Instance/OutputSettings/OutputSetting"
+            xpath="outputcontrol"/>
+      <Rule copySubtree="false"
+            name="/TaskControl/Message/Instances/Instance/Recipient"
+            xpath="recipient"/>
+      <Rule copySubtree="false"
+            name="/TaskControl/Message/Instances/Instance/Recipient/Partner"
+            submappingRef="\\Framework\Datamappings\xml\Parts\Partner.mapping"
+            xpath="Partner"/>
+      <Rule copySubtree="false"
+            name="/TaskControl/Message/Instances/Instance/RecipientProxy"
+            xpath="recipientproxy"/>
+      <Rule copySubtree="false"
+            name="/TaskControl/Message/Instances/Instance/RecipientProxy/Partner"
+            submappingRef="\\Framework\Datamappings\xml\Parts\Partner.mapping"
+            xpath="Partner"/>
+      <Rule copySubtree="false"
+            name="/TaskControl/Message/Instances/Instance/Sender"
+            xpath="sender"/>
+      <Rule copySubtree="false"
+            name="/TaskControl/Message/Instances/Instance/Sender/City"
+            xpath="city"/>
+      <Rule copySubtree="false"
+            name="/TaskControl/Message/Instances/Instance/Sender/Name"
+            xpath="Name"/>
+      <Rule copySubtree="false"
+            name="/TaskControl/Message/Instances/Instance/Sender/Street"
+            xpath="Street"/>
+      <Rule copySubtree="false"
+            name="/TaskControl/Message/Instances/Instance/Sender/User"
+            submappingRef="\\Framework\Datamappings\xml\Parts\Partner.mapping"
+            xpath="user"/>
+      <Rule copySubtree="false"
+            name="/TaskControl/Message/Instances/Instance/Sender/Zip"
+            xpath="zip"/>
+      <Rule copySubtree="true"
+            name="/TaskControl/Message/Language"
+            xpath="language"/>
+      <Rule copySubtree="true"
+            name="/TaskControl/Message/LetterDate"
+            xpath="letterdate"/>
+   </Rules>
+   <Params/>
+   <Namespaces/>
+</Mapping>

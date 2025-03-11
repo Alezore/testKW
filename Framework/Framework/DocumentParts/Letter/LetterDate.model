@@ -1,0 +1,27 @@
+<SectionPart xmlns="urn:kwsoft:mtext:tonic:dom">
+ <DataDefinition>
+  <ParamDef name="Message" ref="\\Framework\Data\Message.datamodel" provided="true">
+   <Description></Description>
+  </ParamDef>
+  <ParamDef name="Sender" ref="\\Framework\Data\Sender.datamodel" provided="true">
+   <Description></Description>
+  </ParamDef>
+ </DataDefinition>
+ <StaticContainer>
+  <Style>
+   <RegionRef>letterdate</RegionRef>
+  </Style>
+  <Container>
+   <Par>
+    <Span>
+     <Data>$Sender.City</Data>
+     <Text>, </Text>
+     <Data>$Message.LetterDate</Data>
+    </Span>
+   </Par>
+  </Container>
+ </StaticContainer>
+ <SectionPart>
+  <DataDefinition></DataDefinition>
+ </SectionPart>
+</SectionPart>

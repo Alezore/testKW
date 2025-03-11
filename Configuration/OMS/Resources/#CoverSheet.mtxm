@@ -1,0 +1,33 @@
+.DSC 
+.DSC Erstellt am: 04.02.2014 12:45:56
+.DSC Erstellt von: Hille
+.DSC Projekt: Configuration
+.DSC Pfad: #Deckblatt.mtxm
+.DSC 
+.DSC Anpassungen für TONIC
+.DSC 
+.DSC .........................................................................................
+.MODEL type=NORMAL
+.MAX *20
+.DSC *04 enthält S = Start oder E = Ende. 
+.DSC *03 Anzahl Blätter beinhaltet auch Deckblätter und muss deshalb
+.DSC   beim Start um 1 reduziert werden (1. Deckblatt)
+.DSC   und beim Ende um 2, da auch das letzte Deckblatt mitzählt
+.IF *04=S
+.SUB *03,1
+.PAR spaceBefore=3cm
+DECKBLATT START
+.ELS 
+.SUB *03,2
+.PAR spaceBefore=3cm
+DECKBLATT ENDE
+.END 
+.DSC 
+.PAR spaceBefore=1cm
+Stapellauf-ID: *01
+.PAR spaceBefore=1cm
+Anzahl Dokumente: *02
+.PAR spaceBefore=1cm
+Anzahl Blätter: *03
+.PAR spaceBefore=1cm
+Start-/Endekennzeichen: *04

@@ -1,0 +1,10 @@
+<configuration
+	xmlns="http://www.kwsoft.de/controlcenter/serverConfiguration"
+	name="DockerDistant">
+	<mtextclient>
+		<defaults>REST</defaults>
+		<communication>
+			<Url>http://10.23.1.133:8080/</Url>
+		</communication>
+	</mtextclient>
+</configuration>

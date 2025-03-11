@@ -1,0 +1,100 @@
+<ContainerPart xmlns="urn:kwsoft:mtext:tonic:dom">
+ <DataDefinition>
+  <ParamDef name="Recipient" ref="\\Framework\Data\Recipient.datamodel" provided="true">
+   <Description></Description>
+  </ParamDef>
+ </DataDefinition>
+ <ContainerPart>
+  <VisibleIf><![CDATA[$Recipient.SalutatoryGender.valueOf() != "X"]]></VisibleIf>
+  <DataDefinition></DataDefinition>
+  <Container id="salutatoryaddress">
+   <Style parentName="SalutatoryAddress"></Style>
+   <ContainerPart>
+    <VisibleIf><![CDATA[$Recipient.SalutatoryGender.valueOf() == "F"]]></VisibleIf>
+    <DataDefinition></DataDefinition>
+    <Par>
+     <Translations>
+      <Translation>
+       <Language language="it" country="IT" variant=""></Language>
+       <Span>
+        <Text>Cara signora </Text>
+        <Data>$Recipient.SalutatoryName</Data>
+        <Text>,</Text>
+       </Span>
+      </Translation>
+      <Translation>
+       <Language language="en" country="US" variant=""></Language>
+       <Span>
+        <Text>Dear Mrs. </Text>
+        <Data>$Recipient.SalutatoryName</Data>
+        <Text>,</Text>
+       </Span>
+      </Translation>
+     </Translations>
+     <Span>
+      <Text>Sehr geehrte Frau </Text>
+      <Data>$Recipient.SalutatoryName</Data>
+      <Text>,</Text>
+     </Span>
+    </Par>
+   </ContainerPart>
+   <ContainerPart>
+    <VisibleIf><![CDATA[$Recipient.SalutatoryGender.valueOf() == "M"]]></VisibleIf>
+    <DataDefinition></DataDefinition>
+    <Par>
+     <Translations>
+      <Translation>
+       <Language language="it" country="IT" variant=""></Language>
+       <Span>
+        <Text>Caro signor </Text>
+        <Data>$Recipient.SalutatoryName</Data>
+        <Text>,</Text>
+       </Span>
+      </Translation>
+      <Translation>
+       <Language language="en" country="US" variant=""></Language>
+       <Span>
+        <Text>Dear Mr. </Text>
+        <Data>$Recipient.SalutatoryName</Data>
+        <Text>,</Text>
+       </Span>
+      </Translation>
+     </Translations>
+     <Span>
+      <Text>Sehr geehrter Herr </Text>
+      <Data>$Recipient.SalutatoryName</Data>
+      <Text>,</Text>
+     </Span>
+    </Par>
+   </ContainerPart>
+   <ContainerPart>
+    <Comments>
+     <Comment>
+      <Value><![CDATA[Anrede, wenn kein Anredekennzeichen vorhanden]]></Value>
+     </Comment>
+    </Comments>
+    <VisibleIf><![CDATA[$Recipient.SalutatoryGender.valueOf() == "N"]]></VisibleIf>
+    <DataDefinition></DataDefinition>
+    <Par>
+     <Translations>
+      <Translation>
+       <Language language="it" country="IT" variant=""></Language>
+       <Span>
+        <Text>Signore e signori,</Text>
+       </Span>
+      </Translation>
+      <Translation>
+       <Language language="en" country="US" variant=""></Language>
+       <Span>
+        <Text>Dear Sir or Madam,</Text>
+       </Span>
+      </Translation>
+     </Translations>
+     <Span>
+      <Text>Sehr geehrte Damen und Herren,</Text>
+     </Span>
+    </Par>
+   </ContainerPart>
+  </Container>
+ </ContainerPart>
+</ContainerPart>

@@ -1,0 +1,46 @@
+<ContainerPart xmlns="urn:kwsoft:mtext:tonic:dom">
+ <DataDefinition></DataDefinition>
+ <Container>
+  <Par>
+   <Span>
+    <Style parentName="CompanyHighlight">
+     <FontStyle>bold</FontStyle>
+    </Style>
+    <Text>Company Unlimited</Text>
+   </Span>
+  </Par>
+  <Par>
+   <Span>
+    <Text>Linnestr. 1 - 3</Text>
+   </Span>
+  </Par>
+  <Par>
+   <Span>
+    <Text>79110 Freiburg</Text>
+   </Span>
+  </Par>
+  <Par>
+   <Translations>
+    <Translation>
+     <Language language="en" country="US" variant=""></Language>
+     <Span>
+      <Hyperlink><![CDATA["http://www.kwsoft.com"]]></Hyperlink>
+      <Style>
+       <HyperlinkUnderline>false</HyperlinkUnderline>
+       <HyperlinkColor>rgb(80,80,80)</HyperlinkColor>
+      </Style>
+      <Text>www.company.com</Text>
+     </Span>
+    </Translation>
+   </Translations>
+   <Span>
+    <Hyperlink><![CDATA["http://www.kwsoft.de"]]></Hyperlink>
+    <Style>
+     <HyperlinkUnderline>false</HyperlinkUnderline>
+     <HyperlinkColor>rgb(80,80,80)</HyperlinkColor>
+    </Style>
+    <Text>www.company.de</Text>
+   </Span>
+  </Par>
+ </Container>
+</ContainerPart>

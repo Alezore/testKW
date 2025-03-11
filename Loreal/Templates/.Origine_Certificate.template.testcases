@@ -1,0 +1,836 @@
+<TestCases xmlns="urn:kwsoft:mtext:tonic:dom" activeTestCase="testcase">
+ <TestCase name="testcase" includeInRegressionTool="false">
+  <Root base="Loreal">
+   <RootPartInstance partIndex="0">
+    <Data>
+     <DataNode name="data">
+      <Value><![CDATA[string:]]></Value>
+      <DataNode name="page_id" valueChanged="fromDataSource">
+       <Value><![CDATA[string:001]]></Value>
+      </DataNode>
+      <DataNode name="Header">
+       <Value><![CDATA[string:]]></Value>
+       <DataNode name="name" valueChanged="fromDataSource">
+        <Value><![CDATA[string:L]]></Value>
+       </DataNode>
+       <DataNode name="sym" valueChanged="fromDataSource">
+        <Value><![CDATA[string:1481191]]></Value>
+        <DataNode name="name" valueChanged="fromDataSource">
+         <Value><![CDATA[string:DS_HEADER-TKNUM]]></Value>
+        </DataNode>
+       </DataNode>
+      </DataNode>
+      <DataNode name="Header">
+       <Value><![CDATA[string:]]></Value>
+       <DataNode name="name" valueChanged="fromDataSource">
+        <Value><![CDATA[string:L]]></Value>
+       </DataNode>
+       <DataNode name="sym" valueChanged="fromDataSource">
+        <Value><![CDATA[string:11.02.2025]]></Value>
+        <DataNode name="name" valueChanged="fromDataSource">
+         <Value><![CDATA[string:DS_HEADER-DATBG]]></Value>
+        </DataNode>
+       </DataNode>
+      </DataNode>
+      <DataNode name="Header">
+       <Value><![CDATA[string:]]></Value>
+       <DataNode name="name" valueChanged="fromDataSource">
+        <Value><![CDATA[string:L]]></Value>
+       </DataNode>
+       <DataNode name="sym" valueChanged="fromDataSource">
+        <Value><![CDATA[string:44163049]]></Value>
+        <DataNode name="name" valueChanged="fromDataSource">
+         <Value><![CDATA[string:DS_HEADER-VBELN]]></Value>
+        </DataNode>
+       </DataNode>
+      </DataNode>
+      <DataNode name="Header">
+       <Value><![CDATA[string:]]></Value>
+       <DataNode name="name" valueChanged="fromDataSource">
+        <Value><![CDATA[string:L]]></Value>
+       </DataNode>
+       <DataNode name="sym" valueChanged="fromDataSource">
+        <Value><![CDATA[string:11.02.2025]]></Value>
+        <DataNode name="name" valueChanged="fromDataSource">
+         <Value><![CDATA[string:DS_HEADER-ERDAT]]></Value>
+        </DataNode>
+       </DataNode>
+      </DataNode>
+      <DataNode name="Header">
+       <Value><![CDATA[string:]]></Value>
+       <DataNode name="name" valueChanged="fromDataSource">
+        <Value><![CDATA[string:L]]></Value>
+       </DataNode>
+       <DataNode name="sym" valueChanged="fromDataSource">
+        <Value><![CDATA[string:XUSL001]]></Value>
+        <DataNode name="name" valueChanged="fromDataSource">
+         <Value><![CDATA[string:DS_HEADER-KUNAG]]></Value>
+        </DataNode>
+       </DataNode>
+      </DataNode>
+      <DataNode name="Header">
+       <Value><![CDATA[string:]]></Value>
+       <DataNode name="name" valueChanged="fromDataSource">
+        <Value><![CDATA[string:L]]></Value>
+       </DataNode>
+       <DataNode name="sym" valueChanged="fromDataSource">
+        <Value><![CDATA[string:EUR]]></Value>
+        <DataNode name="name" valueChanged="fromDataSource">
+         <Value><![CDATA[string:DS_HEADER-WAERK]]></Value>
+        </DataNode>
+       </DataNode>
+      </DataNode>
+      <DataNode name="Header">
+       <Value><![CDATA[string:]]></Value>
+       <DataNode name="name" valueChanged="fromDataSource">
+        <Value><![CDATA[string:L]]></Value>
+       </DataNode>
+       <DataNode name="sym" valueChanged="fromDataSource">
+        <Value><![CDATA[string:L OREAL USA LUXURY PRODUCTS]]></Value>
+        <DataNode name="name" valueChanged="fromDataSource">
+         <Value><![CDATA[string:DS_HEADER-NAME1_WE]]></Value>
+        </DataNode>
+       </DataNode>
+      </DataNode>
+      <DataNode name="Header">
+       <Value><![CDATA[string:]]></Value>
+       <DataNode name="name" valueChanged="fromDataSource">
+        <Value><![CDATA[string:L]]></Value>
+       </DataNode>
+       <DataNode name="sym" valueChanged="fromDataSource">
+        <Value><![CDATA[string:77 DEANS RHODE HALL ROAD]]></Value>
+        <DataNode name="name" valueChanged="fromDataSource">
+         <Value><![CDATA[string:DS_HEADER-STREET_WE]]></Value>
+        </DataNode>
+       </DataNode>
+      </DataNode>
+      <DataNode name="Header">
+       <Value><![CDATA[string:]]></Value>
+       <DataNode name="name" valueChanged="fromDataSource">
+        <Value><![CDATA[string:L]]></Value>
+       </DataNode>
+       <DataNode name="sym" valueChanged="fromDataSource">
+        <Value><![CDATA[string:08852]]></Value>
+        <DataNode name="name" valueChanged="fromDataSource">
+         <Value><![CDATA[string:DS_HEADER-POST_CODE1_WE]]></Value>
+        </DataNode>
+       </DataNode>
+      </DataNode>
+      <DataNode name="Header">
+       <Value><![CDATA[string:]]></Value>
+       <DataNode name="name" valueChanged="fromDataSource">
+        <Value><![CDATA[string:L]]></Value>
+       </DataNode>
+       <DataNode name="sym" valueChanged="fromDataSource">
+        <Value><![CDATA[string:NEW JERSEY - MONMOUTH JUNCTION]]></Value>
+        <DataNode name="name" valueChanged="fromDataSource">
+         <Value><![CDATA[string:DS_HEADER-CITY1_WE]]></Value>
+        </DataNode>
+       </DataNode>
+      </DataNode>
+      <DataNode name="Header">
+       <Value><![CDATA[string:]]></Value>
+       <DataNode name="name" valueChanged="fromDataSource">
+        <Value><![CDATA[string:L]]></Value>
+       </DataNode>
+       <DataNode name="sym" valueChanged="fromDataSource">
+        <Value><![CDATA[string:USA]]></Value>
+        <DataNode name="name" valueChanged="fromDataSource">
+         <Value><![CDATA[string:DS_HEADER-COUNTRY_WE]]></Value>
+        </DataNode>
+       </DataNode>
+      </DataNode>
+      <DataNode name="Header">
+       <Value><![CDATA[string:]]></Value>
+       <DataNode name="name" valueChanged="fromDataSource">
+        <Value><![CDATA[string:L]]></Value>
+       </DataNode>
+       <DataNode name="sym" valueChanged="fromDataSource">
+        <Value><![CDATA[string:L OREAL USA PRODUCT INC]]></Value>
+        <DataNode name="name" valueChanged="fromDataSource">
+         <Value><![CDATA[string:DS_HEADER-NAME1_RE]]></Value>
+        </DataNode>
+       </DataNode>
+      </DataNode>
+      <DataNode name="Header">
+       <Value><![CDATA[string:]]></Value>
+       <DataNode name="name" valueChanged="fromDataSource">
+        <Value><![CDATA[string:L]]></Value>
+       </DataNode>
+       <DataNode name="sym" valueChanged="fromDataSource">
+        <Value><![CDATA[string:50 CONNELL DRIVE]]></Value>
+        <DataNode name="name" valueChanged="fromDataSource">
+         <Value><![CDATA[string:DS_HEADER-STREET_RE]]></Value>
+        </DataNode>
+       </DataNode>
+      </DataNode>
+      <DataNode name="Header">
+       <Value><![CDATA[string:]]></Value>
+       <DataNode name="name" valueChanged="fromDataSource">
+        <Value><![CDATA[string:L]]></Value>
+       </DataNode>
+       <DataNode name="sym" valueChanged="fromDataSource">
+        <Value><![CDATA[string:07922]]></Value>
+        <DataNode name="name" valueChanged="fromDataSource">
+         <Value><![CDATA[string:DS_HEADER-POST_CODE1_RE]]></Value>
+        </DataNode>
+       </DataNode>
+      </DataNode>
+      <DataNode name="Header">
+       <Value><![CDATA[string:]]></Value>
+       <DataNode name="name" valueChanged="fromDataSource">
+        <Value><![CDATA[string:L]]></Value>
+       </DataNode>
+       <DataNode name="sym" valueChanged="fromDataSource">
+        <Value><![CDATA[string:BERKELEY HEIGHTS]]></Value>
+        <DataNode name="name" valueChanged="fromDataSource">
+         <Value><![CDATA[string:DS_HEADER-CITY1_RE]]></Value>
+        </DataNode>
+       </DataNode>
+      </DataNode>
+      <DataNode name="Header">
+       <Value><![CDATA[string:]]></Value>
+       <DataNode name="name" valueChanged="fromDataSource">
+        <Value><![CDATA[string:L]]></Value>
+       </DataNode>
+       <DataNode name="sym" valueChanged="fromDataSource">
+        <Value><![CDATA[string:USA]]></Value>
+        <DataNode name="name" valueChanged="fromDataSource">
+         <Value><![CDATA[string:DS_HEADER-COUNTRY_RE]]></Value>
+        </DataNode>
+       </DataNode>
+      </DataNode>
+      <DataNode name="Header">
+       <Value><![CDATA[string:]]></Value>
+       <DataNode name="name" valueChanged="fromDataSource">
+        <Value><![CDATA[string:L]]></Value>
+       </DataNode>
+       <DataNode name="sym">
+        <Value><![CDATA[string:]]></Value>
+        <DataNode name="name"></DataNode>
+       </DataNode>
+      </DataNode>
+      <DataNode name="section_tableau">
+       <Value><![CDATA[string:]]></Value>
+       <DataNode name="name" valueChanged="fromDataSource">
+        <Value><![CDATA[string:ITEMS]]></Value>
+       </DataNode>
+       <DataNode name="Ligne">
+        <Value><![CDATA[string:]]></Value>
+        <DataNode name="name" valueChanged="fromDataSource">
+         <Value><![CDATA[string:ITEM]]></Value>
+        </DataNode>
+        <DataNode name="Donner">
+         <Value><![CDATA[string:]]></Value>
+         <DataNode name="name" valueChanged="fromDataSource">
+          <Value><![CDATA[string:L]]></Value>
+         </DataNode>
+         <DataNode name="sym" valueChanged="fromDataSource">
+          <Value><![CDATA[string:FR]]></Value>
+          <DataNode name="name" valueChanged="fromDataSource">
+           <Value><![CDATA[string:DS_ITEMS-HERKL]]></Value>
+          </DataNode>
+         </DataNode>
+        </DataNode>
+        <DataNode name="Donner">
+         <Value><![CDATA[string:]]></Value>
+         <DataNode name="name" valueChanged="fromDataSource">
+          <Value><![CDATA[string:L]]></Value>
+         </DataNode>
+         <DataNode name="sym" valueChanged="fromDataSource">
+          <Value><![CDATA[string:3303001000]]></Value>
+          <DataNode name="name" valueChanged="fromDataSource">
+           <Value><![CDATA[string:DS_ITEMS-STAWN]]></Value>
+          </DataNode>
+         </DataNode>
+        </DataNode>
+        <DataNode name="Donner">
+         <Value><![CDATA[string:]]></Value>
+         <DataNode name="name" valueChanged="fromDataSource">
+          <Value><![CDATA[string:L]]></Value>
+         </DataNode>
+         <DataNode name="sym" valueChanged="fromDataSource">
+          <Value><![CDATA[string:468.202,40]]></Value>
+          <DataNode name="name" valueChanged="fromDataSource">
+           <Value><![CDATA[string:DS_ITEMS-KWERT_VALUE]]></Value>
+          </DataNode>
+         </DataNode>
+        </DataNode>
+        <DataNode name="Donner">
+         <Value><![CDATA[string:]]></Value>
+         <DataNode name="name" valueChanged="fromDataSource">
+          <Value><![CDATA[string:L]]></Value>
+         </DataNode>
+         <DataNode name="sym" valueChanged="fromDataSource">
+          <Value><![CDATA[string:468.202,40]]></Value>
+          <DataNode name="name" valueChanged="fromDataSource">
+           <Value><![CDATA[string:DS_ITEMS-KWERT_GOODS]]></Value>
+          </DataNode>
+         </DataNode>
+        </DataNode>
+        <DataNode name="Donner">
+         <Value><![CDATA[string:]]></Value>
+         <DataNode name="name" valueChanged="fromDataSource">
+          <Value><![CDATA[string:L]]></Value>
+         </DataNode>
+         <DataNode name="sym" valueChanged="fromDataSource">
+          <Value><![CDATA[string:10.570,712]]></Value>
+          <DataNode name="name" valueChanged="fromDataSource">
+           <Value><![CDATA[string:DS_ITEMS-NTGEW]]></Value>
+          </DataNode>
+         </DataNode>
+        </DataNode>
+        <DataNode name="Donner">
+         <Value><![CDATA[string:]]></Value>
+         <DataNode name="name" valueChanged="fromDataSource">
+          <Value><![CDATA[string:L]]></Value>
+         </DataNode>
+         <DataNode name="sym" valueChanged="fromDataSource">
+          <Value><![CDATA[string:12.105,223]]></Value>
+          <DataNode name="name" valueChanged="fromDataSource">
+           <Value><![CDATA[string:DS_ITEMS-BRGEW]]></Value>
+          </DataNode>
+         </DataNode>
+        </DataNode>
+        <DataNode name="Donner">
+         <Value><![CDATA[string:]]></Value>
+         <DataNode name="name" valueChanged="fromDataSource">
+          <Value><![CDATA[string:L]]></Value>
+         </DataNode>
+         <DataNode name="sym" valueChanged="fromDataSource">
+          <Value><![CDATA[string:2.216]]></Value>
+          <DataNode name="name" valueChanged="fromDataSource">
+           <Value><![CDATA[string:DS_ITEMS-BOXES]]></Value>
+          </DataNode>
+         </DataNode>
+        </DataNode>
+       </DataNode>
+       <DataNode name="Ligne">
+        <Value><![CDATA[string:]]></Value>
+        <DataNode name="name" valueChanged="fromDataSource">
+         <Value><![CDATA[string:ITEM]]></Value>
+        </DataNode>
+        <DataNode name="Donner">
+         <Value><![CDATA[string:]]></Value>
+         <DataNode name="name" valueChanged="fromDataSource">
+          <Value><![CDATA[string:L]]></Value>
+         </DataNode>
+         <DataNode name="sym">
+          <Value><![CDATA[string:]]></Value>
+          <DataNode name="name" valueChanged="fromDataSource">
+           <Value><![CDATA[string:]]></Value>
+          </DataNode>
+         </DataNode>
+        </DataNode>
+        <DataNode name="Donner">
+         <Value><![CDATA[string:]]></Value>
+         <DataNode name="name" valueChanged="fromDataSource">
+          <Value><![CDATA[string:L]]></Value>
+         </DataNode>
+         <DataNode name="sym" valueChanged="fromDataSource">
+          <Value><![CDATA[string:3303009000]]></Value>
+          <DataNode name="name" valueChanged="fromDataSource">
+           <Value><![CDATA[string:DS_ITEMS-STAWN]]></Value>
+          </DataNode>
+         </DataNode>
+        </DataNode>
+        <DataNode name="Donner">
+         <Value><![CDATA[string:]]></Value>
+         <DataNode name="name" valueChanged="fromDataSource">
+          <Value><![CDATA[string:L]]></Value>
+         </DataNode>
+         <DataNode name="sym" valueChanged="fromDataSource">
+          <Value><![CDATA[string:70.413,44]]></Value>
+          <DataNode name="name" valueChanged="fromDataSource">
+           <Value><![CDATA[string:DS_ITEMS-KWERT_VALUE]]></Value>
+          </DataNode>
+         </DataNode>
+        </DataNode>
+        <DataNode name="Donner">
+         <Value><![CDATA[string:]]></Value>
+         <DataNode name="name" valueChanged="fromDataSource">
+          <Value><![CDATA[string:L]]></Value>
+         </DataNode>
+         <DataNode name="sym" valueChanged="fromDataSource">
+          <Value><![CDATA[string:70.413,44]]></Value>
+          <DataNode name="name" valueChanged="fromDataSource">
+           <Value><![CDATA[string:DS_ITEMS-KWERT_GOODS]]></Value>
+          </DataNode>
+         </DataNode>
+        </DataNode>
+        <DataNode name="Donner">
+         <Value><![CDATA[string:]]></Value>
+         <DataNode name="name" valueChanged="fromDataSource">
+          <Value><![CDATA[string:L]]></Value>
+         </DataNode>
+         <DataNode name="sym" valueChanged="fromDataSource">
+          <Value><![CDATA[string:1.182,000]]></Value>
+          <DataNode name="name" valueChanged="fromDataSource">
+           <Value><![CDATA[string:DS_ITEMS-NTGEW]]></Value>
+          </DataNode>
+         </DataNode>
+        </DataNode>
+        <DataNode name="Donner">
+         <Value><![CDATA[string:]]></Value>
+         <DataNode name="name" valueChanged="fromDataSource">
+          <Value><![CDATA[string:L]]></Value>
+         </DataNode>
+         <DataNode name="sym" valueChanged="fromDataSource">
+          <Value><![CDATA[string:1.338,713]]></Value>
+          <DataNode name="name" valueChanged="fromDataSource">
+           <Value><![CDATA[string:DS_ITEMS-BRGEW]]></Value>
+          </DataNode>
+         </DataNode>
+        </DataNode>
+        <DataNode name="Donner">
+         <Value><![CDATA[string:]]></Value>
+         <DataNode name="name" valueChanged="fromDataSource">
+          <Value><![CDATA[string:L]]></Value>
+         </DataNode>
+         <DataNode name="sym">
+          <Value><![CDATA[string:]]></Value>
+          <DataNode name="name" valueChanged="fromDataSource">
+           <Value><![CDATA[string:]]></Value>
+          </DataNode>
+         </DataNode>
+        </DataNode>
+       </DataNode>
+       <DataNode name="Ligne">
+        <Value><![CDATA[string:]]></Value>
+        <DataNode name="name" valueChanged="fromDataSource">
+         <Value><![CDATA[string:ITEM]]></Value>
+        </DataNode>
+        <DataNode name="Donner">
+         <Value><![CDATA[string:]]></Value>
+         <DataNode name="name" valueChanged="fromDataSource">
+          <Value><![CDATA[string:L]]></Value>
+         </DataNode>
+         <DataNode name="sym">
+          <Value><![CDATA[string:]]></Value>
+          <DataNode name="name" valueChanged="fromDataSource">
+           <Value><![CDATA[string:]]></Value>
+          </DataNode>
+         </DataNode>
+        </DataNode>
+        <DataNode name="Donner">
+         <Value><![CDATA[string:]]></Value>
+         <DataNode name="name" valueChanged="fromDataSource">
+          <Value><![CDATA[string:L]]></Value>
+         </DataNode>
+         <DataNode name="sym" valueChanged="fromDataSource">
+          <Value><![CDATA[string:3304990000]]></Value>
+          <DataNode name="name" valueChanged="fromDataSource">
+           <Value><![CDATA[string:DS_ITEMS-STAWN]]></Value>
+          </DataNode>
+         </DataNode>
+        </DataNode>
+        <DataNode name="Donner">
+         <Value><![CDATA[string:]]></Value>
+         <DataNode name="name" valueChanged="fromDataSource">
+          <Value><![CDATA[string:L]]></Value>
+         </DataNode>
+         <DataNode name="sym" valueChanged="fromDataSource">
+          <Value><![CDATA[string:23.172,21]]></Value>
+          <DataNode name="name" valueChanged="fromDataSource">
+           <Value><![CDATA[string:DS_ITEMS-KWERT_VALUE]]></Value>
+          </DataNode>
+         </DataNode>
+        </DataNode>
+        <DataNode name="Donner">
+         <Value><![CDATA[string:]]></Value>
+         <DataNode name="name" valueChanged="fromDataSource">
+          <Value><![CDATA[string:L]]></Value>
+         </DataNode>
+         <DataNode name="sym" valueChanged="fromDataSource">
+          <Value><![CDATA[string:23.172,21]]></Value>
+          <DataNode name="name" valueChanged="fromDataSource">
+           <Value><![CDATA[string:DS_ITEMS-KWERT_GOODS]]></Value>
+          </DataNode>
+         </DataNode>
+        </DataNode>
+        <DataNode name="Donner">
+         <Value><![CDATA[string:]]></Value>
+         <DataNode name="name" valueChanged="fromDataSource">
+          <Value><![CDATA[string:L]]></Value>
+         </DataNode>
+         <DataNode name="sym" valueChanged="fromDataSource">
+          <Value><![CDATA[string:556,212]]></Value>
+          <DataNode name="name" valueChanged="fromDataSource">
+           <Value><![CDATA[string:DS_ITEMS-NTGEW]]></Value>
+          </DataNode>
+         </DataNode>
+        </DataNode>
+        <DataNode name="Donner">
+         <Value><![CDATA[string:]]></Value>
+         <DataNode name="name" valueChanged="fromDataSource">
+          <Value><![CDATA[string:L]]></Value>
+         </DataNode>
+         <DataNode name="sym" valueChanged="fromDataSource">
+          <Value><![CDATA[string:626,623]]></Value>
+          <DataNode name="name" valueChanged="fromDataSource">
+           <Value><![CDATA[string:DS_ITEMS-BRGEW]]></Value>
+          </DataNode>
+         </DataNode>
+        </DataNode>
+        <DataNode name="Donner">
+         <Value><![CDATA[string:]]></Value>
+         <DataNode name="name" valueChanged="fromDataSource">
+          <Value><![CDATA[string:L]]></Value>
+         </DataNode>
+         <DataNode name="sym">
+          <Value><![CDATA[string:]]></Value>
+          <DataNode name="name" valueChanged="fromDataSource">
+           <Value><![CDATA[string:]]></Value>
+          </DataNode>
+         </DataNode>
+        </DataNode>
+       </DataNode>
+       <DataNode name="Ligne">
+        <Value><![CDATA[string:]]></Value>
+        <DataNode name="name" valueChanged="fromDataSource">
+         <Value><![CDATA[string:ITEM]]></Value>
+        </DataNode>
+        <DataNode name="Donner">
+         <Value><![CDATA[string:]]></Value>
+         <DataNode name="name" valueChanged="fromDataSource">
+          <Value><![CDATA[string:L]]></Value>
+         </DataNode>
+         <DataNode name="sym">
+          <Value><![CDATA[string:]]></Value>
+          <DataNode name="name" valueChanged="fromDataSource">
+           <Value><![CDATA[string:]]></Value>
+          </DataNode>
+         </DataNode>
+        </DataNode>
+        <DataNode name="Donner">
+         <Value><![CDATA[string:]]></Value>
+         <DataNode name="name" valueChanged="fromDataSource">
+          <Value><![CDATA[string:L]]></Value>
+         </DataNode>
+         <DataNode name="sym" valueChanged="fromDataSource">
+          <Value><![CDATA[string:3304100000]]></Value>
+          <DataNode name="name" valueChanged="fromDataSource">
+           <Value><![CDATA[string:DS_ITEMS-STAWN]]></Value>
+          </DataNode>
+         </DataNode>
+        </DataNode>
+        <DataNode name="Donner">
+         <Value><![CDATA[string:]]></Value>
+         <DataNode name="name" valueChanged="fromDataSource">
+          <Value><![CDATA[string:L]]></Value>
+         </DataNode>
+         <DataNode name="sym" valueChanged="fromDataSource">
+          <Value><![CDATA[string:1.722,80]]></Value>
+          <DataNode name="name" valueChanged="fromDataSource">
+           <Value><![CDATA[string:DS_ITEMS-KWERT_VALUE]]></Value>
+          </DataNode>
+         </DataNode>
+        </DataNode>
+        <DataNode name="Donner">
+         <Value><![CDATA[string:]]></Value>
+         <DataNode name="name" valueChanged="fromDataSource">
+          <Value><![CDATA[string:L]]></Value>
+         </DataNode>
+         <DataNode name="sym" valueChanged="fromDataSource">
+          <Value><![CDATA[string:1.722,80]]></Value>
+          <DataNode name="name" valueChanged="fromDataSource">
+           <Value><![CDATA[string:DS_ITEMS-KWERT_GOODS]]></Value>
+          </DataNode>
+         </DataNode>
+        </DataNode>
+        <DataNode name="Donner">
+         <Value><![CDATA[string:]]></Value>
+         <DataNode name="name" valueChanged="fromDataSource">
+          <Value><![CDATA[string:L]]></Value>
+         </DataNode>
+         <DataNode name="sym" valueChanged="fromDataSource">
+          <Value><![CDATA[string:10,915]]></Value>
+          <DataNode name="name" valueChanged="fromDataSource">
+           <Value><![CDATA[string:DS_ITEMS-NTGEW]]></Value>
+          </DataNode>
+         </DataNode>
+        </DataNode>
+        <DataNode name="Donner">
+         <Value><![CDATA[string:]]></Value>
+         <DataNode name="name" valueChanged="fromDataSource">
+          <Value><![CDATA[string:L]]></Value>
+         </DataNode>
+         <DataNode name="sym" valueChanged="fromDataSource">
+          <Value><![CDATA[string:12,307]]></Value>
+          <DataNode name="name" valueChanged="fromDataSource">
+           <Value><![CDATA[string:DS_ITEMS-BRGEW]]></Value>
+          </DataNode>
+         </DataNode>
+        </DataNode>
+        <DataNode name="Donner">
+         <Value><![CDATA[string:]]></Value>
+         <DataNode name="name" valueChanged="fromDataSource">
+          <Value><![CDATA[string:L]]></Value>
+         </DataNode>
+         <DataNode name="sym">
+          <Value><![CDATA[string:]]></Value>
+          <DataNode name="name" valueChanged="fromDataSource">
+           <Value><![CDATA[string:]]></Value>
+          </DataNode>
+         </DataNode>
+        </DataNode>
+       </DataNode>
+       <DataNode name="Ligne">
+        <Value><![CDATA[string:]]></Value>
+        <DataNode name="name" valueChanged="fromDataSource">
+         <Value><![CDATA[string:ITEM]]></Value>
+        </DataNode>
+        <DataNode name="Donner">
+         <Value><![CDATA[string:]]></Value>
+         <DataNode name="name" valueChanged="fromDataSource">
+          <Value><![CDATA[string:L]]></Value>
+         </DataNode>
+         <DataNode name="sym">
+          <Value><![CDATA[string:]]></Value>
+          <DataNode name="name" valueChanged="fromDataSource">
+           <Value><![CDATA[string:]]></Value>
+          </DataNode>
+         </DataNode>
+        </DataNode>
+        <DataNode name="Donner">
+         <Value><![CDATA[string:]]></Value>
+         <DataNode name="name" valueChanged="fromDataSource">
+          <Value><![CDATA[string:L]]></Value>
+         </DataNode>
+         <DataNode name="sym" valueChanged="fromDataSource">
+          <Value><![CDATA[string:3401300000]]></Value>
+          <DataNode name="name" valueChanged="fromDataSource">
+           <Value><![CDATA[string:DS_ITEMS-STAWN]]></Value>
+          </DataNode>
+         </DataNode>
+        </DataNode>
+        <DataNode name="Donner">
+         <Value><![CDATA[string:]]></Value>
+         <DataNode name="name" valueChanged="fromDataSource">
+          <Value><![CDATA[string:L]]></Value>
+         </DataNode>
+         <DataNode name="sym" valueChanged="fromDataSource">
+          <Value><![CDATA[string:595,70]]></Value>
+          <DataNode name="name" valueChanged="fromDataSource">
+           <Value><![CDATA[string:DS_ITEMS-KWERT_VALUE]]></Value>
+          </DataNode>
+         </DataNode>
+        </DataNode>
+        <DataNode name="Donner">
+         <Value><![CDATA[string:]]></Value>
+         <DataNode name="name" valueChanged="fromDataSource">
+          <Value><![CDATA[string:L]]></Value>
+         </DataNode>
+         <DataNode name="sym" valueChanged="fromDataSource">
+          <Value><![CDATA[string:595,70]]></Value>
+          <DataNode name="name" valueChanged="fromDataSource">
+           <Value><![CDATA[string:DS_ITEMS-KWERT_GOODS]]></Value>
+          </DataNode>
+         </DataNode>
+        </DataNode>
+        <DataNode name="Donner">
+         <Value><![CDATA[string:]]></Value>
+         <DataNode name="name" valueChanged="fromDataSource">
+          <Value><![CDATA[string:L]]></Value>
+         </DataNode>
+         <DataNode name="sym" valueChanged="fromDataSource">
+          <Value><![CDATA[string:18,410]]></Value>
+          <DataNode name="name" valueChanged="fromDataSource">
+           <Value><![CDATA[string:DS_ITEMS-NTGEW]]></Value>
+          </DataNode>
+         </DataNode>
+        </DataNode>
+        <DataNode name="Donner">
+         <Value><![CDATA[string:]]></Value>
+         <DataNode name="name" valueChanged="fromDataSource">
+          <Value><![CDATA[string:L]]></Value>
+         </DataNode>
+         <DataNode name="sym" valueChanged="fromDataSource">
+          <Value><![CDATA[string:21,337]]></Value>
+          <DataNode name="name" valueChanged="fromDataSource">
+           <Value><![CDATA[string:DS_ITEMS-BRGEW]]></Value>
+          </DataNode>
+         </DataNode>
+        </DataNode>
+        <DataNode name="Donner">
+         <Value><![CDATA[string:]]></Value>
+         <DataNode name="name" valueChanged="fromDataSource">
+          <Value><![CDATA[string:L]]></Value>
+         </DataNode>
+         <DataNode name="sym">
+          <Value><![CDATA[string:]]></Value>
+          <DataNode name="name" valueChanged="fromDataSource">
+           <Value><![CDATA[string:]]></Value>
+          </DataNode>
+         </DataNode>
+        </DataNode>
+       </DataNode>
+       <DataNode name="Ligne">
+        <Value><![CDATA[string:]]></Value>
+        <DataNode name="name" valueChanged="fromDataSource">
+         <Value><![CDATA[string:_TEXT1]]></Value>
+        </DataNode>
+        <DataNode name="Donner">
+         <Value><![CDATA[string:]]></Value>
+         <DataNode name="name" valueChanged="fromDataSource">
+          <Value><![CDATA[string:L]]></Value>
+         </DataNode>
+         <DataNode name="sym" valueChanged="fromDataSource">
+          <Value><![CDATA[string:564.106,55]]></Value>
+          <DataNode name="name" valueChanged="fromDataSource">
+           <Value><![CDATA[string:W_TOT_KWERT_VALUE]]></Value>
+          </DataNode>
+         </DataNode>
+        </DataNode>
+        <DataNode name="Donner">
+         <Value><![CDATA[string:]]></Value>
+         <DataNode name="name" valueChanged="fromDataSource">
+          <Value><![CDATA[string:L]]></Value>
+         </DataNode>
+         <DataNode name="sym" valueChanged="fromDataSource">
+          <Value><![CDATA[string:564.106,55]]></Value>
+          <DataNode name="name" valueChanged="fromDataSource">
+           <Value><![CDATA[string:W_TOT_KWERT_GOODS]]></Value>
+          </DataNode>
+         </DataNode>
+        </DataNode>
+        <DataNode name="Donner">
+         <Value><![CDATA[string:]]></Value>
+         <DataNode name="name" valueChanged="fromDataSource">
+          <Value><![CDATA[string:L]]></Value>
+         </DataNode>
+         <DataNode name="sym" valueChanged="fromDataSource">
+          <Value><![CDATA[string:14.104,203]]></Value>
+          <DataNode name="name" valueChanged="fromDataSource">
+           <Value><![CDATA[string:W_TOT_BRGEW]]></Value>
+          </DataNode>
+         </DataNode>
+        </DataNode>
+        <DataNode name="Donner">
+         <Value><![CDATA[string:]]></Value>
+         <DataNode name="name" valueChanged="fromDataSource">
+          <Value><![CDATA[string:L]]></Value>
+         </DataNode>
+         <DataNode name="sym" valueChanged="fromDataSource">
+          <Value><![CDATA[string:12.338,249]]></Value>
+          <DataNode name="name" valueChanged="fromDataSource">
+           <Value><![CDATA[string:W_TOT_NTGEW]]></Value>
+          </DataNode>
+         </DataNode>
+        </DataNode>
+        <DataNode name="Donner">
+         <Value><![CDATA[string:]]></Value>
+         <DataNode name="name" valueChanged="fromDataSource">
+          <Value><![CDATA[string:L]]></Value>
+         </DataNode>
+         <DataNode name="sym" valueChanged="fromDataSource">
+          <Value><![CDATA[string:2.216]]></Value>
+          <DataNode name="name" valueChanged="fromDataSource">
+           <Value><![CDATA[string:W_TOT_BOXES]]></Value>
+          </DataNode>
+         </DataNode>
+        </DataNode>
+       </DataNode>
+       <DataNode name="Total">
+        <Value><![CDATA[string:]]></Value>
+        <DataNode name="text">
+         <Value><![CDATA[string:]]></Value>
+         <DataNode name="name" valueChanged="fromDataSource">
+          <Value><![CDATA[string:_TEXT2]]></Value>
+         </DataNode>
+         <DataNode name="Donner">
+          <Value><![CDATA[string:]]></Value>
+          <DataNode name="name" valueChanged="fromDataSource">
+           <Value><![CDATA[string:L]]></Value>
+          </DataNode>
+          <DataNode name="sym" valueChanged="fromDataSource">
+           <Value><![CDATA[string:564.106,55]]></Value>
+           <DataNode name="name" valueChanged="fromDataSource">
+            <Value><![CDATA[string:W_GTOT_KWERT_VALUE]]></Value>
+           </DataNode>
+          </DataNode>
+         </DataNode>
+         <DataNode name="Donner">
+          <Value><![CDATA[string:]]></Value>
+          <DataNode name="name" valueChanged="fromDataSource">
+           <Value><![CDATA[string:L]]></Value>
+          </DataNode>
+          <DataNode name="sym" valueChanged="fromDataSource">
+           <Value><![CDATA[string:564.106,55]]></Value>
+           <DataNode name="name" valueChanged="fromDataSource">
+            <Value><![CDATA[string:W_GTOT_KWERT_GOODS]]></Value>
+           </DataNode>
+          </DataNode>
+         </DataNode>
+         <DataNode name="Donner">
+          <Value><![CDATA[string:]]></Value>
+          <DataNode name="name" valueChanged="fromDataSource">
+           <Value><![CDATA[string:L]]></Value>
+          </DataNode>
+          <DataNode name="sym" valueChanged="fromDataSource">
+           <Value><![CDATA[string:14.104]]></Value>
+           <DataNode name="name" valueChanged="fromDataSource">
+            <Value><![CDATA[string:W_GTOT_BRGEW]]></Value>
+           </DataNode>
+          </DataNode>
+         </DataNode>
+         <DataNode name="Donner">
+          <Value><![CDATA[string:]]></Value>
+          <DataNode name="name" valueChanged="fromDataSource">
+           <Value><![CDATA[string:L]]></Value>
+          </DataNode>
+          <DataNode name="sym" valueChanged="fromDataSource">
+           <Value><![CDATA[string:12.338]]></Value>
+           <DataNode name="name" valueChanged="fromDataSource">
+            <Value><![CDATA[string:W_GTOT_NTGEW]]></Value>
+           </DataNode>
+          </DataNode>
+         </DataNode>
+         <DataNode name="Donner">
+          <Value><![CDATA[string:]]></Value>
+          <DataNode name="name" valueChanged="fromDataSource">
+           <Value><![CDATA[string:L]]></Value>
+          </DataNode>
+          <DataNode name="sym" valueChanged="fromDataSource">
+           <Value><![CDATA[string:2.216]]></Value>
+           <DataNode name="name" valueChanged="fromDataSource">
+            <Value><![CDATA[string:W_GTOT_BOXES]]></Value>
+           </DataNode>
+          </DataNode>
+         </DataNode>
+        </DataNode>
+       </DataNode>
+      </DataNode>
+     </DataNode>
+     <DataNode name="Metadata">
+      <Value><![CDATA[string:]]></Value>
+      <DataNode name="State" valueChanged="fromDataSource">
+       <Value><![CDATA[string:Created]]></Value>
+      </DataNode>
+      <DataNode name="ValidationState" valueChanged="manually">
+       <Value><![CDATA[string:OK]]></Value>
+      </DataNode>
+      <DataNode name="Editor">
+       <Value><![CDATA[string:]]></Value>
+       <DataNode name="DefaultDocumentName" valueChanged="fromDataSource">
+        <Value><![CDATA[string:]]></Value>
+       </DataNode>
+       <DataNode name="DefaultDocumentDescription" valueChanged="fromDataSource">
+        <Value><![CDATA[string:]]></Value>
+       </DataNode>
+      </DataNode>
+      <DataNode name="DocumentLanguage" valueChanged="fromDataSource">
+       <Value><![CDATA[string:]]></Value>
+      </DataNode>
+      <DataNode name="InitialDataBinding" valueChanged="fromDataSource">
+       <Value><![CDATA[string:\library\Loreal\Templates\Origine_Certificate.template]]></Value>
+      </DataNode>
+     </DataNode>
+    </Data>
+   </RootPartInstance>
+  </Root>
+  <DataSourceProperties>
+   <Property value="\\Loreal\Data\ZWMKISS_ORIGIN_CERTIFICATE.xml" name="data.FILE_NAME"></Property>
+  </DataSourceProperties>
+ </TestCase>
+</TestCases>

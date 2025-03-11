@@ -1,0 +1,89 @@
+<SectionPart xmlns="urn:kwsoft:mtext:tonic:dom">
+ <DataDefinition>
+  <DataNodeDef name="Signature">
+   <Description></Description>
+   <Input text-prefix="" text-suffix=""></Input>
+   <Output text-prefix="" text-suffix=""></Output>
+   <Script><![CDATA[$Sender.User.Signature || 'mtx://Framework/Graphics/signature_BG.png';]]></Script>
+   <Validation validation-type="any_value" operator="any" allow-empty-value="true">
+    <Values></Values>
+   </Validation>
+  </DataNodeDef>
+  <ParamDef name="Sender" ref="\\Framework\Data\Sender.datamodel">
+   <Description></Description>
+  </ParamDef>
+ </DataDefinition>
+ <ModificationRights>
+  <Allowed>
+   <ModificationRight role="_EVERYONE_" operations="INPUT"></ModificationRight>
+  </Allowed>
+  <Denied>
+   <ModificationRight role="_EVERYONE_" operations="EDIT"></ModificationRight>
+  </Denied>
+ </ModificationRights>
+ <Container id="ComplimentaryClose">
+  <Style>
+   <RegionRef>Body</RegionRef>
+  </Style>
+  <Par>
+   <Translations>
+    <Translation>
+     <Language language="it" country="IT" variant=""></Language>
+     <Span>
+      <Text>Con cordiali saluti</Text>
+     </Span>
+    </Translation>
+    <Translation>
+     <Language language="en" country="US" variant=""></Language>
+     <Span>
+      <Text>Sincerely yours</Text>
+     </Span>
+    </Translation>
+   </Translations>
+   <Style>
+    <SpaceBefore>0.3cm</SpaceBefore>
+    <SpaceAfter resolution="combine">0.9cm</SpaceAfter>
+    <KeepWithPrevious>true</KeepWithPrevious>
+   </Style>
+   <Span>
+    <Text>Mit freundlichen Grüßen</Text>
+   </Span>
+  </Par>
+  <ContainerPart>
+   <VisibleIf><![CDATA[$Sender.User.Signature.notEmpty()]]></VisibleIf>
+   <DataDefinition></DataDefinition>
+   <Image>
+    <DataUri><![CDATA[$Sender.User.Signature]]></DataUri>
+    <Style>
+     <KeepWithPrevious>true</KeepWithPrevious>
+     <Height>2.0cm</Height>
+     <Stretch>keep_aspect_ratio</Stretch>
+    </Style>
+   </Image>
+  </ContainerPart>
+  <ContainerPart>
+   <VisibleIf><![CDATA[else]]></VisibleIf>
+   <DataDefinition></DataDefinition>
+   <ContainerPart>
+    <VisibleIf><![CDATA[$Signature.notEmpty()]]></VisibleIf>
+    <DataDefinition></DataDefinition>
+    <Image>
+     <DataUri><![CDATA[$Signature]]></DataUri>
+     <Style>
+      <KeepWithPrevious>true</KeepWithPrevious>
+      <Height>2.0cm</Height>
+      <Stretch>keep_aspect_ratio</Stretch>
+     </Style>
+    </Image>
+   </ContainerPart>
+  </ContainerPart>
+  <Par>
+   <Style parentName="Signatur_Name">
+    <KeepWithPrevious>true</KeepWithPrevious>
+   </Style>
+   <Span>
+    <Data>$Sender.User.Lastname</Data>
+   </Span>
+  </Par>
+ </Container>
+</SectionPart>

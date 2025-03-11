@@ -1,0 +1,12 @@
+<ContainerPart xmlns="urn:kwsoft:mtext:tonic:dom">
+ <DataDefinition>
+  <ParamDef name="Sender" ref="\\Framework\Data\Sender.datamodel">
+   <Description></Description>
+  </ParamDef>
+ </DataDefinition>
+ <Par>
+  <Span>
+   <Data>$Sender.SenderAddress</Data>
+  </Span>
+ </Par>
+</ContainerPart>

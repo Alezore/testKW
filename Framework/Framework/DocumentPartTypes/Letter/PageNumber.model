@@ -1,0 +1,84 @@
+<ContainerPart xmlns="urn:kwsoft:mtext:tonic:dom">
+ <DataDefinition>
+  <ParamDef name="backpage" data-type="boolean" provided="true">
+   <Description></Description>
+   <Input true-value="true" false-value="false"></Input>
+   <Output true-value="X" false-value=""></Output>
+   <Subtype></Subtype>
+   <Validation validation-type="any_value" allow-empty-value="true">
+    <Values></Values>
+   </Validation>
+  </ParamDef>
+ </DataDefinition>
+ <ContainerPart>
+  <VisibleIf><![CDATA[$backpage.valueOf()]]></VisibleIf>
+  <DataDefinition></DataDefinition>
+  <Par>
+   <Translations>
+    <Translation>
+     <Language language="it" country="IT" variant=""></Language>
+     <Span>
+      <Text>Pagina </Text>
+      <PageNumber scope="logicaldocument"></PageNumber>
+      <Text> di </Text>
+      <PageCount scope="logicaldocument"></PageCount>
+     </Span>
+    </Translation>
+    <Translation>
+     <Language language="en" country="US" variant=""></Language>
+     <Span>
+      <Text>Page </Text>
+      <PageNumber scope="logicaldocument"></PageNumber>
+      <Text> of </Text>
+      <PageCount scope="logicaldocument"></PageCount>
+     </Span>
+    </Translation>
+   </Translations>
+   <Style>
+    <Align>right</Align>
+    <VerticalPosition>last</VerticalPosition>
+   </Style>
+   <Span>
+    <Text>Seite </Text>
+    <PageNumber scope="logicaldocument"></PageNumber>
+    <Text> von </Text>
+    <PageCount scope="logicaldocument"></PageCount>
+   </Span>
+  </Par>
+ </ContainerPart>
+ <ContainerPart>
+  <VisibleIf><![CDATA[else]]></VisibleIf>
+  <DataDefinition></DataDefinition>
+  <Par>
+   <Translations>
+    <Translation>
+     <Language language="it" country="IT" variant=""></Language>
+     <Span>
+      <Text>Pagina </Text>
+      <PageNumber scope="logicaldocument"></PageNumber>
+      <Text> di </Text>
+      <PageCount scope="logicaldocument"></PageCount>
+     </Span>
+    </Translation>
+    <Translation>
+     <Language language="en" country="US" variant=""></Language>
+     <Span>
+      <Text>Page </Text>
+      <PageNumber scope="logicaldocument"></PageNumber>
+      <Text> of </Text>
+      <PageCount scope="logicaldocument"></PageCount>
+     </Span>
+    </Translation>
+   </Translations>
+   <Style>
+    <VerticalPosition>last</VerticalPosition>
+   </Style>
+   <Span>
+    <Text>Seite </Text>
+    <PageNumber scope="logicaldocument"></PageNumber>
+    <Text> von </Text>
+    <PageCount scope="logicaldocument"></PageCount>
+   </Span>
+  </Par>
+ </ContainerPart>
+</ContainerPart>

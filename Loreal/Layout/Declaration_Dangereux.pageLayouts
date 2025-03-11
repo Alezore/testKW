@@ -1,0 +1,11 @@
+<PageLayouts xmlns="urn:kwsoft:mtext:tonic:dom">
+ <First parentRef="Layout\Declaration_Dangereux1.pageLayout">
+  <PageSize name="A4"></PageSize>
+  <Landscape>false</Landscape>
+  <RendererMetadata></RendererMetadata>
+ </First>
+ <DefaultPageLayout parentRef="Layout\Declaration_Dangereux2.pageLayout">
+  <PageSize name="A4"></PageSize>
+  <RendererMetadata></RendererMetadata>
+ </DefaultPageLayout>
+</PageLayouts>

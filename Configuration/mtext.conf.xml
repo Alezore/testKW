@@ -1,0 +1,537 @@
+<!-- M/TEXT Formatter configuration -->
+<configuration
+	xmlns="http://www.kwsoft.de/mtext-formatter/conf">
+
+	<!-- Global information about the input format, valid for all destinations. 
+		Replaces M/TEXT environment (used to be in the edit.lib) -->
+	<global>
+		<long-date-format>dd.MM.yyyy</long-date-format>
+		<short-date-format>dd.MM.yy</short-date-format>
+		<time-format>HH:mm:ss</time-format>
+		<decimal-separator>,</decimal-separator>
+		<thousands-separator>.</thousands-separator>
+		<minus-at-number-start>true</minus-at-number-start>
+
+		<default-language>GER</default-language>
+		<sign-password-checked>true</sign-password-checked>
+		<!-- Default value for .OCL PAGE_CONTROL TEXT_OFFSET_X/Y, default units 
+			(without postfix) are mgraf units - 1/100 mm, other possible units are millipoints 
+			with postfix 'mtp' e.g. 42520mtp or cm, mm. -->
+		<default-text-offset
+			top="1cm"
+			left="2cm" />
+
+		<available-editor-fonts>
+			<font-family name="Standard" />
+
+
+		</available-editor-fonts>
+		<escape-options>1</escape-options>
+	</global>
+	<destinations>
+		<!-- Default setting that will be used for each destination if not overridden 
+			at destination level -->
+		<destination-defaults>
+			<!-- absolute offset of all elements (text + graphics) on the page, default 
+				units (without postfix) are mgraf units - 1/100 mm, other possible units 
+				are millipoints with postfix 'mtp' e.g. 42520mtp or cm, mm. -->
+			<page-pos />
+			<!-- renderer -->
+			<renderer
+				mime-type="application/X-mtext-intermediate-format"
+				xmlns:renderer="http://www.kwsoft.de/mtext/ext/renderer/mtext-intermediate-format">
+				<renderer:enable-document-structure-information>true</renderer:enable-document-structure-information>
+				<renderer:include-tonic-dom>true</renderer:include-tonic-dom>
+			</renderer>
+			<!-- font set reference, defined bellow -->
+			<font-set name="ttf-fonts"></font-set>
+			<!-- Defines barcode engine used for generating barcode. Possible values 
+				are : native barcode4j -->
+			<barcode-engine>barcode4j</barcode-engine>
+			<!-- Target resolution in dpi (dots/pixels per inch) for specifying the 
+				target resolution for generated bitmaps, default: 72dpi -->
+			<target-resolution>300</target-resolution>
+		</destination-defaults>
+		<!-- Destination with reserved name "preview" is used for preview. This 
+			special destination ignores renderer and post-processor settings, and uses 
+			the font settings only for formatting, for rendering always the AWT fonts 
+			on the client are used -->
+		<destination name="preview">
+		</destination>
+		<!-- Destination with reserved name prefix "export-" + target format name 
+			is used for exporting into the target format. -->
+		<destination name="export-application/pdf">
+			<renderer
+				mime-type="application/X-kw-pdf"
+				xmlns:renderer="http://www.kwsoft.de/mtext/ext/renderer/pdf">
+				<renderer:accessibility>true</renderer:accessibility>
+			</renderer>
+			<!-- example of key handler, used to pass .KEY elements to an external 
+				handler <key-handler class="de.kwsoft.mtext.format.config.DummyKeyHandler"/> -->
+			<watermarkGroup>
+				<watermark
+					resource="\\Configuration\Watermarks\preview.svg"
+					page-orientation="portrait"
+					page-side="any"
+					layer="Background" />
+			</watermarkGroup>
+		</destination>
+		<!-- Destination with reserved name prefix "export-" + target format name 
+			is used for exporting into the target format. -->
+
+		<!-- Destination with reserved name prefix "export-" + target format name 
+			is used for exporting into the target format. -->
+		<destination name="pcl">
+			<font-set name="ttf-fonts" />
+			<renderer
+				mime-type="application/X-kw-pcl"
+				xmlns:renderer="http://www.kwsoft.de/mtext/ext/renderer/pcl"></renderer>
+		</destination>
+		<!-- Destination with reserved name prefix "export-" + target format name 
+			is used for exporting into the target format. -->
+		<!-- This example destination shows the OMS integration -->
+		<destination name="OMS">
+			<ocl-handler
+				class="de.kwsoft.moms.client.ocl.converter.OCLCommandHandler"
+				xmlns:ocl-handler="http://www.kwsoft.de/mtext/ext/ocl-handler/oms" />
+			<post-processor
+				class="de.kwsoft.moms.client.postprocessor.OmsPostProcessor"
+				xmlns:post-processor="http://www.kwsoft.de/mtext/ext/post-processor/oms" />
+			<renderer
+				mime-type="application/X-mtext-intermediate-format"
+				xmlns:renderer="http://www.kwsoft.de/mtext/ext/renderer/mtext-intermediate-format">
+				<renderer:enable-document-structure-information>true</renderer:enable-document-structure-information>
+				<renderer:enable-metrics-correction>true</renderer:enable-metrics-correction>
+				<renderer:include-tonic-dom>true</renderer:include-tonic-dom>
+			</renderer>
+			<show-hidden>true</show-hidden>
+		</destination>
+		<destination name="afp">
+			<renderer
+				mime-type="application/X-kw-afp"
+				xmlns:renderer="http://www.kwsoft.de/mtext/ext/renderer/afp">
+			</renderer>
+			<post-processor
+				class="de.kwsoft.mtext.format.ext.FileOutputPostProcessor"
+				xmlns:post-processor="http://www.kwsoft.de/mtext/ext/post-processor/file-output">
+				<post-processor:output-file>/opt/serie-m/Dokumente/afp/${documentName}_${counter}.${ext}</post-processor:output-file>
+			</post-processor>
+			<font-set name="ttf-fonts" />
+		</destination>
+		<destination name="export-image/png">
+			<renderer
+				mime-type="image/png"
+				xmlns:renderer="http://www.kwsoft.de/mtext/ext/renderer/png" />
+			<target-resolution>150</target-resolution>
+		</destination>
+		<destination name="OMS-PDF">
+			<renderer
+				mime-type="application/X-kw-pdf"
+				xmlns:renderer="http://www.kwsoft.de/mtext/ext/renderer/pdf">
+				<renderer:insert-page-side-blank-pages>false</renderer:insert-page-side-blank-pages>
+				<renderer:insert-simplex-blank-pages>false</renderer:insert-simplex-blank-pages>
+				<renderer:metadata
+					type="xmp"
+					occurrence="document">
+					<renderer:item
+						uri="mtx://Configuration/xmp/SetProperties.xmp"
+						produce-if-empty="true"></renderer:item>
+				</renderer:metadata>
+			</renderer>
+		</destination>
+		<destination name="OMS-PCL">
+			<renderer
+				mime-type="application/X-kw-pcl"
+				xmlns:renderer="http://www.kwsoft.de/mtext/ext/renderer/pcl">
+				<renderer:metadata
+					type="pjl"
+					xmlns:metadata="http://www.kwsoft.de/mtext/ext/renderer/pcl/metadata/pjl"
+					occurrence="job">
+					<metadata:item
+						type="SET"
+						description="User-ID"
+						produce-if-empty="true">${LOKALDRUCK_USER_ID}</metadata:item>
+				</renderer:metadata>
+			</renderer>
+			<keys>
+				<key
+					name="LOKALDRUCK_USER_ID"
+					type="String"
+					description='Setzt USERID="..."'>USERID=&quot;${LOKALDRUCK_USER_ID}&quot;</key>
+			</keys>
+		</destination>
+		<destination name="OMS-AFP">
+			<renderer
+				mime-type="application/X-kw-afp"
+				xmlns:renderer="http://www.kwsoft.de/mtext/ext/renderer/afp">
+				<renderer:metadata
+					type="tle"
+					occurrence="document">
+					<renderer:item
+						name="LKZ"
+						description="Landkennzeichen"
+						produce-if-empty="true">${LKZ}</renderer:item>
+					<renderer:item
+						name="PLZ"
+						produce-if-empty="true"
+						description="Postleitzahl">${PLZ}</renderer:item>
+				</renderer:metadata>
+			</renderer>
+			<keys>
+				<key
+					type="String"
+					name="LKZ"
+					description="Landkennzeichen">${LKZ}</key>
+				<key
+					type="String"
+					name="PKZ"
+					description="Landkennzeichen">${PKZ}</key>
+			</keys>
+		</destination>
+		<destination name="OMS-HTML">
+			<renderer
+				mime-type="application/X-tonic-html"
+				xmlns:renderer="http://www.kwsoft.de/mtext/ext/renderer/tonic-html">
+				<renderer:headers>
+					<renderer:header type="meta">
+						<renderer:attribute
+							name="name"
+							value="viewport" />
+						<renderer:attribute
+							name="content"
+							value="width=device-width, initial-scale=1" />
+					</renderer:header>
+				</renderer:headers>
+			</renderer>
+		</destination>
+		<destination name="OMS-TIFF">
+			<target-resolution>200</target-resolution>
+			<renderer
+				mime-type="image/tiff"
+				xmlns:renderer="http://www.kwsoft.de/mtext/ext/renderer/tiff"></renderer>
+		</destination>
+		<destination name="OMS-PDFVT">
+			<renderer
+				xmlns:renderer="http://www.kwsoft.de/mtext/ext/renderer/pdf"
+				mime-type="application/X-kw-pdf">
+				<renderer:pdf-vt>true</renderer:pdf-vt>
+				<renderer:pdf-x-mode>PDF/X-4:2008</renderer:pdf-x-mode>
+				<renderer:version>1.6</renderer:version>
+				<renderer:output-profile>\\Configuration\OMS\pdf-vt\ISOcoated_v2_300_eci.icc</renderer:output-profile>
+				<renderer:pdf-vt-group-template>\\Configuration\OMS\pdf-vt\vt-group1.xml;\\Configuration\OMS\pdf-vt\vt-group2.xml</renderer:pdf-vt-group-template>
+				<renderer:form-fields-as-graphics>true</renderer:form-fields-as-graphics>
+				<renderer:ignore-hyperlinks>false</renderer:ignore-hyperlinks>
+			</renderer>
+			<!-- example of key handler, used to pass .KEY elements to an external 
+				handler <key-handler class="de.kwsoft.mtext.format.config.DummyKeyHandler"/> -->
+		</destination>
+		<destination name="export-regressiontest/pdf">
+			<renderer
+				mime-type="application/X-kw-pdf"
+				xmlns:renderer="http://www.kwsoft.de/mtext/ext/renderer/pdf">
+			</renderer>
+			<!-- example of key handler, used to pass .KEY elements to an external 
+				handler <key-handler class="de.kwsoft.mtext.format.config.DummyKeyHandler"/> -->
+		</destination>
+		<destination name="OMS-Mail-Subject">
+			<renderer
+				mime-type="application/X-tonic-scriptable"
+				xmlns:renderer="http://www.kwsoft.de/mtext/ext/renderer/tonic-scriptable">
+				<renderer:freemarker-template
+					uri="\\Configuration\OMS\ftl\subject.ftl"></renderer:freemarker-template>
+				<renderer:output-format>PLAINTEXT</renderer:output-format>
+			</renderer>
+		</destination>
+		<destination name="OMS-TEXT">
+			<renderer
+				mime-type="application/X-kw-txt"
+				xmlns:renderer="http://www.kwsoft.de/mtext/ext/renderer/txt">
+				<renderer:convert-to-ascii>true</renderer:convert-to-ascii>
+				<renderer:insert-paragraph-blank-line>true</renderer:insert-paragraph-blank-line>
+				<renderer:disable-soft-hyphen>true</renderer:disable-soft-hyphen>
+				<renderer:concatenate-paragraph-lines>true</renderer:concatenate-paragraph-lines>
+			</renderer>
+		</destination>
+	</destinations>
+	<!-- Font set definitions -->
+	<fonts>
+		<font-set name="standard-fonts">
+			<!-- base URL used for resolving fonts, when font are defined manually 
+				as font triplets. Not required, if auto-detect is used. <font-base>file:/c:/windows/fonts</font-base> -->
+			<font-name-alias
+				from-name="SERIF"
+				to-name="DejaVu Serif Condensed" />
+			<font-name-alias
+				from-name="SANS"
+				to-name="DejaVu Sans Condensed" />
+			<font-name-alias
+				from-name="MONO"
+				to-name="DejaVu Sans Mono" />
+			<font-name-alias
+				from-name="TIMES"
+				to-name="DejaVu Serif Condensed" />
+			<font-name-alias
+				from-name="ARIAL"
+				to-name="DejaVu Sans Condensed" />
+			<font-name-alias
+				from-name="COURIER"
+				to-name="DejaVu Sans Mono" />
+		</font-set>
+
+
+
+
+
+		<font-set name="ttf-fonts">
+			<font
+				xmlns="http://www.kwsoft.de/mtext/ext/renderer/font/ttf"
+				embed-url="DejaVuSansCondensed.ttf">
+				<font-triplet
+					name="DejaVu Sans Condensed"
+					style="normal"
+					weight="normal" />
+			</font>
+			<font
+				xmlns="http://www.kwsoft.de/mtext/ext/renderer/font/ttf"
+				embed-url="DejaVuSansCondensed-Bold.ttf">
+				<font-triplet
+					name="DejaVu Sans Condensed"
+					style="normal"
+					weight="bold" />
+			</font>
+			<font
+				xmlns="http://www.kwsoft.de/mtext/ext/renderer/font/ttf"
+				embed-url="DejaVuSansCondensed-Oblique.ttf">
+				<font-triplet
+					name="DejaVu Sans Condensed"
+					style="italic"
+					weight="normal" />
+			</font>
+			<font
+				xmlns="http://www.kwsoft.de/mtext/ext/renderer/font/ttf"
+				embed-url="DejaVuSansCondensed-BoldOblique.ttf">
+				<font-triplet
+					name="DejaVu Sans Condensed"
+					style="italic"
+					weight="bold" />
+			</font>
+			<font
+				xmlns="http://www.kwsoft.de/mtext/ext/renderer/font/ttf"
+				embed-url="DejaVuSerifCondensed.ttf">
+				<font-triplet
+					name="DejaVu Serif Condensed"
+					style="normal"
+					weight="normal" />
+			</font>
+			<font
+				xmlns="http://www.kwsoft.de/mtext/ext/renderer/font/ttf"
+				embed-url="DejaVuSerifCondensed-Bold.ttf">
+				<font-triplet
+					name="DejaVu Serif Condensed"
+					style="normal"
+					weight="bold" />
+			</font>
+			<font
+				xmlns="http://www.kwsoft.de/mtext/ext/renderer/font/ttf"
+				embed-url="DejaVuSerifCondensed-Italic.ttf">
+				<font-triplet
+					name="DejaVu Serif Condensed"
+					style="italic"
+					weight="normal" />
+			</font>
+			<font
+				xmlns="http://www.kwsoft.de/mtext/ext/renderer/font/ttf"
+				embed-url="DejaVuSerifCondensed-BoldItalic.ttf">
+				<font-triplet
+					name="DejaVu Serif Condensed"
+					style="italic"
+					weight="bold" />
+			</font>
+
+			<font
+				xmlns="http://www.kwsoft.de/mtext/ext/renderer/font/ttf"
+				embed-url="DejaVuSansMono.ttf">
+				<font-triplet
+					name="DejaVu Sans Mono"
+					style="normal"
+					weight="normal" />
+
+
+			</font>
+			<font
+				xmlns="http://www.kwsoft.de/mtext/ext/renderer/font/ttf"
+				embed-url="DejaVuSansMono-Bold.ttf">
+				<font-triplet
+					name="DejaVu Sans Mono"
+					style="normal"
+					weight="bold" />
+
+
+			</font>
+			<font
+				xmlns="http://www.kwsoft.de/mtext/ext/renderer/font/ttf"
+				embed-url="DejaVuSansMono-Oblique.ttf">
+				<font-triplet
+					name="DejaVu Sans Mono"
+					style="italic"
+					weight="normal" />
+
+
+			</font>
+			<font
+				xmlns="http://www.kwsoft.de/mtext/ext/renderer/font/ttf"
+				embed-url="DejaVuSansMono-BoldOblique.ttf">
+
+				<font-triplet
+					name="DejaVu Sans Mono"
+					style="italic"
+					weight="bold" />
+
+			</font>
+
+			<font
+				xmlns="http://www.kwsoft.de/mtext/ext/renderer/font/ttf"
+				embed-url="Levibats-Regular.ttf">
+
+				<font-triplet
+					name="Zapf Dingbats"
+					style="normal"
+					weight="normal" />
+
+			</font>
+
+			<font-base>mtx://Fonts/TTF</font-base>
+			<font-name-alias
+				from-name="SANS"
+				to-name="DejaVu Sans Condensed" />
+			<font-name-alias
+				from-name="SERIF"
+				to-name="DejaVu Serif Condensed" />
+			<font-name-alias
+				from-name="MONO"
+				to-name="DejaVu Sans Mono" />
+			<font-name-alias
+				from-name="Standard"
+				to-name="DejaVu Sans Condensed" />
+			<font-name-alias
+				from-name="TIMES"
+				to-name="DejaVu Serif Condensed" />
+			<font-name-alias
+				from-name="COURIER"
+				to-name="DejaVu Sans Mono" />
+			<font-name-alias
+				from-name="ARIAL"
+				to-name="DejaVu Sans Condensed" />
+			<font-name-alias
+				from-name="Courier-Bold"
+				to-name="DejaVu Sans Mono" />
+			<font-name-alias
+				from-name="Courier"
+				to-name="DejaVu Sans Mono" />
+
+			<font-name-alias
+				from-name="ZapfDingbats"
+				to-name="Zapf Dingbats" />
+			<font-name-alias
+				from-name="zapfdingbats"
+				to-name="Zapf Dingbats" />
+			<font-name-alias
+				from-name="ZAPFDINGBATS"
+				to-name="Zapf Dingbats" />
+		</font-set>
+	</fonts>
+	<!-- Renderer specific configuration valid for all destinations, if not 
+		overriden at destination level -->
+	<renderers>
+		<renderer
+			mime-type="application/X-kw-pdf"
+			xmlns:renderer="http://www.kwsoft.de/mtext/ext/renderer/pdf">
+			<renderer:pdf-a-mode>PDF/A disabled</renderer:pdf-a-mode>
+			<renderer:accessibility>true</renderer:accessibility>
+		</renderer>
+		<renderer
+			mime-type="application/X-kw-pcl"
+			xmlns:renderer="http://www.kwsoft.de/mtext/ext/renderer/pcl">
+			<renderer:enable-color-support>true</renderer:enable-color-support>
+		</renderer>
+		<renderer
+			mime-type="application/X-kw-afp"
+			xmlns:renderer="http://www.kwsoft.de/mtext/ext/renderer/afp">
+			<renderer:images
+				mode="color"
+				native="true"></renderer:images>
+		</renderer>
+		<renderer
+			mime-type="application/X-tonic-html"
+			xmlns:renderer="http://www.kwsoft.de/mtext/ext/renderer/tonic-html"></renderer>
+		<renderer
+			mime-type="image/tiff"
+			xmlns:renderer="http://www.kwsoft.de/mtext/ext/renderer/tiff">
+			<renderer:color-mode>gray</renderer:color-mode>
+		</renderer>
+	</renderers>
+	<regression-tool>
+		<testcase
+			references-path-format="${project}/Regression/${destination}/${templatefolder}/${template}_${testCase}.${extension}" />
+		<regression-tool-destination>export-regressiontest/pdf</regression-tool-destination>
+		<regression-tool-date>2024-04-15T14:17:00</regression-tool-date>
+	</regression-tool>
+	<auto_correction>
+		<language locale="GER">
+			<typographical_quote
+				start="„"
+				end="“" />
+			<single_quote
+				start="‚"
+				end="‘" />
+			<string_replace
+				in="--"
+				out="–" />
+			<string_replace
+				in="..."
+				out="…" />
+		</language>
+		<language locale="SWI">
+			<typographical_quote
+				start='«'
+				end="»" />
+			<single_quote
+				start="‹"
+				end="›" />
+			<string_replace
+				in="--"
+				out="–" />
+			<string_replace
+				in="..."
+				out="…" />
+		</language>
+		<language locale="USA">
+			<typographical_quote
+				start="“"
+				end="”" />
+			<single_quote
+				start="‘"
+				end="’" />
+			<string_replace
+				in="--"
+				out="–" />
+			<string_replace
+				in="..."
+				out="…" />
+		</language>
+		<language locale="ENG">
+			<typographical_quote
+				start="“"
+				end="”" />
+			<single_quote
+				start="‘"
+				end="’" />
+			<string_replace
+				in="--"
+				out="–" />
+			<string_replace
+				in="..."
+				out="…" />
+		</language>
+	</auto_correction>
+</configuration>

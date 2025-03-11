@@ -1,0 +1,8 @@
+<DPM>
+	<CIP4_Root>
+		<CIP4_Metadata>
+			<CIP4_Conformance value="GROUP-Meta-L2" />
+			<group2 value="$Group2" />
+		</CIP4_Metadata>
+	</CIP4_Root>
+</DPM>

@@ -1,0 +1,45 @@
+<DocumentPart xmlns="urn:kwsoft:mtext:tonic:dom">
+ <DataDefinition>
+  <ParamDef name="Attachment">
+   <Description></Description>
+   <Output text-prefix="" text-suffix=""></Output>
+   <Script></Script>
+   <Validation validation-type="any_value" operator="any" allow-empty-value="true">
+    <Values></Values>
+   </Validation>
+  </ParamDef>
+  <ParamDef name="AttachmentName" provided="true">
+   <Description></Description>
+   <Output text-prefix="" text-suffix=""></Output>
+   <Script></Script>
+   <Validation validation-type="any_value" operator="any" allow-empty-value="true">
+    <Values></Values>
+   </Validation>
+  </ParamDef>
+  <ParamDef name="InstanceOutputSettings" ref="\\Framework\Data\Instance.datamodel" provided="true">
+   <Description></Description>
+   <Script></Script>
+  </ParamDef>
+ </DataDefinition>
+ <AttachmentSection>
+  <OutputSettingsRef uri="\\Framework\Framework\OutputSettings.outputSettings">
+   <Param name="SendAsAttachment">true</Param>
+  </OutputSettingsRef>
+  <DataUri>$Attachment</DataUri>
+  <Style parentName="Attachment">
+   <OriginalPageSizes>false</OriginalPageSizes>
+   <FillContainerWidth>true</FillContainerWidth>
+   <FillContainerHeight>true</FillContainerHeight>
+  </Style>
+  <StaticContainer>
+   <Style parentName="AttachmentName">
+   </Style>
+   <Par>
+    <Span>
+     <Data>$AttachmentName</Data>
+     <Text></Text>
+    </Span>
+   </Par>
+  </StaticContainer>
+ </AttachmentSection>
+</DocumentPart>

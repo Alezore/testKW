@@ -1,0 +1,7 @@
+<ContainerPart xmlns="urn:kwsoft:mtext:tonic:dom">
+ <DataDefinition></DataDefinition>
+ <Numbering id="Default">
+  <Style parentName="RomanNumbers"></Style>
+ </Numbering>
+ <ContainerExtensionDef id="Extension1"></ContainerExtensionDef>
+</ContainerPart>

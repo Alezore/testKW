@@ -1,0 +1,1383 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Configuration
+	xmlns="http://www.kwsoft.de/moms/conf"
+	collectRootFolderName="config-param:collectRootFolderName"
+	splitSynchronously="true"
+	timestampFormat="dd.MM.yyyy HH:mm:ss">
+	<Stacks>
+		<Stack
+			allowToUpdateDocuments="true"
+			callExtensionGroupEventsSeparately="true"
+			continueOnDocumentError="true"
+			documentDistributionMode="FULL_REST"
+			maxDocumentCollectionDocumentCount="0"
+			maxDocumentCollectionSheetCount="0"
+			maxFirstDocumentCollectionDocumentCount="0"
+			maxFirstDocumentCollectionSheetCount="0"
+			maxParallelStacks="0"
+			name="ARCHIVE"
+			onlineStackSleepSeconds="0"
+			processDocCollectionParallel="false"
+			splitDocStatModAfterStackIR="FIN_STAT_OF_FIN_COL"
+			tolerance="100"
+			splitDocumentStatus="STACK_PROCESSING_SUCCESSFUL"
+			persistControlJob="true"
+			stackGroupID="ArchiveStacks"
+			description="Stack for processing documents to be archived">
+			<Select>
+				<Equal
+					logicalOperator="AND"
+					parameterName="KW_MEDIUM"
+					value="ARCHIVE" />
+				<Equal
+					logicalOperator="AND"
+					value="WAIT_FOR_STACK_PROCESSING"
+					parameterName="KW_STATUS" />
+			</Select>
+			<StackExtensions>
+				<StackExtension
+					className="de.kwsoft.moms.server.stack.extension.extensions.ParameterSetter"
+					xmlns:StackExtension="http://www.kwsoft.de/moms/ext/stack/ParameterSetter"
+					name="set file path and file name">
+					<StackExtension:ExtensionConfiguration
+						can-run-parallel="false">
+						<StackExtension:ParameterToSet
+							parameter-name="ARCHIVE_PATH_NAME"
+							parameter-type="Runtime-Parameter"
+							runtime-parameter-data-type="Character"
+							event="EVENT_TYPE_BEFORE_DOCUMENT_SELECT">
+							<StackExtension:DynamicValue
+								format="config-param:ARCHIVE_PATH_NAME">
+							</StackExtension:DynamicValue>
+						</StackExtension:ParameterToSet>
+						<StackExtension:ParameterToSet
+							parameter-name="ARCHIVE_FILE_NAME"
+							parameter-type="Runtime-Parameter"
+							event="EVENT_TYPE_DOCUMENT"
+							runtime-parameter-data-type="Character">
+							<StackExtension:DynamicValue
+								format="%1$s/%4$tY%4$tm%4$td_PDF/%4$tY%4$tm%4$td_%4$tH%4$tM%4$tS_%2$s_%3$s_%5$s">
+								<StackExtension:FormatArgument
+									parameter-name="ARCHIVE_PATH_NAME"
+									parameter-type="Runtime-Parameter"
+									runtime-parameter-data-type="Character" />
+								<StackExtension:FormatArgument
+									parameter-name="KW_RUN_ID"
+									parameter-type="M/OMS-Parameter" />
+								<StackExtension:FormatArgument
+									parameter-name="KW_SPLIT_ID"
+									parameter-type="M/OMS-Parameter" />
+								<StackExtension:FormatArgument
+									parameter-name="KW_SPLIT_TIME"
+									parameter-type="M/OMS-Parameter" />
+								<StackExtension:FormatArgument
+									parameter-name="KW_INPUT_ID"
+									parameter-type="M/OMS-Parameter" />
+							</StackExtension:DynamicValue>
+						</StackExtension:ParameterToSet>
+					</StackExtension:ExtensionConfiguration>
+				</StackExtension>
+				<StackExtension
+					className="de.kwsoft.moms.server.stack.extension.renderer.RendererExtension"
+					xmlns:StackExtension="http://www.kwsoft.de/moms/ext/stack/Renderer"
+					name="render PDF">
+					<StackExtension:ExtensionConfiguration
+						destination="OMS-PDF"
+						outputFilenameExtension="pdf"
+						renderSingleDocuments="true"
+						renderDocumentGroup="false">
+						<StackExtension:KeyConfiguration>
+							<StackExtension:JobKeyParametersForAllOutputs>
+								<StackExtension:KeyParameter
+									parameter-name="PDF_TITLE"
+									parameter-type="M/OMS-Parameter"
+									key-name="PDF_TITLE" />
+								<StackExtension:KeyParameter
+									parameter-name="PDF_CREATOR"
+									parameter-type="M/OMS-Parameter"
+									key-name="PDF_CREATOR" />
+							</StackExtension:JobKeyParametersForAllOutputs>
+						</StackExtension:KeyConfiguration>
+					</StackExtension:ExtensionConfiguration>
+				</StackExtension>
+				<StackExtension
+					className="de.kwsoft.moms.server.stack.extension.extensions.persistenter.PersistenterExtension"
+					xmlns:StackExtension="http://www.kwsoft.de/moms/ext/stack/persistenter/PersistenterExtension"
+					name="write file to storage">
+					<StackExtension:ExtensionConfiguration>
+						<StackExtension:PersistenterConfiguration
+							doIfFileExists="re-name"
+							nameOfResource="STACK_PRN"
+							typeOfFile="*"
+							unzip="false"
+							event="EVENT_TYPE_DOCUMENT">
+							<StackExtension:FileNameRoot>
+								<StackExtension:FileNameParts>
+									<StackExtension:FileNamePart
+										number="1"
+										parameter-type="Runtime-Parameter"
+										parameter-name="ARCHIVE_FILE_NAME" />
+								</StackExtension:FileNameParts>
+							</StackExtension:FileNameRoot>
+						</StackExtension:PersistenterConfiguration>
+					</StackExtension:ExtensionConfiguration>
+				</StackExtension>
+				<StackExtension
+					xmlns:StackExtension="http://www.kwsoft.de/moms/ext/stack/FileExtension"
+					className="de.kwsoft.moms.server.stack.extension.extensions.FileExtension"
+					name="generate XML for archiving">
+					<StackExtension:ExtensionConfiguration
+						charSet="UTF-8"
+						fileMode="DOCUMENT"
+						formatUrl="mtx://Configuration/OMS/Resources/ArchiveXML.txt"
+						locale="de_DE"
+						outputType="xml"
+						storeMode="FILE">
+						<StackExtension:FileName format="%1$s.xml">
+							<StackExtension:FormatArgument
+								parameter-name="ARCHIVE_FILE_NAME"
+								parameter-type="Runtime-Parameter"
+								runtime-parameter-data-type="Character" />
+						</StackExtension:FileName>
+					</StackExtension:ExtensionConfiguration>
+				</StackExtension>
+			</StackExtensions>
+		</Stack>
+		<Stack
+			allowToUpdateDocuments="true"
+			callExtensionGroupEventsSeparately="true"
+			continueOnDocumentError="true"
+			documentDistributionMode="EQUAL"
+			maxDocumentCollectionDocumentCount="0"
+			maxDocumentCollectionSheetCount="0"
+			maxFirstDocumentCollectionDocumentCount="0"
+			maxFirstDocumentCollectionSheetCount="0"
+			maxParallelStacks="0"
+			name="LOCALPRINTING"
+			onlineStackSleepSeconds="0"
+			processDocCollectionParallel="false"
+			splitDocStatModAfterStackIR="FIN_STAT_OF_FIN_COL"
+			tolerance="100"
+			removeStackRun="true"
+			splitDocumentStatus="STACK_PROCESSING_SUCCESSFUL"
+			stackGroupID="PrintStacks"
+			description="PCL-rendered documents to be printed locally">
+			<Select>
+				<Equal
+					logicalOperator="AND"
+					parameterName="KW_MEDIUM"
+					value="LOCALPRINTING" />
+				<Equal
+					logicalOperator="AND"
+					value="WAIT_FOR_STACK_PROCESSING"
+					parameterName="KW_STATUS" />
+			</Select>
+			<StackExtensions>
+				<StackExtension
+					className="de.kwsoft.moms.server.stack.extension.extensions.ParameterSetter"
+					xmlns:StackExtension="http://www.kwsoft.de/moms/ext/stack/ParameterSetter"
+					name="set path name and file name">
+					<StackExtension:ExtensionConfiguration
+						can-run-parallel="false">
+						<StackExtension:ParameterToSet
+							parameter-name="LOCALPRINTING_PATH_NAME"
+							parameter-type="Runtime-Parameter"
+							runtime-parameter-data-type="Character"
+							event="EVENT_TYPE_BEFORE_DOCUMENT_SELECT">
+							<StackExtension:DynamicValue
+								format="config-param:LOCALPRINTING_PATH_NAME">
+							</StackExtension:DynamicValue>
+						</StackExtension:ParameterToSet>
+						<StackExtension:ParameterToSet
+							parameter-name="LOCALPRINTING_FILE_NAME"
+							parameter-type="Runtime-Parameter"
+							event="EVENT_TYPE_START"
+							runtime-parameter-data-type="Character">
+							<StackExtension:DynamicValue
+								format="%1$s/%2$s/%3$s">
+								<StackExtension:FormatArgument
+									parameter-name="LOCALPRINTING_PATH_NAME"
+									parameter-type="Runtime-Parameter"
+									runtime-parameter-data-type="Character" />
+								<StackExtension:FormatArgument
+									parameter-name="LOCALPRINTING_PRINTER"
+									parameter-type="M/OMS-Parameter" />
+								<StackExtension:FormatArgument
+									parameter-name="KW_SPLIT_ID"
+									parameter-type="M/OMS-Parameter" />
+							</StackExtension:DynamicValue>
+						</StackExtension:ParameterToSet>
+						<StackExtension:ParameterToSet
+							parameter-name="SRV_PRINTER_QUEUE"
+							parameter-type="Runtime-Parameter"
+							runtime-parameter-data-type="Character"
+							event="EVENT_TYPE_BEFORE_DOCUMENT_SELECT">
+							<StackExtension:DynamicValue
+								format="config-param:SRV_PRINTER_QUEUE"></StackExtension:DynamicValue>
+						</StackExtension:ParameterToSet>
+						<StackExtension:ParameterToSet
+							parameter-name="PRINTER_QUEUE"
+							parameter-type="Runtime-Parameter"
+							runtime-parameter-data-type="Character"
+							event="EVENT_TYPE_DOCUMENT">
+							<StackExtension:DynamicValue
+								format="%1$s/%2$s">
+								<StackExtension:FormatArgument
+									parameter-name="SRV_PRINTER_QUEUE"
+									parameter-type="Runtime-Parameter"
+									runtime-parameter-data-type="Character" />
+								<StackExtension:FormatArgument
+									parameter-name="LOCALPRINTING_PRINTER"
+									parameter-type="M/OMS-Parameter" />
+							</StackExtension:DynamicValue>
+						</StackExtension:ParameterToSet>
+					</StackExtension:ExtensionConfiguration>
+				</StackExtension>
+				<StackExtension
+					className="de.kwsoft.moms.server.stack.extension.renderer.RendererExtension"
+					xmlns:StackExtension="http://www.kwsoft.de/moms/ext/stack/Renderer"
+					name="render pcl file">
+					<StackExtension:ExtensionConfiguration
+						destination="OMS-PCL"
+						renderInput="INTERPRET_GENERATED_MCJ"
+						outputFilenameExtension="pcl"
+						renderCollectFile="false"
+						renderDocumentGroup="false"
+						pageRepeatCountType="RUNTIME_PARAMETER"
+						renderSingleDocuments="true">
+						<StackExtension:KeyConfiguration>
+							<StackExtension:JobKeyParameters>
+								<StackExtension:KeyParameter
+									parameter-name="LOCALPRINTING_USER_ID"
+									parameter-type="M/OMS-Parameter"
+									key-name="LOCALPRINTING_USER_ID" />
+							</StackExtension:JobKeyParameters>
+						</StackExtension:KeyConfiguration>
+					</StackExtension:ExtensionConfiguration>
+				</StackExtension>
+				<StackExtension
+					className="de.kwsoft.moms.server.stack.extension.extensions.persistenter.PersistenterExtension"
+					xmlns:StackExtension="http://www.kwsoft.de/moms/ext/stack/persistenter/PersistenterExtension"
+					name="write file to storage">
+					<StackExtension:ExtensionConfiguration>
+						<StackExtension:PersistenterConfiguration
+							doIfFileExists="re-name"
+							nameOfResource="STACK_PRN"
+							typeOfFile="*"
+							unzip="false"
+							event="EVENT_TYPE_DOCUMENT">
+							<StackExtension:FileNameRoot>
+								<StackExtension:FileNameParts>
+									<StackExtension:FileNamePart
+										number="1"
+										parameter-type="Runtime-Parameter"
+										parameter-name="LOCALPRINTING_FILE_NAME" />
+								</StackExtension:FileNameParts>
+							</StackExtension:FileNameRoot>
+						</StackExtension:PersistenterConfiguration>
+					</StackExtension:ExtensionConfiguration>
+				</StackExtension>
+				<StackExtension
+					className="de.kwsoft.moms.server.stack.extension.extensions.PrintResourceExtension"
+					xmlns:StackExtension="http://www.kwsoft.de/moms/ext/stack/PrintResourceExtension">
+					<StackExtension:ExtensionConfiguration
+						resourceName="STACK_PRN"
+						printerQueue="Printer_CUPS"
+						queueNameParameterType="Runtime-Parameter"
+						queueNameParameterName="PRINTER_QUEUE">
+					</StackExtension:ExtensionConfiguration>
+				</StackExtension>
+			</StackExtensions>
+		</Stack>
+		<Stack
+			allowToUpdateDocuments="true"
+			callExtensionGroupEventsSeparately="true"
+			continueOnDocumentError="true"
+			documentDistributionMode="EQUAL"
+			maxDocumentCollectionDocumentCount="0"
+			maxDocumentCollectionSheetCount="0"
+			maxFirstDocumentCollectionDocumentCount="0"
+			maxFirstDocumentCollectionSheetCount="0"
+			maxParallelStacks="0"
+			name="CENTRALPRINTING"
+			onlineStackSleepSeconds="0"
+			processDocCollectionParallel="false"
+			splitDocStatModAfterStackIR="FIN_STAT_OF_FIN_COL"
+			tolerance="100"
+			description="Stack for rendering document collections to AFP format.
+One file for each country of destination is produced."
+			removeStackRun="true"
+			splitDocumentStatus="STACK_PROCESSING_SUCCESSFUL"
+			stackGroupID="PrintStacks"
+			groupNameToLimitDocumentCollection="CountryCode">
+			<Select>
+				<Equal
+					logicalOperator="AND"
+					parameterName="KW_MEDIUM"
+					value="CENTRALPRINTING" />
+				<Equal
+					logicalOperator="AND"
+					value="WAIT_FOR_STACK_PROCESSING"
+					parameterName="KW_STATUS" />
+			</Select>
+			<StackExtensions>
+				<StackExtension
+					className="de.kwsoft.moms.server.stack.extension.extensions.ParameterSetter"
+					xmlns:StackExtension="http://www.kwsoft.de/moms/ext/stack/ParameterSetter"
+					name="set file path and file name">
+					<StackExtension:ExtensionConfiguration
+						can-run-parallel="false">
+						<StackExtension:ParameterToSet
+							parameter-name="CENTRALPRINTING_PATH_NAME"
+							parameter-type="Runtime-Parameter"
+							runtime-parameter-data-type="Character"
+							event="EVENT_TYPE_START">
+							<StackExtension:DynamicValue
+								format="config-param:CENTRALPRINTING_PATH_NAME">
+							</StackExtension:DynamicValue>
+						</StackExtension:ParameterToSet>
+						<StackExtension:ParameterToSet
+							parameter-name="CENTRALPRINTING_FILE_NAME"
+							parameter-type="Runtime-Parameter"
+							event="EVENT_TYPE_DOCUMENT_COLLECTION_START"
+							runtime-parameter-data-type="Character">
+							<StackExtension:DynamicValue
+								format="%1$s/%3$tY%3$tm%3$td_AFP/%3$tY%3$tm%3$td_%3$tH%3$tM%3$tS_%2$s_%4$s.afp">
+								<StackExtension:FormatArgument
+									parameter-name="CENTRALPRINTING_PATH_NAME"
+									parameter-type="Runtime-Parameter"
+									runtime-parameter-data-type="Character" />
+								<StackExtension:FormatArgument
+									parameter-name="KW_RUN_ID"
+									parameter-type="M/OMS-Parameter" />
+								<StackExtension:FormatArgument
+									parameter-name="START_TIME_DATE"
+									parameter-type="Runtime-Parameter" />
+								<StackExtension:FormatArgument
+									parameter-name="RECIPIENT_COUNTRY_CODE"
+									parameter-type="M/OMS-Parameter" />
+							</StackExtension:DynamicValue>
+						</StackExtension:ParameterToSet>
+					</StackExtension:ExtensionConfiguration>
+				</StackExtension>
+				<StackExtension
+					className="de.kwsoft.moms.server.stack.extension.extensions.GroupValuesSaver"
+					xmlns:StackExtension="http://www.kwsoft.de/moms/ext/stack/GroupValuesSaver">
+					<StackExtension:ExtensionConfiguration
+						setGroupId="false"
+						setGroupDocumentCount="false"
+						setGroupPosition="false"
+						setGroupSheetCount="true"
+						groupName="Envelope" />
+				</StackExtension>
+				<StackExtension
+					className="de.kwsoft.moms.server.stack.extension.extensions.marking.MarkingExtension"
+					xmlns:StackExtension="http://www.kwsoft.de/moms/ext/stack/Marking"
+					name="Datamatrix">
+					<StackExtension:ExtensionConfiguration>
+						<StackExtension:MarkingConfiguration>
+							<StackExtension:Marking
+								name="QR Code"
+								length="23"
+								pageDirection="FORWARD"
+								paddingChar="'0'">
+								<StackExtension:PagePositionConfiguration
+									sheetFrontPages="true"></StackExtension:PagePositionConfiguration>
+								<StackExtension:BarcodeMarkingFormat
+									name="QR Code">
+									<StackExtension:BarcodeMetadata
+										code-type="QR"
+										code-size="0"
+										width="1200"
+										height="1200" />
+									<StackExtension:BarcodeLocationPortrait
+										position-x="14173"
+										position-y="235843" />
+									<StackExtension:BarcodeLocationLandscape
+										position-x="56693"
+										position-y="56693" />
+								</StackExtension:BarcodeMarkingFormat>
+								<StackExtension:TextMarkingFormat
+									name="Klarschrift"
+									position="1"
+									length="23">
+									<StackExtension:Text
+										fontSize="7000"
+										fontName="Standard"
+										fontStyle="0" />
+									<StackExtension:PageOperationLocationPortrait
+										position-x="14173"
+										position-y="226772"
+										orientation="90" />
+									<StackExtension:PageOperationLocationLandscape />
+								</StackExtension:TextMarkingFormat>
+								<StackExtension:Command
+									name="KW Kennzeichen"
+									className="de.kwsoft.moms.server.stack.extension.extensions.marking.commands.ConstantValue"
+									xmlns:Command="http://www.kwsoft.de/moms/ext/stack/marking/command/ConstantValue"
+									position="1"
+									length="2"
+									encoding="STRING">
+									<Command:ExtensionConfiguration
+										value="KW" />
+								</StackExtension:Command>
+								<StackExtension:Command
+									name="Minus"
+									position="3"
+									length="1"
+									encoding="STRING"
+									className="de.kwsoft.moms.server.stack.extension.extensions.marking.commands.ConstantValue"
+									xmlns:Command="http://www.kwsoft.de/moms/ext/stack/marking/command/ConstantValue">
+									<Command:ExtensionConfiguration
+										value="-" />
+								</StackExtension:Command>
+								<StackExtension:Command
+									name="Run ID"
+									className="de.kwsoft.moms.server.stack.extension.extensions.marking.commands.MOMSParameter"
+									xmlns:Command="http://www.kwsoft.de/moms/ext/stack/marking/command/MOMSParameter"
+									paddingChar="'0'"
+									position="4"
+									length="6"
+									encoding="STR_DECIMAL">
+									<Command:ExtensionConfiguration
+										parameterName="KW_RUN_ID" />
+								</StackExtension:Command>
+								<StackExtension:Command
+									name="Minus B"
+									className="de.kwsoft.moms.server.stack.extension.extensions.marking.commands.ConstantValue"
+									xmlns:Command="http://www.kwsoft.de/moms/ext/stack/marking/command/ConstantValue"
+									position="10"
+									length="1"
+									encoding="STRING">
+									<Command:ExtensionConfiguration
+										value="-" />
+								</StackExtension:Command>
+								<StackExtension:Command
+									name="Nummer des Umschlags"
+									className="de.kwsoft.moms.server.stack.extension.extensions.marking.commands.GroupOfDocumentCollection"
+									xmlns:Command="http://www.kwsoft.de/moms/ext/stack/marking/command/GroupOfDocumentCollection"
+									position="11"
+									length="4"
+									encoding="STR_DECIMAL"
+									paddingChar="'0'">
+									<Command:ExtensionConfiguration
+										groupName="Envelope" />
+								</StackExtension:Command>
+								<StackExtension:Command
+									name="Minus C"
+									className="de.kwsoft.moms.server.stack.extension.extensions.marking.commands.ConstantValue"
+									xmlns:Command="http://www.kwsoft.de/moms/ext/stack/marking/command/ConstantValue"
+									position="15"
+									length="1"
+									encoding="STRING">
+									<Command:ExtensionConfiguration
+										value="-" />
+								</StackExtension:Command>
+								<StackExtension:Command
+									name="Blatt im Umschlag"
+									className="de.kwsoft.moms.server.stack.extension.extensions.marking.commands.SheetOfDocumentGroup"
+									xmlns:Command="http://www.kwsoft.de/moms/ext/stack/marking/command/SheetOfDocumentGroup"
+									position="16"
+									length="4"
+									encoding="STR_DECIMAL"
+									paddingChar="'0'">
+									<Command:ExtensionConfiguration
+										groupName="Envelope" />
+								</StackExtension:Command>
+								<StackExtension:Command
+									name="Minus D"
+									className="de.kwsoft.moms.server.stack.extension.extensions.marking.commands.ConstantValue"
+									xmlns:Command="http://www.kwsoft.de/moms/ext/stack/marking/command/ConstantValue"
+									position="20"
+									length="1"
+									encoding="STRING">
+									<Command:ExtensionConfiguration
+										value="-" />
+								</StackExtension:Command>
+								<StackExtension:Command
+									name="Anzahl Blätter im Umschlag"
+									className="de.kwsoft.moms.server.stack.extension.extensions.marking.commands.MOMSParameter"
+									xmlns:Command="http://www.kwsoft.de/moms/ext/stack/marking/command/MOMSParameter"
+									position="21"
+									length="3"
+									encoding="STR_DECIMAL"
+									paddingChar="'0'">
+									<Command:ExtensionConfiguration
+										parameterName="KW_GROUP_SHEETS" />
+								</StackExtension:Command>
+							</StackExtension:Marking>
+						</StackExtension:MarkingConfiguration>
+					</StackExtension:ExtensionConfiguration>
+				</StackExtension>
+				<StackExtension
+					className="de.kwsoft.moms.server.stack.extension.renderer.RendererExtension"
+					xmlns:StackExtension="http://www.kwsoft.de/moms/ext/stack/Renderer"
+					name="render AFP">
+					<StackExtension:ExtensionConfiguration
+						destination="OMS-AFP"
+						renderInput="INTERPRET_GENERATED_MCJ"
+						outputFilenameExtension="afp"
+						renderCollectFile="true"
+						renderDocumentGroup="false"
+						pageRepeatCountType="RUNTIME_PARAMETER"
+						renderSingleDocuments="false"
+						coverpagePosition="NONE"
+						pageTemplateNameType="URL">
+						<StackExtension:KeyConfiguration>
+							<StackExtension:DocumentKeyParameters>
+								<StackExtension:KeyParameter
+									parameter-name="RECIPIENT_COUNTRY_CODE"
+									parameter-type="M/OMS-Parameter"
+									key-name="LKZ" />
+								<StackExtension:KeyParameter
+									parameter-name="RECIPIENT_ZIP"
+									parameter-type="M/OMS-Parameter"
+									key-name="PLZ" />
+							</StackExtension:DocumentKeyParameters>
+						</StackExtension:KeyConfiguration>
+					</StackExtension:ExtensionConfiguration>
+				</StackExtension>
+				<StackExtension
+					className="de.kwsoft.moms.server.stack.extension.extensions.CollectExtension"
+					xmlns:StackExtension="http://www.kwsoft.de/moms/ext/stack/Collect"
+					name="deposit AFP">
+					<StackExtension:ExtensionConfiguration
+						outputFilenameExtension="afp"
+						fileNameParam="CENTRALPRINTING_FILE_NAME"
+						pageRepeatCountType="CONSTANT"
+						coverpagePosition="END"
+						pageTemplate="mtx://Configuration/OMS/Resources/Collection_CoverSheet.mtx"
+						endPageTemplate="mtx://Configuration/OMS/Resources/Collection_CoverSheet.mtx">
+						<StackExtension:PlaceHolderParameter
+							parameterType="STACK_PARAMETER"
+							placeholderName="PRINTFILE_DOCUMENT_COUNT"
+							parameterNameOrValue="PRINTFILE_DOCUMENT_COUNT" />
+						<StackExtension:PlaceHolderParameter
+							parameterType="STACK_PARAMETER"
+							placeholderName="PRINTFILE_SHEET_COUNT"
+							parameterNameOrValue="PRINTFILE_SHEET_COUNT" />
+						<StackExtension:PlaceHolderParameter
+							parameterType="DOCUMENT_PARAMETER"
+							placeholderName="RUN_ID"
+							parameterNameOrValue="KW_RUN_ID" />
+						<StackExtension:PlaceHolderParameter
+							parameterType="RUNTIME_PARAMETER"
+							placeholderName="STACK_NAME"
+							parameterNameOrValue="STACK_NAME" />
+						<StackExtension:PlaceHolderParameter
+							parameterType="RUNTIME_PARAMETER"
+							placeholderName="STACK_DSC"
+							parameterNameOrValue="STACK_DESCRIPTION" />
+						<StackExtension:PlaceHolderParameter
+							parameterType="RUNTIME_PARAMETER"
+							placeholderName="START_TIME_DATE"
+							parameterNameOrValue="START_TIME_DATE" />
+						<StackExtension:PlaceHolderParameter
+							parameterType="DOCUMENT_PARAMETER"
+							placeholderName="LKZ"
+							parameterNameOrValue="RECIPIENT_COUNTRY_CODE" />
+					</StackExtension:ExtensionConfiguration>
+				</StackExtension>
+			</StackExtensions>
+			<Groups>
+				<Group
+					changeAsSortParam="true"
+					breakAllowed="false"
+					sortParameter="RECIPIENT_COUNTRY_CODE"
+					resetAtCollectionStart="false"
+					groupName="CountryCode" />
+				<Group
+					changeAsSortParam="true"
+					breakAllowed="false"
+					sortParameter="RECIPIENT_ID"
+					resetAtCollectionStart="false"
+					groupName="Envelope" />
+			</Groups>
+			<SortParameters>
+				<SortParameter
+					order="asc"
+					name="RECIPIENT_COUNTRY_CODE" />
+				<SortParameter
+					order="asc"
+					name="RECIPIENT_ID" />
+			</SortParameters>
+		</Stack>
+		<Stack
+			callExtensionGroupEventsSeparately="true"
+			documentDistributionMode="FULL_REST"
+			maxDocumentCollectionDocumentCount="0"
+			maxDocumentCollectionSheetCount="0"
+			maxFirstDocumentCollectionDocumentCount="0"
+			maxFirstDocumentCollectionSheetCount="0"
+			maxParallelStacks="2"
+			name="EMAIL"
+			onlineStackSleepSeconds="0"
+			processDocCollectionParallel="false"
+			splitDocStatModAfterStackIR="FIN_STAT"
+			tolerance="100"
+			splitDocumentStatus="STACK_PROCESSING_SUCCESSFUL">
+			<Select>
+				<In
+					logicalOperator="AND"
+					parameterName="KW_MEDIUM">
+					<Value>EMAIL</Value>
+					<Value>EMAILATTACHMENT</Value>
+				</In>
+				<Equal
+					logicalOperator="AND"
+					value="WAIT_FOR_STACK_PROCESSING"
+					parameterName="KW_STATUS" />
+			</Select>
+			<StackExtensions>
+				<StackExtension
+					className="de.kwsoft.moms.server.extension.jsextension.JavaScriptStackExtension"
+					xmlns:StackExtension="http://www.kwsoft.de/moms/ext/stack/JavaScriptStackExtension"
+					name="Choose renderer">
+					<StackExtension:ExtensionConfiguration
+						scriptUrl="mtx://Configuration/OMS/switchMailDestinations.js"
+						createAddSheetsInDocs="true">
+						<StackExtension:Events>
+							<StackExtension:Event
+								value="EVENT_TYPE_DOCUMENT">
+								<StackExtension:ParametersToWrite></StackExtension:ParametersToWrite>
+								<StackExtension:ParametersToRead>
+									<StackExtension:Parameter
+										parameter-name="KW_MEDIUM"
+										parameter-type="M/OMS-Parameter" />
+								</StackExtension:ParametersToRead>
+								<StackExtension:ResourcesToWrite></StackExtension:ResourcesToWrite>
+								<StackExtension:ResourcesToRead></StackExtension:ResourcesToRead>
+							</StackExtension:Event>
+							<StackExtension:Event
+								value="EVENT_TYPE_GROUP_START">
+								<StackExtension:GroupName
+									value="Recipient" />
+								<StackExtension:ParametersToWrite></StackExtension:ParametersToWrite>
+								<StackExtension:ParametersToRead>
+									<StackExtension:Parameter
+										parameter-name="KW_MEDIUM"
+										parameter-type="M/OMS-Parameter" />
+								</StackExtension:ParametersToRead>
+								<StackExtension:ResourcesToWrite></StackExtension:ResourcesToWrite>
+								<StackExtension:ResourcesToRead></StackExtension:ResourcesToRead>
+							</StackExtension:Event>
+						</StackExtension:Events>
+					</StackExtension:ExtensionConfiguration>
+				</StackExtension>
+				<StackExtension
+					className="de.kwsoft.moms.server.stack.extension.renderer.RendererExtension"
+					xmlns:StackExtension="http://www.kwsoft.de/moms/ext/stack/Renderer"
+					name="Render MAIL Body Html">
+					<StackExtension:ExtensionConfiguration
+						prnResourceName="MAIL_BODY"
+						renderSingleDocuments="true"
+						persistRenderedDocuments="true"
+						destination="OMS-HTML"
+						outputFilenameExtension="html"
+						use-resource-scopes="true"></StackExtension:ExtensionConfiguration>
+				</StackExtension>
+				<StackExtension
+					className="de.kwsoft.moms.server.stack.extension.renderer.RendererExtension"
+					xmlns:StackExtension="http://www.kwsoft.de/moms/ext/stack/Renderer"
+					name="Render MAIL Body Text">
+					<StackExtension:ExtensionConfiguration
+						use-resource-scopes="true"
+						destination="OMS-TEXT"
+						outputFilenameExtension="txt"
+						renderSingleDocuments="true"
+						prnResourceName="MAIL_BODY_TXT"
+						persistRenderedDocuments="true">
+					</StackExtension:ExtensionConfiguration>
+				</StackExtension>
+				<StackExtension
+					className="de.kwsoft.moms.server.stack.extension.renderer.RendererExtension"
+					xmlns:StackExtension="http://www.kwsoft.de/moms/ext/stack/Renderer"
+					name="Render MAIL Attachments">
+					<StackExtension:ExtensionConfiguration
+						prnResourceName="MAIL_ATTACHMENT"
+						renderSingleDocuments="true"
+						persistRenderedDocuments="false"
+						destination="OMS-PDF"
+						outputFilenameExtension="pdf"
+						renderInput="INTERPRET_GENERATED_MCJ"
+						use-resource-scopes="true"></StackExtension:ExtensionConfiguration>
+				</StackExtension>
+				<StackExtension
+					className="de.kwsoft.moms.server.stack.extension.renderer.RendererExtension"
+					xmlns:StackExtension="http://www.kwsoft.de/moms/ext/stack/Renderer"
+					name="Mail Subject">
+					<StackExtension:ExtensionConfiguration
+						use-resource-scopes="true"
+						destination="OMS-Mail-Subject"
+						renderSingleDocuments="true"
+						prnResourceName="MAIL_SUBJECT"
+						persistRenderedDocuments="true"
+						outputFilenameExtension="txt">
+					</StackExtension:ExtensionConfiguration>
+				</StackExtension>
+				<StackExtension
+					className="de.kwsoft.moms.server.extension.jsextension.JavaScriptStackExtension"
+					xmlns:StackExtension="http://www.kwsoft.de/moms/ext/stack/JavaScriptStackExtension"
+					name="Get Mail Subject">
+					<StackExtension:ExtensionConfiguration
+						scriptUrl="mtx://Configuration/OMS/getMailSubjectFromResource.js"
+						createAddSheetsInDocs="true"
+						javascriptEngine="RHINO"
+						charSet="UTF-8"
+						canRunParallel="false">
+						<StackExtension:Events>
+							<StackExtension:Event
+								value="EVENT_TYPE_DOCUMENT">
+								<StackExtension:ParametersToWrite>
+									<StackExtension:Parameter
+										parameter-name="MAIL_SUBJECT"
+										scope-name="DOCUMENT"
+										parameter-type="M/OMS-Parameter"
+										runtime-parameter-data-type="Character" />
+								</StackExtension:ParametersToWrite>
+								<StackExtension:ParametersToRead>
+									<StackExtension:Parameter
+										parameter-name="KW_MEDIUM"
+										parameter-type="M/OMS-Parameter" />
+								</StackExtension:ParametersToRead>
+								<StackExtension:ResourcesToWrite></StackExtension:ResourcesToWrite>
+								<StackExtension:ResourcesToRead>
+									<StackExtension:Resource
+										resource-name="MAIL_SUBJECT" />
+								</StackExtension:ResourcesToRead>
+							</StackExtension:Event>
+						</StackExtension:Events>
+					</StackExtension:ExtensionConfiguration>
+				</StackExtension>
+				<StackExtension
+					className="de.kwsoft.moms.server.stack.extension.extensions.email.EmailExtension2"
+					xmlns:StackExtension="http://www.kwsoft.de/moms/ext/stack/EmailExtension2"
+					continueAfterAnyError="true">
+					<StackExtension:ExtensionConfiguration
+						mailEvent="GROUP_ALL"
+						groupName="Recipient">
+						<StackExtension:Transport
+							mailServer="MailServer"
+							mailServerUser="mailuser"
+							useFromAddress="false"
+							authentication="LOGIN_PASSWORD"
+							debug="true"
+							tlsMode="REQUIRED">
+							<StackExtension:SessionProperties>
+								<StackExtension:SessionProperty
+									key="mail.smtp.socketFactory.class"
+									value="javax.net.ssl.SSLSocketFactory" />
+							</StackExtension:SessionProperties>
+						</StackExtension:Transport>
+						<StackExtension:MailHeaders
+							groupHeaderEvent="FIRST_DOCUMENT">
+							<StackExtension:StandardHeaders>
+								<StackExtension:From
+									paramNameOrValue="MAIL_FROM"
+									paramType="OMS" />
+								<StackExtension:To
+									paramNameOrValue="MAIL_TO"
+									paramType="OMS" />
+								<StackExtension:Reply-To
+									paramNameOrValue="MAIL_FROM"
+									paramType="OMS"
+									ignoreWhenMissing="true" />
+								<StackExtension:Subject
+									paramNameOrValue="MAIL_SUBJECT"
+									paramType="OMS"
+									ignoreWhenMissing="true" />
+							</StackExtension:StandardHeaders>
+							<StackExtension:CustomHeaders></StackExtension:CustomHeaders>
+						</StackExtension:MailHeaders>
+						<StackExtension:MessageText
+							addHtmlText="true"
+							addPlainText="false"
+							plainTextSourceType="DOCUMENT"
+							htmlTextSourceType="DOCUMENT"
+							htmlTextSourceName="MAIL_BODY"
+							htmlTextSourceEvent="FIRST_DOCUMENT"
+							plainTextSourceName="MAIL_BODY_TXT"
+							plainTextSourceEvent="FIRST_DOCUMENT"/>
+						<StackExtension:Attachments>
+							<StackExtension:AttachmentStackDocument
+								attachmentResourceName="MAIL_ATTACHMENT"
+								attachmentNameParam="MAIL_ATTACHMENTNAME"
+								selectedDocsOnly="true"
+								selectionMode="SKIP_FIRST"
+								attachmentNameParameterType="OMS" />
+						</StackExtension:Attachments>
+					</StackExtension:ExtensionConfiguration>
+				</StackExtension>
+			</StackExtensions>
+			<SortParameters>
+				<SortParameter
+					order="asc"
+					name="KW_INPUT_ID" />
+				<SortParameter
+					order="asc"
+					name="MAIL_TO" />
+				<SortParameter
+					order="asc"
+					name="KW_MEDIUM" />
+				<SortParameter
+					order="asc"
+					name="KW_SPLIT_ID" />
+			</SortParameters>
+			<Groups>
+				<Group
+					changeAsSortParam="true"
+					breakAllowed="false"
+					sortParameter="MAIL_TO"
+					resetAtCollectionStart="false"
+					groupName="Recipient"
+					processInOnePstack="true" />
+			</Groups>
+			<PersistenceConfig
+				mode="CONSISTENCY"
+				consistencySet="GROUP"
+				groupName="Recipient"
+				setErrorStatus="true" />
+		</Stack>
+		<Stack
+			callExtensionGroupEventsSeparately="true"
+			documentDistributionMode="FULL_REST"
+			maxDocumentCollectionDocumentCount="0"
+			maxDocumentCollectionSheetCount="0"
+			maxFirstDocumentCollectionDocumentCount="0"
+			maxFirstDocumentCollectionSheetCount="0"
+			maxParallelStacks="2"
+			name="FAX"
+			onlineStackSleepSeconds="0"
+			processDocCollectionParallel="true"
+			splitDocStatModAfterStackIR="FIN_STAT"
+			tolerance="100"
+			splitDocumentStatus="STACK_PROCESSING_SUCCESSFUL">
+			<Select>
+				<Equal
+					logicalOperator="AND"
+					value="FAX"
+					parameterName="KW_MEDIUM" />
+				<Equal
+					logicalOperator="AND"
+					value="WAIT_FOR_STACK_PROCESSING"
+					parameterName="KW_STATUS" />
+			</Select>
+			<StackExtensions>
+				<StackExtension
+					className="de.kwsoft.moms.server.stack.extension.extensions.ParameterSetter"
+					xmlns:StackExtension="http://www.kwsoft.de/moms/ext/stack/ParameterSetter"
+					name="prepare parameters to send fax via e-mail-gateway">
+					<StackExtension:ExtensionConfiguration>
+						<StackExtension:ParameterToSet
+							parameter-name="FAX_BY_MAIL_TO"
+							parameter-type="Runtime-Parameter"
+							runtime-parameter-data-type="Character"
+							event="EVENT_TYPE_GROUP_START"
+							group-name="Recipient">
+							<StackExtension:DynamicValue
+								format="%1$s@myfax.gate.way">
+								<StackExtension:FormatArgument
+									parameter-name="FAX_RECIPIENT"
+									parameter-type="M/OMS-Parameter" />
+							</StackExtension:DynamicValue>
+						</StackExtension:ParameterToSet>
+						<StackExtension:ParameterToSet
+							parameter-name="FAX_BY_MAIL_FROM"
+							parameter-type="Runtime-Parameter"
+							event="EVENT_TYPE_GROUP_START"
+							group-name="Recipient"
+							runtime-parameter-data-type="Character">
+							<StackExtension:DynamicValue
+								format="%1$s">
+								<StackExtension:FormatArgument
+									parameter-name="FAX_SENDER"
+									parameter-type="M/OMS-Parameter" />
+							</StackExtension:DynamicValue>
+						</StackExtension:ParameterToSet>
+						<StackExtension:ParameterToSet
+							parameter-name="FAX_BY_MAIL_SUBJECT"
+							parameter-type="Runtime-Parameter"
+							runtime-parameter-data-type="Character"
+							event="EVENT_TYPE_GROUP_START"
+							group-name="Recipient">
+							<StackExtension:DynamicValue
+								format="[%1$s]%2$s">
+								<StackExtension:FormatArgument
+									parameter-name="FAX_RECIPIENT"
+									parameter-type="M/OMS-Parameter" />
+								<StackExtension:FormatArgument
+									parameter-name="MAIL_ATTACHMENTNAME"
+									parameter-type="M/OMS-Parameter" />
+							</StackExtension:DynamicValue>
+						</StackExtension:ParameterToSet>
+						<StackExtension:ParameterToSet
+							parameter-name="FAX_BY_MAIL_TEXT"
+							parameter-type="Runtime-Parameter"
+							runtime-parameter-data-type="Character"
+							event="EVENT_TYPE_GROUP_START"
+							group-name="Recipient">
+							<StackExtension:DynamicValue
+								provide-empty-string="true"></StackExtension:DynamicValue>
+						</StackExtension:ParameterToSet>
+					</StackExtension:ExtensionConfiguration>
+				</StackExtension>
+				<StackExtension
+					className="de.kwsoft.moms.server.stack.extension.renderer.RendererExtension"
+					xmlns:StackExtension="http://www.kwsoft.de/moms/ext/stack/Renderer"
+					name="Render FAX">
+					<StackExtension:ExtensionConfiguration
+						renderSingleDocuments="false"
+						persistRenderedDocuments="false"
+						destination="OMS-TIFF"
+						outputFilenameExtension="tif"
+						renderInput="INTERPRET_GENERATED_MCJ"
+						renderDocumentGroup="true"
+						grpResourceName="STACK_GRP_PRN"
+						groupName="Recipient"></StackExtension:ExtensionConfiguration>
+				</StackExtension>
+				<StackExtension
+					className="de.kwsoft.moms.server.stack.extension.extensions.email.EmailExtension2"
+					xmlns:StackExtension="http://www.kwsoft.de/moms/ext/stack/EmailExtension2"
+					name="send fax via e-mail-gateway">
+					<StackExtension:ExtensionConfiguration
+						mailEvent="GROUP_END"
+						groupName="Recipient">
+						<StackExtension:Transport
+							useFromAddress="true"
+							authentication="LOGIN_PASSWORD"
+							tlsMode="REQUIRED"
+							mailServer="MailServer"
+							mailServerUser="mailuser"></StackExtension:Transport>
+						<StackExtension:MailHeaders>
+							<StackExtension:StandardHeaders>
+								<StackExtension:From
+									paramNameOrValue="FAX_BY_MAIL_FROM"
+									paramType="RUNTIME" />
+								<StackExtension:To
+									paramNameOrValue="FAX_BY_MAIL_TO"
+									paramType="RUNTIME" />
+								<StackExtension:Reply-To
+									paramNameOrValue="no-reply@myfax.gate.way"
+									paramType="CONSTANT" />
+								<StackExtension:Subject
+									paramNameOrValue="FAX_BY_MAIL_SUBJECT"
+									paramType="RUNTIME" />
+							</StackExtension:StandardHeaders>
+							<StackExtension:CustomHeaders></StackExtension:CustomHeaders>
+						</StackExtension:MailHeaders>
+						<StackExtension:MessageText
+							addHtmlText="false"
+							addPlainText="true"
+							plainTextSourceType="RUNTIME"
+							plainTextSourceName="FAX_BY_MAIL_TEXT"
+							htmlTextSourceType="DOCUMENT" />
+						<StackExtension:Attachments>
+							<StackExtension:AttachmentInfo
+								name="STACK_GRP_PRN"
+								type="RESOURCE"
+								attachmentNameParameterType="CONSTANT"
+								attachmentNameParam="anlage.tif"
+								event="GROUP_END" />
+						</StackExtension:Attachments>
+					</StackExtension:ExtensionConfiguration>
+				</StackExtension>
+			</StackExtensions>
+			<SortParameters>
+				<SortParameter
+					order="asc"
+					name="KW_INPUT_ID" />
+				<SortParameter
+					order="asc"
+					name="KW_SPLIT_ID" />
+				<SortParameter
+					order="asc"
+					name="FAX_RECIPIENT" />
+			</SortParameters>
+			<Groups>
+				<Group
+					changeAsSortParam="true"
+					breakAllowed="false"
+					sortParameter="FAX_RECIPIENT"
+					resetAtCollectionStart="false"
+					groupName="Recipient"
+					processInOnePstack="true" />
+			</Groups>
+			<PersistenceConfig
+				mode="CONSISTENCY"
+				consistencySet="GROUP"
+				groupName="Recipient"
+				setErrorStatus="true" />
+		</Stack>
+		<Stack
+			name="CENTRALPRINTING_PDFVT"
+			maxDocumentCollectionSheetCount="0"
+			maxDocumentCollectionDocumentCount="100"
+			maxFirstDocumentCollectionSheetCount="0"
+			maxFirstDocumentCollectionDocumentCount="0"
+			documentDistributionMode="FULL_REST"
+			maxParallelStacks="0"
+			processDocCollectionParallel="false"
+			continueOnDocumentError="false"
+			onlineStackSleepSeconds="0"
+			allowToUpdateDocuments="true"
+			isReprintStack="false"
+			splitDocumentStatus="STACK_PROCESSING_SUCCESSFUL"
+			persistControlJob="true"
+			stackGroupID="PrintStacks"
+			tolerance="10"
+			description="Stack for rendering document collections to PDF-VT format.
+One file for each country of destination is produced.">
+
+
+
+
+			<Select>
+				<Equal
+					logicalOperator="AND"
+					parameterName="KW_MEDIUM"
+					value="CENTRALPRINTING"></Equal>
+				<Equal
+					logicalOperator="AND"
+					parameterName="KW_STATUS"
+					value="WAIT_FOR_STACK_PROCESSING"></Equal>
+			</Select>
+
+			<SortParameters>
+				<SortParameter
+					name="RECIPIENT_ZIP"
+					order="asc" />
+
+				<SortParameter
+					order="asc"
+					name="RECIPIENT_ID" />
+			</SortParameters>
+
+			<StackExtensions>
+				<StackExtension
+					className="de.kwsoft.moms.server.stack.extension.extensions.ParameterSetter"
+					xmlns:StackExtension="http://www.kwsoft.de/moms/ext/stack/ParameterSetter"
+					name="Pfad und Dateiname setzen">
+					<StackExtension:ExtensionConfiguration
+						can-run-parallel="false">
+						<StackExtension:ParameterToSet
+							parameter-name="CENTRALPRINTING_PATH_NAME"
+							parameter-type="Runtime-Parameter"
+							runtime-parameter-data-type="Character"
+							event="EVENT_TYPE_START">
+							<StackExtension:DynamicValue
+								format="config-param:CENTRALPRINTING_PATH_NAME_VT">
+							</StackExtension:DynamicValue>
+						</StackExtension:ParameterToSet>
+						<StackExtension:ParameterToSet
+							parameter-name="CENTRALPRINTING_FILE_NAME"
+							parameter-type="Runtime-Parameter"
+							event="EVENT_TYPE_DOCUMENT_COLLECTION_START"
+							runtime-parameter-data-type="Character">
+							<StackExtension:DynamicValue
+								format="%1$s/%3$tY%3$tm%3$td_PDFVT/%3$tY%3$tm%3$td_%3$tH%3$tM%3$tS_%2$s_%4$s.pdf">
+								<StackExtension:FormatArgument
+									parameter-name="CENTRALPRINTING_PATH_NAME"
+									parameter-type="Runtime-Parameter"
+									runtime-parameter-data-type="Character" />
+								<StackExtension:FormatArgument
+									parameter-name="KW_RUN_ID"
+									parameter-type="M/OMS-Parameter" />
+								<StackExtension:FormatArgument
+									parameter-name="START_TIME_DATE"
+									parameter-type="Runtime-Parameter" />
+								<StackExtension:FormatArgument
+									parameter-name="RECIPIENT_COUNTRY_CODE"
+									parameter-type="M/OMS-Parameter" />
+							</StackExtension:DynamicValue>
+						</StackExtension:ParameterToSet>
+					</StackExtension:ExtensionConfiguration>
+				</StackExtension>
+
+
+
+
+				<StackExtension
+					className="de.kwsoft.moms.server.stack.extension.renderer.RendererExtension"
+					xmlns:StackExtension="http://www.kwsoft.de/moms/ext/stack/Renderer"
+					name="PDF_Renderer">
+					<StackExtension:ExtensionConfiguration
+						destination="OMS-PDFVT"
+						outputFilenameExtension="pdf"
+						outputMode="SINGLE_AND_APPEND_DOCUMENT"
+						persistRenderedDocuments="false"
+						coverpagePosition="START"
+						persistInterpretedDocument="false"
+						renderInput="INTERPRET_GENERATED_MCJ"
+						outputFilenamePrefix="pstackcollection"
+						pageTemplate="mtx://Configuration/OMS/Resources/Collection_CoverSheet.mtx"
+						renderSingleDocuments="true"
+						renderCollectFile="true"
+						persistRenderedDocumentGroup="true">
+						<StackExtension:PlaceHolderParameter
+							parameterType="STACK_PARAMETER"
+							placeholderName="PRINTFILE_DOCUMENT_COUNT"
+							parameterNameOrValue="PRINTFILE_DOCUMENT_COUNT" />
+						<StackExtension:PlaceHolderParameter
+							parameterType="STACK_PARAMETER"
+							placeholderName="PRINTFILE_SHEET_COUNT"
+							parameterNameOrValue="PRINTFILE_SHEET_COUNT" />
+						<StackExtension:PlaceHolderParameter
+							parameterType="DOCUMENT_PARAMETER"
+							placeholderName="RUN_ID"
+							parameterNameOrValue="KW_RUN_ID" />
+						<StackExtension:PlaceHolderParameter
+							parameterType="RUNTIME_PARAMETER"
+							placeholderName="STACK_NAME"
+							parameterNameOrValue="STACK_NAME" />
+						<StackExtension:PlaceHolderParameter
+							parameterType="RUNTIME_PARAMETER"
+							placeholderName="STACK_DSC"
+							parameterNameOrValue="STACK_DESCRIPTION" />
+						<StackExtension:PlaceHolderParameter
+							parameterType="RUNTIME_PARAMETER"
+							placeholderName="START_TIME_DATE"
+							parameterNameOrValue="START_TIME_DATE" />
+						<StackExtension:PlaceHolderParameter
+							parameterType="DOCUMENT_PARAMETER"
+							placeholderName="LKZ"
+							parameterNameOrValue="RECIPIENT_COUNTRY_CODE" />
+
+					</StackExtension:ExtensionConfiguration>
+				</StackExtension>
+				<StackExtension
+					className="de.kwsoft.moms.server.stack.extension.extensions.CollectExtension"
+					xmlns:StackExtension="http://www.kwsoft.de/moms/ext/stack/Collect"
+					name="Collection PDF">
+					<StackExtension:ExtensionConfiguration
+						outputFilenamePrefix="collection"
+						outputFilenameExtension="pdf"
+						removeParallelStackCollectFiles="true"
+						coverpagePosition="NONE"
+						setDocumentsCollectFileId="true"
+						destination="export-application/pdf"
+						fileNameParam="CENTRALPRINTING_FILE_NAME"
+						pageTemplateNameType="URL">
+
+					</StackExtension:ExtensionConfiguration>
+				</StackExtension>
+			</StackExtensions>
+			<Groups>
+				<Group
+					changeAsSortParam="true"
+					breakAllowed="false"
+					sortParameter="RECIPIENT_ID"
+					resetAtCollectionStart="false"
+					groupName="Customer"
+					processInOnePstack="true" />
+			</Groups>
+		</Stack>
+	</Stacks>
+	<Splitter />
+	<Parameters>
+		<Parameter
+			name="ARCHIVE_DATA"
+			editable="true"
+			nullable="true"
+			type="Character" />
+		<Parameter
+			name="MAIL_TO"
+			editable="true"
+			nullable="true"
+			type="Character"
+			length="128"
+			indexed="true" />
+		<Parameter
+			name="MAIL_FROM"
+			editable="true"
+			nullable="true"
+			type="Character"
+			length="128" />
+		<Parameter
+			name="PRINTER_NAME"
+			editable="true"
+			nullable="true"
+			type="Character"
+			length="64" />
+		<Parameter
+			editable="true"
+			nullable="true"
+			type="Character"
+			name="TEMPLATE"
+			description="M/TEXT Vorlage" />
+		<Parameter
+			name="RECIPIENT_ZIP"
+			editable="true"
+			nullable="true"
+			type="Character"
+			length="50"
+			indexed="true"
+			description="PLZ des Empfängers" />
+		<Parameter
+			name="RECIPIENT_COUNTRY_CODE"
+			editable="true"
+			nullable="true"
+			type="Character"
+			length="100"
+			indexed="true"
+			description="Land bzw. Länderkennzeichen des Empfängers" />
+		<Parameter
+			name="RECIPIENT_ADDRESSEE_NAME"
+			editable="true"
+			nullable="true"
+			type="Character"
+			indexed="true"
+			length="200" />
+		<Parameter
+			name="RECIPIENT_ID"
+			editable="true"
+			nullable="true"
+			type="Character"
+			length="50"
+			indexed="true" />
+		<Parameter
+			name="MAIL_SUBJECT"
+			editable="true"
+			nullable="true"
+			type="Character" />
+		<Parameter
+			name="RECIPIENT_CITY"
+			editable="true"
+			nullable="true"
+			type="Character"
+			indexed="true"
+			length="200" />
+		<Parameter
+			name="ARCHIVE_RECIPIENT_ID"
+			editable="true"
+			nullable="true"
+			type="Character" />
+		<Parameter
+			name="LOCALPRINTING_PRINTER"
+			editable="true"
+			nullable="true"
+			type="Character" />
+		<Parameter
+			name="LOCALPRINTING_USER_ID"
+			editable="true"
+			nullable="true"
+			type="Character" />
+		<Parameter
+			name="CENTRALPRINTING_BATCH"
+			editable="true"
+			nullable="true"
+			type="Character"
+			description=" " />
+		<Parameter
+			name="MAIL_ATTACHMENTNAME"
+			editable="true"
+			nullable="true"
+			type="Character" />
+		<Parameter
+			name="FAX_SENDER"
+			editable="true"
+			nullable="true"
+			type="Character"
+			length="50" />
+		<Parameter
+			name="FAX_RECIPIENT"
+			editable="true"
+			nullable="true"
+			type="Character"
+			length="50"
+			indexed="true" />
+		<Parameter
+			name="PDF_CREATOR"
+			editable="true"
+			nullable="true"
+			type="Character" />
+		<Parameter
+			name="PDF_TITLE"
+			editable="true"
+			nullable="true"
+			type="Character" />
+	</Parameters>
+	<PreviewFormats>
+		<PreviewFormat inputType="MFD">
+			<PreviewFormatOutput
+				destinationName="export-application/pdf"
+				fileNameExtension="pdf"
+				formatName="PDF" />
+			<PreviewFormatOutput
+				destinationName="OMS-HTML"
+				fileNameExtension="html"
+				formatName="HTML" />
+		</PreviewFormat>
+	</PreviewFormats>
+	<PrintingParameters>
+		<PrinterQueues>
+			<PrinterQueue
+				descriptionOfPrinterQueue="Physical-Printer for JPS"
+				locationOfPrinterQueue="Lokal"
+				nameId="Printer_JPS"
+				nameOfPrinterQueue="DummyPrinterQueue"
+				printTypeId="PrintType_Jps" />
+			<PrinterQueue
+				descriptionOfPrinterQueue="Physical-Printer for external process-call"
+				locationOfPrinterQueue="Lokal"
+				nameId="Printer_Perl"
+				nameOfPrinterQueue="DummyPrinterQueue"
+				printTypeId="PrintType_Perl" />
+			<PrinterQueue
+				printTypeId="PrintType_CUPS"
+				nameOfPrinterQueue="http://localhost:631/printers/"
+				nameId="Printer_CUPS" />
+		</PrinterQueues>
+		<PrintTypes>
+			<PrintType
+				descriptionOfPrintType="For PrintDocumentExtension via jps on windows"
+				descriptionOfWayOfPrinting="using the Java-Print-Service"
+				nameId="PrintType_Jps"
+				printTimeOutSec="0"
+				wayOfPrinting="JPS" />
+			<PrintType
+				descriptionOfPrintType="For PrintDocumentExtension via perl on unix and windows"
+				descriptionOfWayOfPrinting="using an external Perl-Script"
+				nameId="PrintType_Perl"
+				printCommand="cmd.exe, /c, momsPrintingScript.pl"
+				printDirFileMode="PERSIST"
+				printTimeOutSec="30"
+				wayOfPrinting="COMMAND" />
+			<PrintType
+				wayOfPrinting="de.kwsoft.moms.server.printer.printsystem.cups.PrintSystemCups4j"
+				nameId="PrintType_CUPS">
+			</PrintType>
+		</PrintTypes>
+	</PrintingParameters>
+	<StackGroupIDs>
+		<StackGroupID
+			descriptionOfStackGroup="Stack which are printing"
+			groupId="PrintStacks" />
+		<StackGroupID
+			descriptionOfStackGroup="Stacks which are archiving"
+			groupId="ArchiveStacks" />
+		<StackGroupID
+			descriptionOfStackGroup="Stacks to reprint sinlge documents of collect files"
+			groupId="Reprint-Stacks" />
+	</StackGroupIDs>
+	<DateParsePatterns>
+		<DateParsePattern pattern="dd.MM.yy HH:mm:ss" />
+		<DateParsePattern pattern="dd.MM.yy" />
+		<DateParsePattern pattern="dd.MM.yyyy HH:mm:ss" />
+		<DateParsePattern pattern="dd.MM.yyyy" />
+	</DateParsePatterns>
+	<MailServers>
+		<MailServer
+			port="25"
+			serverId="MailServer"
+			hostName="smtp.myserver.url" />
+	</MailServers>
+	<MailServerUsers>
+		<MailServerUser
+			userId="mailuser"
+			emailAddress="mailuser@myserver.url"
+			name="mailuser"
+			accountName="mailuser"
+			accountPwd="56DB32B809C1C6429D1EAC8D603CAC4D">
+		</MailServerUser>
+	</MailServerUsers>
+</Configuration>

@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<smartxsf xmlns="urn:sap-com:SmartForms:2000:xsf">
+<header>
+<general>
+<version>1.14.2</version>
+<form>ZWMKISS_ORIGIN_CERTIFICATE</form>
+<language>FR</language>
+<device>PRINTER</device>
+<output-device>FY14</output-device>
+<device-type>HPLJ4000</device-type>
+<tddataset>SMART</tddataset>
+<tdsuffix1>FY14</tdsuffix1>
+<tdsuffix2>COLLINS1</tdsuffix2>
+<tdimmed>X</tdimmed>
+<tdlifetime>8</tdlifetime>
+<tdcopies>001</tdcopies>
+</general>
+<archive mode="1" mode-modify-enabled="yes" system-id="P48"/>
+<page name="_PAGE1" id="001"/>
+</header>
+<data xml:space="preserve" style="SYSTEM">
+<window name="MAIN" type="main" page="_PAGE1" page-id="001">
+<text name="MAIL" style="SYSTEM" lang="FR">
+<p name="L">
+</p>
+<p name="L">
+</p>
+<p name="L">
+</p>
+</text>
+<section name="HEADER" style="SYSTEM">
+<sbody>
+<text name="HEADER" style="SYSTEM" lang="FR">
+<p name="L">
+<sym name="DS_HEADER-TKNUM">1481191</sym>
+</p>
+<p name="L">
+<sym name="DS_HEADER-DATBG">11.02.2025</sym>
+</p>
+<p name="L">
+<sym name="DS_HEADER-VBELN">44163049</sym>
+</p>
+<p name="L">
+<sym name="DS_HEADER-ERDAT">11.02.2025</sym>
+</p>
+<p name="L">
+<sym name="DS_HEADER-KUNAG">XUSL001</sym>
+</p>
+<p name="L">
+<sym name="DS_HEADER-WAERK">EUR</sym>
+</p>
+<p name="L">
+<sym name="DS_HEADER-NAME1_WE">L OREAL USA LUXURY PRODUCTS</sym>
+</p>
+<p name="L">
+<sym name="DS_HEADER-STREET_WE">77 DEANS RHODE HALL ROAD</sym>
+</p>
+<p name="L">
+<sym name="DS_HEADER-POST_CODE1_WE">08852</sym>
+</p>
+<p name="L">
+<sym name="DS_HEADER-CITY1_WE">NEW JERSEY - MONMOUTH JUNCTION</sym>
+</p>
+<p name="L">
+<sym name="DS_HEADER-COUNTRY_WE">USA</sym>
+</p>
+<p name="L">
+<sym name="DS_HEADER-NAME1_RE">L OREAL USA PRODUCT INC</sym>
+</p>
+<p name="L">
+<sym name="DS_HEADER-STREET_RE">50 CONNELL DRIVE</sym>
+</p>
+<p name="L">
+<sym name="DS_HEADER-POST_CODE1_RE">07922</sym>
+</p>
+<p name="L">
+<sym name="DS_HEADER-CITY1_RE">BERKELEY HEIGHTS</sym>
+</p>
+<p name="L">
+<sym name="DS_HEADER-COUNTRY_RE">USA</sym>
+</p>
+<p name="L">
+</p>
+</text>
+<section name="ITEMS" style="SYSTEM">
+<sbody>
+<text name="ITEM" style="SYSTEM" lang="FR">
+<p name="L">
+<sym name="DS_ITEMS-HERKL">FR</sym>
+</p>
+<p name="L">
+<sym name="DS_ITEMS-STAWN">3303001000</sym>
+</p>
+<p name="L">
+<sym name="DS_ITEMS-KWERT_VALUE">468.202,40 </sym>
+</p>
+<p name="L">
+<sym name="DS_ITEMS-KWERT_GOODS">468.202,40 </sym>
+</p>
+<p name="L">
+<sym name="DS_ITEMS-NTGEW">10.570,712 </sym>
+</p>
+<p name="L">
+<sym name="DS_ITEMS-BRGEW">12.105,223 </sym>
+</p>
+<p name="L">
+<sym name="DS_ITEMS-BOXES">2.216 </sym>
+</p>
+</text>
+<text name="ITEM" style="SYSTEM" lang="FR">
+<p name="L">
+</p>
+<p name="L">
+<sym name="DS_ITEMS-STAWN">3303009000</sym>
+</p>
+<p name="L">
+<sym name="DS_ITEMS-KWERT_VALUE">70.413,44 </sym>
+</p>
+<p name="L">
+<sym name="DS_ITEMS-KWERT_GOODS">70.413,44 </sym>
+</p>
+<p name="L">
+<sym name="DS_ITEMS-NTGEW">1.182,000 </sym>
+</p>
+<p name="L">
+<sym name="DS_ITEMS-BRGEW">1.338,713 </sym>
+</p>
+<p name="L">
+</p>
+</text>
+<text name="ITEM" style="SYSTEM" lang="FR">
+<p name="L">
+</p>
+<p name="L">
+<sym name="DS_ITEMS-STAWN">3304990000</sym>
+</p>
+<p name="L">
+<sym name="DS_ITEMS-KWERT_VALUE">23.172,21 </sym>
+</p>
+<p name="L">
+<sym name="DS_ITEMS-KWERT_GOODS">23.172,21 </sym>
+</p>
+<p name="L">
+<sym name="DS_ITEMS-NTGEW">556,212 </sym>
+</p>
+<p name="L">
+<sym name="DS_ITEMS-BRGEW">626,623 </sym>
+</p>
+<p name="L">
+</p>
+</text>
+<text name="ITEM" style="SYSTEM" lang="FR">
+<p name="L">
+</p>
+<p name="L">
+<sym name="DS_ITEMS-STAWN">3304100000</sym>
+</p>
+<p name="L">
+<sym name="DS_ITEMS-KWERT_VALUE">1.722,80 </sym>
+</p>
+<p name="L">
+<sym name="DS_ITEMS-KWERT_GOODS">1.722,80 </sym>
+</p>
+<p name="L">
+<sym name="DS_ITEMS-NTGEW">10,915 </sym>
+</p>
+<p name="L">
+<sym name="DS_ITEMS-BRGEW">12,307 </sym>
+</p>
+<p name="L">
+</p>
+</text>
+<text name="ITEM" style="SYSTEM" lang="FR">
+<p name="L">
+</p>
+<p name="L">
+<sym name="DS_ITEMS-STAWN">3401300000</sym>
+</p>
+<p name="L">
+<sym name="DS_ITEMS-KWERT_VALUE">595,70 </sym>
+</p>
+<p name="L">
+<sym name="DS_ITEMS-KWERT_GOODS">595,70 </sym>
+</p>
+<p name="L">
+<sym name="DS_ITEMS-NTGEW">18,410 </sym>
+</p>
+<p name="L">
+<sym name="DS_ITEMS-BRGEW">21,337 </sym>
+</p>
+<p name="L">
+</p>
+</text>
+<text name="_TEXT1" style="SYSTEM" lang="FR">
+<p name="L">
+<sym name="W_TOT_KWERT_VALUE">564.106,55 </sym>
+</p>
+<p name="L">
+<sym name="W_TOT_KWERT_GOODS">564.106,55 </sym>
+</p>
+<p name="L">
+<sym name="W_TOT_BRGEW">14.104,203 </sym>
+</p>
+<p name="L">
+<sym name="W_TOT_NTGEW">12.338,249 </sym>
+</p>
+<p name="L">
+<sym name="W_TOT_BOXES">2.216 </sym>
+</p>
+</text>
+</sbody>
+<sfoot>
+<text name="_TEXT2" style="SYSTEM" lang="FR">
+<p name="L">
+<sym name="W_GTOT_KWERT_VALUE">564.106,55 </sym>
+</p>
+<p name="L">
+<sym name="W_GTOT_KWERT_GOODS">564.106,55 </sym>
+</p>
+<p name="L">
+<sym name="W_GTOT_BRGEW">14.104 </sym>
+</p>
+<p name="L">
+<sym name="W_GTOT_NTGEW">12.338 </sym>
+</p>
+<p name="L">
+<sym name="W_GTOT_BOXES">2.216 </sym>
+</p>
+</text>
+</sfoot>
+</section>
+</sbody>
+</section>
+</window>
+</data>
+</smartxsf>

@@ -1,0 +1,59 @@
+<ContainerPart xmlns="urn:kwsoft:mtext:tonic:dom">
+ <DataDefinition>
+  <ParamDef name="User" ref="\\Framework\Data\Partner.datamodel"></ParamDef>
+ </DataDefinition>
+ <Par>
+  <Translations>
+   <Translation>
+    <Language language="it" country="IT" variant=""></Language>
+    <Span>
+     <Text>Con cordiali saluti</Text>
+    </Span>
+   </Translation>
+   <Translation>
+    <Language language="en" country="US" variant=""></Language>
+    <Span>
+     <Text>Sincerely yours</Text>
+    </Span>
+   </Translation>
+  </Translations>
+  <Style>
+   <SpaceBefore>0.22cm</SpaceBefore>
+   <SpaceAfter resolution="combine">0.9cm</SpaceAfter>
+   <KeepWithPrevious>true</KeepWithPrevious>
+   <IgnoreCaseCorrection>true</IgnoreCaseCorrection>
+  </Style>
+  <Span>
+   <Text>Mit freundlichen Grüßen</Text>
+  </Span>
+ </Par>
+ <ContainerPart>
+  <VisibleIf><![CDATA[$User.Signature.notEmpty()]]></VisibleIf>
+  <DataDefinition></DataDefinition>
+  <Image>
+   <DataUri><![CDATA[$User.Signature]]></DataUri>
+   <Alt><![CDATA['Signature: ' + $User.Firstname + ' ' + $User.Lastname]]></Alt>
+   <Style>
+    <KeepWithPrevious>true</KeepWithPrevious>
+    <Height>2.0cm</Height>
+    <Stretch>keep_aspect_ratio</Stretch>
+   </Style>
+  </Image>
+ </ContainerPart>
+ <Par>
+  <Style parentName="Signatur_Name">
+   <KeepWithPrevious>true</KeepWithPrevious>
+  </Style>
+  <ParPart>
+   <VisibleIf><![CDATA[$User.Firstname.notEmpty()]]></VisibleIf>
+   <DataDefinition></DataDefinition>
+   <Span>
+    <Data>$User.Firstname</Data>
+    <Text> </Text>
+   </Span>
+  </ParPart>
+  <Span>
+   <Data>$User.Lastname</Data>
+  </Span>
+ </Par>
+</ContainerPart>

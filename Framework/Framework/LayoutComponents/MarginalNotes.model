@@ -1,0 +1,55 @@
+<SectionPart xmlns="urn:kwsoft:mtext:tonic:dom">
+ <DataDefinition>
+  <ParamDef name="InstanceOutputSettings" ref="\\Framework\Data\Instance.datamodel" provided="true">
+   <Description></Description>
+  </ParamDef>
+  <ParamDef name="Instance" ref="\\Framework\Data\Instance.datamodel" provided="true">
+   <Description></Description>
+  </ParamDef>
+ </DataDefinition>
+ <StaticContainer>
+  <Style parentName="MarginalNotes">
+  </Style>
+  <ContainerPart>
+   <VisibleIf><![CDATA[$system.Destination == "OMS"]]></VisibleIf>
+   <DataDefinition></DataDefinition>
+   <Par>
+    <Span>
+     <Style>
+      <FontStyle>bold</FontStyle>
+     </Style>
+     <Text>%%%OMSKV%%%</Text>
+    </Span>
+    <Span>
+     <Text>%%%OMSID%%%</Text>
+    </Span>
+   </Par>
+  </ContainerPart>
+  <ContainerPart>
+   <VisibleIf><![CDATA[$InstanceOutputSettings.No != $Instance.No]]></VisibleIf>
+   <DataDefinition></DataDefinition>
+   <Par>
+    <Translations>
+     <Translation>
+      <Language language="en" country="US" variant=""></Language>
+      <Span>
+       <Text>Copy for </Text>
+       <Data>$InstanceOutputSettings.Recipient.NameFirstname</Data>
+      </Span>
+     </Translation>
+     <Translation>
+      <Language language="de" country="DE" variant=""></Language>
+      <Span>
+       <Text>Kopie für </Text>
+       <Data>$InstanceOutputSettings.Recipient.NameFirstname</Data>
+      </Span>
+     </Translation>
+    </Translations>
+    <Span>
+     <Text>Kopie für </Text>
+     <Data>$InstanceOutputSettings.Recipient.NameFirstname</Data>
+    </Span>
+   </Par>
+  </ContainerPart>
+ </StaticContainer>
+</SectionPart>

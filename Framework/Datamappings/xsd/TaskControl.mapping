@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Mapping alwaysAddRootElement="true">
+   <DataModel root-path="">\\Framework\Data\TaskControl.datamodel</DataModel>
+   <Rules>
+      <Rule copySubtree="false"
+            name="/TaskControl/Message"
+            xpath="/ns:taskcontrol/ns:message"/>
+      <Rule copySubtree="false"
+            name="/TaskControl/Message/Instances/Instance"
+            xpath="ns:instance"/>
+      <Rule copySubtree="false"
+            name="/TaskControl/Message/Instances/Instance/OutputSettings/OutputSetting"
+            xpath="ns:outputcontrol"/>
+      <Rule copySubtree="false"
+            name="/TaskControl/Message/Instances/Instance/OutputSettings/OutputSetting/CENTRALPRINTING"
+            xpath="ns:CENTRALPRINTING"/>
+      <Rule copySubtree="false"
+            name="/TaskControl/Message/Instances/Instance/OutputSettings/OutputSetting/EMAIL"
+            xpath="ns:EMAIL"/>
+      <Rule copySubtree="true"
+            name="/TaskControl/Message/Instances/Instance/OutputSettings/OutputSetting/EMAIL/Subject"
+            xpath="ns:subject"/>
+      <Rule copySubtree="false"
+            name="/TaskControl/Message/Instances/Instance/OutputSettings/OutputSetting/LOCALPRINTING"
+            xpath="ns:LOCALPRINTING"/>
+      <Rule copySubtree="true"
+            name="/TaskControl/Message/Instances/Instance/OutputSettings/OutputSetting/LOCALPRINTING/PrinterName"
+            xpath="ns:printername"/>
+      <Rule copySubtree="true"
+            name="/TaskControl/Message/Instances/Instance/OutputSettings/OutputSetting/OutputChannel"
+            xpath="ns:outputchannel"/>
+      <Rule copySubtree="false"
+            name="/TaskControl/Message/Instances/Instance/Recipient"
+            xpath="ns:recipient"/>
+      <Rule copySubtree="false"
+            name="/TaskControl/Message/Instances/Instance/Recipient/Partner"
+            submappingRef="\\Framework\Datamappings\xsd\Parts\Partner.mapping"
+            xpath="ns:partner"/>
+      <Rule copySubtree="false"
+            name="/TaskControl/Message/Instances/Instance/RecipientProxy"
+            xpath="ns:recipientproxy"/>
+      <Rule copySubtree="false"
+            name="/TaskControl/Message/Instances/Instance/RecipientProxy/Partner"
+            submappingRef="\\Framework\Datamappings\xsd\Parts\Partner.mapping"
+            xpath="ns:partner"/>
+      <Rule copySubtree="false"
+            name="/TaskControl/Message/Instances/Instance/Sender"
+            xpath="ns:sender"/>
+      <Rule copySubtree="true"
+            name="/TaskControl/Message/Instances/Instance/Sender/City"
+            xpath="ns:city"/>
+      <Rule copySubtree="true"
+            name="/TaskControl/Message/Instances/Instance/Sender/Name"
+            xpath="ns:name"/>
+      <Rule copySubtree="true"
+            name="/TaskControl/Message/Instances/Instance/Sender/Street"
+            xpath="ns:street"/>
+      <Rule copySubtree="false"
+            name="/TaskControl/Message/Instances/Instance/Sender/User"
+            submappingRef="\\Framework\Datamappings\xsd\Parts\Partner.mapping"
+            xpath="ns:user"/>
+      <Rule copySubtree="true"
+            name="/TaskControl/Message/Instances/Instance/Sender/Zip"
+            xpath="ns:zip"/>
+      <Rule copySubtree="true"
+            name="/TaskControl/Message/Language"
+            xpath="ns:language"/>
+      <Rule copySubtree="true"
+            name="/TaskControl/Message/LetterDate"
+            xpath="ns:letterdate"/>
+   </Rules>
+   <Params/>
+   <Namespaces>
+      <Namespace prefix="ns">http://www.kwsoft.de/xmlns/v1.0/taskcontrol</Namespace>
+      <Namespace prefix="ns1">http://www.kwsoft.de/xmlns/common/v1.0/partner</Namespace>
+   </Namespaces>
+</Mapping>

@@ -1,0 +1,50 @@
+<ContainerPart xmlns="urn:kwsoft:mtext:tonic:dom">
+ <DataDefinition></DataDefinition>
+ <Table>
+  <Columns>
+   <Column id="">
+    <Style>
+     <ColumnWidth>87465.0mpt</ColumnWidth>
+    </Style>
+   </Column>
+   <Column>
+    <Style>
+     <ColumnWidth>149162.0mpt</ColumnWidth>
+    </Style>
+   </Column>
+   <Column>
+    <Style>
+     <ColumnWidth>125264.0mpt</ColumnWidth>
+    </Style>
+   </Column>
+   <Column>
+    <Style>
+     <ColumnWidth>auto</ColumnWidth>
+    </Style>
+   </Column>
+  </Columns>
+  <Style parentName="Simple"></Style>
+  <Row>
+   <Cell>
+    <Container>
+     <ContainerPartRef uri="Framework\DocumentPartTypes\Letter\CompanyInfo_AddressInformation.model"></ContainerPartRef>
+    </Container>
+   </Cell>
+   <Cell>
+    <Container>
+     <ContainerPartRef uri="Framework\DocumentPartTypes\Letter\CompanyInfo_Management.model"></ContainerPartRef>
+    </Container>
+   </Cell>
+   <Cell>
+    <Container>
+     <ContainerPartRef uri="Framework\DocumentPartTypes\Letter\CompanyInfo_CorrespondentBank.model"></ContainerPartRef>
+    </Container>
+   </Cell>
+   <Cell>
+    <Container>
+     <ContainerPartRef uri="Framework\DocumentPartTypes\Letter\CompanyInfo_CommercialRegister.model"></ContainerPartRef>
+    </Container>
+   </Cell>
+  </Row>
+ </Table>
+</ContainerPart>

@@ -1,0 +1,8 @@
+<StyleCollection xmlns="urn:kwsoft:mtext:tonic:dom">
+ <SectionStyle name="Origine_Certificate">
+  <PageLayouts parentRef="Layout\Origine_Certificate.pageLayouts"></PageLayouts>
+ </SectionStyle>
+ <SectionStyle name="Declaration_Dangereux">
+  <PageLayouts parentRef="Layout\Declaration_Dangereux.pageLayouts"></PageLayouts>
+ </SectionStyle>
+</StyleCollection>

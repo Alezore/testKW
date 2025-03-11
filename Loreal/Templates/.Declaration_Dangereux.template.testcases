@@ -1,0 +1,1762 @@
+<TestCases xmlns="urn:kwsoft:mtext:tonic:dom" activeTestCase="testcase">
+ <TestCase name="testcase" includeInRegressionTool="false">
+  <Root base="Loreal">
+   <RootPartInstance partIndex="0">
+    <Data>
+     <DataNode name="data">
+      <Value><![CDATA[string:]]></Value>
+      <DataNode name="window">
+       <Value><![CDATA[string:]]></Value>
+       <DataNode name="page" valueChanged="fromDataSource">
+        <Value><![CDATA[string:_PAGE1]]></Value>
+       </DataNode>
+       <DataNode name="page_id" valueChanged="fromDataSource">
+        <Value><![CDATA[string:001]]></Value>
+       </DataNode>
+       <DataNode name="text">
+        <Value><![CDATA[string:]]></Value>
+        <DataNode name="name" valueChanged="fromDataSource">
+         <Value><![CDATA[string:MAIL]]></Value>
+        </DataNode>
+        <DataNode name="noeuddonné">
+         <Value><![CDATA[string:]]></Value>
+         <DataNode name="name" valueChanged="fromDataSource">
+          <Value><![CDATA[string:L]]></Value>
+         </DataNode>
+         <DataNode name="donné">
+          <Value><![CDATA[string:]]></Value>
+         </DataNode>
+        </DataNode>
+        <DataNode name="noeuddonné">
+         <Value><![CDATA[string:]]></Value>
+         <DataNode name="name" valueChanged="fromDataSource">
+          <Value><![CDATA[string:L]]></Value>
+         </DataNode>
+         <DataNode name="donné">
+          <Value><![CDATA[string:]]></Value>
+         </DataNode>
+        </DataNode>
+        <DataNode name="noeuddonné">
+         <Value><![CDATA[string:]]></Value>
+         <DataNode name="name" valueChanged="fromDataSource">
+          <Value><![CDATA[string:L]]></Value>
+         </DataNode>
+         <DataNode name="donné">
+          <Value><![CDATA[string:]]></Value>
+         </DataNode>
+        </DataNode>
+        <DataNode name="noeuddonné">
+         <Value><![CDATA[string:]]></Value>
+         <DataNode name="name" valueChanged="fromDataSource">
+          <Value><![CDATA[string:L]]></Value>
+         </DataNode>
+         <DataNode name="donné">
+          <Value><![CDATA[string:]]></Value>
+         </DataNode>
+        </DataNode>
+        <DataNode name="noeuddonné">
+         <Value><![CDATA[string:]]></Value>
+         <DataNode name="name" valueChanged="fromDataSource">
+          <Value><![CDATA[string:L]]></Value>
+         </DataNode>
+         <DataNode name="donné">
+          <Value><![CDATA[string:]]></Value>
+         </DataNode>
+        </DataNode>
+       </DataNode>
+       <DataNode name="text">
+        <Value><![CDATA[string:]]></Value>
+        <DataNode name="name" valueChanged="fromDataSource">
+         <Value><![CDATA[string:HEADER]]></Value>
+        </DataNode>
+        <DataNode name="noeuddonné">
+         <Value><![CDATA[string:]]></Value>
+         <DataNode name="name" valueChanged="fromDataSource">
+          <Value><![CDATA[string:L]]></Value>
+         </DataNode>
+         <DataNode name="donné">
+          <Value><![CDATA[string:]]></Value>
+         </DataNode>
+        </DataNode>
+        <DataNode name="noeuddonné">
+         <Value><![CDATA[string:]]></Value>
+         <DataNode name="name" valueChanged="fromDataSource">
+          <Value><![CDATA[string:L]]></Value>
+         </DataNode>
+         <DataNode name="donné">
+          <Value><![CDATA[string:]]></Value>
+         </DataNode>
+        </DataNode>
+        <DataNode name="noeuddonné">
+         <Value><![CDATA[string:]]></Value>
+         <DataNode name="name" valueChanged="fromDataSource">
+          <Value><![CDATA[string:L]]></Value>
+         </DataNode>
+         <DataNode name="donné">
+          <Value><![CDATA[string:]]></Value>
+         </DataNode>
+        </DataNode>
+        <DataNode name="noeuddonné">
+         <Value><![CDATA[string:]]></Value>
+         <DataNode name="name" valueChanged="fromDataSource">
+          <Value><![CDATA[string:L]]></Value>
+         </DataNode>
+         <DataNode name="donné" valueChanged="fromDataSource">
+          <Value><![CDATA[string:FR]]></Value>
+          <DataNode name="name" valueChanged="fromDataSource">
+           <Value><![CDATA[string:IS_HEADER-SPRAS]]></Value>
+          </DataNode>
+         </DataNode>
+        </DataNode>
+        <DataNode name="noeuddonné">
+         <Value><![CDATA[string:]]></Value>
+         <DataNode name="name" valueChanged="fromDataSource">
+          <Value><![CDATA[string:L]]></Value>
+         </DataNode>
+         <DataNode name="donné" valueChanged="fromDataSource">
+          <Value><![CDATA[string:PRESTIGE & COLLECTIONS INTERNATIONAL]]></Value>
+          <DataNode name="name" valueChanged="fromDataSource">
+           <Value><![CDATA[string:IS_HEADER-1_NAME1]]></Value>
+          </DataNode>
+         </DataNode>
+        </DataNode>
+        <DataNode name="noeuddonné">
+         <Value><![CDATA[string:]]></Value>
+         <DataNode name="name" valueChanged="fromDataSource">
+          <Value><![CDATA[string:L]]></Value>
+         </DataNode>
+         <DataNode name="donné" valueChanged="fromDataSource">
+          <Value><![CDATA[string:62, quai Charles Pasqua]]></Value>
+          <DataNode name="name" valueChanged="fromDataSource">
+           <Value><![CDATA[string:IS_HEADER-1_STRAS]]></Value>
+          </DataNode>
+         </DataNode>
+        </DataNode>
+        <DataNode name="noeuddonné">
+         <Value><![CDATA[string:]]></Value>
+         <DataNode name="name" valueChanged="fromDataSource">
+          <Value><![CDATA[string:L]]></Value>
+         </DataNode>
+         <DataNode name="donné" valueChanged="fromDataSource">
+          <Value><![CDATA[string:92300]]></Value>
+          <DataNode name="name" valueChanged="fromDataSource">
+           <Value><![CDATA[string:IS_HEADER-1_PSTLZ]]></Value>
+          </DataNode>
+         </DataNode>
+        </DataNode>
+        <DataNode name="noeuddonné">
+         <Value><![CDATA[string:]]></Value>
+         <DataNode name="name" valueChanged="fromDataSource">
+          <Value><![CDATA[string:L]]></Value>
+         </DataNode>
+         <DataNode name="donné" valueChanged="fromDataSource">
+          <Value><![CDATA[string:LEVALLOIS PERRET]]></Value>
+          <DataNode name="name" valueChanged="fromDataSource">
+           <Value><![CDATA[string:IS_HEADER-1_ORT01]]></Value>
+          </DataNode>
+         </DataNode>
+        </DataNode>
+        <DataNode name="noeuddonné">
+         <Value><![CDATA[string:]]></Value>
+         <DataNode name="name" valueChanged="fromDataSource">
+          <Value><![CDATA[string:L]]></Value>
+         </DataNode>
+         <DataNode name="donné" valueChanged="fromDataSource">
+          <Value><![CDATA[string:France]]></Value>
+          <DataNode name="name" valueChanged="fromDataSource">
+           <Value><![CDATA[string:IS_HEADER-1_LANDX]]></Value>
+          </DataNode>
+         </DataNode>
+        </DataNode>
+        <DataNode name="noeuddonné">
+         <Value><![CDATA[string:]]></Value>
+         <DataNode name="name" valueChanged="fromDataSource">
+          <Value><![CDATA[string:L]]></Value>
+         </DataNode>
+         <DataNode name="donné" valueChanged="fromDataSource">
+          <Value><![CDATA[string:DE306383104]]></Value>
+          <DataNode name="name" valueChanged="fromDataSource">
+           <Value><![CDATA[string:IS_HEADER-1_STCEG]]></Value>
+          </DataNode>
+         </DataNode>
+        </DataNode>
+        <DataNode name="noeuddonné">
+         <Value><![CDATA[string:]]></Value>
+         <DataNode name="name" valueChanged="fromDataSource">
+          <Value><![CDATA[string:L]]></Value>
+         </DataNode>
+         <DataNode name="donné" valueChanged="fromDataSource">
+          <Value><![CDATA[string:1481191]]></Value>
+          <DataNode name="name" valueChanged="fromDataSource">
+           <Value><![CDATA[string:IS_HEADER-2A_TKNUM]]></Value>
+          </DataNode>
+         </DataNode>
+        </DataNode>
+        <DataNode name="noeuddonné">
+         <Value><![CDATA[string:]]></Value>
+         <DataNode name="name" valueChanged="fromDataSource">
+          <Value><![CDATA[string:L]]></Value>
+         </DataNode>
+         <DataNode name="donné" valueChanged="fromDataSource">
+          <Value><![CDATA[string:11.02.2025]]></Value>
+          <DataNode name="name" valueChanged="fromDataSource">
+           <Value><![CDATA[string:IS_HEADER-2B_DATBG]]></Value>
+          </DataNode>
+         </DataNode>
+        </DataNode>
+        <DataNode name="noeuddonné">
+         <Value><![CDATA[string:]]></Value>
+         <DataNode name="name" valueChanged="fromDataSource">
+          <Value><![CDATA[string:L]]></Value>
+         </DataNode>
+         <DataNode name="donné" valueChanged="fromDataSource">
+          <Value><![CDATA[string:44163049]]></Value>
+          <DataNode name="name" valueChanged="fromDataSource">
+           <Value><![CDATA[string:IS_HEADER-4_VBELN]]></Value>
+          </DataNode>
+         </DataNode>
+        </DataNode>
+        <DataNode name="noeuddonné">
+         <Value><![CDATA[string:]]></Value>
+         <DataNode name="name" valueChanged="fromDataSource">
+          <Value><![CDATA[string:L]]></Value>
+         </DataNode>
+         <DataNode name="donné" valueChanged="fromDataSource">
+          <Value><![CDATA[string:L OREAL USA LUXURY PRODUCTS]]></Value>
+          <DataNode name="name" valueChanged="fromDataSource">
+           <Value><![CDATA[string:IS_HEADER-6_NAME1]]></Value>
+          </DataNode>
+         </DataNode>
+        </DataNode>
+        <DataNode name="noeuddonné">
+         <Value><![CDATA[string:]]></Value>
+         <DataNode name="name" valueChanged="fromDataSource">
+          <Value><![CDATA[string:L]]></Value>
+         </DataNode>
+         <DataNode name="donné" valueChanged="fromDataSource">
+          <Value><![CDATA[string:77 DEANS RHODE HALL ROAD]]></Value>
+          <DataNode name="name" valueChanged="fromDataSource">
+           <Value><![CDATA[string:IS_HEADER-6_STRAS]]></Value>
+          </DataNode>
+         </DataNode>
+        </DataNode>
+        <DataNode name="noeuddonné">
+         <Value><![CDATA[string:]]></Value>
+         <DataNode name="name" valueChanged="fromDataSource">
+          <Value><![CDATA[string:L]]></Value>
+         </DataNode>
+         <DataNode name="donné" valueChanged="fromDataSource">
+          <Value><![CDATA[string:08852]]></Value>
+          <DataNode name="name" valueChanged="fromDataSource">
+           <Value><![CDATA[string:IS_HEADER-6_PSTLZ]]></Value>
+          </DataNode>
+         </DataNode>
+        </DataNode>
+        <DataNode name="noeuddonné">
+         <Value><![CDATA[string:]]></Value>
+         <DataNode name="name" valueChanged="fromDataSource">
+          <Value><![CDATA[string:L]]></Value>
+         </DataNode>
+         <DataNode name="donné" valueChanged="fromDataSource">
+          <Value><![CDATA[string:NEW JERSEY - MONMOUTH JUNCTION]]></Value>
+          <DataNode name="name" valueChanged="fromDataSource">
+           <Value><![CDATA[string:IS_HEADER-6_ORT01]]></Value>
+          </DataNode>
+         </DataNode>
+        </DataNode>
+        <DataNode name="noeuddonné">
+         <Value><![CDATA[string:]]></Value>
+         <DataNode name="name" valueChanged="fromDataSource">
+          <Value><![CDATA[string:L]]></Value>
+         </DataNode>
+         <DataNode name="donné" valueChanged="fromDataSource">
+          <Value><![CDATA[string:USA]]></Value>
+          <DataNode name="name" valueChanged="fromDataSource">
+           <Value><![CDATA[string:IS_HEADER-6_LANDX]]></Value>
+          </DataNode>
+         </DataNode>
+        </DataNode>
+        <DataNode name="noeuddonné">
+         <Value><![CDATA[string:]]></Value>
+         <DataNode name="name" valueChanged="fromDataSource">
+          <Value><![CDATA[string:L]]></Value>
+         </DataNode>
+         <DataNode name="donné">
+          <Value><![CDATA[string:]]></Value>
+         </DataNode>
+        </DataNode>
+        <DataNode name="noeuddonné">
+         <Value><![CDATA[string:]]></Value>
+         <DataNode name="name" valueChanged="fromDataSource">
+          <Value><![CDATA[string:L]]></Value>
+         </DataNode>
+         <DataNode name="donné">
+          <Value><![CDATA[string:]]></Value>
+         </DataNode>
+        </DataNode>
+        <DataNode name="noeuddonné">
+         <Value><![CDATA[string:]]></Value>
+         <DataNode name="name" valueChanged="fromDataSource">
+          <Value><![CDATA[string:L]]></Value>
+         </DataNode>
+         <DataNode name="donné">
+          <Value><![CDATA[string:]]></Value>
+         </DataNode>
+        </DataNode>
+        <DataNode name="noeuddonné">
+         <Value><![CDATA[string:]]></Value>
+         <DataNode name="name" valueChanged="fromDataSource">
+          <Value><![CDATA[string:L]]></Value>
+         </DataNode>
+         <DataNode name="donné">
+          <Value><![CDATA[string:]]></Value>
+         </DataNode>
+        </DataNode>
+        <DataNode name="noeuddonné">
+         <Value><![CDATA[string:]]></Value>
+         <DataNode name="name" valueChanged="fromDataSource">
+          <Value><![CDATA[string:L]]></Value>
+         </DataNode>
+         <DataNode name="donné">
+          <Value><![CDATA[string:]]></Value>
+         </DataNode>
+        </DataNode>
+        <DataNode name="noeuddonné">
+         <Value><![CDATA[string:]]></Value>
+         <DataNode name="name" valueChanged="fromDataSource">
+          <Value><![CDATA[string:L]]></Value>
+         </DataNode>
+         <DataNode name="donné" valueChanged="fromDataSource">
+          <Value><![CDATA[string:24 HOURS EMERGENCY PHONE: * (24h) 00 33 298 331 010 – CEDRE / UTMD 27 *]]></Value>
+          <DataNode name="name" valueChanged="fromDataSource">
+           <Value><![CDATA[string:IS_HEADER-9_1]]></Value>
+          </DataNode>
+         </DataNode>
+        </DataNode>
+        <DataNode name="noeuddonné">
+         <Value><![CDATA[string:]]></Value>
+         <DataNode name="name" valueChanged="fromDataSource">
+          <Value><![CDATA[string:L]]></Value>
+         </DataNode>
+         <DataNode name="donné">
+          <Value><![CDATA[string:]]></Value>
+         </DataNode>
+        </DataNode>
+        <DataNode name="noeuddonné">
+         <Value><![CDATA[string:]]></Value>
+         <DataNode name="name" valueChanged="fromDataSource">
+          <Value><![CDATA[string:L]]></Value>
+         </DataNode>
+         <DataNode name="donné" valueChanged="fromDataSource">
+          <Value><![CDATA[string:OVERPACK USED]]></Value>
+          <DataNode name="name" valueChanged="fromDataSource">
+           <Value><![CDATA[string:IS_HEADER-9_3]]></Value>
+          </DataNode>
+         </DataNode>
+        </DataNode>
+        <DataNode name="noeuddonné">
+         <Value><![CDATA[string:]]></Value>
+         <DataNode name="name" valueChanged="fromDataSource">
+          <Value><![CDATA[string:L]]></Value>
+         </DataNode>
+         <DataNode name="donné">
+          <Value><![CDATA[string:]]></Value>
+         </DataNode>
+        </DataNode>
+        <DataNode name="noeuddonné">
+         <Value><![CDATA[string:]]></Value>
+         <DataNode name="name" valueChanged="fromDataSource">
+          <Value><![CDATA[string:L]]></Value>
+         </DataNode>
+         <DataNode name="donné">
+          <Value><![CDATA[string:]]></Value>
+         </DataNode>
+        </DataNode>
+        <DataNode name="noeuddonné">
+         <Value><![CDATA[string:]]></Value>
+         <DataNode name="name" valueChanged="fromDataSource">
+          <Value><![CDATA[string:L]]></Value>
+         </DataNode>
+         <DataNode name="donné">
+          <Value><![CDATA[string:]]></Value>
+         </DataNode>
+        </DataNode>
+        <DataNode name="noeuddonné">
+         <Value><![CDATA[string:]]></Value>
+         <DataNode name="name" valueChanged="fromDataSource">
+          <Value><![CDATA[string:L]]></Value>
+         </DataNode>
+         <DataNode name="donné">
+          <Value><![CDATA[string:]]></Value>
+         </DataNode>
+        </DataNode>
+        <DataNode name="noeuddonné">
+         <Value><![CDATA[string:]]></Value>
+         <DataNode name="name" valueChanged="fromDataSource">
+          <Value><![CDATA[string:L]]></Value>
+         </DataNode>
+         <DataNode name="donné" valueChanged="fromDataSource">
+          <Value><![CDATA[string:ACLU9684109]]></Value>
+          <DataNode name="name" valueChanged="fromDataSource">
+           <Value><![CDATA[string:IS_HEADER-15_SIGNI]]></Value>
+          </DataNode>
+         </DataNode>
+        </DataNode>
+        <DataNode name="noeuddonné">
+         <Value><![CDATA[string:]]></Value>
+         <DataNode name="name" valueChanged="fromDataSource">
+          <Value><![CDATA[string:L]]></Value>
+         </DataNode>
+         <DataNode name="donné" valueChanged="fromDataSource">
+          <Value><![CDATA[string:Seal Number 1 : 187417]]></Value>
+          <DataNode name="name" valueChanged="fromDataSource">
+           <Value><![CDATA[string:IS_HEADER-16_EXTI1]]></Value>
+          </DataNode>
+         </DataNode>
+        </DataNode>
+        <DataNode name="noeuddonné">
+         <Value><![CDATA[string:]]></Value>
+         <DataNode name="name" valueChanged="fromDataSource">
+          <Value><![CDATA[string:L]]></Value>
+         </DataNode>
+         <DataNode name="donné">
+          <Value><![CDATA[string:]]></Value>
+         </DataNode>
+        </DataNode>
+        <DataNode name="noeuddonné">
+         <Value><![CDATA[string:]]></Value>
+         <DataNode name="name" valueChanged="fromDataSource">
+          <Value><![CDATA[string:L]]></Value>
+         </DataNode>
+         <DataNode name="donné" valueChanged="fromDataSource">
+          <Value><![CDATA[string:container]]></Value>
+          <DataNode name="name" valueChanged="fromDataSource">
+           <Value><![CDATA[string:IS_HEADER-17_BEZEI]]></Value>
+          </DataNode>
+         </DataNode>
+        </DataNode>
+        <DataNode name="noeuddonné">
+         <Value><![CDATA[string:]]></Value>
+         <DataNode name="name" valueChanged="fromDataSource">
+          <Value><![CDATA[string:L]]></Value>
+         </DataNode>
+         <DataNode name="donné">
+          <Value><![CDATA[string:]]></Value>
+         </DataNode>
+        </DataNode>
+        <DataNode name="noeuddonné">
+         <Value><![CDATA[string:]]></Value>
+         <DataNode name="name" valueChanged="fromDataSource">
+          <Value><![CDATA[string:L]]></Value>
+         </DataNode>
+         <DataNode name="donné">
+          <Value><![CDATA[string:]]></Value>
+         </DataNode>
+        </DataNode>
+        <DataNode name="noeuddonné">
+         <Value><![CDATA[string:]]></Value>
+         <DataNode name="name" valueChanged="fromDataSource">
+          <Value><![CDATA[string:L]]></Value>
+         </DataNode>
+         <DataNode name="donné">
+          <Value><![CDATA[string:]]></Value>
+         </DataNode>
+        </DataNode>
+        <DataNode name="noeuddonné">
+         <Value><![CDATA[string:]]></Value>
+         <DataNode name="name" valueChanged="fromDataSource">
+          <Value><![CDATA[string:L]]></Value>
+         </DataNode>
+         <DataNode name="donné" valueChanged="fromDataSource">
+          <Value><![CDATA[string:Roye]]></Value>
+          <DataNode name="name" valueChanged="fromDataSource">
+           <Value><![CDATA[string:IS_HEADER-22C_ORT01]]></Value>
+          </DataNode>
+         </DataNode>
+        </DataNode>
+        <DataNode name="noeuddonné">
+         <Value><![CDATA[string:]]></Value>
+         <DataNode name="name" valueChanged="fromDataSource">
+          <Value><![CDATA[string:L]]></Value>
+         </DataNode>
+         <DataNode name="donné" valueChanged="fromDataSource">
+          <Value><![CDATA[string:11.02.2025]]></Value>
+          <DataNode name="name" valueChanged="fromDataSource">
+           <Value><![CDATA[string:IS_HEADER-22C_DATUM]]></Value>
+          </DataNode>
+         </DataNode>
+        </DataNode>
+        <DataNode name="noeuddonné">
+         <Value><![CDATA[string:]]></Value>
+         <DataNode name="name" valueChanged="fromDataSource">
+          <Value><![CDATA[string:L]]></Value>
+         </DataNode>
+         <DataNode name="donné" valueChanged="fromDataSource">
+          <Value><![CDATA[string:Fapagau & Compagnie]]></Value>
+          <DataNode name="name" valueChanged="fromDataSource">
+           <Value><![CDATA[string:IS_HEADER-22A_NAME2]]></Value>
+          </DataNode>
+         </DataNode>
+        </DataNode>
+        <DataNode name="noeuddonné">
+         <Value><![CDATA[string:]]></Value>
+         <DataNode name="name" valueChanged="fromDataSource">
+          <Value><![CDATA[string:L]]></Value>
+         </DataNode>
+         <DataNode name="donné">
+          <Value><![CDATA[string:]]></Value>
+         </DataNode>
+        </DataNode>
+        <DataNode name="noeuddonné">
+         <Value><![CDATA[string:]]></Value>
+         <DataNode name="name" valueChanged="fromDataSource">
+          <Value><![CDATA[string:L]]></Value>
+         </DataNode>
+         <DataNode name="donné">
+          <Value><![CDATA[string:]]></Value>
+         </DataNode>
+        </DataNode>
+        <DataNode name="noeuddonné">
+         <Value><![CDATA[string:]]></Value>
+         <DataNode name="name" valueChanged="fromDataSource">
+          <Value><![CDATA[string:L]]></Value>
+         </DataNode>
+         <DataNode name="donné" valueChanged="fromDataSource">
+          <Value><![CDATA[string:X]]></Value>
+          <DataNode name="name" valueChanged="fromDataSource">
+           <Value><![CDATA[string:IS_HEADER-UN3088]]></Value>
+          </DataNode>
+         </DataNode>
+        </DataNode>
+        <DataNode name="noeuddonné">
+         <Value><![CDATA[string:]]></Value>
+         <DataNode name="name" valueChanged="fromDataSource">
+          <Value><![CDATA[string:L]]></Value>
+         </DataNode>
+         <DataNode name="donné">
+          <Value><![CDATA[string:]]></Value>
+         </DataNode>
+        </DataNode>
+        <DataNode name="noeuddonné">
+         <Value><![CDATA[string:]]></Value>
+         <DataNode name="name" valueChanged="fromDataSource">
+          <Value><![CDATA[string:L]]></Value>
+         </DataNode>
+         <DataNode name="donné">
+          <Value><![CDATA[string:]]></Value>
+         </DataNode>
+        </DataNode>
+        <DataNode name="noeuddonné">
+         <Value><![CDATA[string:]]></Value>
+         <DataNode name="name" valueChanged="fromDataSource">
+          <Value><![CDATA[string:L]]></Value>
+         </DataNode>
+         <DataNode name="donné">
+          <Value><![CDATA[string:]]></Value>
+         </DataNode>
+        </DataNode>
+       </DataNode>
+       <DataNode name="tableau">
+        <Value><![CDATA[string:]]></Value>
+        <DataNode name="colone">
+         <Value><![CDATA[string:]]></Value>
+         <DataNode name="name" valueChanged="fromDataSource">
+          <Value><![CDATA[string:L]]></Value>
+         </DataNode>
+         <DataNode name="donné">
+          <Value><![CDATA[string:]]></Value>
+          <DataNode name="name" valueChanged="fromDataSource">
+           <Value><![CDATA[string:]]></Value>
+          </DataNode>
+         </DataNode>
+        </DataNode>
+        <DataNode name="colone">
+         <Value><![CDATA[string:]]></Value>
+         <DataNode name="name" valueChanged="fromDataSource">
+          <Value><![CDATA[string:L]]></Value>
+         </DataNode>
+         <DataNode name="donné" valueChanged="fromDataSource">
+          <Value><![CDATA[string:UN1266/PERFUMERY PRODUCTS]]></Value>
+          <DataNode name="name" valueChanged="fromDataSource">
+           <Value><![CDATA[string:IS_ITEM-14_SHIPPING_MARKS]]></Value>
+          </DataNode>
+         </DataNode>
+        </DataNode>
+        <DataNode name="colone">
+         <Value><![CDATA[string:]]></Value>
+         <DataNode name="name" valueChanged="fromDataSource">
+          <Value><![CDATA[string:L]]></Value>
+         </DataNode>
+         <DataNode name="donné">
+          <Value><![CDATA[string:]]></Value>
+          <DataNode name="name" valueChanged="fromDataSource">
+           <Value><![CDATA[string:]]></Value>
+          </DataNode>
+         </DataNode>
+        </DataNode>
+        <DataNode name="colone">
+         <Value><![CDATA[string:]]></Value>
+         <DataNode name="name" valueChanged="fromDataSource">
+          <Value><![CDATA[string:L]]></Value>
+         </DataNode>
+         <DataNode name="donné">
+          <Value><![CDATA[string:]]></Value>
+          <DataNode name="name" valueChanged="fromDataSource">
+           <Value><![CDATA[string:]]></Value>
+          </DataNode>
+         </DataNode>
+        </DataNode>
+        <DataNode name="colone">
+         <Value><![CDATA[string:]]></Value>
+         <DataNode name="name" valueChanged="fromDataSource">
+          <Value><![CDATA[string:L]]></Value>
+         </DataNode>
+         <DataNode name="donné">
+          <Value><![CDATA[string:]]></Value>
+          <DataNode name="name" valueChanged="fromDataSource">
+           <Value><![CDATA[string:]]></Value>
+          </DataNode>
+         </DataNode>
+        </DataNode>
+       </DataNode>
+       <DataNode name="tableau">
+        <Value><![CDATA[string:]]></Value>
+        <DataNode name="colone">
+         <Value><![CDATA[string:]]></Value>
+         <DataNode name="name" valueChanged="fromDataSource">
+          <Value><![CDATA[string:L]]></Value>
+         </DataNode>
+         <DataNode name="donné">
+          <Value><![CDATA[string:]]></Value>
+          <DataNode name="name" valueChanged="fromDataSource">
+           <Value><![CDATA[string:]]></Value>
+          </DataNode>
+         </DataNode>
+        </DataNode>
+        <DataNode name="colone">
+         <Value><![CDATA[string:]]></Value>
+         <DataNode name="name" valueChanged="fromDataSource">
+          <Value><![CDATA[string:L]]></Value>
+         </DataNode>
+         <DataNode name="donné" valueChanged="fromDataSource">
+          <Value><![CDATA[string:Class 3, II]]></Value>
+          <DataNode name="name" valueChanged="fromDataSource">
+           <Value><![CDATA[string:IS_ITEM-14_SHIPPING_MARKS]]></Value>
+          </DataNode>
+         </DataNode>
+        </DataNode>
+        <DataNode name="colone">
+         <Value><![CDATA[string:]]></Value>
+         <DataNode name="name" valueChanged="fromDataSource">
+          <Value><![CDATA[string:L]]></Value>
+         </DataNode>
+         <DataNode name="donné">
+          <Value><![CDATA[string:]]></Value>
+          <DataNode name="name" valueChanged="fromDataSource">
+           <Value><![CDATA[string:]]></Value>
+          </DataNode>
+         </DataNode>
+        </DataNode>
+        <DataNode name="colone">
+         <Value><![CDATA[string:]]></Value>
+         <DataNode name="name" valueChanged="fromDataSource">
+          <Value><![CDATA[string:L]]></Value>
+         </DataNode>
+         <DataNode name="donné">
+          <Value><![CDATA[string:]]></Value>
+          <DataNode name="name" valueChanged="fromDataSource">
+           <Value><![CDATA[string:]]></Value>
+          </DataNode>
+         </DataNode>
+        </DataNode>
+        <DataNode name="colone">
+         <Value><![CDATA[string:]]></Value>
+         <DataNode name="name" valueChanged="fromDataSource">
+          <Value><![CDATA[string:L]]></Value>
+         </DataNode>
+         <DataNode name="donné">
+          <Value><![CDATA[string:]]></Value>
+          <DataNode name="name" valueChanged="fromDataSource">
+           <Value><![CDATA[string:]]></Value>
+          </DataNode>
+         </DataNode>
+        </DataNode>
+       </DataNode>
+       <DataNode name="tableau">
+        <Value><![CDATA[string:]]></Value>
+        <DataNode name="colone">
+         <Value><![CDATA[string:]]></Value>
+         <DataNode name="name" valueChanged="fromDataSource">
+          <Value><![CDATA[string:L]]></Value>
+         </DataNode>
+         <DataNode name="donné">
+          <Value><![CDATA[string:]]></Value>
+          <DataNode name="name" valueChanged="fromDataSource">
+           <Value><![CDATA[string:]]></Value>
+          </DataNode>
+         </DataNode>
+        </DataNode>
+        <DataNode name="colone">
+         <Value><![CDATA[string:]]></Value>
+         <DataNode name="name" valueChanged="fromDataSource">
+          <Value><![CDATA[string:L]]></Value>
+         </DataNode>
+         <DataNode name="donné" valueChanged="fromDataSource">
+          <Value><![CDATA[string:LIMITED QUANTITY, EMS : F-E/S-D, Stowage : Category A]]></Value>
+          <DataNode name="name" valueChanged="fromDataSource">
+           <Value><![CDATA[string:IS_ITEM-14_SHIPPING_MARKS]]></Value>
+          </DataNode>
+         </DataNode>
+        </DataNode>
+        <DataNode name="colone">
+         <Value><![CDATA[string:]]></Value>
+         <DataNode name="name" valueChanged="fromDataSource">
+          <Value><![CDATA[string:L]]></Value>
+         </DataNode>
+         <DataNode name="donné">
+          <Value><![CDATA[string:]]></Value>
+          <DataNode name="name" valueChanged="fromDataSource">
+           <Value><![CDATA[string:]]></Value>
+          </DataNode>
+         </DataNode>
+        </DataNode>
+        <DataNode name="colone">
+         <Value><![CDATA[string:]]></Value>
+         <DataNode name="name" valueChanged="fromDataSource">
+          <Value><![CDATA[string:L]]></Value>
+         </DataNode>
+         <DataNode name="donné">
+          <Value><![CDATA[string:]]></Value>
+          <DataNode name="name" valueChanged="fromDataSource">
+           <Value><![CDATA[string:]]></Value>
+          </DataNode>
+         </DataNode>
+        </DataNode>
+        <DataNode name="colone">
+         <Value><![CDATA[string:]]></Value>
+         <DataNode name="name" valueChanged="fromDataSource">
+          <Value><![CDATA[string:L]]></Value>
+         </DataNode>
+         <DataNode name="donné">
+          <Value><![CDATA[string:]]></Value>
+          <DataNode name="name" valueChanged="fromDataSource">
+           <Value><![CDATA[string:]]></Value>
+          </DataNode>
+         </DataNode>
+        </DataNode>
+       </DataNode>
+       <DataNode name="tableau">
+        <Value><![CDATA[string:]]></Value>
+        <DataNode name="colone">
+         <Value><![CDATA[string:]]></Value>
+         <DataNode name="name" valueChanged="fromDataSource">
+          <Value><![CDATA[string:L]]></Value>
+         </DataNode>
+         <DataNode name="donné">
+          <Value><![CDATA[string:]]></Value>
+          <DataNode name="name" valueChanged="fromDataSource">
+           <Value><![CDATA[string:]]></Value>
+          </DataNode>
+         </DataNode>
+        </DataNode>
+        <DataNode name="colone">
+         <Value><![CDATA[string:]]></Value>
+         <DataNode name="name" valueChanged="fromDataSource">
+          <Value><![CDATA[string:L]]></Value>
+         </DataNode>
+         <DataNode name="donné" valueChanged="fromDataSource">
+          <Value><![CDATA[string:720 fibreboard boxes with 172.800 Sprays (F.P. : 18.0 °C cc)]]></Value>
+          <DataNode name="name" valueChanged="fromDataSource">
+           <Value><![CDATA[string:IS_ITEM-14_SHIPPING_MARKS]]></Value>
+          </DataNode>
+         </DataNode>
+        </DataNode>
+        <DataNode name="colone">
+         <Value><![CDATA[string:]]></Value>
+         <DataNode name="name" valueChanged="fromDataSource">
+          <Value><![CDATA[string:L]]></Value>
+         </DataNode>
+         <DataNode name="donné" valueChanged="fromDataSource">
+          <Value><![CDATA[string:2091,816]]></Value>
+          <DataNode name="name" valueChanged="fromDataSource">
+           <Value><![CDATA[string:IS_ITEM-14_BRGEW]]></Value>
+          </DataNode>
+         </DataNode>
+        </DataNode>
+        <DataNode name="colone">
+         <Value><![CDATA[string:]]></Value>
+         <DataNode name="name" valueChanged="fromDataSource">
+          <Value><![CDATA[string:L]]></Value>
+         </DataNode>
+         <DataNode name="donné" valueChanged="fromDataSource">
+          <Value><![CDATA[string:1382,400]]></Value>
+          <DataNode name="name" valueChanged="fromDataSource">
+           <Value><![CDATA[string:IS_ITEM-14_NTGEW]]></Value>
+          </DataNode>
+         </DataNode>
+        </DataNode>
+        <DataNode name="colone">
+         <Value><![CDATA[string:]]></Value>
+         <DataNode name="name" valueChanged="fromDataSource">
+          <Value><![CDATA[string:L]]></Value>
+         </DataNode>
+         <DataNode name="donné" valueChanged="fromDataSource">
+          <Value><![CDATA[string:12,960 M3]]></Value>
+          <DataNode name="name" valueChanged="fromDataSource">
+           <Value><![CDATA[string:IS_ITEM-14_VOLUM]]></Value>
+          </DataNode>
+         </DataNode>
+        </DataNode>
+       </DataNode>
+       <DataNode name="tableau">
+        <Value><![CDATA[string:]]></Value>
+        <DataNode name="colone">
+         <Value><![CDATA[string:]]></Value>
+         <DataNode name="name" valueChanged="fromDataSource">
+          <Value><![CDATA[string:L]]></Value>
+         </DataNode>
+         <DataNode name="donné">
+          <Value><![CDATA[string:]]></Value>
+          <DataNode name="name" valueChanged="fromDataSource">
+           <Value><![CDATA[string:]]></Value>
+          </DataNode>
+         </DataNode>
+        </DataNode>
+        <DataNode name="colone">
+         <Value><![CDATA[string:]]></Value>
+         <DataNode name="name" valueChanged="fromDataSource">
+          <Value><![CDATA[string:L]]></Value>
+         </DataNode>
+         <DataNode name="donné" valueChanged="fromDataSource">
+          <Value><![CDATA[string:1423 fibreboard boxes with 31.415 Sprays (F.P. : 13.0 °C cc)]]></Value>
+          <DataNode name="name" valueChanged="fromDataSource">
+           <Value><![CDATA[string:IS_ITEM-14_SHIPPING_MARKS]]></Value>
+          </DataNode>
+         </DataNode>
+        </DataNode>
+        <DataNode name="colone">
+         <Value><![CDATA[string:]]></Value>
+         <DataNode name="name" valueChanged="fromDataSource">
+          <Value><![CDATA[string:L]]></Value>
+         </DataNode>
+         <DataNode name="donné" valueChanged="fromDataSource">
+          <Value><![CDATA[string:11325,631]]></Value>
+          <DataNode name="name" valueChanged="fromDataSource">
+           <Value><![CDATA[string:IS_ITEM-14_BRGEW]]></Value>
+          </DataNode>
+         </DataNode>
+        </DataNode>
+        <DataNode name="colone">
+         <Value><![CDATA[string:]]></Value>
+         <DataNode name="name" valueChanged="fromDataSource">
+          <Value><![CDATA[string:L]]></Value>
+         </DataNode>
+         <DataNode name="donné" valueChanged="fromDataSource">
+          <Value><![CDATA[string:10370,312]]></Value>
+          <DataNode name="name" valueChanged="fromDataSource">
+           <Value><![CDATA[string:IS_ITEM-14_NTGEW]]></Value>
+          </DataNode>
+         </DataNode>
+        </DataNode>
+        <DataNode name="colone">
+         <Value><![CDATA[string:]]></Value>
+         <DataNode name="name" valueChanged="fromDataSource">
+          <Value><![CDATA[string:L]]></Value>
+         </DataNode>
+         <DataNode name="donné" valueChanged="fromDataSource">
+          <Value><![CDATA[string:14,613 M3]]></Value>
+          <DataNode name="name" valueChanged="fromDataSource">
+           <Value><![CDATA[string:IS_ITEM-14_VOLUM]]></Value>
+          </DataNode>
+         </DataNode>
+        </DataNode>
+       </DataNode>
+       <DataNode name="tableau">
+        <Value><![CDATA[string:]]></Value>
+        <DataNode name="colone">
+         <Value><![CDATA[string:]]></Value>
+         <DataNode name="name" valueChanged="fromDataSource">
+          <Value><![CDATA[string:L]]></Value>
+         </DataNode>
+         <DataNode name="donné">
+          <Value><![CDATA[string:]]></Value>
+          <DataNode name="name" valueChanged="fromDataSource">
+           <Value><![CDATA[string:]]></Value>
+          </DataNode>
+         </DataNode>
+        </DataNode>
+        <DataNode name="colone">
+         <Value><![CDATA[string:]]></Value>
+         <DataNode name="name" valueChanged="fromDataSource">
+          <Value><![CDATA[string:L]]></Value>
+         </DataNode>
+         <DataNode name="donné" valueChanged="fromDataSource">
+          <Value><![CDATA[string:Sub total UN1266 - Class 3, II : 2143 fibreboard boxes with 204215 inner packaging]]></Value>
+          <DataNode name="name" valueChanged="fromDataSource">
+           <Value><![CDATA[string:IS_ITEM-14_SHIPPING_MARKS]]></Value>
+          </DataNode>
+         </DataNode>
+        </DataNode>
+        <DataNode name="colone">
+         <Value><![CDATA[string:]]></Value>
+         <DataNode name="name" valueChanged="fromDataSource">
+          <Value><![CDATA[string:L]]></Value>
+         </DataNode>
+         <DataNode name="donné" valueChanged="fromDataSource">
+          <Value><![CDATA[string:13417,447]]></Value>
+          <DataNode name="name" valueChanged="fromDataSource">
+           <Value><![CDATA[string:IS_ITEM-14_BRGEW]]></Value>
+          </DataNode>
+         </DataNode>
+        </DataNode>
+        <DataNode name="colone">
+         <Value><![CDATA[string:]]></Value>
+         <DataNode name="name" valueChanged="fromDataSource">
+          <Value><![CDATA[string:L]]></Value>
+         </DataNode>
+         <DataNode name="donné" valueChanged="fromDataSource">
+          <Value><![CDATA[string:11752,712]]></Value>
+          <DataNode name="name" valueChanged="fromDataSource">
+           <Value><![CDATA[string:IS_ITEM-14_NTGEW]]></Value>
+          </DataNode>
+         </DataNode>
+        </DataNode>
+        <DataNode name="colone">
+         <Value><![CDATA[string:]]></Value>
+         <DataNode name="name" valueChanged="fromDataSource">
+          <Value><![CDATA[string:L]]></Value>
+         </DataNode>
+         <DataNode name="donné" valueChanged="fromDataSource">
+          <Value><![CDATA[string:27,573 M3]]></Value>
+          <DataNode name="name" valueChanged="fromDataSource">
+           <Value><![CDATA[string:IS_ITEM-14_VOLUM]]></Value>
+          </DataNode>
+         </DataNode>
+        </DataNode>
+       </DataNode>
+       <DataNode name="tableau">
+        <Value><![CDATA[string:]]></Value>
+        <DataNode name="colone">
+         <Value><![CDATA[string:]]></Value>
+         <DataNode name="name" valueChanged="fromDataSource">
+          <Value><![CDATA[string:L]]></Value>
+         </DataNode>
+         <DataNode name="donné">
+          <Value><![CDATA[string:]]></Value>
+          <DataNode name="name" valueChanged="fromDataSource">
+           <Value><![CDATA[string:]]></Value>
+          </DataNode>
+         </DataNode>
+        </DataNode>
+        <DataNode name="colone">
+         <Value><![CDATA[string:]]></Value>
+         <DataNode name="name" valueChanged="fromDataSource">
+          <Value><![CDATA[string:L]]></Value>
+         </DataNode>
+         <DataNode name="donné">
+          <Value><![CDATA[string:]]></Value>
+          <DataNode name="name" valueChanged="fromDataSource">
+           <Value><![CDATA[string:]]></Value>
+          </DataNode>
+         </DataNode>
+        </DataNode>
+        <DataNode name="colone">
+         <Value><![CDATA[string:]]></Value>
+         <DataNode name="name" valueChanged="fromDataSource">
+          <Value><![CDATA[string:L]]></Value>
+         </DataNode>
+         <DataNode name="donné">
+          <Value><![CDATA[string:]]></Value>
+          <DataNode name="name" valueChanged="fromDataSource">
+           <Value><![CDATA[string:]]></Value>
+          </DataNode>
+         </DataNode>
+        </DataNode>
+        <DataNode name="colone">
+         <Value><![CDATA[string:]]></Value>
+         <DataNode name="name" valueChanged="fromDataSource">
+          <Value><![CDATA[string:L]]></Value>
+         </DataNode>
+         <DataNode name="donné">
+          <Value><![CDATA[string:]]></Value>
+          <DataNode name="name" valueChanged="fromDataSource">
+           <Value><![CDATA[string:]]></Value>
+          </DataNode>
+         </DataNode>
+        </DataNode>
+        <DataNode name="colone">
+         <Value><![CDATA[string:]]></Value>
+         <DataNode name="name" valueChanged="fromDataSource">
+          <Value><![CDATA[string:L]]></Value>
+         </DataNode>
+         <DataNode name="donné">
+          <Value><![CDATA[string:]]></Value>
+          <DataNode name="name" valueChanged="fromDataSource">
+           <Value><![CDATA[string:]]></Value>
+          </DataNode>
+         </DataNode>
+        </DataNode>
+       </DataNode>
+       <DataNode name="tableau">
+        <Value><![CDATA[string:]]></Value>
+        <DataNode name="colone">
+         <Value><![CDATA[string:]]></Value>
+         <DataNode name="name" valueChanged="fromDataSource">
+          <Value><![CDATA[string:L]]></Value>
+         </DataNode>
+         <DataNode name="donné">
+          <Value><![CDATA[string:]]></Value>
+          <DataNode name="name" valueChanged="fromDataSource">
+           <Value><![CDATA[string:]]></Value>
+          </DataNode>
+         </DataNode>
+        </DataNode>
+        <DataNode name="colone">
+         <Value><![CDATA[string:]]></Value>
+         <DataNode name="name" valueChanged="fromDataSource">
+          <Value><![CDATA[string:L]]></Value>
+         </DataNode>
+         <DataNode name="donné" valueChanged="fromDataSource">
+          <Value><![CDATA[string:UN1993/FLAMMABLE LIQUID, N.O.S. (ISODODECANE, ETHANOL)]]></Value>
+          <DataNode name="name" valueChanged="fromDataSource">
+           <Value><![CDATA[string:IS_ITEM-14_SHIPPING_MARKS]]></Value>
+          </DataNode>
+         </DataNode>
+        </DataNode>
+        <DataNode name="colone">
+         <Value><![CDATA[string:]]></Value>
+         <DataNode name="name" valueChanged="fromDataSource">
+          <Value><![CDATA[string:L]]></Value>
+         </DataNode>
+         <DataNode name="donné">
+          <Value><![CDATA[string:]]></Value>
+          <DataNode name="name" valueChanged="fromDataSource">
+           <Value><![CDATA[string:]]></Value>
+          </DataNode>
+         </DataNode>
+        </DataNode>
+        <DataNode name="colone">
+         <Value><![CDATA[string:]]></Value>
+         <DataNode name="name" valueChanged="fromDataSource">
+          <Value><![CDATA[string:L]]></Value>
+         </DataNode>
+         <DataNode name="donné">
+          <Value><![CDATA[string:]]></Value>
+          <DataNode name="name" valueChanged="fromDataSource">
+           <Value><![CDATA[string:]]></Value>
+          </DataNode>
+         </DataNode>
+        </DataNode>
+        <DataNode name="colone">
+         <Value><![CDATA[string:]]></Value>
+         <DataNode name="name" valueChanged="fromDataSource">
+          <Value><![CDATA[string:L]]></Value>
+         </DataNode>
+         <DataNode name="donné">
+          <Value><![CDATA[string:]]></Value>
+          <DataNode name="name" valueChanged="fromDataSource">
+           <Value><![CDATA[string:]]></Value>
+          </DataNode>
+         </DataNode>
+        </DataNode>
+       </DataNode>
+       <DataNode name="tableau">
+        <Value><![CDATA[string:]]></Value>
+        <DataNode name="colone">
+         <Value><![CDATA[string:]]></Value>
+         <DataNode name="name" valueChanged="fromDataSource">
+          <Value><![CDATA[string:L]]></Value>
+         </DataNode>
+         <DataNode name="donné">
+          <Value><![CDATA[string:]]></Value>
+          <DataNode name="name" valueChanged="fromDataSource">
+           <Value><![CDATA[string:]]></Value>
+          </DataNode>
+         </DataNode>
+        </DataNode>
+        <DataNode name="colone">
+         <Value><![CDATA[string:]]></Value>
+         <DataNode name="name" valueChanged="fromDataSource">
+          <Value><![CDATA[string:L]]></Value>
+         </DataNode>
+         <DataNode name="donné" valueChanged="fromDataSource">
+          <Value><![CDATA[string:Class 3, III]]></Value>
+          <DataNode name="name" valueChanged="fromDataSource">
+           <Value><![CDATA[string:IS_ITEM-14_SHIPPING_MARKS]]></Value>
+          </DataNode>
+         </DataNode>
+        </DataNode>
+        <DataNode name="colone">
+         <Value><![CDATA[string:]]></Value>
+         <DataNode name="name" valueChanged="fromDataSource">
+          <Value><![CDATA[string:L]]></Value>
+         </DataNode>
+         <DataNode name="donné">
+          <Value><![CDATA[string:]]></Value>
+          <DataNode name="name" valueChanged="fromDataSource">
+           <Value><![CDATA[string:]]></Value>
+          </DataNode>
+         </DataNode>
+        </DataNode>
+        <DataNode name="colone">
+         <Value><![CDATA[string:]]></Value>
+         <DataNode name="name" valueChanged="fromDataSource">
+          <Value><![CDATA[string:L]]></Value>
+         </DataNode>
+         <DataNode name="donné">
+          <Value><![CDATA[string:]]></Value>
+          <DataNode name="name" valueChanged="fromDataSource">
+           <Value><![CDATA[string:]]></Value>
+          </DataNode>
+         </DataNode>
+        </DataNode>
+        <DataNode name="colone">
+         <Value><![CDATA[string:]]></Value>
+         <DataNode name="name" valueChanged="fromDataSource">
+          <Value><![CDATA[string:L]]></Value>
+         </DataNode>
+         <DataNode name="donné">
+          <Value><![CDATA[string:]]></Value>
+          <DataNode name="name" valueChanged="fromDataSource">
+           <Value><![CDATA[string:]]></Value>
+          </DataNode>
+         </DataNode>
+        </DataNode>
+       </DataNode>
+       <DataNode name="tableau">
+        <Value><![CDATA[string:]]></Value>
+        <DataNode name="colone">
+         <Value><![CDATA[string:]]></Value>
+         <DataNode name="name" valueChanged="fromDataSource">
+          <Value><![CDATA[string:L]]></Value>
+         </DataNode>
+         <DataNode name="donné">
+          <Value><![CDATA[string:]]></Value>
+          <DataNode name="name" valueChanged="fromDataSource">
+           <Value><![CDATA[string:]]></Value>
+          </DataNode>
+         </DataNode>
+        </DataNode>
+        <DataNode name="colone">
+         <Value><![CDATA[string:]]></Value>
+         <DataNode name="name" valueChanged="fromDataSource">
+          <Value><![CDATA[string:L]]></Value>
+         </DataNode>
+         <DataNode name="donné" valueChanged="fromDataSource">
+          <Value><![CDATA[string:LIMITED QUANTITY, EMS : F-E, S-E, Stowage : Category A]]></Value>
+          <DataNode name="name" valueChanged="fromDataSource">
+           <Value><![CDATA[string:IS_ITEM-14_SHIPPING_MARKS]]></Value>
+          </DataNode>
+         </DataNode>
+        </DataNode>
+        <DataNode name="colone">
+         <Value><![CDATA[string:]]></Value>
+         <DataNode name="name" valueChanged="fromDataSource">
+          <Value><![CDATA[string:L]]></Value>
+         </DataNode>
+         <DataNode name="donné">
+          <Value><![CDATA[string:]]></Value>
+          <DataNode name="name" valueChanged="fromDataSource">
+           <Value><![CDATA[string:]]></Value>
+          </DataNode>
+         </DataNode>
+        </DataNode>
+        <DataNode name="colone">
+         <Value><![CDATA[string:]]></Value>
+         <DataNode name="name" valueChanged="fromDataSource">
+          <Value><![CDATA[string:L]]></Value>
+         </DataNode>
+         <DataNode name="donné">
+          <Value><![CDATA[string:]]></Value>
+          <DataNode name="name" valueChanged="fromDataSource">
+           <Value><![CDATA[string:]]></Value>
+          </DataNode>
+         </DataNode>
+        </DataNode>
+        <DataNode name="colone">
+         <Value><![CDATA[string:]]></Value>
+         <DataNode name="name" valueChanged="fromDataSource">
+          <Value><![CDATA[string:L]]></Value>
+         </DataNode>
+         <DataNode name="donné">
+          <Value><![CDATA[string:]]></Value>
+          <DataNode name="name" valueChanged="fromDataSource">
+           <Value><![CDATA[string:]]></Value>
+          </DataNode>
+         </DataNode>
+        </DataNode>
+       </DataNode>
+       <DataNode name="tableau">
+        <Value><![CDATA[string:]]></Value>
+        <DataNode name="colone">
+         <Value><![CDATA[string:]]></Value>
+         <DataNode name="name" valueChanged="fromDataSource">
+          <Value><![CDATA[string:L]]></Value>
+         </DataNode>
+         <DataNode name="donné">
+          <Value><![CDATA[string:]]></Value>
+          <DataNode name="name" valueChanged="fromDataSource">
+           <Value><![CDATA[string:]]></Value>
+          </DataNode>
+         </DataNode>
+        </DataNode>
+        <DataNode name="colone">
+         <Value><![CDATA[string:]]></Value>
+         <DataNode name="name" valueChanged="fromDataSource">
+          <Value><![CDATA[string:L]]></Value>
+         </DataNode>
+         <DataNode name="donné" valueChanged="fromDataSource">
+          <Value><![CDATA[string:21 fibreboard boxes with 1.269 Bottle or Container (F.P. : 33.0 °C cc)]]></Value>
+          <DataNode name="name" valueChanged="fromDataSource">
+           <Value><![CDATA[string:IS_ITEM-14_SHIPPING_MARKS]]></Value>
+          </DataNode>
+         </DataNode>
+        </DataNode>
+        <DataNode name="colone">
+         <Value><![CDATA[string:]]></Value>
+         <DataNode name="name" valueChanged="fromDataSource">
+          <Value><![CDATA[string:L]]></Value>
+         </DataNode>
+         <DataNode name="donné" valueChanged="fromDataSource">
+          <Value><![CDATA[string:185,282]]></Value>
+          <DataNode name="name" valueChanged="fromDataSource">
+           <Value><![CDATA[string:IS_ITEM-14_BRGEW]]></Value>
+          </DataNode>
+         </DataNode>
+        </DataNode>
+        <DataNode name="colone">
+         <Value><![CDATA[string:]]></Value>
+         <DataNode name="name" valueChanged="fromDataSource">
+          <Value><![CDATA[string:L]]></Value>
+         </DataNode>
+         <DataNode name="donné" valueChanged="fromDataSource">
+          <Value><![CDATA[string:175,122]]></Value>
+          <DataNode name="name" valueChanged="fromDataSource">
+           <Value><![CDATA[string:IS_ITEM-14_NTGEW]]></Value>
+          </DataNode>
+         </DataNode>
+        </DataNode>
+        <DataNode name="colone">
+         <Value><![CDATA[string:]]></Value>
+         <DataNode name="name" valueChanged="fromDataSource">
+          <Value><![CDATA[string:L]]></Value>
+         </DataNode>
+         <DataNode name="donné" valueChanged="fromDataSource">
+          <Value><![CDATA[string:0,180 M3]]></Value>
+          <DataNode name="name" valueChanged="fromDataSource">
+           <Value><![CDATA[string:IS_ITEM-14_VOLUM]]></Value>
+          </DataNode>
+         </DataNode>
+        </DataNode>
+       </DataNode>
+       <DataNode name="tableau">
+        <Value><![CDATA[string:]]></Value>
+        <DataNode name="colone">
+         <Value><![CDATA[string:]]></Value>
+         <DataNode name="name" valueChanged="fromDataSource">
+          <Value><![CDATA[string:L]]></Value>
+         </DataNode>
+         <DataNode name="donné">
+          <Value><![CDATA[string:]]></Value>
+          <DataNode name="name" valueChanged="fromDataSource">
+           <Value><![CDATA[string:]]></Value>
+          </DataNode>
+         </DataNode>
+        </DataNode>
+        <DataNode name="colone">
+         <Value><![CDATA[string:]]></Value>
+         <DataNode name="name" valueChanged="fromDataSource">
+          <Value><![CDATA[string:L]]></Value>
+         </DataNode>
+         <DataNode name="donné" valueChanged="fromDataSource">
+          <Value><![CDATA[string:46 fibreboard boxes with 2.859 Pump Bottle (F.P. : 38.0 °C cc)]]></Value>
+          <DataNode name="name" valueChanged="fromDataSource">
+           <Value><![CDATA[string:IS_ITEM-14_SHIPPING_MARKS]]></Value>
+          </DataNode>
+         </DataNode>
+        </DataNode>
+        <DataNode name="colone">
+         <Value><![CDATA[string:]]></Value>
+         <DataNode name="name" valueChanged="fromDataSource">
+          <Value><![CDATA[string:L]]></Value>
+         </DataNode>
+         <DataNode name="donné" valueChanged="fromDataSource">
+          <Value><![CDATA[string:398,448]]></Value>
+          <DataNode name="name" valueChanged="fromDataSource">
+           <Value><![CDATA[string:IS_ITEM-14_BRGEW]]></Value>
+          </DataNode>
+         </DataNode>
+        </DataNode>
+        <DataNode name="colone">
+         <Value><![CDATA[string:]]></Value>
+         <DataNode name="name" valueChanged="fromDataSource">
+          <Value><![CDATA[string:L]]></Value>
+         </DataNode>
+         <DataNode name="donné" valueChanged="fromDataSource">
+          <Value><![CDATA[string:381,090]]></Value>
+          <DataNode name="name" valueChanged="fromDataSource">
+           <Value><![CDATA[string:IS_ITEM-14_NTGEW]]></Value>
+          </DataNode>
+         </DataNode>
+        </DataNode>
+        <DataNode name="colone">
+         <Value><![CDATA[string:]]></Value>
+         <DataNode name="name" valueChanged="fromDataSource">
+          <Value><![CDATA[string:L]]></Value>
+         </DataNode>
+         <DataNode name="donné" valueChanged="fromDataSource">
+          <Value><![CDATA[string:0,463 M3]]></Value>
+          <DataNode name="name" valueChanged="fromDataSource">
+           <Value><![CDATA[string:IS_ITEM-14_VOLUM]]></Value>
+          </DataNode>
+         </DataNode>
+        </DataNode>
+       </DataNode>
+       <DataNode name="tableau">
+        <Value><![CDATA[string:]]></Value>
+        <DataNode name="colone">
+         <Value><![CDATA[string:]]></Value>
+         <DataNode name="name" valueChanged="fromDataSource">
+          <Value><![CDATA[string:L]]></Value>
+         </DataNode>
+         <DataNode name="donné">
+          <Value><![CDATA[string:]]></Value>
+          <DataNode name="name" valueChanged="fromDataSource">
+           <Value><![CDATA[string:]]></Value>
+          </DataNode>
+         </DataNode>
+        </DataNode>
+        <DataNode name="colone">
+         <Value><![CDATA[string:]]></Value>
+         <DataNode name="name" valueChanged="fromDataSource">
+          <Value><![CDATA[string:L]]></Value>
+         </DataNode>
+         <DataNode name="donné" valueChanged="fromDataSource">
+          <Value><![CDATA[string:Sub total UN1993 - Class 3, III : 67 fibreboard boxes with 4128 inner packaging]]></Value>
+          <DataNode name="name" valueChanged="fromDataSource">
+           <Value><![CDATA[string:IS_ITEM-14_SHIPPING_MARKS]]></Value>
+          </DataNode>
+         </DataNode>
+        </DataNode>
+        <DataNode name="colone">
+         <Value><![CDATA[string:]]></Value>
+         <DataNode name="name" valueChanged="fromDataSource">
+          <Value><![CDATA[string:L]]></Value>
+         </DataNode>
+         <DataNode name="donné" valueChanged="fromDataSource">
+          <Value><![CDATA[string:583,730]]></Value>
+          <DataNode name="name" valueChanged="fromDataSource">
+           <Value><![CDATA[string:IS_ITEM-14_BRGEW]]></Value>
+          </DataNode>
+         </DataNode>
+        </DataNode>
+        <DataNode name="colone">
+         <Value><![CDATA[string:]]></Value>
+         <DataNode name="name" valueChanged="fromDataSource">
+          <Value><![CDATA[string:L]]></Value>
+         </DataNode>
+         <DataNode name="donné" valueChanged="fromDataSource">
+          <Value><![CDATA[string:556,212]]></Value>
+          <DataNode name="name" valueChanged="fromDataSource">
+           <Value><![CDATA[string:IS_ITEM-14_NTGEW]]></Value>
+          </DataNode>
+         </DataNode>
+        </DataNode>
+        <DataNode name="colone">
+         <Value><![CDATA[string:]]></Value>
+         <DataNode name="name" valueChanged="fromDataSource">
+          <Value><![CDATA[string:L]]></Value>
+         </DataNode>
+         <DataNode name="donné" valueChanged="fromDataSource">
+          <Value><![CDATA[string:0,643 M3]]></Value>
+          <DataNode name="name" valueChanged="fromDataSource">
+           <Value><![CDATA[string:IS_ITEM-14_VOLUM]]></Value>
+          </DataNode>
+         </DataNode>
+        </DataNode>
+       </DataNode>
+       <DataNode name="tableau">
+        <Value><![CDATA[string:]]></Value>
+        <DataNode name="colone">
+         <Value><![CDATA[string:]]></Value>
+         <DataNode name="name" valueChanged="fromDataSource">
+          <Value><![CDATA[string:L]]></Value>
+         </DataNode>
+         <DataNode name="donné">
+          <Value><![CDATA[string:]]></Value>
+          <DataNode name="name" valueChanged="fromDataSource">
+           <Value><![CDATA[string:]]></Value>
+          </DataNode>
+         </DataNode>
+        </DataNode>
+        <DataNode name="colone">
+         <Value><![CDATA[string:]]></Value>
+         <DataNode name="name" valueChanged="fromDataSource">
+          <Value><![CDATA[string:L]]></Value>
+         </DataNode>
+         <DataNode name="donné">
+          <Value><![CDATA[string:]]></Value>
+          <DataNode name="name" valueChanged="fromDataSource">
+           <Value><![CDATA[string:]]></Value>
+          </DataNode>
+         </DataNode>
+        </DataNode>
+        <DataNode name="colone">
+         <Value><![CDATA[string:]]></Value>
+         <DataNode name="name" valueChanged="fromDataSource">
+          <Value><![CDATA[string:L]]></Value>
+         </DataNode>
+         <DataNode name="donné">
+          <Value><![CDATA[string:]]></Value>
+          <DataNode name="name" valueChanged="fromDataSource">
+           <Value><![CDATA[string:]]></Value>
+          </DataNode>
+         </DataNode>
+        </DataNode>
+        <DataNode name="colone">
+         <Value><![CDATA[string:]]></Value>
+         <DataNode name="name" valueChanged="fromDataSource">
+          <Value><![CDATA[string:L]]></Value>
+         </DataNode>
+         <DataNode name="donné">
+          <Value><![CDATA[string:]]></Value>
+          <DataNode name="name" valueChanged="fromDataSource">
+           <Value><![CDATA[string:]]></Value>
+          </DataNode>
+         </DataNode>
+        </DataNode>
+        <DataNode name="colone">
+         <Value><![CDATA[string:]]></Value>
+         <DataNode name="name" valueChanged="fromDataSource">
+          <Value><![CDATA[string:L]]></Value>
+         </DataNode>
+         <DataNode name="donné">
+          <Value><![CDATA[string:]]></Value>
+          <DataNode name="name" valueChanged="fromDataSource">
+           <Value><![CDATA[string:]]></Value>
+          </DataNode>
+         </DataNode>
+        </DataNode>
+       </DataNode>
+      </DataNode>
+     </DataNode>
+     <DataNode name="Metadata">
+      <Value><![CDATA[string:]]></Value>
+      <DataNode name="State" valueChanged="fromDataSource">
+       <Value><![CDATA[string:Created]]></Value>
+      </DataNode>
+      <DataNode name="ValidationState" valueChanged="manually">
+       <Value><![CDATA[string:OK]]></Value>
+      </DataNode>
+      <DataNode name="Editor">
+       <Value><![CDATA[string:]]></Value>
+       <DataNode name="DefaultDocumentName" valueChanged="fromDataSource">
+        <Value><![CDATA[string:]]></Value>
+       </DataNode>
+       <DataNode name="DefaultDocumentDescription" valueChanged="fromDataSource">
+        <Value><![CDATA[string:]]></Value>
+       </DataNode>
+      </DataNode>
+      <DataNode name="DocumentLanguage" valueChanged="fromDataSource">
+       <Value><![CDATA[string:]]></Value>
+      </DataNode>
+      <DataNode name="InitialDataBinding" valueChanged="fromDataSource">
+       <Value><![CDATA[string:\library\Loreal\Templates\Declaration_Dangereux.template]]></Value>
+      </DataNode>
+     </DataNode>
+    </Data>
+    <ParPartInstance partIndex="0">
+     <Data>
+      <DataNodeRef handle=":0/0/4" loopNode="true" name="tableau"></DataNodeRef>
+     </Data>
+    </ParPartInstance>
+    <ParPartInstance partIndex="0">
+     <Data>
+      <DataNodeRef handle=":0/0/5" loopNode="true" name="tableau"></DataNodeRef>
+     </Data>
+    </ParPartInstance>
+    <ParPartInstance partIndex="0">
+     <Data>
+      <DataNodeRef handle=":0/0/6" loopNode="true" name="tableau"></DataNodeRef>
+     </Data>
+    </ParPartInstance>
+    <ParPartInstance partIndex="0">
+     <Data>
+      <DataNodeRef handle=":0/0/7" loopNode="true" name="tableau"></DataNodeRef>
+     </Data>
+    </ParPartInstance>
+    <ParPartInstance partIndex="0">
+     <Data>
+      <DataNodeRef handle=":0/0/8" loopNode="true" name="tableau"></DataNodeRef>
+     </Data>
+    </ParPartInstance>
+    <ParPartInstance partIndex="0">
+     <Data>
+      <DataNodeRef handle=":0/0/9" loopNode="true" name="tableau"></DataNodeRef>
+     </Data>
+    </ParPartInstance>
+    <ParPartInstance partIndex="0">
+     <Data>
+      <DataNodeRef handle=":0/0/10" loopNode="true" name="tableau"></DataNodeRef>
+     </Data>
+    </ParPartInstance>
+    <ParPartInstance partIndex="0">
+     <Data>
+      <DataNodeRef handle=":0/0/11" loopNode="true" name="tableau"></DataNodeRef>
+     </Data>
+    </ParPartInstance>
+    <ParPartInstance partIndex="0">
+     <Data>
+      <DataNodeRef handle=":0/0/12" loopNode="true" name="tableau"></DataNodeRef>
+     </Data>
+    </ParPartInstance>
+    <ParPartInstance partIndex="0">
+     <Data>
+      <DataNodeRef handle=":0/0/13" loopNode="true" name="tableau"></DataNodeRef>
+     </Data>
+    </ParPartInstance>
+    <ParPartInstance partIndex="0">
+     <Data>
+      <DataNodeRef handle=":0/0/14" loopNode="true" name="tableau"></DataNodeRef>
+     </Data>
+    </ParPartInstance>
+    <ParPartInstance partIndex="0">
+     <Data>
+      <DataNodeRef handle=":0/0/15" loopNode="true" name="tableau"></DataNodeRef>
+     </Data>
+    </ParPartInstance>
+    <ParPartInstance partIndex="0">
+     <Data>
+      <DataNodeRef handle=":0/0/16" loopNode="true" name="tableau"></DataNodeRef>
+     </Data>
+    </ParPartInstance>
+    <ParPartInstance partIndex="0">
+     <Data>
+      <DataNodeRef handle=":0/0/17" loopNode="true" name="tableau"></DataNodeRef>
+     </Data>
+    </ParPartInstance>
+    <ParPartInstance partIndex="1">
+     <Data>
+      <DataNodeRef handle=":0/0/4" loopNode="true" name="tableau"></DataNodeRef>
+     </Data>
+    </ParPartInstance>
+    <ParPartInstance partIndex="1">
+     <Data>
+      <DataNodeRef handle=":0/0/5" loopNode="true" name="tableau"></DataNodeRef>
+     </Data>
+    </ParPartInstance>
+    <ParPartInstance partIndex="1">
+     <Data>
+      <DataNodeRef handle=":0/0/6" loopNode="true" name="tableau"></DataNodeRef>
+     </Data>
+    </ParPartInstance>
+    <ParPartInstance partIndex="1">
+     <Data>
+      <DataNodeRef handle=":0/0/7" loopNode="true" name="tableau"></DataNodeRef>
+     </Data>
+    </ParPartInstance>
+    <ParPartInstance partIndex="1">
+     <Data>
+      <DataNodeRef handle=":0/0/8" loopNode="true" name="tableau"></DataNodeRef>
+     </Data>
+    </ParPartInstance>
+    <ParPartInstance partIndex="1">
+     <Data>
+      <DataNodeRef handle=":0/0/9" loopNode="true" name="tableau"></DataNodeRef>
+     </Data>
+    </ParPartInstance>
+    <ParPartInstance partIndex="1">
+     <Data>
+      <DataNodeRef handle=":0/0/10" loopNode="true" name="tableau"></DataNodeRef>
+     </Data>
+    </ParPartInstance>
+    <ParPartInstance partIndex="1">
+     <Data>
+      <DataNodeRef handle=":0/0/11" loopNode="true" name="tableau"></DataNodeRef>
+     </Data>
+    </ParPartInstance>
+    <ParPartInstance partIndex="1">
+     <Data>
+      <DataNodeRef handle=":0/0/12" loopNode="true" name="tableau"></DataNodeRef>
+     </Data>
+    </ParPartInstance>
+    <ParPartInstance partIndex="1">
+     <Data>
+      <DataNodeRef handle=":0/0/13" loopNode="true" name="tableau"></DataNodeRef>
+     </Data>
+    </ParPartInstance>
+    <ParPartInstance partIndex="1">
+     <Data>
+      <DataNodeRef handle=":0/0/14" loopNode="true" name="tableau"></DataNodeRef>
+     </Data>
+    </ParPartInstance>
+    <ParPartInstance partIndex="1">
+     <Data>
+      <DataNodeRef handle=":0/0/15" loopNode="true" name="tableau"></DataNodeRef>
+     </Data>
+    </ParPartInstance>
+    <ParPartInstance partIndex="1">
+     <Data>
+      <DataNodeRef handle=":0/0/16" loopNode="true" name="tableau"></DataNodeRef>
+     </Data>
+    </ParPartInstance>
+    <ParPartInstance partIndex="1">
+     <Data>
+      <DataNodeRef handle=":0/0/17" loopNode="true" name="tableau"></DataNodeRef>
+     </Data>
+    </ParPartInstance>
+    <ParPartInstance partIndex="2">
+     <Data>
+      <DataNodeRef handle=":0/0/4" loopNode="true" name="tableau"></DataNodeRef>
+     </Data>
+    </ParPartInstance>
+    <ParPartInstance partIndex="2">
+     <Data>
+      <DataNodeRef handle=":0/0/5" loopNode="true" name="tableau"></DataNodeRef>
+     </Data>
+    </ParPartInstance>
+    <ParPartInstance partIndex="2">
+     <Data>
+      <DataNodeRef handle=":0/0/6" loopNode="true" name="tableau"></DataNodeRef>
+     </Data>
+    </ParPartInstance>
+    <ParPartInstance partIndex="2">
+     <Data>
+      <DataNodeRef handle=":0/0/7" loopNode="true" name="tableau"></DataNodeRef>
+     </Data>
+    </ParPartInstance>
+    <ParPartInstance partIndex="2">
+     <Data>
+      <DataNodeRef handle=":0/0/8" loopNode="true" name="tableau"></DataNodeRef>
+     </Data>
+    </ParPartInstance>
+    <ParPartInstance partIndex="2">
+     <Data>
+      <DataNodeRef handle=":0/0/9" loopNode="true" name="tableau"></DataNodeRef>
+     </Data>
+    </ParPartInstance>
+    <ParPartInstance partIndex="2">
+     <Data>
+      <DataNodeRef handle=":0/0/10" loopNode="true" name="tableau"></DataNodeRef>
+     </Data>
+    </ParPartInstance>
+    <ParPartInstance partIndex="2">
+     <Data>
+      <DataNodeRef handle=":0/0/11" loopNode="true" name="tableau"></DataNodeRef>
+     </Data>
+    </ParPartInstance>
+    <ParPartInstance partIndex="2">
+     <Data>
+      <DataNodeRef handle=":0/0/12" loopNode="true" name="tableau"></DataNodeRef>
+     </Data>
+    </ParPartInstance>
+    <ParPartInstance partIndex="2">
+     <Data>
+      <DataNodeRef handle=":0/0/13" loopNode="true" name="tableau"></DataNodeRef>
+     </Data>
+    </ParPartInstance>
+    <ParPartInstance partIndex="2">
+     <Data>
+      <DataNodeRef handle=":0/0/14" loopNode="true" name="tableau"></DataNodeRef>
+     </Data>
+    </ParPartInstance>
+    <ParPartInstance partIndex="2">
+     <Data>
+      <DataNodeRef handle=":0/0/15" loopNode="true" name="tableau"></DataNodeRef>
+     </Data>
+    </ParPartInstance>
+    <ParPartInstance partIndex="2">
+     <Data>
+      <DataNodeRef handle=":0/0/16" loopNode="true" name="tableau"></DataNodeRef>
+     </Data>
+    </ParPartInstance>
+    <ParPartInstance partIndex="2">
+     <Data>
+      <DataNodeRef handle=":0/0/17" loopNode="true" name="tableau"></DataNodeRef>
+     </Data>
+    </ParPartInstance>
+    <ParPartInstance partIndex="3">
+     <Data>
+      <DataNodeRef handle=":0/0/4" loopNode="true" name="tableau"></DataNodeRef>
+     </Data>
+    </ParPartInstance>
+    <ParPartInstance partIndex="3">
+     <Data>
+      <DataNodeRef handle=":0/0/5" loopNode="true" name="tableau"></DataNodeRef>
+     </Data>
+    </ParPartInstance>
+    <ParPartInstance partIndex="3">
+     <Data>
+      <DataNodeRef handle=":0/0/6" loopNode="true" name="tableau"></DataNodeRef>
+     </Data>
+    </ParPartInstance>
+    <ParPartInstance partIndex="3">
+     <Data>
+      <DataNodeRef handle=":0/0/7" loopNode="true" name="tableau"></DataNodeRef>
+     </Data>
+    </ParPartInstance>
+    <ParPartInstance partIndex="3">
+     <Data>
+      <DataNodeRef handle=":0/0/8" loopNode="true" name="tableau"></DataNodeRef>
+     </Data>
+    </ParPartInstance>
+    <ParPartInstance partIndex="3">
+     <Data>
+      <DataNodeRef handle=":0/0/9" loopNode="true" name="tableau"></DataNodeRef>
+     </Data>
+    </ParPartInstance>
+    <ParPartInstance partIndex="3">
+     <Data>
+      <DataNodeRef handle=":0/0/10" loopNode="true" name="tableau"></DataNodeRef>
+     </Data>
+    </ParPartInstance>
+    <ParPartInstance partIndex="3">
+     <Data>
+      <DataNodeRef handle=":0/0/11" loopNode="true" name="tableau"></DataNodeRef>
+     </Data>
+    </ParPartInstance>
+    <ParPartInstance partIndex="3">
+     <Data>
+      <DataNodeRef handle=":0/0/12" loopNode="true" name="tableau"></DataNodeRef>
+     </Data>
+    </ParPartInstance>
+    <ParPartInstance partIndex="3">
+     <Data>
+      <DataNodeRef handle=":0/0/13" loopNode="true" name="tableau"></DataNodeRef>
+     </Data>
+    </ParPartInstance>
+    <ParPartInstance partIndex="3">
+     <Data>
+      <DataNodeRef handle=":0/0/14" loopNode="true" name="tableau"></DataNodeRef>
+     </Data>
+    </ParPartInstance>
+    <ParPartInstance partIndex="3">
+     <Data>
+      <DataNodeRef handle=":0/0/15" loopNode="true" name="tableau"></DataNodeRef>
+     </Data>
+    </ParPartInstance>
+    <ParPartInstance partIndex="3">
+     <Data>
+      <DataNodeRef handle=":0/0/16" loopNode="true" name="tableau"></DataNodeRef>
+     </Data>
+    </ParPartInstance>
+    <ParPartInstance partIndex="3">
+     <Data>
+      <DataNodeRef handle=":0/0/17" loopNode="true" name="tableau"></DataNodeRef>
+     </Data>
+    </ParPartInstance>
+   </RootPartInstance>
+  </Root>
+  <DataSourceProperties>
+   <Property value="\\Loreal\Data\ZKISS_DECLARATION_DANGEREUX.xml" name="data.FILE_NAME"></Property>
+  </DataSourceProperties>
+  <ForceVisibilities>
+   <ForceVisibility visible="true" designMode="false">
+    <Position length="10" positions="0,0,0,2,0,1,3,0,0,0"></Position>
+   </ForceVisibility>
+   <ForceVisibility visible="true" designMode="false">
+    <Position length="10" positions="0,0,0,2,0,1,2,0,0,0"></Position>
+   </ForceVisibility>
+  </ForceVisibilities>
+ </TestCase>
+</TestCases>

@@ -1,0 +1,5 @@
+%/Partner/Person/NaturalPerson/Name/Firstname/__VALIDATION_LABEL__=TRANSLATION: Vorname
+%/Partner/Person/NaturalPerson/Name/Lastname/__VALIDATION_ERROR_MESSAGE__=TRANSLATION: Bitte geben Sie den Nachnamen ein
+%/Partner/Person/NaturalPerson/Name/Lastname/__VALIDATION_LABEL__=TRANSLATION: Nachname
+%/Partner/Person/NaturalPerson/Name/Title/__VALIDATION_LABEL__=TRANSLATION: Titel
+%/Partner/Person/Salutation/__VALIDATION_LABEL__=TRANSLATION: Anrede

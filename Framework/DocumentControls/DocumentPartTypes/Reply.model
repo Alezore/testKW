@@ -1,0 +1,146 @@
+<DocumentPart xmlns="urn:kwsoft:mtext:tonic:dom">
+ <DataDefinition>
+  <ParamDef name="Message" ref="\\Framework\Data\Message.datamodel" provided="true">
+   <Description></Description>
+   <Output text-prefix="" text-suffix=""></Output>
+  </ParamDef>
+  <ParamDef name="Instance" ref="\\Framework\Data\Instance.datamodel" provided="true">
+   <Description></Description>
+   <Output text-prefix="" text-suffix=""></Output>
+  </ParamDef>
+  <ParamDef name="Recipient" ref="\\Framework\Data\Recipient.datamodel">
+   <Description></Description>
+   <Output text-prefix="" text-suffix=""></Output>
+  </ParamDef>
+  <ParamDef name="Sender" ref="\\Framework\Data\Sender.datamodel">
+   <Description></Description>
+   <Output text-prefix="" text-suffix=""></Output>
+  </ParamDef>
+  <ParamDef name="InstanceOutputSettings" ref="\\Framework\Data\Instance.datamodel" provided="true">
+   <Description></Description>
+  </ParamDef>
+  <ParamDef name="Language" provided="true">
+   <Description></Description>
+   <Input text-prefix="" text-suffix=""></Input>
+   <Output text-prefix="" text-suffix=""></Output>
+   <Subtype></Subtype>
+   <Validation validation-type="any_value" operator="any" allow-empty-value="true">
+    <Values></Values>
+   </Validation>
+  </ParamDef>
+  <DataNodeDef name="SendAsAttachment" data-type="boolean">
+   <Description></Description>
+   <Input true-value="true" false-value="false"></Input>
+   <Output true-value="X" false-value=""></Output>
+   <Subtype></Subtype>
+   <Script><![CDATA[true]]></Script>
+   <Validation validation-type="any_value" allow-empty-value="true">
+    <Values></Values>
+   </Validation>
+  </DataNodeDef>
+  <ParamDef name="AttachmentName">
+   <Description></Description>
+   <Input text-prefix="" text-suffix=""></Input>
+   <Output text-prefix="" text-suffix=""></Output>
+   <Subtype></Subtype>
+   <Validation validation-type="any_value" operator="any" allow-empty-value="true">
+    <Values></Values>
+   </Validation>
+  </ParamDef>
+ </DataDefinition>
+ <ModificationRights>
+  <Allowed>
+   <ModificationRight role="_EVERYONE_" operations="INPUT"></ModificationRight>
+  </Allowed>
+  <Denied></Denied>
+ </ModificationRights>
+ <Section title="Antwort von $Recipient.NameFirstname" title-en_US="Reply from $Recipient.NameFirstname">
+  <Language><![CDATA[$Language]]></Language>
+  <OutputSettingsRef uri="Framework\OutputSettings.outputSettings"></OutputSettingsRef>
+  <Style parentName="Reply"></Style>
+  <StaticContainer>
+   <Style>
+    <RegionRef>logo</RegionRef>
+   </Style>
+   <ContainerPartRef uri="Framework\LayoutComponents\Logo.model"></ContainerPartRef>
+  </StaticContainer>
+  <StaticContainer>
+   <Style>
+    <RegionRef>recipient</RegionRef>
+   </Style>
+   <Par>
+    <Span>
+     <Data>$Sender.Name</Data>
+     <Text></Text>
+    </Span>
+   </Par>
+   <Par>
+    <Span>
+     <Data>$Sender.Street</Data>
+     <Text></Text>
+    </Span>
+   </Par>
+   <Par>
+    <Span>
+     <Data>$Sender.Zip</Data>
+     <Text> </Text>
+     <Data>$Sender.City</Data>
+    </Span>
+   </Par>
+  </StaticContainer>
+  <Container>
+   <Style parentName="Subject"></Style>
+   <ContainerExtensionDef id="Reply Subject"></ContainerExtensionDef>
+  </Container>
+  <Container>
+   <Style parentName="Body"></Style>
+   <Numbering id="Default"></Numbering>
+   <ContainerExtensionDef id="Reply Content"></ContainerExtensionDef>
+  </Container>
+  <StaticContainer>
+   <Style parentName="ContactInformationResponsive"></Style>
+   <ContainerPartRef uri="Framework\DocumentPartTypes\Letter\ContactInformations.model">
+    <Param name="Sender" type="datanoderef">$Sender</Param>
+   </ContainerPartRef>
+  </StaticContainer>
+  <SectionPartRef uri="Framework\DocumentPartTypes\Letter\Info.model">
+   <Param name="User">$Sender.User</Param>
+  </SectionPartRef>
+  <SectionPartRef uri="Framework\DocumentParts\Letter\LetterDate.model"></SectionPartRef>
+  <StaticContainer>
+   <Style parentName="LetterSenderAddress"></Style>
+   <ContainerPartRef uri="Framework\DocumentPartTypes\Letter\Sender.model">
+    <Param name="Sender">$Sender</Param>
+   </ContainerPartRef>
+  </StaticContainer>
+  <StaticContainer>
+   <Style parentName="LetterRecipientAddress"></Style>
+   <ContainerPartRef uri="Framework\DocumentPartTypes\Letter\RecipientAddress.model">
+    <Param name="Recipient">$Recipient</Param>
+   </ContainerPartRef>
+  </StaticContainer>
+  <StaticContainer>
+   <Style parentName="CompanyFooterResponsive"></Style>
+   <ContainerPartRef uri="\\Framework\Framework\DocumentPartTypes\Letter\CompanyInfo_AddressInformation.model"></ContainerPartRef>
+   <ContainerPartRef uri="\\Framework\Framework\DocumentPartTypes\Letter\CompanyInfo_Management.model"></ContainerPartRef>
+   <ContainerPartRef uri="\\Framework\Framework\DocumentPartTypes\Letter\CompanyInfo_CorrespondentBank.model"></ContainerPartRef>
+   <ContainerPartRef uri="\\Framework\Framework\DocumentPartTypes\Letter\CompanyInfo_CommercialRegister.model"></ContainerPartRef>
+  </StaticContainer>
+  <SectionPartRef uri="\\Framework\Framework\LayoutComponents\MarginalNotes.model"></SectionPartRef>
+  <StaticContainer>
+   <Style>
+    <RegionRef>footer</RegionRef>
+   </Style>
+   <ContainerPartRef uri="\\Framework\Framework\DocumentPartTypes\Letter\PageNumber.model"></ContainerPartRef>
+  </StaticContainer>
+  <StaticContainer>
+   <Style parentName="CompanyFooter"></Style>
+   <ContainerPartRef uri="Framework\DocumentPartTypes\Letter\CompanyFooter.model"></ContainerPartRef>
+  </StaticContainer>
+  <StaticContainer>
+   <Style>
+    <RegionRef>footerbackpage</RegionRef>
+   </Style>
+  </StaticContainer>
+ </Section>
+</DocumentPart>

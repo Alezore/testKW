@@ -1,0 +1,1914 @@
+<RootPart xmlns="urn:kwsoft:mtext:tonic:dom" id="\library\Loreal\Templates\Declaration_Dangereux.template">
+ <DataDefinition>
+  <ParamDef name="data" ref="\\Loreal\Data\Declaration_Dangereux.datamodel" dataMappingRef="\\Loreal\Data\Declaration_Dangereux.mapping" constantDataRef="">
+   <Description></Description>
+   <Input text-prefix="" text-suffix=""></Input>
+   <Output text-prefix="" text-suffix=""></Output>
+  </ParamDef>
+ </DataDefinition>
+ <ModificationRights>
+  <Allowed>
+   <ModificationRight role="_EVERYONE_" operations="INPUT"></ModificationRight>
+  </Allowed>
+  <Denied></Denied>
+ </ModificationRights>
+ <Document>
+  <Section>
+   <Style parentName="Declaration_Dangereux"></Style>
+   <StaticContainer>
+    <Style>
+     <RegionRef>header</RegionRef>
+    </Style>
+    <Par>
+     <Style>
+      <Align>center</Align>
+      <LineSpacing type="at_least" value="0.0cm"></LineSpacing>
+     </Style>
+     <Span>
+      <Style>
+       <FontSize>7.0pt</FontSize>
+      </Style>
+      <Text>FORMULE CADRE POUR LE TRANSPORT MULTIMODAL DE MARCHANDISES DANGEREUSES / </Text>
+     </Span>
+     <Span>
+      <Style>
+       <FontSize>6.0pt</FontSize>
+       <FontStyle>italics</FontStyle>
+      </Style>
+      <Text>MULTIMODAL DANGEROUS GOODS FORM</Text>
+     </Span>
+    </Par>
+    <Par>
+     <Style>
+      <Align>left</Align>
+     </Style>
+     <Span>
+      <Style>
+       <FontSize>7.0pt</FontSize>
+      </Style>
+      <Text>
+</Text>
+     </Span>
+     <Span>
+      <Style>
+       <FontSize>5.0pt</FontSize>
+      </Style>
+      <Text>La présente formule cadre peut être utilisée aux fins de la déclaration de marchandises dangereuses car elle satisfait aux prescriptions de la règle 4 du chapitre VII de la Convention SOLAS de 1974, de la règle 4 de
+l'Annexe III de MARPOL 73/78 et du chapitre 5.4 du Code IMDG et de l'ADR en vigueur. Les informations demandées dans les cases 1, 6, 9, 14 (sauf marques d'expédition), 15, 20 et 22 doivent être obligatoirement
+fournies lorsqu'elles sont applicables. </Text>
+     </Span>
+     <Span>
+      <Style>
+       <FontSize>4.0pt</FontSize>
+      </Style>
+      <Text>This form may be used as a Dangerous goods Declaration as it meets requirements of SOLAS 74, chapter VII, regulation 4; MARPOL 73/78, annexe III, regulation IV; IMDG Regulation 5.4; current ADR; Regulation 5.4</Text>
+     </Span>
+    </Par>
+   </StaticContainer>
+   <StaticContainer>
+    <Style>
+     <RegionRef>Data1</RegionRef>
+    </Style>
+    <Table>
+     <Columns>
+      <Column>
+       <Style>
+        <ColumnWidth>auto</ColumnWidth>
+       </Style>
+      </Column>
+      <Column>
+       <Style>
+        <ColumnWidth>auto</ColumnWidth>
+       </Style>
+      </Column>
+      <Column>
+       <Style>
+        <ColumnWidth>35164.0mpt</ColumnWidth>
+       </Style>
+      </Column>
+      <Column>
+       <Style>
+        <ColumnWidth>auto</ColumnWidth>
+       </Style>
+      </Column>
+      <Column>
+       <Style>
+        <ColumnWidth>54564.0mpt</ColumnWidth>
+       </Style>
+      </Column>
+      <Column>
+       <Style>
+        <ColumnWidth>auto</ColumnWidth>
+       </Style>
+      </Column>
+      <Column>
+       <Style>
+        <ColumnWidth>auto</ColumnWidth>
+       </Style>
+      </Column>
+      <Column>
+       <Style>
+        <ColumnWidth>auto</ColumnWidth>
+       </Style>
+      </Column>
+      <Column>
+       <Style>
+        <ColumnWidth>auto</ColumnWidth>
+       </Style>
+      </Column>
+      <Column>
+       <Style>
+        <ColumnWidth>auto</ColumnWidth>
+       </Style>
+      </Column>
+     </Columns>
+     <Style>
+      <RowStyle>
+       <CellStyle>
+        <Padding top="0.0mpt" right="0.0mpt" bottom="0.0mpt" left="0.0mpt"></Padding>
+       </CellStyle>
+      </RowStyle>
+      <SpaceBefore resolution="combine">0.0cm</SpaceBefore>
+      <SpaceAfter resolution="combine">0.0cm</SpaceAfter>
+     </Style>
+     <Row>
+      <Cell colSpan="5" rowSpan="4">
+       <Style>
+        <Padding top="0.1cm" right="0.1cm" bottom="0.1cm" left="0.1cm"></Padding>
+       </Style>
+       <Container>
+        <Par>
+         <Span>
+          <Style>
+           <FontSize>5.0pt</FontSize>
+           <FontStyle>bold</FontStyle>
+          </Style>
+          <Text>1. EXPÉDITEUR SHIPPER / CONSIGNOR / SENDER</Text>
+         </Span>
+        </Par>
+        <Par>
+         <Span>
+          <Style>
+           <FontSize>5.0pt</FontSize>
+           <FontStyle>bold</FontStyle>
+          </Style>
+          <Text></Text>
+         </Span>
+        </Par>
+        <Par>
+         <Span>
+          <Style>
+           <FontSize>7.0pt</FontSize>
+           <FontStyle>bold</FontStyle>
+          </Style>
+          <Data>$data.window.text.instance(1).noeuddonné.instance(4).donné</Data>
+          <Text> </Text>
+          <Text></Text>
+         </Span>
+        </Par>
+        <Par>
+         <Span>
+          <Style>
+           <FontSize>7.0pt</FontSize>
+           <FontStyle>bold</FontStyle>
+          </Style>
+          <Data>$data.window.text.instance(1).noeuddonné.instance(5).donné</Data>
+          <Text> </Text>
+          <Text></Text>
+         </Span>
+        </Par>
+        <Par>
+         <Span>
+          <Style>
+           <FontSize>7.0pt</FontSize>
+           <FontStyle>bold</FontStyle>
+          </Style>
+          <Data>$data.window.text.instance(1).noeuddonné.instance(6).donné</Data>
+          <Text>  </Text>
+          <Data>$data.window.text.instance(1).noeuddonné.instance(7).donné</Data>
+          <Text> </Text>
+          <Text></Text>
+         </Span>
+        </Par>
+        <Par>
+         <Span>
+          <Style>
+           <FontSize>7.0pt</FontSize>
+           <FontStyle>bold</FontStyle>
+          </Style>
+          <Data>$data.window.text.instance(1).noeuddonné.instance(8).donné</Data>
+          <Text> </Text>
+          <Text></Text>
+         </Span>
+        </Par>
+        <Par>
+         <Span>
+          <Style>
+           <FontSize>7.0pt</FontSize>
+           <FontStyle>bold</FontStyle>
+          </Style>
+          <Text>CIF. </Text>
+          <Data>$data.window.text.instance(1).noeuddonné.instance(9).donné</Data>
+          <Text> </Text>
+          <Text></Text>
+         </Span>
+        </Par>
+        <Par>
+         <Span>
+          <Style>
+           <FontSize>7.0pt</FontSize>
+           <FontStyle>bold</FontStyle>
+          </Style>
+          <Text></Text>
+         </Span>
+        </Par>
+       </Container>
+      </Cell>
+      <Cell colSpan="5">
+       <Style>
+        <Padding top="0.1cm" right="0.1cm" bottom="0.1cm" left="0.1cm"></Padding>
+        <Border>
+         <Left width="500.0mpt" color="rgb(0,0,0)" style="solid"></Left>
+         <Top width="500.0mpt" color="rgb(0,0,0)" style="solid"></Top>
+         <Right width="500.0mpt" color="rgb(0,0,0)" style="solid"></Right>
+         <Bottom width="500.0mpt" color="rgb(0,0,0)" style="none"></Bottom>
+        </Border>
+       </Style>
+       <Container>
+        <Par>
+         <Span>
+          <Style>
+           <FontSize>5.0pt</FontSize>
+           <FontStyle>bold</FontStyle>
+          </Style>
+          <Text>2. NUMÉRO DU DOCUMENT DE TRANSPORT / TRANSPORT DOCUMENT NUMBER</Text>
+         </Span>
+        </Par>
+        <Par>
+         <Span>
+          <Style>
+           <FontSize>5.0pt</FontSize>
+           <FontStyle>bold</FontStyle>
+          </Style>
+          <Text></Text>
+         </Span>
+        </Par>
+       </Container>
+      </Cell>
+     </Row>
+     <Row>
+      <Cell colSpan="3">
+       <Style>
+        <Padding top="0.1cm" right="0.1cm" bottom="0.1cm" left="0.1cm"></Padding>
+        <Border>
+         <Left width="500.0mpt" color="rgb(0,0,0)" style="solid"></Left>
+         <Top width="500.0mpt" color="rgb(0,0,0)" style="none"></Top>
+         <Right width="500.0mpt" color="rgb(0,0,0)" style="none"></Right>
+         <Bottom width="500.0mpt" color="rgb(0,0,0)" style="solid"></Bottom>
+        </Border>
+       </Style>
+       <Container>
+        <Par>
+         <Span>
+          <Style>
+           <FontSize>5.0pt</FontSize>
+           <FontStyle>bold</FontStyle>
+          </Style>
+          <Text>	Expédition </Text>
+         </Span>
+         <Span>
+          <Style>
+           <FontSize>7.0pt</FontSize>
+           <FontStyle>bold</FontStyle>
+          </Style>
+          <Data>$data.window.text.instance(1).noeuddonné.instance(10).donné</Data>
+          <Text> </Text>
+         </Span>
+        </Par>
+        <Par>
+         <Span>
+          <Style>
+           <FontSize>5.0pt</FontSize>
+           <FontStyle>bold</FontStyle>
+          </Style>
+          <Text></Text>
+         </Span>
+        </Par>
+       </Container>
+      </Cell>
+      <Cell colSpan="2">
+       <Style>
+        <Padding top="0.1cm" right="0.1cm" bottom="0.1cm" left="0.1cm"></Padding>
+        <Border>
+         <Left width="500.0mpt" color="rgb(0,0,0)" style="none"></Left>
+         <Top width="500.0mpt" color="rgb(0,0,0)" style="none"></Top>
+         <Right width="500.0mpt" color="rgb(0,0,0)" style="solid"></Right>
+         <Bottom width="500.0mpt" color="rgb(0,0,0)" style="solid"></Bottom>
+        </Border>
+       </Style>
+       <Container>
+        <Par>
+         <Span>
+          <Style>
+           <FontSize>5.0pt</FontSize>
+           <FontStyle>bold</FontStyle>
+          </Style>
+          <Text>le </Text>
+         </Span>
+         <Span>
+          <Style>
+           <FontSize>7.0pt</FontSize>
+           <FontStyle>bold</FontStyle>
+          </Style>
+          <Data>$data.window.text.instance(1).noeuddonné.instance(11).donné</Data>
+          <Text> </Text>
+         </Span>
+        </Par>
+       </Container>
+      </Cell>
+     </Row>
+     <Row>
+      <Cell colSpan="5">
+       <Style>
+        <Padding top="0.1cm" right="0.1cm" bottom="0.1cm" left="0.1cm"></Padding>
+       </Style>
+       <Container>
+        <Par>
+         <Span>
+          <Style>
+           <FontSize>5.0pt</FontSize>
+           <FontStyle>bold</FontStyle>
+          </Style>
+          <Text>4. NUMÉRO DE RÉFÉRENCE DE L'EXPÉDITEUR / SHIPPER'S REFERENCE</Text>
+         </Span>
+        </Par>
+        <Par>
+         <Span>
+          <Style>
+           <FontSize>5.0pt</FontSize>
+           <FontStyle>bold</FontStyle>
+          </Style>
+          <Text></Text>
+         </Span>
+        </Par>
+        <Par>
+         <Span>
+          <Style>
+           <FontSize>5.0pt</FontSize>
+           <FontStyle>bold</FontStyle>
+          </Style>
+          <Text>	Facture </Text>
+         </Span>
+         <Span>
+          <Style>
+           <FontSize>7.0pt</FontSize>
+           <FontStyle>bold</FontStyle>
+          </Style>
+          <Data>$data.window.text.instance(1).noeuddonné.instance(12).donné</Data>
+          <Text> </Text>
+         </Span>
+        </Par>
+        <Par>
+         <Span>
+          <Style>
+           <FontSize>7.0pt</FontSize>
+           <FontStyle>bold</FontStyle>
+          </Style>
+          <Text></Text>
+         </Span>
+        </Par>
+       </Container>
+      </Cell>
+     </Row>
+     <Row>
+      <Cell colSpan="2">
+       <Style>
+        <Padding top="0.1cm" right="0.1cm" bottom="0.1cm" left="0.1cm"></Padding>
+       </Style>
+       <Container>
+        <Par>
+         <Span>
+          <Style>
+           <FontSize>5.0pt</FontSize>
+           <FontStyle>bold</FontStyle>
+          </Style>
+          <Text>3.</Text>
+         </Span>
+        </Par>
+        <Par>
+         <Span>
+          <Style>
+           <FontSize>6.0pt</FontSize>
+           <FontStyle>bold</FontStyle>
+          </Style>
+          <Text></Text>
+         </Span>
+        </Par>
+        <Par>
+         <Span>
+          <Style>
+           <FontSize>6.0pt</FontSize>
+           <FontStyle>bold</FontStyle>
+          </Style>
+          <Text>Page 1	de 1  pages</Text>
+         </Span>
+        </Par>
+        <Par>
+         <Span>
+          <Style>
+           <FontSize>5.0pt</FontSize>
+           <FontStyle>bold</FontStyle>
+          </Style>
+          <Text></Text>
+         </Span>
+        </Par>
+       </Container>
+      </Cell>
+      <Cell colSpan="3">
+       <Style>
+        <Padding top="0.1cm" right="0.1cm" bottom="0.1cm" left="0.1cm"></Padding>
+       </Style>
+       <Container>
+        <Par>
+         <Span>
+          <Style>
+           <FontSize>5.0pt</FontSize>
+           <FontStyle>bold</FontStyle>
+          </Style>
+          <Text>5. NUMÉRO DE RÉFÉRENCE DU TRANSITAIRE
+FREIGHT FORWARDER'S REFERENCE</Text>
+         </Span>
+        </Par>
+        <Par>
+         <Span>
+          <Style>
+           <FontSize>5.0pt</FontSize>
+           <FontStyle>bold</FontStyle>
+          </Style>
+          <Text></Text>
+         </Span>
+        </Par>
+        <Par>
+         <Span>
+          <Style>
+           <FontSize>5.0pt</FontSize>
+           <FontStyle>bold</FontStyle>
+          </Style>
+          <Text></Text>
+         </Span>
+        </Par>
+       </Container>
+      </Cell>
+     </Row>
+     <Row>
+      <Cell colSpan="5">
+       <Style>
+        <Padding top="0.1cm" right="0.1cm" bottom="0.1cm" left="0.1cm"></Padding>
+       </Style>
+       <Container>
+        <Par>
+         <Span>
+          <Style>
+           <FontSize>5.0pt</FontSize>
+           <FontStyle>bold</FontStyle>
+          </Style>
+          <Text>6. DESTINATAIRE CONSIGNEE</Text>
+         </Span>
+        </Par>
+        <Par>
+         <Span>
+          <Style>
+           <FontSize>5.0pt</FontSize>
+           <FontStyle>bold</FontStyle>
+          </Style>
+          <Text></Text>
+         </Span>
+        </Par>
+        <Par>
+         <Span>
+          <Style>
+           <FontSize>7.0pt</FontSize>
+           <FontStyle>bold</FontStyle>
+          </Style>
+          <Data>$data.window.text.instance(1).noeuddonné.instance(13).donné</Data>
+          <Text> </Text>
+          <Text></Text>
+         </Span>
+        </Par>
+        <Par>
+         <Span>
+          <Style>
+           <FontSize>7.0pt</FontSize>
+           <FontStyle>bold</FontStyle>
+          </Style>
+          <Data>$data.window.text.instance(1).noeuddonné.instance(14).donné</Data>
+          <Text> </Text>
+          <Text></Text>
+         </Span>
+        </Par>
+        <Par>
+         <Span>
+          <Style>
+           <FontSize>7.0pt</FontSize>
+           <FontStyle>bold</FontStyle>
+          </Style>
+          <Data>$data.window.text.instance(1).noeuddonné.instance(15).donné</Data>
+          <Text>  </Text>
+          <Data>$data.window.text.instance(1).noeuddonné.instance(16).donné</Data>
+          <Text> </Text>
+          <Text></Text>
+         </Span>
+        </Par>
+        <Par>
+         <Span>
+          <Style>
+           <FontSize>7.0pt</FontSize>
+           <FontStyle>bold</FontStyle>
+          </Style>
+          <Data>$data.window.text.instance(1).noeuddonné.instance(17).donné</Data>
+          <Text> </Text>
+          <Text></Text>
+         </Span>
+        </Par>
+        <Par>
+         <Span>
+          <Style>
+           <FontSize>7.0pt</FontSize>
+           <FontStyle>bold</FontStyle>
+          </Style>
+          <Text></Text>
+         </Span>
+        </Par>
+       </Container>
+      </Cell>
+      <Cell colSpan="5">
+       <Style>
+        <Padding top="0.1cm" right="0.1cm" bottom="0.1cm" left="0.1cm"></Padding>
+       </Style>
+       <Container>
+        <Par>
+         <Span>
+          <Style>
+           <FontSize>5.0pt</FontSize>
+           <FontStyle>bold</FontStyle>
+          </Style>
+          <Text>7. TRANSPORTEUR (à compléter par le transporteur) CARRIER (to be completed by the carrier)</Text>
+         </Span>
+        </Par>
+       </Container>
+      </Cell>
+     </Row>
+     <Row>
+      <Cell colSpan="5">
+       <Style>
+        <Padding top="0.1cm" right="0.1cm" bottom="0.1cm" left="0.1cm"></Padding>
+       </Style>
+       <Container>
+        <Par>
+         <Span>
+          <Text></Text>
+         </Span>
+        </Par>
+       </Container>
+      </Cell>
+      <Cell colSpan="5">
+       <Style>
+        <Padding top="0.1cm" right="0.1cm" bottom="0.1cm" left="0.1cm"></Padding>
+       </Style>
+       <Container>
+        <Par>
+         <Span>
+          <Style>
+           <FontSize>5.0pt</FontSize>
+           <FontFamily>Standard</FontFamily>
+           <FontStyle>bold</FontStyle>
+          </Style>
+          <Text>DECLARATION DE L'EXPEDITEUR SHIPPER'S DECLARATION (voir case 22 ci-dessous)</Text>
+         </Span>
+         <Span>
+          <Style>
+           <FontSize>5.0pt</FontSize>
+           <FontFamily>Standard</FontFamily>
+          </Style>
+          <Text> </Text>
+         </Span>
+        </Par>
+        <Par>
+         <Span>
+          <Style>
+           <FontSize>5.0pt</FontSize>
+           <FontFamily>Standard</FontFamily>
+          </Style>
+          <Text>Je déclare que le contenu de ce chargement est décrit ci-dessous de façon complète et exacte par la
+désignation officielle de transport et qu'il est convenablement classé, emballé, marqué, étiqueté, placardé et à tous égards bien conditionné pour être transporté conformément aux réglementations internationales et nationales applicable.</Text>
+         </Span>
+         <Span>
+          <Style>
+           <FontSize>5.0pt</FontSize>
+           <FontFamily>Standard</FontFamily>
+          </Style>
+          <Text> </Text>
+         </Span>
+        </Par>
+        <Par>
+         <Span>
+          <Style>
+           <FontSize>4.0pt</FontSize>
+           <FontFamily>Standard</FontFamily>
+          </Style>
+          <Text>We hereby declare that the contents of this consignment are fully and accuratly described above by the proper shipping name, and care classified, packaged, marked and labelled/placarded(necessary labels given to the driver) and are in all respects in proper conditions for transport according to applicable international and national governmental regulations.</Text>
+         </Span>
+        </Par>
+       </Container>
+      </Cell>
+     </Row>
+     <Row>
+      <Cell colSpan="5">
+       <Style>
+        <Padding top="0.1cm" right="0.1cm" bottom="0.1cm" left="0.1cm"></Padding>
+        <Border>
+         <Left width="500.0mpt" color="rgb(0,0,0)" style="solid"></Left>
+         <Top width="500.0mpt" color="rgb(0,0,0)" style="solid"></Top>
+         <Right width="500.0mpt" color="rgb(0,0,0)" style="solid"></Right>
+         <Bottom width="500.0mpt" color="rgb(0,0,0)" style="none"></Bottom>
+        </Border>
+       </Style>
+       <Container>
+        <Par>
+         <Span>
+          <Style>
+           <FontSize>5.0pt</FontSize>
+           <FontStyle>bold</FontStyle>
+          </Style>
+          <Text>8. CET ENVOI EST CONFORME AUX LIMITES ACCEPTABLES POUR (biffer la mention non-applicable)
+ (réservé aux transports aériens)</Text>
+         </Span>
+        </Par>
+       </Container>
+      </Cell>
+      <Cell colSpan="5" rowSpan="4">
+       <Style>
+        <Padding top="0.1cm" right="0.1cm" bottom="0.1cm" left="0.1cm"></Padding>
+       </Style>
+       <Container>
+        <Par>
+         <Span>
+          <Style>
+           <FontSize>5.0pt</FontSize>
+           <FontStyle>bold</FontStyle>
+          </Style>
+          <Text>9. INFORMATIONS COMPLÉMENTAIRES **** ADDITIONAL HANDLING INFORMATION</Text>
+         </Span>
+        </Par>
+        <Par>
+         <Span>
+          <Style>
+           <FontSize>5.0pt</FontSize>
+           <FontStyle>bold</FontStyle>
+          </Style>
+          <Text></Text>
+         </Span>
+        </Par>
+        <Par>
+         <Span>
+          <Style>
+           <FontSize>7.0pt</FontSize>
+           <FontStyle>bold</FontStyle>
+          </Style>
+          <Data>$data.window.text.instance(1).noeuddonné.instance(23).donné</Data>
+          <Text> </Text>
+          <Text></Text>
+         </Span>
+        </Par>
+        <Par>
+         <Span>
+          <Style>
+           <FontSize>7.0pt</FontSize>
+           <FontStyle>bold</FontStyle>
+          </Style>
+          <Data>$data.window.text.instance(1).noeuddonné.instance(24).donné.name</Data>
+          <Text></Text>
+         </Span>
+        </Par>
+        <Par>
+         <Span>
+          <Style>
+           <FontSize>7.0pt</FontSize>
+           <FontStyle>bold</FontStyle>
+          </Style>
+          <Data>$data.window.text.instance(1).noeuddonné.instance(25).donné</Data>
+          <Text> </Text>
+          <Text></Text>
+         </Span>
+        </Par>
+       </Container>
+      </Cell>
+     </Row>
+     <Row>
+      <Cell colSpan="3">
+       <Style>
+        <Padding top="0.1cm" right="0.1cm" bottom="0.1cm" left="0.1cm"></Padding>
+        <Border>
+         <Left width="500.0mpt" color="rgb(0,0,0)" style="solid"></Left>
+         <Top width="500.0mpt" color="rgb(0,0,0)" style="none"></Top>
+         <Right width="500.0mpt" color="rgb(0,0,0)" style="solid"></Right>
+         <Bottom width="500.0mpt" color="rgb(0,0,0)" style="solid"></Bottom>
+        </Border>
+       </Style>
+       <Container>
+        <Par>
+         <Span>
+          <Style>
+           <FontSize>5.0pt</FontSize>
+           <FontStyle>bold</FontStyle>
+          </Style>
+          <Text>AERONEF PASSAGER
+ET CARGO
+PASSENGER AND CARGO AIRCRAFT</Text>
+         </Span>
+        </Par>
+       </Container>
+      </Cell>
+      <Cell colSpan="2">
+       <Style>
+        <Padding top="0.1cm" right="0.1cm" bottom="0.1cm" left="0.1cm"></Padding>
+        <Border>
+         <Left width="500.0mpt" color="rgb(0,0,0)" style="solid"></Left>
+         <Top width="500.0mpt" color="rgb(0,0,0)" style="none"></Top>
+         <Right width="500.0mpt" color="rgb(0,0,0)" style="solid"></Right>
+         <Bottom width="500.0mpt" color="rgb(0,0,0)" style="solid"></Bottom>
+        </Border>
+       </Style>
+       <Container>
+        <Par>
+         <Span>
+          <Style>
+           <FontSize>5.0pt</FontSize>
+           <FontStyle>bold</FontStyle>
+          </Style>
+          <Text>AERONEF CARGO
+SEULEMENT CARGO AIRCRAFT ONLY</Text>
+         </Span>
+        </Par>
+       </Container>
+      </Cell>
+     </Row>
+     <Row>
+      <Cell colSpan="3">
+       <Style>
+        <Padding top="0.1cm" right="0.1cm" bottom="0.1cm" left="0.1cm"></Padding>
+       </Style>
+       <Container>
+        <Par>
+         <Span>
+          <Style>
+           <FontSize>5.0pt</FontSize>
+           <FontStyle>bold</FontStyle>
+          </Style>
+          <Text>10. NAVIRE / N° DE VOL ET DATE
+ VESSEL / FLIGHT &amp; DATE</Text>
+         </Span>
+        </Par>
+       </Container>
+      </Cell>
+      <Cell colSpan="2">
+       <Style>
+        <Padding top="0.1cm" right="0.1cm" bottom="0.1cm" left="0.1cm"></Padding>
+       </Style>
+       <Container>
+        <Par>
+         <Span>
+          <Style>
+           <FontSize>5.0pt</FontSize>
+           <FontStyle>bold</FontStyle>
+          </Style>
+          <Text>11. PORT - LIEU DE CHARGEMENT LOADING</Text>
+         </Span>
+        </Par>
+       </Container>
+      </Cell>
+     </Row>
+     <Row>
+      <Cell colSpan="3">
+       <Style>
+        <Padding top="0.1cm" right="0.1cm" bottom="0.1cm" left="0.1cm"></Padding>
+       </Style>
+       <Container>
+        <Par>
+         <Span>
+          <Style>
+           <FontSize>5.0pt</FontSize>
+           <FontStyle>bold</FontStyle>
+          </Style>
+          <Text>12. PORT - LIEU DE DÉCHARGEMENT DISCHARGE</Text>
+         </Span>
+        </Par>
+       </Container>
+      </Cell>
+      <Cell colSpan="2">
+       <Style>
+        <Padding top="0.1cm" right="0.1cm" bottom="0.1cm" left="0.1cm"></Padding>
+       </Style>
+       <Container>
+        <Par>
+         <Span>
+          <Style>
+           <FontSize>5.0pt</FontSize>
+           <FontStyle>bold</FontStyle>
+          </Style>
+          <Text>13. DESTINATION</Text>
+         </Span>
+        </Par>
+       </Container>
+      </Cell>
+     </Row>
+    </Table>
+   </StaticContainer>
+   <Container>
+    <Table>
+     <Columns>
+      <Column>
+       <Style>
+        <ColumnWidth>auto</ColumnWidth>
+       </Style>
+      </Column>
+      <Column>
+       <Style>
+        <ColumnWidth>auto</ColumnWidth>
+       </Style>
+      </Column>
+      <Column>
+       <Style>
+        <ColumnWidth>35164.0mpt</ColumnWidth>
+       </Style>
+      </Column>
+      <Column>
+       <Style>
+        <ColumnWidth>auto</ColumnWidth>
+       </Style>
+      </Column>
+      <Column>
+       <Style>
+        <ColumnWidth>54564.0mpt</ColumnWidth>
+       </Style>
+      </Column>
+      <Column>
+       <Style>
+        <ColumnWidth>auto</ColumnWidth>
+       </Style>
+      </Column>
+      <Column>
+       <Style>
+        <ColumnWidth>auto</ColumnWidth>
+       </Style>
+      </Column>
+      <Column>
+       <Style>
+        <ColumnWidth>auto</ColumnWidth>
+       </Style>
+      </Column>
+      <Column>
+       <Style>
+        <ColumnWidth>auto</ColumnWidth>
+       </Style>
+      </Column>
+      <Column>
+       <Style>
+        <ColumnWidth>auto</ColumnWidth>
+       </Style>
+      </Column>
+     </Columns>
+     <Style>
+      <RowStyle>
+       <CellStyle>
+        <Padding top="0.0mpt" right="0.0mpt" bottom="0.0mpt" left="0.0mpt"></Padding>
+       </CellStyle>
+      </RowStyle>
+      <SpaceBefore resolution="combine">0.0cm</SpaceBefore>
+      <SpaceAfter resolution="combine">0.0cm</SpaceAfter>
+     </Style>
+     <Row>
+      <Cell colSpan="2">
+       <Style>
+        <Margin top="0.0cm" right="0.0cm" bottom="0.0cm" left="0.0cm"></Margin>
+        <Padding top="0.1cm" right="0.1cm" bottom="0.1cm" left="0.1cm"></Padding>
+        <Border>
+         <Left width="500.0mpt" color="rgb(0,0,0)" style="solid"></Left>
+         <Top width="500.0mpt" color="rgb(0,0,0)" style="none"></Top>
+         <Right width="500.0mpt" color="rgb(0,0,0)" style="solid"></Right>
+         <Bottom width="500.0mpt" color="rgb(0,0,0)" style="solid"></Bottom>
+        </Border>
+       </Style>
+       <Container>
+        <Par>
+         <Span>
+          <Style>
+           <FontSize>5.0pt</FontSize>
+           <FontStyle>bold</FontStyle>
+          </Style>
+          <Text>14. MARQUES D'EXPÉDITION
+ SHIPPING MARKS</Text>
+         </Span>
+        </Par>
+       </Container>
+      </Cell>
+      <Cell colSpan="5">
+       <Style>
+        <Margin top="0.0cm" right="0.0cm" bottom="0.0cm" left="0.0cm"></Margin>
+        <Padding top="0.1cm" right="0.1cm" bottom="0.1cm" left="0.1cm"></Padding>
+        <Border>
+         <Left width="500.0mpt" color="rgb(0,0,0)" style="solid"></Left>
+         <Top width="500.0mpt" color="rgb(0,0,0)" style="none"></Top>
+         <Right width="500.0mpt" color="rgb(0,0,0)" style="solid"></Right>
+         <Bottom width="500.0mpt" color="rgb(0,0,0)" style="solid"></Bottom>
+        </Border>
+       </Style>
+       <Container>
+        <Par>
+         <Span>
+          <Style>
+           <FontSize>5.0pt</FontSize>
+           <FontStyle>bold</FontStyle>
+          </Style>
+          <Text>NOMBRE ET TYPE DE COLIS : DESCRIPTION DES MARCHANDISES * </Text>
+         </Span>
+        </Par>
+        <Par>
+         <Span>
+          <Style>
+           <FontSize>5.0pt</FontSize>
+           <FontStyle>bold</FontStyle>
+          </Style>
+          <Text>NUMBER AND KIND OF PACKAGES : DESCRIPTION OF GOODS</Text>
+         </Span>
+        </Par>
+       </Container>
+      </Cell>
+      <Cell>
+       <Style>
+        <Margin top="0.0cm" right="0.0cm" bottom="0.0cm" left="0.0cm"></Margin>
+        <Padding top="0.1cm" right="0.1cm" bottom="0.1cm" left="0.1cm"></Padding>
+        <Border>
+         <Left width="500.0mpt" color="rgb(0,0,0)" style="solid"></Left>
+         <Top width="500.0mpt" color="rgb(0,0,0)" style="none"></Top>
+         <Right width="500.0mpt" color="rgb(0,0,0)" style="solid"></Right>
+         <Bottom width="500.0mpt" color="rgb(0,0,0)" style="solid"></Bottom>
+        </Border>
+       </Style>
+       <Container>
+        <Par>
+         <Span>
+          <Style>
+           <FontSize>5.0pt</FontSize>
+           <FontStyle>bold</FontStyle>
+          </Style>
+          <Text>MASSE BRUTE (kg) GROSS MASS </Text>
+         </Span>
+        </Par>
+       </Container>
+      </Cell>
+      <Cell>
+       <Style>
+        <Margin top="0.0cm" right="0.0cm" bottom="0.0cm" left="0.0cm"></Margin>
+        <Padding top="0.1cm" right="0.1cm" bottom="0.1cm" left="0.1cm"></Padding>
+        <Border>
+         <Left width="500.0mpt" color="rgb(0,0,0)" style="solid"></Left>
+         <Top width="500.0mpt" color="rgb(0,0,0)" style="none"></Top>
+         <Right width="500.0mpt" color="rgb(0,0,0)" style="solid"></Right>
+         <Bottom width="500.0mpt" color="rgb(0,0,0)" style="solid"></Bottom>
+        </Border>
+       </Style>
+       <Container>
+        <Par>
+         <Span>
+          <Style>
+           <FontSize>5.0pt</FontSize>
+           <FontStyle>bold</FontStyle>
+          </Style>
+          <Text>MASSE NETTE (kg) ** NET MASS </Text>
+         </Span>
+        </Par>
+       </Container>
+      </Cell>
+      <Cell>
+       <Style>
+        <Margin top="0.0cm" right="0.0cm" bottom="0.0cm" left="0.0cm"></Margin>
+        <Padding top="0.1cm" right="0.1cm" bottom="0.1cm" left="0.1cm"></Padding>
+        <Border>
+         <Left width="500.0mpt" color="rgb(0,0,0)" style="solid"></Left>
+         <Top width="500.0mpt" color="rgb(0,0,0)" style="none"></Top>
+         <Right width="500.0mpt" color="rgb(0,0,0)" style="solid"></Right>
+         <Bottom width="500.0mpt" color="rgb(0,0,0)" style="solid"></Bottom>
+        </Border>
+       </Style>
+       <Container>
+        <Par>
+         <Span>
+          <Style>
+           <FontSize>5.0pt</FontSize>
+           <FontStyle>bold</FontStyle>
+          </Style>
+          <Text>CUBAGE - VOLUME(m3) CUBE - VOLUME</Text>
+         </Span>
+        </Par>
+       </Container>
+      </Cell>
+     </Row>
+     <Row>
+      <Cell colSpan="7">
+       <Style>
+        <Margin top="0.0cm" right="0.0cm" bottom="0.0cm" left="0.0cm"></Margin>
+        <Padding top="0.1cm" right="0.1cm" bottom="0.1cm" left="0.1cm"></Padding>
+        <Border>
+         <Left width="500.0mpt" color="rgb(0,0,0)" style="solid"></Left>
+         <Top width="500.0mpt" color="rgb(0,0,0)" style="solid"></Top>
+         <Right width="500.0mpt" color="rgb(0,0,0)" style="solid"></Right>
+         <Bottom width="500.0mpt" color="rgb(0,0,0)" style="none"></Bottom>
+        </Border>
+       </Style>
+       <Container>
+        <Par>
+         <Style>
+          <Border>
+           <Left width="0.0cm" color="rgb(0,0,0)" style="none"></Left>
+           <Top width="0.0cm" color="rgb(0,0,0)" style="none"></Top>
+           <Right width="0.0cm" color="rgb(0,0,0)" style="none"></Right>
+           <Bottom width="0.0cm" color="rgb(0,0,0)" style="none"></Bottom>
+          </Border>
+          <KeepWithNext>false</KeepWithNext>
+          <KeepWithPrevious>false</KeepWithPrevious>
+          <KeepTogether>false</KeepTogether>
+         </Style>
+         <ParPart>
+          <ForEach><![CDATA[$data.window.tableau]]></ForEach>
+          <DataDefinition></DataDefinition>
+          <Span>
+           <Style>
+            <FontSize>7.0pt</FontSize>
+            <FontStyle></FontStyle>
+           </Style>
+           <Data>$tableau.colone.instance(1).donné</Data>
+          </Span>
+          <Span>
+           <Style>
+            <FontSize>7.0pt</FontSize>
+           </Style>
+           <Text> 
+</Text>
+          </Span>
+         </ParPart>
+        </Par>
+       </Container>
+      </Cell>
+      <Cell>
+       <Style>
+        <Margin top="0.0cm" right="0.0cm" bottom="0.0cm" left="0.0cm"></Margin>
+        <Padding top="0.1cm" right="0.1cm" bottom="0.1cm" left="0.1cm"></Padding>
+        <Border>
+         <Left width="500.0mpt" color="rgb(0,0,0)" style="solid"></Left>
+         <Top width="500.0mpt" color="rgb(0,0,0)" style="solid"></Top>
+         <Right width="500.0mpt" color="rgb(0,0,0)" style="solid"></Right>
+         <Bottom width="500.0mpt" color="rgb(0,0,0)" style="none"></Bottom>
+        </Border>
+       </Style>
+       <Container>
+        <Par>
+         <Style>
+          <Align>right</Align>
+         </Style>
+         <ParPart>
+          <ForEach><![CDATA[$data.window.tableau]]></ForEach>
+          <DataDefinition></DataDefinition>
+          <Span>
+           <Style>
+            <FontSize>7.0pt</FontSize>
+           </Style>
+           <Data>$tableau.colone.instance(2).donné</Data>
+           <Text> 
+</Text>
+           <Text></Text>
+          </Span>
+         </ParPart>
+        </Par>
+       </Container>
+      </Cell>
+      <Cell>
+       <Style>
+        <Margin top="0.0cm" right="0.0cm" bottom="0.0cm" left="0.0cm"></Margin>
+        <Padding top="0.1cm" right="0.1cm" bottom="0.1cm" left="0.1cm"></Padding>
+        <Border>
+         <Left width="500.0mpt" color="rgb(0,0,0)" style="solid"></Left>
+         <Top width="500.0mpt" color="rgb(0,0,0)" style="solid"></Top>
+         <Right width="500.0mpt" color="rgb(0,0,0)" style="solid"></Right>
+         <Bottom width="500.0mpt" color="rgb(0,0,0)" style="none"></Bottom>
+        </Border>
+       </Style>
+       <Container>
+        <Par>
+         <Style>
+          <Align>right</Align>
+         </Style>
+         <ParPart>
+          <ForEach><![CDATA[$data.window.tableau]]></ForEach>
+          <DataDefinition></DataDefinition>
+          <Span>
+           <Style>
+            <FontSize>7.0pt</FontSize>
+           </Style>
+           <Data>$tableau.colone.instance(3).donné</Data>
+           <Text> 
+</Text>
+           <Text></Text>
+          </Span>
+         </ParPart>
+        </Par>
+       </Container>
+      </Cell>
+      <Cell>
+       <Style>
+        <Margin top="0.0cm" right="0.0cm" bottom="0.0cm" left="0.0cm"></Margin>
+        <Padding top="0.1cm" right="0.1cm" bottom="0.1cm" left="0.1cm"></Padding>
+        <Border>
+         <Left width="500.0mpt" color="rgb(0,0,0)" style="solid"></Left>
+         <Top width="500.0mpt" color="rgb(0,0,0)" style="solid"></Top>
+         <Right width="500.0mpt" color="rgb(0,0,0)" style="solid"></Right>
+         <Bottom width="500.0mpt" color="rgb(0,0,0)" style="none"></Bottom>
+        </Border>
+       </Style>
+       <Container>
+        <Par>
+         <Style>
+          <Align>right</Align>
+         </Style>
+         <ParPart>
+          <ForEach><![CDATA[$data.window.tableau]]></ForEach>
+          <DataDefinition></DataDefinition>
+          <Span>
+           <Style>
+            <FontSize>7.0pt</FontSize>
+           </Style>
+           <Data>$tableau.colone.instance(4).donné</Data>
+          </Span>
+          <Span>
+           <Style>
+            <FontSize>7.0pt</FontSize>
+           </Style>
+           <Text>
+</Text>
+          </Span>
+         </ParPart>
+        </Par>
+       </Container>
+      </Cell>
+     </Row>
+    </Table>
+   </Container>
+   <StaticContainer>
+    <Style>
+     <RegionRef>Data2</RegionRef>
+    </Style>
+    <Table>
+     <Columns>
+      <Column>
+       <Style>
+        <ColumnWidth>auto</ColumnWidth>
+       </Style>
+      </Column>
+      <Column>
+       <Style>
+        <ColumnWidth>auto</ColumnWidth>
+       </Style>
+      </Column>
+      <Column>
+       <Style>
+        <ColumnWidth>35164.0mpt</ColumnWidth>
+       </Style>
+      </Column>
+      <Column>
+       <Style>
+        <ColumnWidth>auto</ColumnWidth>
+       </Style>
+      </Column>
+      <Column>
+       <Style>
+        <ColumnWidth>54564.0mpt</ColumnWidth>
+       </Style>
+      </Column>
+      <Column>
+       <Style>
+        <ColumnWidth>auto</ColumnWidth>
+       </Style>
+      </Column>
+      <Column>
+       <Style>
+        <ColumnWidth>auto</ColumnWidth>
+       </Style>
+      </Column>
+      <Column>
+       <Style>
+        <ColumnWidth>auto</ColumnWidth>
+       </Style>
+      </Column>
+      <Column>
+       <Style>
+        <ColumnWidth>auto</ColumnWidth>
+       </Style>
+      </Column>
+      <Column>
+       <Style>
+        <ColumnWidth>auto</ColumnWidth>
+       </Style>
+      </Column>
+     </Columns>
+     <Style>
+      <RowStyle>
+       <CellStyle>
+        <Padding top="0.0mpt" right="0.0mpt" bottom="0.0mpt" left="0.0mpt"></Padding>
+       </CellStyle>
+      </RowStyle>
+      <SpaceBefore resolution="combine">0.0cm</SpaceBefore>
+      <SpaceAfter resolution="combine">0.0cm</SpaceAfter>
+     </Style>
+     <Row>
+      <Cell colSpan="4">
+       <Style>
+        <Padding top="0.1cm" right="0.1cm" bottom="0.1cm" left="0.1cm"></Padding>
+        <Border>
+         <Left width="500.0mpt" color="rgb(0,0,0)" style="solid"></Left>
+         <Top width="500.0mpt" color="rgb(0,0,0)" style="none"></Top>
+         <Right width="500.0mpt" color="rgb(0,0,0)" style="none"></Right>
+         <Bottom width="500.0mpt" color="rgb(0,0,0)" style="none"></Bottom>
+        </Border>
+       </Style>
+       <Container>
+        <Par>
+         <Span>
+          <Style>
+           <FontSize>5.0pt</FontSize>
+          </Style>
+          <Text>ADR 1.1.3.6 - TOTAL CATEGORIE 1:</Text>
+         </Span>
+        </Par>
+       </Container>
+      </Cell>
+      <Cell colSpan="2">
+       <Style>
+        <Padding top="0.1cm" right="0.1cm" bottom="0.1cm" left="0.1cm"></Padding>
+        <Border>
+         <Left width="500.0mpt" color="rgb(0,0,0)" style="none"></Left>
+         <Top width="500.0mpt" color="rgb(0,0,0)" style="none"></Top>
+         <Right width="500.0mpt" color="rgb(0,0,0)" style="none"></Right>
+         <Bottom width="500.0mpt" color="rgb(0,0,0)" style="none"></Bottom>
+        </Border>
+       </Style>
+       <Container>
+        <Par>
+         <Span>
+          <Style>
+           <FontSize>5.0pt</FontSize>
+          </Style>
+          <Text>CAT. 2 :</Text>
+         </Span>
+        </Par>
+       </Container>
+      </Cell>
+      <Cell colSpan="2">
+       <Style>
+        <Padding top="0.1cm" right="0.1cm" bottom="0.1cm" left="0.1cm"></Padding>
+        <Border>
+         <Left width="500.0mpt" color="rgb(0,0,0)" style="none"></Left>
+         <Top width="500.0mpt" color="rgb(0,0,0)" style="none"></Top>
+         <Right width="500.0mpt" color="rgb(0,0,0)" style="none"></Right>
+         <Bottom width="500.0mpt" color="rgb(0,0,0)" style="none"></Bottom>
+        </Border>
+       </Style>
+       <Container>
+        <Par>
+         <Span>
+          <Style>
+           <FontSize>5.0pt</FontSize>
+          </Style>
+          <Text>CAT. 3 :</Text>
+         </Span>
+        </Par>
+       </Container>
+      </Cell>
+      <Cell colSpan="2">
+       <Style>
+        <Padding top="0.1cm" right="0.1cm" bottom="0.1cm" left="0.1cm"></Padding>
+        <Border>
+         <Left width="500.0mpt" color="rgb(0,0,0)" style="none"></Left>
+         <Top width="500.0mpt" color="rgb(0,0,0)" style="none"></Top>
+         <Right width="500.0mpt" color="rgb(0,0,0)" style="solid"></Right>
+         <Bottom width="500.0mpt" color="rgb(0,0,0)" style="none"></Bottom>
+        </Border>
+       </Style>
+       <Container>
+        <Par>
+         <Span>
+          <Style>
+           <FontSize>5.0pt</FontSize>
+          </Style>
+          <Text>CAT. 4 :</Text>
+         </Span>
+        </Par>
+       </Container>
+      </Cell>
+     </Row>
+     <Row>
+      <Cell colSpan="3">
+       <Style>
+        <Padding top="0.1cm" right="0.1cm" bottom="0.1cm" left="0.1cm"></Padding>
+       </Style>
+       <Container>
+        <Par>
+         <Span>
+          <Style>
+           <FontSize>5.0pt</FontSize>
+           <FontStyle>bold</FontStyle>
+          </Style>
+          <Text>15. N° D'IDENTIFICATION DU CONTENEUR OU N°
+ D'IMMATRICULATION DU VÉHICULE
+ CONTAINER OR VEHICULE IDENTIFICATION</Text>
+         </Span>
+        </Par>
+        <Par>
+         <Span>
+          <Style>
+           <FontSize>5.0pt</FontSize>
+           <FontStyle>bold</FontStyle>
+          </Style>
+          <Text></Text>
+         </Span>
+        </Par>
+        <Par>
+         <Span>
+          <Style>
+           <FontSize>7.0pt</FontSize>
+           <FontStyle>bold</FontStyle>
+          </Style>
+          <Data>$data.window.text.instance(1).noeuddonné.instance(30).donné</Data>
+          <Text> </Text>
+          <Text></Text>
+         </Span>
+        </Par>
+       </Container>
+      </Cell>
+      <Cell colSpan="3">
+       <Style>
+        <Padding top="0.1cm" right="0.1cm" bottom="0.1cm" left="0.1cm"></Padding>
+       </Style>
+       <Container>
+        <Par>
+         <Span>
+          <Style>
+           <FontSize>5.0pt</FontSize>
+           <FontStyle>bold</FontStyle>
+          </Style>
+          <Text>16. NUMÉRO(S) DE SCELLÉS
+ SEAL NUMBER(S) </Text>
+         </Span>
+        </Par>
+        <Par>
+         <Span>
+          <Style>
+           <FontSize>7.0pt</FontSize>
+           <FontStyle>bold</FontStyle>
+          </Style>
+          <Data>$data.window.text.instance(1).noeuddonné.instance(31).donné</Data>
+          <Text> </Text>
+          <Text></Text>
+         </Span>
+        </Par>
+       </Container>
+      </Cell>
+      <Cell colSpan="2">
+       <Style>
+        <Padding top="0.1cm" right="0.1cm" bottom="0.1cm" left="0.1cm"></Padding>
+       </Style>
+       <Container>
+        <Par>
+         <Span>
+          <Style>
+           <FontSize>5.0pt</FontSize>
+           <FontStyle>bold</FontStyle>
+          </Style>
+          <Text>17. DIMENSIONS ET TYPE DU CONTENEUR /
+ VÉHICULE CONTAINER / VEHICULE SIZE AND TYPE</Text>
+         </Span>
+        </Par>
+        <Par>
+         <Span>
+          <Style>
+           <FontSize>5.0pt</FontSize>
+           <FontStyle>bold</FontStyle>
+          </Style>
+          <Text></Text>
+         </Span>
+        </Par>
+        <Par>
+         <Span>
+          <Style>
+           <FontSize>7.0pt</FontSize>
+           <FontStyle>bold</FontStyle>
+          </Style>
+          <Data>$data.window.text.instance(1).noeuddonné.instance(33).donné</Data>
+          <Text> </Text>
+          <Text></Text>
+         </Span>
+        </Par>
+       </Container>
+      </Cell>
+      <Cell>
+       <Style>
+        <Padding top="0.1cm" right="0.1cm" bottom="0.1cm" left="0.1cm"></Padding>
+       </Style>
+       <Container>
+        <Par>
+         <Span>
+          <Style>
+           <FontSize>5.0pt</FontSize>
+           <FontStyle>bold</FontStyle>
+          </Style>
+          <Text>18. TARE (KG)</Text>
+         </Span>
+        </Par>
+       </Container>
+      </Cell>
+      <Cell>
+       <Style>
+        <Padding top="0.1cm" right="0.1cm" bottom="0.1cm" left="0.1cm"></Padding>
+       </Style>
+       <Container>
+        <Par>
+         <Span>
+          <Style>
+           <FontSize>5.0pt</FontSize>
+           <FontStyle>bold</FontStyle>
+          </Style>
+          <Text>19. MASSE BRUTE TOTALE
+(y compris tare) (kg)
+ TOTAL GROSS MASS
+ (including tare) (kg)</Text>
+         </Span>
+        </Par>
+       </Container>
+      </Cell>
+     </Row>
+     <Row>
+      <Cell colSpan="4">
+       <Style>
+        <Padding top="0.1cm" right="0.1cm" bottom="0.1cm" left="0.1cm"></Padding>
+       </Style>
+       <Container>
+        <Par>
+         <Span>
+          <Style>
+           <FontSize>6.0pt</FontSize>
+           <FontStyle>bold</FontStyle>
+          </Style>
+          <Text>CERTIFICAT D'EMPOTAGE / DE CHARGEMENT </Text>
+         </Span>
+        </Par>
+        <Par>
+         <Span>
+          <Style>
+           <FontSize>6.0pt</FontSize>
+           <FontStyle>bold</FontStyle>
+          </Style>
+          <Text>CONTAINER - VEHICULE PACKING CERTIFICATE</Text>
+         </Span>
+         <Span>
+          <Text>
+</Text>
+         </Span>
+         <Span>
+          <Style>
+           <FontSize>4.0pt</FontSize>
+           <FontStyle>bold</FontStyle>
+          </Style>
+          <Text>Je déclare que les marchandises décrites ci-dessus ont été empotées / chargées dans le conteneur / véhicule identifié ci-dessus conformément aux dispositions applicables *** </Text>
+         </Span>
+        </Par>
+        <Par>
+         <Span>
+          <Style>
+           <FontSize>4.0pt</FontSize>
+           <FontStyle>bold</FontStyle>
+          </Style>
+          <Text>A COMPLETER ET A SIGNER POUR TOUT CHARGEMENT EN CONTENEUR / VEHICULE PAR LA PERSONNE RESPONSABLE DE L'EMPOTAGE/DU CHARGEMENT</Text>
+         </Span>
+         <Span>
+          <Text>
+</Text>
+         </Span>
+         <Span>
+          <Style>
+           <FontSize>4.0pt</FontSize>
+          </Style>
+          <Text>I hereby declare that the goods described above have been packed/loaded into the container/vehicle
+identified above in accordance with the applicable provisions.*** MUST BE COMPLETED AND SIGNED
+FOR ALL CONTAINER/VEHICULE LOADS BY PERSON RESPONSIBLE FOR PACKING/LOADING</Text>
+         </Span>
+        </Par>
+       </Container>
+      </Cell>
+      <Cell colSpan="6">
+       <Style>
+        <Padding top="0.1cm" right="0.1cm" bottom="0.1cm" left="0.1cm"></Padding>
+        <Border>
+         <Left width="500.0mpt" color="rgb(0,0,0)" style="solid"></Left>
+         <Top width="500.0mpt" color="rgb(0,0,0)" style="solid"></Top>
+         <Right width="500.0mpt" color="rgb(0,0,0)" style="solid"></Right>
+         <Bottom width="500.0mpt" color="rgb(0,0,0)" style="none"></Bottom>
+        </Border>
+       </Style>
+       <Container>
+        <Par>
+         <Span>
+          <Style>
+           <FontSize>5.0pt</FontSize>
+           <FontStyle>bold</FontStyle>
+          </Style>
+          <Text>21. ENGAGEMENT DU CONDUCTEUR </Text>
+         </Span>
+        </Par>
+        <Par>
+         <Span>
+          <Style>
+           <FontSize>4.5pt</FontSize>
+           <FontStyle>bold</FontStyle>
+          </Style>
+          <Text>Je certifie que :
+- au chargement des marchandises, mon véhicule était équipé, placardé et signalisé conformément aux prescriptions de l'arrêté TMD du 29 mai 2009.
+- les marchandises chargées n'étaient pas incompatibles entre elles et les colis étaient convenablement calés et arrimés. Je reconnais qu'en cas de retrait de la signalisation, du placardage ou des équipements de mon véhicule, de modification du
+calage ou de l'arrivage des colis ou de chargement ultérieur à bord de produits incompatibles avec ceux remis par cette société, ma responsabilité seule serait engagée.</Text>
+         </Span>
+        </Par>
+       </Container>
+      </Cell>
+     </Row>
+     <Row>
+      <Cell colSpan="4">
+       <Style>
+        <Padding top="0.1cm" right="0.1cm" bottom="0.1cm" left="0.1cm"></Padding>
+       </Style>
+       <Container>
+        <Par>
+         <Span>
+          <Style>
+           <FontSize>5.0pt</FontSize>
+           <FontStyle>bold</FontStyle>
+          </Style>
+          <Text>20. NOM DE LA SOCIETE / NAME OF COMPANY</Text>
+         </Span>
+        </Par>
+        <Par>
+         <Span>
+          <Style>
+           <FontSize>5.0pt</FontSize>
+           <FontStyle>bold</FontStyle>
+          </Style>
+          <Text></Text>
+         </Span>
+        </Par>
+        <Par>
+         <Span>
+          <Style>
+           <FontSize>5.0pt</FontSize>
+           <FontStyle>bold</FontStyle>
+          </Style>
+          <Text></Text>
+         </Span>
+        </Par>
+       </Container>
+      </Cell>
+      <Cell colSpan="2">
+       <Style>
+        <Padding top="0.1cm" right="0.1cm" bottom="0.1cm" left="0.1cm"></Padding>
+        <Border>
+         <Left width="500.0mpt" color="rgb(0,0,0)" style="solid"></Left>
+         <Top width="500.0mpt" color="rgb(0,0,0)" style="none"></Top>
+         <Right width="500.0mpt" color="rgb(0,0,0)" style="solid"></Right>
+         <Bottom width="500.0mpt" color="rgb(0,0,0)" style="none"></Bottom>
+        </Border>
+       </Style>
+       <Container>
+        <Par>
+         <Span>
+          <Style>
+           <FontSize>5.0pt</FontSize>
+           <FontStyle>bold</FontStyle>
+          </Style>
+          <Text>NOM DU TRANSPORTEUR</Text>
+         </Span>
+        </Par>
+       </Container>
+      </Cell>
+      <Cell colSpan="4">
+       <Style>
+        <Padding top="0.1cm" right="0.1cm" bottom="0.1cm" left="0.1cm"></Padding>
+       </Style>
+       <Container>
+        <Par>
+         <Span>
+          <Style>
+           <FontSize>5.0pt</FontSize>
+           <FontStyle>bold</FontStyle>
+          </Style>
+          <Text>22. NOM DE LA SOCIÉTÉ EXPÉDITRICE / NAME OF COMPANY (SHIPPER)</Text>
+         </Span>
+        </Par>
+        <Par>
+         <Span>
+          <Style>
+           <FontSize>5.0pt</FontSize>
+           <FontStyle>bold</FontStyle>
+          </Style>
+          <Text></Text>
+         </Span>
+        </Par>
+        <Par>
+         <Span>
+          <Style>
+           <FontSize>7.0pt</FontSize>
+           <FontStyle>bold</FontStyle>
+          </Style>
+          <Data>$data.window.text.instance(1).noeuddonné.instance(39).donné</Data>
+          <Text> </Text>
+          <Text></Text>
+         </Span>
+        </Par>
+       </Container>
+      </Cell>
+     </Row>
+     <Row>
+      <Cell colSpan="4">
+       <Style>
+        <Padding top="0.1cm" right="0.1cm" bottom="0.1cm" left="0.1cm"></Padding>
+       </Style>
+       <Container>
+        <Par>
+         <Span>
+          <Style>
+           <FontSize>5.0pt</FontSize>
+           <FontStyle>bold</FontStyle>
+          </Style>
+          <Text>NOM ET QUALITÉ DU DÉCLARANT / NAME - STATUS OF DECLARANT</Text>
+         </Span>
+        </Par>
+        <Par>
+         <Span>
+          <Style>
+           <FontSize>5.0pt</FontSize>
+           <FontStyle>bold</FontStyle>
+          </Style>
+          <Text></Text>
+         </Span>
+        </Par>
+       </Container>
+      </Cell>
+      <Cell colSpan="2">
+       <Style>
+        <Padding top="0.1cm" right="0.1cm" bottom="0.1cm" left="0.1cm"></Padding>
+        <Border>
+         <Left width="500.0mpt" color="rgb(0,0,0)" style="solid"></Left>
+         <Top width="500.0mpt" color="rgb(0,0,0)" style="none"></Top>
+         <Right width="500.0mpt" color="rgb(0,0,0)" style="solid"></Right>
+         <Bottom width="500.0mpt" color="rgb(0,0,0)" style="none"></Bottom>
+        </Border>
+       </Style>
+       <Container>
+        <Par>
+         <Span>
+          <Style>
+           <FontSize>5.0pt</FontSize>
+           <FontStyle>bold</FontStyle>
+          </Style>
+          <Text> N° D'IMMATRICULATION DU VÉHICULE</Text>
+         </Span>
+        </Par>
+       </Container>
+      </Cell>
+      <Cell colSpan="4">
+       <Style>
+        <Padding top="0.1cm" right="0.1cm" bottom="0.1cm" left="0.1cm"></Padding>
+       </Style>
+       <Container>
+        <Par>
+         <Span>
+          <Style>
+           <FontSize>5.0pt</FontSize>
+           <FontStyle>bold</FontStyle>
+          </Style>
+          <Text> NOM ET QUALITÉ DU DÉCLARANT / NAME - STATUS OF DECLARANT</Text>
+         </Span>
+        </Par>
+       </Container>
+      </Cell>
+     </Row>
+     <Row>
+      <Cell colSpan="4">
+       <Style>
+        <Padding top="0.1cm" right="0.1cm" bottom="0.1cm" left="0.1cm"></Padding>
+       </Style>
+       <Container>
+        <Par>
+         <Span>
+          <Style>
+           <FontSize>5.0pt</FontSize>
+           <FontStyle>bold</FontStyle>
+          </Style>
+          <Text>LIEU ET DATE / PLACE AND DATE</Text>
+         </Span>
+        </Par>
+        <Par>
+         <Span>
+          <Style>
+           <FontSize>5.0pt</FontSize>
+           <FontStyle>bold</FontStyle>
+          </Style>
+          <Text></Text>
+         </Span>
+        </Par>
+       </Container>
+      </Cell>
+      <Cell>
+       <Style>
+        <Padding top="0.1cm" right="0.1cm" bottom="0.1cm" left="0.1cm"></Padding>
+        <Border>
+         <Left width="500.0mpt" color="rgb(0,0,0)" style="solid"></Left>
+         <Top width="500.0mpt" color="rgb(0,0,0)" style="none"></Top>
+         <Right width="500.0mpt" color="rgb(0,0,0)" style="none"></Right>
+         <Bottom width="500.0mpt" color="rgb(0,0,0)" style="solid"></Bottom>
+        </Border>
+       </Style>
+       <Container>
+        <Par>
+         <Span>
+          <Style>
+           <FontSize>5.0pt</FontSize>
+           <FontStyle>bold</FontStyle>
+          </Style>
+          <Text>NOM DU CHAUFFEUR</Text>
+         </Span>
+        </Par>
+       </Container>
+      </Cell>
+      <Cell>
+       <Style>
+        <Padding top="0.1cm" right="0.1cm" bottom="0.1cm" left="0.1cm"></Padding>
+        <Border>
+         <Left width="500.0mpt" color="rgb(0,0,0)" style="none"></Left>
+         <Top width="500.0mpt" color="rgb(0,0,0)" style="none"></Top>
+         <Right width="500.0mpt" color="rgb(0,0,0)" style="solid"></Right>
+         <Bottom width="500.0mpt" color="rgb(0,0,0)" style="solid"></Bottom>
+        </Border>
+       </Style>
+       <Container>
+        <Par>
+         <Span>
+          <Style>
+           <FontSize>5.0pt</FontSize>
+           <FontStyle>bold</FontStyle>
+          </Style>
+          <Text>DATE</Text>
+         </Span>
+        </Par>
+       </Container>
+      </Cell>
+      <Cell colSpan="4">
+       <Style>
+        <Padding top="0.1cm" right="0.1cm" bottom="0.1cm" left="0.1cm"></Padding>
+       </Style>
+       <Container>
+        <Par>
+         <Span>
+          <Style>
+           <FontSize>5.0pt</FontSize>
+           <FontStyle>bold</FontStyle>
+          </Style>
+          <Text>LIEU ET DATE / PLACE AND DATE</Text>
+         </Span>
+        </Par>
+        <Par>
+         <Span>
+          <Style>
+           <FontSize>7.0pt</FontSize>
+           <FontStyle>bold</FontStyle>
+          </Style>
+          <Data>$data.window.text.instance(1).noeuddonné.instance(37).donné</Data>
+          <Text>  </Text>
+          <Data>$data.window.text.instance(1).noeuddonné.instance(38).donné</Data>
+          <Text> </Text>
+          <Text></Text>
+         </Span>
+        </Par>
+       </Container>
+      </Cell>
+     </Row>
+     <Row>
+      <Cell colSpan="4">
+       <Style>
+        <Padding top="0.1cm" right="0.1cm" bottom="0.1cm" left="0.1cm"></Padding>
+       </Style>
+       <Container>
+        <Par>
+         <Span>
+          <Style>
+           <FontSize>5.0pt</FontSize>
+           <FontStyle>bold</FontStyle>
+          </Style>
+          <Text>SIGNATURE DU DÉCLARANT</Text>
+         </Span>
+        </Par>
+        <Par>
+         <Span>
+          <Style>
+           <FontSize>5.0pt</FontSize>
+           <FontStyle>bold</FontStyle>
+          </Style>
+          <Text></Text>
+         </Span>
+        </Par>
+       </Container>
+      </Cell>
+      <Cell colSpan="2">
+       <Style>
+        <Padding top="0.1cm" right="0.1cm" bottom="0.1cm" left="0.1cm"></Padding>
+        <Border>
+         <Left width="500.0mpt" color="rgb(0,0,0)" style="solid"></Left>
+         <Top width="500.0mpt" color="rgb(0,0,0)" style="none"></Top>
+         <Right width="500.0mpt" color="rgb(0,0,0)" style="none"></Right>
+         <Bottom width="500.0mpt" color="rgb(0,0,0)" style="solid"></Bottom>
+        </Border>
+       </Style>
+       <Container>
+        <Par>
+         <Span>
+          <Style>
+           <FontSize>5.0pt</FontSize>
+           <FontStyle>bold</FontStyle>
+          </Style>
+          <Text>SIGNATURE DU CHAUFFEUR</Text>
+         </Span>
+        </Par>
+        <Par>
+         <Span>
+          <Style>
+           <FontSize>5.0pt</FontSize>
+           <FontStyle>bold</FontStyle>
+          </Style>
+          <Text></Text>
+         </Span>
+        </Par>
+       </Container>
+      </Cell>
+      <Cell colSpan="4">
+       <Style>
+        <Padding top="0.1cm" right="0.1cm" bottom="0.1cm" left="0.1cm"></Padding>
+       </Style>
+       <Container>
+        <Par>
+         <Span>
+          <Style>
+           <FontSize>5.0pt</FontSize>
+           <FontStyle>bold</FontStyle>
+          </Style>
+          <Text>SIGNATURE DU DÉCLARANT</Text>
+         </Span>
+        </Par>
+        <Par>
+         <Span>
+          <Style>
+           <FontSize>5.0pt</FontSize>
+           <FontStyle>bold</FontStyle>
+          </Style>
+          <Text></Text>
+         </Span>
+        </Par>
+       </Container>
+      </Cell>
+     </Row>
+    </Table>
+   </StaticContainer>
+   <StaticContainer>
+    <Style>
+     <RegionRef>side</RegionRef>
+    </Style>
+    <Par>
+     <Span>
+      <Style>
+       <FontSize>6.0pt</FontSize>
+       <FontStyle>bold</FontStyle>
+      </Style>
+      <Text>* Spécifier : N° UN, désignation officielle de transport, classe/division de danger, groupe d'emballage et tout renseignement complémentaire comme spécifié au chapitre 5.4.1 de l'ADR ou du Code IMDG.
+** Lorsque requis (explosifs par exemple)
+*** Aux fins du Code IMDG, voir 5.4.2
+**** Dans certain cas, des renseignements certificats sont exigés. Se reporter au chapitre 5.4 de l'ADR ou du Code IMDG.</Text>
+     </Span>
+    </Par>
+   </StaticContainer>
+  </Section>
+ </Document>
+</RootPart>

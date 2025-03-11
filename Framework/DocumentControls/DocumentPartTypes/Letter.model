@@ -1,0 +1,118 @@
+<DocumentPart xmlns="urn:kwsoft:mtext:tonic:dom">
+ <DataDefinition>
+  <ParamDef name="Message" ref="\\Framework\Data\Message.datamodel" provided="true">
+   <Description></Description>
+   <Output text-prefix="" text-suffix=""></Output>
+  </ParamDef>
+  <ParamDef name="Instance" ref="\\Framework\Data\Instance.datamodel" provided="true">
+   <Description></Description>
+   <Output text-prefix="" text-suffix=""></Output>
+  </ParamDef>
+  <ParamDef name="Recipient" ref="\\Framework\Data\Recipient.datamodel">
+   <Description></Description>
+   <Output text-prefix="" text-suffix=""></Output>
+  </ParamDef>
+  <ParamDef name="Sender" ref="\\Framework\Data\Sender.datamodel">
+   <Description></Description>
+   <Output text-prefix="" text-suffix=""></Output>
+  </ParamDef>
+  <ParamDef name="InstanceOutputSettings" ref="\\Framework\Data\Instance.datamodel" provided="true">
+   <Description></Description>
+  </ParamDef>
+  <ParamDef name="Language" provided="true">
+   <Description></Description>
+   <Input text-prefix="" text-suffix=""></Input>
+   <Output text-prefix="" text-suffix=""></Output>
+   <Subtype></Subtype>
+   <Validation validation-type="any_value" operator="any" allow-empty-value="true">
+    <Values></Values>
+   </Validation>
+  </ParamDef>
+ </DataDefinition>
+ <ModificationRights>
+  <Allowed>
+   <ModificationRight role="_EVERYONE_" operations="INPUT"></ModificationRight>
+  </Allowed>
+  <Denied></Denied>
+ </ModificationRights>
+ <Section title="Brief an $Recipient.NameFirstname" title-en_US="Letter to $Recipient.NameFirstname">
+  <Language><![CDATA[$Language]]></Language>
+  <OutputSettingsRef uri="Framework\OutputSettings.outputSettings"></OutputSettingsRef>
+  <Style parentName="Letter"></Style>
+  <StaticContainer>
+   <Style>
+    <RegionRef>logo</RegionRef>
+   </Style>
+   <ContainerPartRef uri="Framework\LayoutComponents\Logo.model"></ContainerPartRef>
+  </StaticContainer>
+  <Container>
+   <ContainerPartRef uri="Framework\DocumentPartTypes\Letter\Subject.model">
+    <Extensions>
+     <ContainerExtension id="Subject">
+      <ContainerExtensionDef id="Subject"></ContainerExtensionDef>
+     </ContainerExtension>
+    </Extensions>
+   </ContainerPartRef>
+   <ContainerPartRef uri="Framework\DocumentPartTypes\Letter\SalutatoryAddress.model">
+    <Param name="Recipient" type="datanoderef">$Recipient</Param>
+   </ContainerPartRef>
+  </Container>
+  <Container>
+   <Style parentName="Body"></Style>
+   <Numbering id="Default"></Numbering>
+   <ContainerExtensionDef id="Letter Content"></ContainerExtensionDef>
+   <ContainerPartRef uri="\\Framework\Framework\DocumentPartTypes\Letter\ComplimentaryClose2.model">
+    <Param name="User">$Sender.User</Param>
+   </ContainerPartRef>
+  </Container>
+  <StaticContainer>
+   <Style parentName="ContactInformationResponsive"></Style>
+   <ContainerPartRef uri="Framework\DocumentPartTypes\Letter\ContactInformations.model">
+    <Param name="Sender" type="datanoderef">$Sender</Param>
+   </ContainerPartRef>
+  </StaticContainer>
+  <SectionPartRef uri="Framework\DocumentPartTypes\Letter\Info.model">
+   <Param name="User">$Sender.User</Param>
+  </SectionPartRef>
+  <SectionPartRef uri="Framework\DocumentParts\Letter\LetterDate.model"></SectionPartRef>
+  <StaticContainer>
+   <Style parentName="LetterSenderAddress"></Style>
+   <ContainerPartRef uri="Framework\DocumentPartTypes\Letter\Sender.model">
+    <Param name="Sender">$Sender</Param>
+   </ContainerPartRef>
+  </StaticContainer>
+  <StaticContainer>
+   <Style parentName="LetterRecipientAddress"></Style>
+   <ContainerPartRef uri="Framework\DocumentPartTypes\Letter\RecipientAddress.model">
+    <Param name="Recipient">$Recipient</Param>
+   </ContainerPartRef>
+  </StaticContainer>
+  <StaticContainer>
+   <Style parentName="CompanyFooterResponsive"></Style>
+   <ContainerPartRef uri="\\Framework\Framework\DocumentPartTypes\Letter\CompanyInfo_AddressInformation.model"></ContainerPartRef>
+   <ContainerPartRef uri="\\Framework\Framework\DocumentPartTypes\Letter\CompanyInfo_Management.model"></ContainerPartRef>
+   <ContainerPartRef uri="\\Framework\Framework\DocumentPartTypes\Letter\CompanyInfo_CorrespondentBank.model"></ContainerPartRef>
+   <ContainerPartRef uri="\\Framework\Framework\DocumentPartTypes\Letter\CompanyInfo_CommercialRegister.model"></ContainerPartRef>
+  </StaticContainer>
+  <SectionPartRef uri="\\Framework\Framework\LayoutComponents\MarginalNotes.model"></SectionPartRef>
+  <StaticContainer>
+   <Style>
+    <RegionRef>footer</RegionRef>
+   </Style>
+   <ContainerPartRef uri="\\Framework\Framework\DocumentPartTypes\Letter\PageNumber.model"></ContainerPartRef>
+  </StaticContainer>
+  <StaticContainer>
+   <Style parentName="CompanyFooter"></Style>
+   <ContainerPart>
+    <VisibleIf><![CDATA[!$regressionTest]]></VisibleIf>
+    <DataDefinition></DataDefinition>
+    <ContainerPartRef uri="Framework\DocumentPartTypes\Letter\CompanyFooter.model"></ContainerPartRef>
+   </ContainerPart>
+  </StaticContainer>
+  <StaticContainer>
+   <Style>
+    <RegionRef>footerbackpage</RegionRef>
+   </Style>
+  </StaticContainer>
+ </Section>
+</DocumentPart>

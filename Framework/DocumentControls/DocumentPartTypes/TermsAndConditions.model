@@ -1,0 +1,105 @@
+<DocumentPart xmlns="urn:kwsoft:mtext:tonic:dom">
+ <DataDefinition>
+  <ParamDef name="Titel">
+   <Description></Description>
+   <Input text-prefix="" text-suffix=""></Input>
+   <Output text-prefix="" text-suffix=""></Output>
+   <Validation validation-type="any_value" operator="any" allow-empty-value="true">
+    <Values></Values>
+   </Validation>
+  </ParamDef>
+  <ParamDef name="DoNotArchive" data-type="boolean" provided="true">
+   <Description></Description>
+   <Input true-value="true" false-value="false"></Input>
+   <Output true-value="true" false-value="false"></Output>
+   <Validation validation-type="any_value" operator="any" allow-empty-value="true">
+    <Values></Values>
+   </Validation>
+  </ParamDef>
+  <ParamDef name="SendAsAttachment" data-type="boolean" provided="true">
+   <Description></Description>
+   <Input true-value="true" false-value="false"></Input>
+   <Output true-value="true" false-value="false"></Output>
+   <Validation validation-type="any_value" operator="any" allow-empty-value="true">
+    <Values></Values>
+   </Validation>
+  </ParamDef>
+  <ParamDef name="AttachmentName" provided="true">
+   <Description></Description>
+   <Input text-prefix="" text-suffix=""></Input>
+   <Output text-prefix="" text-suffix=""></Output>
+   <Validation validation-type="any_value" operator="any" allow-empty-value="true">
+    <Values></Values>
+   </Validation>
+  </ParamDef>
+  <ParamDef name="Language" provided="true">
+   <Description></Description>
+   <Input text-prefix="" text-suffix=""></Input>
+   <Output text-prefix="" text-suffix=""></Output>
+   <Subtype></Subtype>
+   <Validation validation-type="any_value" operator="any" allow-empty-value="true">
+    <Values></Values>
+   </Validation>
+  </ParamDef>
+ </DataDefinition>
+ <Section>
+  <Language><![CDATA[$Language]]></Language>
+  <OutputSettingsRef uri="\\Framework\Framework\OutputSettings.outputSettings"></OutputSettingsRef>
+  <Style parentName="TermsAndConditions"></Style>
+  <StaticContainer>
+   <Style>
+    <RegionRef>heading</RegionRef>
+   </Style>
+   <Par>
+    <Style>
+     <SpaceBefore resolution="combine">0.0cm</SpaceBefore>
+    </Style>
+    <Span>
+     <Data>$Titel</Data>
+    </Span>
+   </Par>
+  </StaticContainer>
+  <StaticContainer>
+   <Style>
+    <RegionRef>logo</RegionRef>
+   </Style>
+   <Par>
+    <Style>
+     <Align>right</Align>
+    </Style>
+    <Span>
+     <InlineImage uri="mtx://Framework/Graphics/Logo.jpg">
+      <Alt><![CDATA["Logo"]]></Alt>
+      <Style>
+       <FillContainerWidth>false</FillContainerWidth>
+       <FillContainerHeight>false</FillContainerHeight>
+       <Stretch>keep_aspect_ratio</Stretch>
+      </Style>
+     </InlineImage>
+     <Text></Text>
+    </Span>
+   </Par>
+  </StaticContainer>
+  <Container>
+   <Style parentName="Body"></Style>
+   <Numbering id="Default"></Numbering>
+   <ContainerExtensionDef id="TermsAndConditions Content"></ContainerExtensionDef>
+  </Container>
+  <StaticContainer>
+   <Style>
+    <RegionRef>footer_backpage</RegionRef>
+   </Style>
+   <ContainerPartRef uri="\\Framework\Framework\DocumentPartTypes\Letter\PageNumber.model">
+    <Param name="backpage">true</Param>
+   </ContainerPartRef>
+  </StaticContainer>
+  <StaticContainer>
+   <Style>
+    <Height>0.8cm</Height>
+    <RegionRef>footer</RegionRef>
+   </Style>
+   <ContainerPartRef uri="\\Framework\Framework\DocumentPartTypes\Letter\PageNumber.model"></ContainerPartRef>
+  </StaticContainer>
+  <SectionPartRef uri="Framework\LayoutComponents\MarginalNotes.model"></SectionPartRef>
+ </Section>
+</DocumentPart>

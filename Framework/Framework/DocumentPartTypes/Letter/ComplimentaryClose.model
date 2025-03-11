@@ -1,0 +1,30 @@
+<SectionPart xmlns="urn:kwsoft:mtext:tonic:dom">
+ <DataDefinition>
+  <DataNodeDef name="Signature">
+   <Description></Description>
+   <Input text-prefix="" text-suffix=""></Input>
+   <Output text-prefix="" text-suffix=""></Output>
+   <Script><![CDATA[$Sender.User.Signature || 'mtx://Framework/Graphics/signature_BG.png';]]></Script>
+   <Validation validation-type="any_value" operator="any" allow-empty-value="true">
+    <Values></Values>
+   </Validation>
+  </DataNodeDef>
+  <ParamDef name="Sender" ref="\\Framework\Data\Sender.datamodel">
+   <Description></Description>
+   <Script></Script>
+  </ParamDef>
+ </DataDefinition>
+ <ModificationRights>
+  <Allowed>
+   <ModificationRight role="_EVERYONE_" operations="INPUT"></ModificationRight>
+  </Allowed>
+  <Denied>
+   <ModificationRight role="_EVERYONE_" operations="EDIT"></ModificationRight>
+  </Denied>
+ </ModificationRights>
+ <Container id="ComplimentaryClose">
+  <Style>
+   <RegionRef>Body</RegionRef>
+  </Style>
+ </Container>
+</SectionPart>
