@@ -1,0 +1,34 @@
+<RootPart xmlns="urn:kwsoft:mtext:tonic:dom" id="\library\Testing\Templates\Testing.template">
+ <DataDefinition>
+  <ParamDef name="data" ref="\\Testing\Data\testing.datamodel" dataMappingRef="" constantDataRef="">
+   <Description></Description>
+  </ParamDef>
+ </DataDefinition>
+ <UIContribution>
+  <GuideArea></GuideArea>
+  <InputArea>
+   <Field dataNode="$data.zone1"></Field>
+   <Field dataNode="$data.zone2"></Field>
+   <Field dataNode="$data.data1"></Field>
+   <Field dataNode="$data.data2"></Field>
+  </InputArea>
+ </UIContribution>
+ <ModificationRights>
+  <Allowed>
+   <ModificationRight role="_EVERYONE_" operations="INPUT"></ModificationRight>
+  </Allowed>
+  <Denied></Denied>
+ </ModificationRights>
+ <Document>
+  <Section>
+   <Style parentName="testing"></Style>
+   <Container>
+    <Par>
+     <Span>
+      <Text></Text>
+     </Span>
+    </Par>
+   </Container>
+  </Section>
+ </Document>
+</RootPart>

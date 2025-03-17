@@ -1,0 +1,5 @@
+<StyleCollection xmlns="urn:kwsoft:mtext:tonic:dom">
+ <SectionStyle name="testing">
+  <PageLayouts parentRef="Layout\Testing.pageLayouts"></PageLayouts>
+ </SectionStyle>
+</StyleCollection>
