@@ -5,17 +5,19 @@
   </ParamDef>
  </DataDefinition>
  <UIContribution>
-  <GuideArea></GuideArea>
+  <GuideArea>
+   <ActionLink title="test" inputAreaGroupID="1"></ActionLink>
+  </GuideArea>
   <InputArea>
-   <Field dataNode="$data.zone1"></Field>
-   <Field dataNode="$data.zone2"></Field>
-   <Field dataNode="$data.data1"></Field>
-   <Field dataNode="$data.data2"></Field>
+   <Field parentId="1" dataNode="$data.zone1"></Field>
+   <Field parentId="2" dataNode="$data.zone2"></Field>
+   <Field parentId="3" dataNode="$data.data1"></Field>
+   <Field title="" parentId="4" dataNode="$data.data2"></Field>
   </InputArea>
  </UIContribution>
  <ModificationRights>
   <Allowed>
-   <ModificationRight role="_EVERYONE_" operations="INPUT"></ModificationRight>
+   <ModificationRight role="_EVERYONE_" operations="EDIT,INPUT"></ModificationRight>
   </Allowed>
   <Denied></Denied>
  </ModificationRights>
