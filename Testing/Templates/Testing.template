@@ -7,6 +7,7 @@
  <UIContribution>
   <GuideArea>
    <ActionLink title="test" inputAreaGroupID="1"></ActionLink>
+   <ContentLink targetId="zone1" dataNode="$data.zone1"></ContentLink>
   </GuideArea>
   <InputArea>
    <Field parentId="1" dataNode="$data.zone1"></Field>
@@ -228,7 +229,7 @@
      </Span>
     </Par>
    </Container>
-   <StaticContainer>
+   <StaticContainer id="zone1">
     <Style>
      <RegionRef>zone1</RegionRef>
     </Style>
