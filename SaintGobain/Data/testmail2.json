@@ -1,0 +1,1695 @@
+{
+  "documents": [
+    {
+      "header": {
+        "rdiversion": "046A01",
+        "mandt": "216",
+        "tdspoolid": "0000149201",
+        "tdspras": "F",
+        "tdform": "Z_RVORDER01_SK",
+        "tddevice": "PRINTER",
+        "host": "LT058303",
+        "tdcopies": "1",
+        "tddest": "TMEL",
+        "tdprinter": "POST2",
+        "tddataset": "SCRIPT",
+        "tdsuffix1": "TMEL",
+        "tdsuffix2": "S6634826",
+        "tdimmed": "X",
+        "tdlifetime": "8",
+        "tdsenddate": "00000000",
+        "tdsendtime": "000000",
+        "tdprogram": "Z_RVADOR01_SK",
+        "tdscrnpos": "000000000000000",
+        "tdcovtitle": "7020448741 TMEL 20230712 162851",
+        "tdreceiver": "S6634826",
+        "tdarmod": "1",
+        "ldest": "MAIL"
+      },
+      "sort": {},
+      "codepage": {
+        "codepage": "4102",
+        "language": "FR"
+      },
+      "pages": [
+        {
+          "name": "FIRST",
+          "windows": [
+            {
+              "name": "MAIN",
+              "is_main": true,
+              "text_elements": [
+                {
+                  "name": "HEADER_DATA",
+                  "records": [
+                    {
+                      "name": "VBDKA-BUKRS_VF",
+                      "value": "D000",
+                      "type": "data"
+                    },
+                    {
+                      "name": "VBDKA-VSBED",
+                      "value": "EN",
+                      "type": "data"
+                    },
+                    {
+                      "name": "VBDKA-VBTYP",
+                      "value": "C",
+                      "type": "data"
+                    },
+                    {
+                      "name": "VBDKA-VKORG",
+                      "value": "D201",
+                      "type": "data"
+                    },
+                    {
+                      "name": "VBDKA-ERDAT",
+                      "value": "12.07.2023",
+                      "type": "data"
+                    },
+                    {
+                      "name": "VBDKA-BRGEW",
+                      "value": "1.200",
+                      "type": "data"
+                    },
+                    {
+                      "name": "VBDKA-NTGEW",
+                      "value": "1.200",
+                      "type": "data"
+                    },
+                    {
+                      "name": "W_BRGEW_C",
+                      "value": "1.200,000",
+                      "type": "data"
+                    },
+                    {
+                      "name": "W_NTGEW",
+                      "value": "1.200,000",
+                      "type": "data"
+                    },
+                    {
+                      "name": "VBDKA-NTGEW",
+                      "value": "1.200",
+                      "type": "data"
+                    },
+                    {
+                      "name": "VBDKA-GEWEI",
+                      "value": "KG",
+                      "type": "data"
+                    },
+                    {
+                      "name": "VBDKA-BSTNK",
+                      "value": "TEST PRAKASH 01",
+                      "type": "data"
+                    },
+                    {
+                      "name": "NAST-KSCHL",
+                      "value": "ZBAO",
+                      "type": "data"
+                    },
+                    {
+                      "name": "VBDKA-SPART",
+                      "value": "10",
+                      "type": "data"
+                    },
+                    {
+                      "name": "LV_FLAG_D201",
+                      "value": "X",
+                      "type": "data"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "DESTI",
+              "is_main": false,
+              "text_elements": [
+                {
+                  "records": [
+                    {
+                      "name": "MODE",
+                      "value": "M",
+                      "type": "data"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "MAIN",
+              "is_main": false,
+              "text_elements": [
+                {
+                  "name": "CUSTOMER_ADRESSE",
+                  "records": [
+                    {
+                      "name": "TBL_ADRESSE-NAME1",
+                      "value": "COMMERCE EW s.r.o.",
+                      "type": "data"
+                    },
+                    {
+                      "name": "TBL_ADRESSE-STREET",
+                      "value": "Masarykova 16",
+                      "type": "data"
+                    },
+                    {
+                      "name": "TBL_ADRESSE-POST_CODE1",
+                      "value": "080 01",
+                      "type": "data"
+                    },
+                    {
+                      "name": "TBL_ADRESSE-CITY1",
+                      "value": "Prešov",
+                      "type": "data"
+                    },
+                    {
+                      "name": "W_PAYS",
+                      "value": "Slovakia",
+                      "type": "data"
+                    },
+                    {
+                      "name": "TBL_ADRESSE-LANGU",
+                      "value": "SK",
+                      "type": "data"
+                    },
+                    {
+                      "name": "W_LA_DO",
+                      "value": "SK",
+                      "type": "data"
+                    },
+                    {
+                      "name": "TBL_ADRESSE-NAME2",
+                      "value": "právny nástupca BERGERAC",
+                      "type": "data"
+                    },
+                    {
+                      "name": "W_AGREGION_TEXT",
+                      "value": "Prešovský kraj",
+                      "type": "data"
+                    },
+                    {
+                      "name": "W_PAYS_REF",
+                      "value": "SK",
+                      "type": "data"
+                    },
+                    {
+                      "name": "W_AGREGION",
+                      "value": "07",
+                      "type": "data"
+                    },
+                    {
+                      "name": "TBL_ADRESSE-COUNTRY",
+                      "value": "SK",
+                      "type": "data"
+                    }
+                  ]
+                },
+                {
+                  "name": "SHIPPED_ADRESSE",
+                  "records": [
+                    {
+                      "name": "TBL_ADRESSE-NAME1",
+                      "value": "COMMERCE EW s.r.o.",
+                      "type": "data"
+                    },
+                    {
+                      "name": "TBL_ADRESSE-STREET",
+                      "value": "Masarykova 16",
+                      "type": "data"
+                    },
+                    {
+                      "name": "TBL_ADRESSE-POST_CODE1",
+                      "value": "080 01",
+                      "type": "data"
+                    },
+                    {
+                      "name": "TBL_ADRESSE-CITY1",
+                      "value": "Prešov",
+                      "type": "data"
+                    },
+                    {
+                      "name": "W_PAYS",
+                      "value": "Slovakia",
+                      "type": "data"
+                    },
+                    {
+                      "name": "W_WEREGION_TEXT",
+                      "value": "Prešovský kraj",
+                      "type": "data"
+                    },
+                    {
+                      "name": "TBL_ADRESSE-TRANSPZONE",
+                      "value": "D3300",
+                      "type": "data"
+                    },
+                    {
+                      "name": "W_WEREGION",
+                      "value": "07",
+                      "type": "data"
+                    },
+                    {
+                      "name": "TBL_ADRESSE-NAME2",
+                      "value": "právny nástupca BERGERAC",
+                      "type": "data"
+                    },
+                    {
+                      "name": "TBL_ADRESSE-TEL_NUMBER",
+                      "value": "051 7593080",
+                      "type": "data"
+                    },
+                    {
+                      "name": "TBL_ADRESSE-COUNTRY",
+                      "value": "SK",
+                      "type": "data"
+                    }
+                  ]
+                },
+                {
+                  "name": "BILL_TO_ADRESSE",
+                  "records": [
+                    {
+                      "name": "TBL_ADRESSE-NAME1",
+                      "value": "COMMERCE EW s.r.o.",
+                      "type": "data"
+                    },
+                    {
+                      "name": "TBL_ADRESSE-STREET",
+                      "value": "Masarykova 16",
+                      "type": "data"
+                    },
+                    {
+                      "name": "TBL_ADRESSE-POST_CODE1",
+                      "value": "080 01",
+                      "type": "data"
+                    },
+                    {
+                      "name": "TBL_ADRESSE-CITY1",
+                      "value": "Prešov",
+                      "type": "data"
+                    },
+                    {
+                      "name": "W_PAYS",
+                      "value": "Slovakia",
+                      "type": "data"
+                    },
+                    {
+                      "name": "W_WEREGION_TEXT",
+                      "value": "Prešovský kraj",
+                      "type": "data"
+                    },
+                    {
+                      "name": "TBL_ADRESSE-TRANSPZONE",
+                      "value": "D3300",
+                      "type": "data"
+                    },
+                    {
+                      "name": "W_WEREGION",
+                      "value": "07",
+                      "type": "data"
+                    },
+                    {
+                      "name": "TBL_ADRESSE-NAME2",
+                      "value": "právny nástupca BERGERAC",
+                      "type": "data"
+                    },
+                    {
+                      "name": "TBL_ADRESSE-TEL_NUMBER",
+                      "value": "051 7593080",
+                      "type": "data"
+                    },
+                    {
+                      "name": "TBL_ADRESSE-COUNTRY",
+                      "value": "SK",
+                      "type": "data"
+                    }
+                  ]
+                },
+                {
+                  "name": "FOOTER_ADRESSE",
+                  "records": [
+                    {
+                      "name": "TBL_ADRESSE-NAME1",
+                      "value": "Saint-Gobain Construction Products s.r.o",
+                      "type": "data"
+                    },
+                    {
+                      "name": "TBL_ADRESSE-STREET",
+                      "value": "Stará Vajnorská 139",
+                      "type": "data"
+                    },
+                    {
+                      "name": "TBL_ADRESSE-CITY1",
+                      "value": "Bratislava",
+                      "type": "data"
+                    },
+                    {
+                      "name": "TBL_ADRESSE-POST_CODE1",
+                      "value": "831 04",
+                      "type": "data"
+                    },
+                    {
+                      "name": "TBL_ADRESSE-TEL_NUMBER",
+                      "value": "+ 421 2 444 53 022",
+                      "type": "data"
+                    },
+                    {
+                      "name": "TBL_ADRESSE-COUNTRY",
+                      "value": "SK",
+                      "type": "data"
+                    },
+                    {
+                      "name": "W_T001_BUTXT",
+                      "value": "SG Construction Products",
+                      "type": "data"
+                    },
+                    {
+                      "name": "W_T001_STCEG",
+                      "value": "SK2020339761",
+                      "type": "data"
+                    },
+                    {
+                      "name": "W_ICO",
+                      "value": "31389139",
+                      "type": "data"
+                    },
+                    {
+                      "name": "W_DIC",
+                      "value": "2020339761",
+                      "type": "data"
+                    },
+                    {
+                      "name": "W_REGIS",
+                      "value": "Obchodný register Okresného súdu v BA1, vložka c.8410/B odd. sro",
+                      "type": "data"
+                    },
+                    {
+                      "name": "TBL_ADRESSE_TVKO-STREET",
+                      "value": "Stará Vajnorská",
+                      "type": "data"
+                    },
+                    {
+                      "name": "TBL_ADRESSE_TVKO-CITY1",
+                      "value": "Bratislava",
+                      "type": "data"
+                    },
+                    {
+                      "name": "TBL_ADRESSE_TVKO-HOUSE_NUM1",
+                      "value": "139",
+                      "type": "data"
+                    },
+                    {
+                      "name": "TBL_ADRESSE_TVKO-POST_CODE1",
+                      "value": "831 04",
+                      "type": "data"
+                    },
+                    {
+                      "name": "TBL_ADRESSE_TVKO-COUNTRY",
+                      "value": "SK",
+                      "type": "data"
+                    },
+                    {
+                      "name": "TBL_ADRESSE_TVKO-TEL_NUMBER",
+                      "value": "+421 2 444 530 22",
+                      "type": "data"
+                    },
+                    {
+                      "name": "W_VKORG_VTEXT",
+                      "value": "SK - Weber",
+                      "type": "data"
+                    }
+                  ]
+                },
+                {
+                  "name": "FAX_MAIL",
+                  "records": [
+                    {
+                      "name": "W_MAIL_RECIPIENT",
+                      "value": "prakash.bhairi@saint-gobain.com,souhail.samadi@ext.saint-gobain.com",
+                      "type": "data"
+                    },
+                    {
+                      "name": "W_MAIL_SUBJECT",
+                      "value": "Sales order confirmation Saint-Gobain construction products ( 7020448741 )",
+                      "type": "data"
+                    },
+                    {
+                      "name": "W_AR_SUBJECT",
+                      "value": "Sales order confirmation Saint-Gobain construction products ( 7020448741 )",
+                      "type": "data"
+                    },
+                    {
+                      "name": "W_MAIL_TEXT",
+                      "value": "Please find attached sales order number 7020448741",
+                      "type": "data"
+                    }
+                  ]
+                },
+                {
+                  "name": "FAX_MAIL",
+                  "records": [
+                    {
+                      "name": "W_MAIL_TEXT",
+                      "value": "|",
+                      "type": "data"
+                    }
+                  ]
+                },
+                {
+                  "name": "FAX_MAIL",
+                  "records": [
+                    {
+                      "name": "W_MAIL_TEXT",
+                      "value": "Regards,",
+                      "type": "data"
+                    }
+                  ]
+                },
+                {
+                  "name": "FAX_MAIL",
+                  "records": [
+                    {
+                      "name": "W_MAIL_TEXT",
+                      "value": "|",
+                      "type": "data"
+                    }
+                  ]
+                },
+                {
+                  "name": "FAX_MAIL",
+                  "records": [
+                    {
+                      "name": "W_MAIL_TEXT",
+                      "value": "Saint-Gobain Construction Products s.r.o.",
+                      "type": "data"
+                    }
+                  ]
+                },
+                {
+                  "name": "FAX_MAIL",
+                  "records": [
+                    {
+                      "name": "W_MAIL_TEXT",
+                      "value": "Stara Vajnorska 139,",
+                      "type": "data"
+                    }
+                  ]
+                },
+                {
+                  "name": "FAX_MAIL",
+                  "records": [
+                    {
+                      "name": "W_MAIL_TEXT",
+                      "value": "SK- 831 04 Bratislava",
+                      "type": "data"
+                    }
+                  ]
+                },
+                {
+                  "name": "HEADER_DATA_1",
+                  "records": [
+                    {
+                      "name": "W_FDATE",
+                      "value": "1",
+                      "type": "data"
+                    },
+                    {
+                      "name": "W_LANGUE",
+                      "value": "SK",
+                      "type": "data"
+                    },
+                    {
+                      "name": "W_LANGU",
+                      "value": "SK",
+                      "type": "data"
+                    },
+                    {
+                      "name": "W_EXNAME1",
+                      "value": "MAG-ISOVER K.K.",
+                      "type": "data"
+                    },
+                    {
+                      "name": "W_EXSTREET",
+                      "value": "麹町3丁目7番地（サンゴバンビル）",
+                      "type": "data"
+                    },
+                    {
+                      "name": "W_EXPOST_CODE1",
+                      "value": "1020083",
+                      "type": "data"
+                    },
+                    {
+                      "name": "W_EXCITY1",
+                      "value": "千代田区",
+                      "type": "data"
+                    },
+                    {
+                      "name": "W_VKGRP",
+                      "value": "SKE",
+                      "type": "data"
+                    }
+                  ]
+                },
+                {
+                  "name": "HEADER_DATA_2",
+                  "records": [
+                    {
+                      "name": "W_BZTXT",
+                      "value": "SK-W. Vichodosloven.",
+                      "type": "data"
+                    },
+                    {
+                      "name": "W_WAERK",
+                      "value": "EUR",
+                      "type": "data"
+                    },
+                    {
+                      "name": "W_LIB_DIV",
+                      "value": "WEBER KOSICE",
+                      "type": "data"
+                    },
+                    {
+                      "name": "W_WERKS",
+                      "value": "D208",
+                      "type": "data"
+                    },
+                    {
+                      "name": "VBDKA-NETWR",
+                      "value": "600,00",
+                      "type": "data"
+                    },
+                    {
+                      "name": "W_VTWEG",
+                      "value": "D1",
+                      "type": "data"
+                    },
+                    {
+                      "name": "W_INCOTERM",
+                      "value": "EXW",
+                      "type": "data"
+                    },
+                    {
+                      "name": "W_VSBED_TEXT",
+                      "value": "Vlastný odber zák.",
+                      "type": "data"
+                    },
+                    {
+                      "name": "W_TVA2",
+                      "value": "0,00",
+                      "type": "data"
+                    },
+                    {
+                      "name": "W_ZAKLAD_DPH",
+                      "value": "0,00",
+                      "type": "data"
+                    },
+                    {
+                      "name": "W_CIASTKA_DPH",
+                      "value": "0,00",
+                      "type": "data"
+                    },
+                    {
+                      "name": "W_ZAKLAD_DPH2",
+                      "value": "0,00",
+                      "type": "data"
+                    },
+                    {
+                      "name": "W_TVA1",
+                      "value": "0,00",
+                      "type": "data"
+                    },
+                    {
+                      "name": "W_CIASTKA_DPH2",
+                      "value": "0,00",
+                      "type": "data"
+                    },
+                    {
+                      "name": "W_SPOLU",
+                      "value": "0,00",
+                      "type": "data"
+                    },
+                    {
+                      "name": "W_SPOLU2",
+                      "value": "0,00",
+                      "type": "data"
+                    },
+                    {
+                      "name": "W_SPOLU_TOT",
+                      "value": "0,00",
+                      "type": "data"
+                    },
+                    {
+                      "name": "W_LPRIO1",
+                      "value": "00",
+                      "type": "data"
+                    },
+                    {
+                      "name": "W_VKBUR_TEXT",
+                      "value": "SK - Weber Kosice",
+                      "type": "data"
+                    },
+                    {
+                      "name": "W_STCEG",
+                      "value": "SK2020517961",
+                      "type": "data"
+                    },
+                    {
+                      "name": "VBDKA-AUDAT",
+                      "value": "12.07.2023",
+                      "type": "data"
+                    },
+                    {
+                      "name": "VBDKA-ERDAT",
+                      "value": "12.07.2023",
+                      "type": "data"
+                    },
+                    {
+                      "name": "VBDKA-BSTKD",
+                      "value": "TEST PRAKASH 01",
+                      "type": "data"
+                    },
+                    {
+                      "name": "VBDKA-BSTDK",
+                      "value": "12.07.2023",
+                      "type": "data"
+                    },
+                    {
+                      "name": "VBDKA-VKGRP_BEZ",
+                      "value": "SK - Weber Kosice",
+                      "type": "data"
+                    },
+                    {
+                      "name": "W_KUNRG",
+                      "value": "83610",
+                      "type": "data"
+                    },
+                    {
+                      "name": "W_VKBUR_TEL",
+                      "value": "+421 55 799 82 74",
+                      "type": "data"
+                    },
+                    {
+                      "name": "W_PSTYV1",
+                      "value": "ZAN",
+                      "type": "data"
+                    },
+                    {
+                      "name": "W_KUNAG",
+                      "value": "83610",
+                      "type": "data"
+                    },
+                    {
+                      "name": "W_STCD2",
+                      "value": "17077826",
+                      "type": "data"
+                    },
+                    {
+                      "name": "W_TEXT_ROUTE",
+                      "value": "Osobný odber",
+                      "type": "data"
+                    },
+                    {
+                      "name": "W_ROUTE",
+                      "value": "Z99999",
+                      "type": "data"
+                    },
+                    {
+                      "name": "W_MANUAL_CHARGES",
+                      "value": "0,00",
+                      "type": "data"
+                    },
+                    {
+                      "name": "W_DELIV_CHARGES",
+                      "value": "0,00",
+                      "type": "data"
+                    }
+                  ]
+                },
+                {
+                  "name": "HEADER_DATA_3",
+                  "records": [
+                    {
+                      "name": "W_AUART",
+                      "value": "ZDS1",
+                      "type": "data"
+                    },
+                    {
+                      "name": "VBDKA-VKBUR",
+                      "value": "D208",
+                      "type": "data"
+                    },
+                    {
+                      "name": "VBDKA-KUNNR",
+                      "value": "83610",
+                      "type": "data"
+                    },
+                    {
+                      "name": "VBDKA-ERNAM",
+                      "value": "S6634826",
+                      "type": "data"
+                    },
+                    {
+                      "name": "W_VTEXT",
+                      "value": "Platba ihned (Proforma + Cash)",
+                      "type": "data"
+                    },
+                    {
+                      "name": "W_VDATU",
+                      "value": "12.07.2023",
+                      "type": "data"
+                    },
+                    {
+                      "name": "W_NAME1",
+                      "value": "Saint-Gobain Construction Products s.r.o",
+                      "type": "data"
+                    },
+                    {
+                      "name": "W_STREET",
+                      "value": "Stará Vajnorská 139",
+                      "type": "data"
+                    },
+                    {
+                      "name": "W_POSTCD",
+                      "value": "831 04",
+                      "type": "data"
+                    },
+                    {
+                      "name": "W_CITY1",
+                      "value": "Bratislava",
+                      "type": "data"
+                    },
+                    {
+                      "name": "W_TELNBR",
+                      "value": "+ 421 2 444 53 022",
+                      "type": "data"
+                    },
+                    {
+                      "name": "W_ERNAME",
+                      "value": "SAMADI",
+                      "type": "data"
+                    },
+                    {
+                      "name": "T001-STCEG",
+                      "value": "SK2020339761",
+                      "type": "data"
+                    },
+                    {
+                      "name": "W_STCD1",
+                      "value": "2020517961",
+                      "type": "data"
+                    },
+                    {
+                      "name": "W_NAME_TEXT",
+                      "value": "Souhail SAMADI",
+                      "type": "data"
+                    },
+                    {
+                      "name": "W_BANK_NAME",
+                      "value": "Citibank Europe plc",
+                      "type": "data"
+                    },
+                    {
+                      "name": "W_BANK_SWIFT",
+                      "value": "CITISKBA",
+                      "type": "data"
+                    },
+                    {
+                      "name": "W_BANK_CODE",
+                      "value": "8130",
+                      "type": "data"
+                    },
+                    {
+                      "name": "W_BANK_BANKS",
+                      "value": "SK",
+                      "type": "data"
+                    },
+                    {
+                      "name": "W_BANK_STRAS",
+                      "value": "Mlynské nivy 43",
+                      "type": "data"
+                    },
+                    {
+                      "name": "W_BANK_IBAN",
+                      "value": "SK3881300000002012070005",
+                      "type": "data"
+                    },
+                    {
+                      "name": "W_BANK_ORT01",
+                      "value": "Bratislava 825 01",
+                      "type": "data"
+                    },
+                    {
+                      "name": "W_BANK_ACCOUNT",
+                      "value": "2012070005",
+                      "type": "data"
+                    }
+                  ]
+                },
+                {
+                  "name": "ITEM_DATA",
+                  "records": [
+                    {
+                      "name": "VBDPA-POSNR",
+                      "value": "000010",
+                      "type": "data"
+                    },
+                    {
+                      "name": "VBDPA-MATNR",
+                      "value": "734000072",
+                      "type": "data"
+                    },
+                    {
+                      "name": "VBDPA-ARKTX",
+                      "value": "401P webertherm KPS  25kg",
+                      "type": "data"
+                    },
+                    {
+                      "name": "W_VRKME1",
+                      "value": "KG",
+                      "type": "data"
+                    },
+                    {
+                      "name": "W_KOEIN",
+                      "value": "EUR",
+                      "type": "data"
+                    },
+                    {
+                      "name": "W_MEINS",
+                      "value": "KG",
+                      "type": "data"
+                    },
+                    {
+                      "name": "W_KLMENG",
+                      "value": "1.200,000",
+                      "type": "data"
+                    },
+                    {
+                      "name": "W_Q_UV",
+                      "value": "1.200,000",
+                      "type": "data"
+                    },
+                    {
+                      "name": "W_KWERT",
+                      "value": "0,00",
+                      "type": "data"
+                    },
+                    {
+                      "name": "W_Q_UV_C",
+                      "value": "1.200,000",
+                      "type": "data"
+                    },
+                    {
+                      "name": "W_KWERT_C",
+                      "value": "0,00",
+                      "type": "data"
+                    },
+                    {
+                      "name": "VBDPA-VRKME",
+                      "value": "KG",
+                      "type": "data"
+                    },
+                    {
+                      "name": "W_KMEIN",
+                      "value": "KG",
+                      "type": "data"
+                    },
+                    {
+                      "name": "KOMVD-KBETR",
+                      "value": "0,50",
+                      "type": "data"
+                    },
+                    {
+                      "name": "VBDPA-KWMENG",
+                      "value": "1.200",
+                      "type": "data"
+                    },
+                    {
+                      "name": "W_KWMENG_C",
+                      "value": "1.200,000",
+                      "type": "data"
+                    },
+                    {
+                      "name": "W_ZMENG",
+                      "value": "0,000",
+                      "type": "data"
+                    },
+                    {
+                      "name": "W_ZIEME",
+                      "value": "KG",
+                      "type": "data"
+                    },
+                    {
+                      "name": "W_PSTYV",
+                      "value": "ZAN",
+                      "type": "data"
+                    },
+                    {
+                      "name": "W_MATNR",
+                      "value": "734000072",
+                      "type": "data"
+                    },
+                    {
+                      "name": "W_STAWN",
+                      "value": "38245090",
+                      "type": "data"
+                    },
+                    {
+                      "name": "W_MONTANT_TRANSPORT",
+                      "value": "0,00",
+                      "type": "data"
+                    },
+                    {
+                      "name": "W_CLASSIFICATION",
+                      "value": "000",
+                      "type": "data"
+                    },
+                    {
+                      "name": "W_BRGEW",
+                      "value": "1.200,00",
+                      "type": "data"
+                    },
+                    {
+                      "name": "W_BRGEW_C",
+                      "value": "1.200,000",
+                      "type": "data"
+                    },
+                    {
+                      "name": "W_REQ_DATE",
+                      "value": "12.07.2023",
+                      "type": "data"
+                    },
+                    {
+                      "name": "W_CONF_DATE",
+                      "value": "12.07.2023",
+                      "type": "data"
+                    },
+                    {
+                      "name": "W_NTGEW_C",
+                      "value": "1.200,000",
+                      "type": "data"
+                    },
+                    {
+                      "name": "VBDPA-GEWEI",
+                      "value": "KG",
+                      "type": "data"
+                    },
+                    {
+                      "name": "W_VRKME1_C",
+                      "value": "KG",
+                      "type": "data"
+                    },
+                    {
+                      "name": "VBDPA-MATKL",
+                      "value": "ZT05000",
+                      "type": "data"
+                    },
+                    {
+                      "name": "W_TOT_DNT_C",
+                      "value": "600,00",
+                      "type": "data"
+                    },
+                    {
+                      "name": "W_TOT_NET_C",
+                      "value": "1.200,00",
+                      "type": "data"
+                    },
+                    {
+                      "name": "W_KZWI1",
+                      "value": "600,00",
+                      "type": "data"
+                    },
+                    {
+                      "name": "W_KZWI2",
+                      "value": "0,00",
+                      "type": "data"
+                    },
+                    {
+                      "name": "W_KZWI5",
+                      "value": "600,00",
+                      "type": "data"
+                    },
+                    {
+                      "name": "VBDPA-NETPR",
+                      "value": "0,50",
+                      "type": "data"
+                    },
+                    {
+                      "name": "VBDPA-NETWR",
+                      "value": "600,00",
+                      "type": "data"
+                    },
+                    {
+                      "name": "KOMP-NETWR",
+                      "value": "600,00",
+                      "type": "data"
+                    },
+                    {
+                      "name": "KOMP-MWSBP",
+                      "value": "120,00",
+                      "type": "data"
+                    },
+                    {
+                      "name": "W_Q_UV_SK",
+                      "value": "1,200",
+                      "type": "data"
+                    },
+                    {
+                      "name": "KOMP-KZWI3",
+                      "value": "0,00",
+                      "type": "data"
+                    },
+                    {
+                      "name": "KOMP-KZWI4",
+                      "value": "0,00",
+                      "type": "data"
+                    },
+                    {
+                      "name": "W_KZWI3",
+                      "value": "600,00",
+                      "type": "data"
+                    },
+                    {
+                      "name": "W_PRIX_UNIT",
+                      "value": "0,50",
+                      "type": "data"
+                    },
+                    {
+                      "name": "W_PRICE_LIST",
+                      "value": "0,50",
+                      "type": "data"
+                    },
+                    {
+                      "name": "W_DISCOUNT",
+                      "value": "0,00",
+                      "type": "data"
+                    },
+                    {
+                      "name": "W_PRIX_UNIT_3",
+                      "value": "0,500",
+                      "type": "data"
+                    },
+                    {
+                      "name": "W_PRICE_LIST_3",
+                      "value": "0,500",
+                      "type": "data"
+                    },
+                    {
+                      "name": "W_PRICE_KMEIN",
+                      "value": "KG",
+                      "type": "data"
+                    },
+                    {
+                      "name": "W_PRICE_WAERS",
+                      "value": "EUR",
+                      "type": "data"
+                    },
+                    {
+                      "name": "W_WAERS",
+                      "value": "EUR",
+                      "type": "data"
+                    },
+                    {
+                      "name": "W_PRIX_UNIT_MES",
+                      "value": "KG",
+                      "type": "data"
+                    },
+                    {
+                      "name": "W_PRIX_UNIT_EXT",
+                      "value": "KG",
+                      "type": "data"
+                    },
+                    {
+                      "name": "W_DISCOUNT2",
+                      "value": "0,00",
+                      "type": "data"
+                    }
+                  ]
+                },
+                {
+                  "name": "TOTAL_VOLUM",
+                  "records": [
+                    {
+                      "name": "W_TOTAL_VOLUM_C",
+                      "value": "0,000",
+                      "type": "data"
+                    },
+                    {
+                      "name": "W_MANUAL_CHARGES",
+                      "value": "0,00",
+                      "type": "data"
+                    },
+                    {
+                      "name": "W_DELIV_CHARGES",
+                      "value": "0,00",
+                      "type": "data"
+                    },
+                    {
+                      "name": "W_NET_VALUE",
+                      "value": "600,00",
+                      "type": "data"
+                    }
+                  ]
+                },
+                {
+                  "name": "TOTAL",
+                  "records": [
+                    {
+                      "name": "W_TAUX_TVA",
+                      "value": "20,00",
+                      "type": "data"
+                    },
+                    {
+                      "name": "W_MONT_TVA",
+                      "value": "120,00",
+                      "type": "data"
+                    },
+                    {
+                      "name": "W_ROUND",
+                      "value": "0,00",
+                      "type": "data"
+                    },
+                    {
+                      "name": "F_DISCOUNT",
+                      "value": "X",
+                      "type": "data"
+                    },
+                    {
+                      "name": "F_VRKME",
+                      "value": "X",
+                      "type": "data"
+                    },
+                    {
+                      "name": "W_SKTO_NET",
+                      "value": "600,00",
+                      "type": "data"
+                    },
+                    {
+                      "name": "W_SKTO_VAT",
+                      "value": "1,20",
+                      "type": "data"
+                    },
+                    {
+                      "name": "W_SKTO_TOT",
+                      "value": "720,00",
+                      "type": "data"
+                    },
+                    {
+                      "name": "W_ZPRZ1",
+                      "value": "0,000",
+                      "type": "data"
+                    },
+                    {
+                      "name": "W_TOTAL_EURO",
+                      "value": "21.690,72",
+                      "type": "data"
+                    },
+                    {
+                      "name": "W_TOTAL_DUE",
+                      "value": "720,00",
+                      "type": "data"
+                    },
+                    {
+                      "name": "W_EXCHANGE_RATE",
+                      "value": "/30,12600",
+                      "type": "data"
+                    },
+                    {
+                      "name": "W_WAERK_2",
+                      "value": "SKK",
+                      "type": "data"
+                    },
+                    {
+                      "name": "F_TRANSPORT",
+                      "value": "X",
+                      "type": "data"
+                    },
+                    {
+                      "name": "W_NET_VALUE",
+                      "value": "600,00",
+                      "type": "data"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "ADDRESS",
+              "is_main": false,
+              "text_elements": [
+                {
+                  "records": [
+                    {
+                      "name": "ADRS_SENDER",
+                      "object": "TEXT",
+                      "id": "ADRS",
+                      "language": "FR",
+                      "data": [
+                        "IDES Holding AG, Postfach 16 05 29, D-60070 Frankfurt/M",
+                        "___________________________________",
+                        ""
+                      ],
+                      "type": "include_text"
+                    },
+                    {
+                      "name": "STXADDRESS-TDPARGRAPH",
+                      "value": "AS",
+                      "type": "data"
+                    },
+                    {
+                      "name": "STXADDRESS-TYPE",
+                      "value": "1",
+                      "type": "data"
+                    },
+                    {
+                      "name": "STXADDRESS-NUMBER",
+                      "value": "0000175142",
+                      "type": "data"
+                    },
+                    {
+                      "name": "STXADDRESS-FROM_COUNT",
+                      "value": "SK",
+                      "type": "data"
+                    },
+                    {
+                      "name": "STXADDRESS-RECEIVER_L",
+                      "type": "data"
+                    },
+                    {
+                      "name": "STXADDRESS-PRIORITY",
+                      "type": "data"
+                    },
+                    {
+                      "name": "STXADDRESS-DELIVERY",
+                      "type": "data"
+                    },
+                    {
+                      "name": "STXADDRESS-ANZZL",
+                      "value": "10",
+                      "type": "data"
+                    },
+                    {
+                      "name": "STXADDRESS-PERSONNUMB",
+                      "type": "data"
+                    },
+                    {
+                      "name": "STXADDRESS-COUNT_IRL",
+                      "type": "data"
+                    },
+                    {
+                      "name": "STXADDRESS-LANG_COUNT",
+                      "type": "data"
+                    },
+                    {
+                      "name": "STXADDRESS-NO_UPPER",
+                      "type": "data"
+                    },
+                    {
+                      "name": "ADRS1-TITLE_TEXT",
+                      "type": "data"
+                    },
+                    {
+                      "name": "ADRS1-NAME1",
+                      "value": "COMMERCE EW s.r.o.",
+                      "type": "data"
+                    },
+                    {
+                      "name": "ADRS1-NAME2",
+                      "value": "právny nástupca BERGERAC",
+                      "type": "data"
+                    },
+                    {
+                      "name": "ADRS1-NAME3",
+                      "type": "data"
+                    },
+                    {
+                      "name": "ADRS1-NAME4",
+                      "type": "data"
+                    },
+                    {
+                      "name": "ADRS1-NAME_CO",
+                      "type": "data"
+                    },
+                    {
+                      "name": "ADRS1-STREET",
+                      "value": "Masarykova 16",
+                      "type": "data"
+                    },
+                    {
+                      "name": "ADRS1-HOUSE_NUM1",
+                      "type": "data"
+                    },
+                    {
+                      "name": "ADRS1-STR_SUPPL1",
+                      "type": "data"
+                    },
+                    {
+                      "name": "ADRS1-STR_SUPPL2",
+                      "type": "data"
+                    },
+                    {
+                      "name": "ADRS1-STR_SUPPL3",
+                      "type": "data"
+                    },
+                    {
+                      "name": "ADRS1-CITY1",
+                      "value": "Prešov",
+                      "type": "data"
+                    },
+                    {
+                      "name": "ADRS1-CITY2",
+                      "type": "data"
+                    },
+                    {
+                      "name": "ADRS1-HOME_CITY",
+                      "type": "data"
+                    },
+                    {
+                      "name": "ADRS1-POST_CODE1",
+                      "value": "080 01",
+                      "type": "data"
+                    },
+                    {
+                      "name": "ADRS1-POST_CODE2",
+                      "type": "data"
+                    },
+                    {
+                      "name": "ADRS1-POST_CODE3",
+                      "type": "data"
+                    },
+                    {
+                      "name": "ADRS1-PO_BOX",
+                      "type": "data"
+                    },
+                    {
+                      "name": "ADRS1-PO_BOX_LOC",
+                      "type": "data"
+                    },
+                    {
+                      "name": "ADRS1-LOCATION",
+                      "type": "data"
+                    },
+                    {
+                      "name": "ADRS1-REGION",
+                      "value": "07",
+                      "type": "data"
+                    },
+                    {
+                      "name": "ADRS1-COUNTRY",
+                      "value": "SK",
+                      "type": "data"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "FOOTER",
+              "is_main": false,
+              "text_elements": [
+                {
+                  "records": [
+                    {
+                      "name": "ADRS_FOOTER",
+                      "object": "TEXT",
+                      "id": "ADRS",
+                      "language": "SK",
+                      "data": [
+                        "16 Travel Street; Foster City, CA 90123.  Telephone: 1-800-fly-fast.Board of Directors: Thomas Schmidt · Sharon Bishop · Chantal Willemin · Sigeruh Takahashi  -- Incorporated in Delaware."
+                      ],
+                      "type": "include_text"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "HEADER",
+              "is_main": false,
+              "text_elements": [
+                {
+                  "records": [
+                    {
+                      "name": "ADRS_HEADER_LOGO_BMON",
+                      "object": "TEXT",
+                      "id": "ADRS",
+                      "language": "EN",
+                      "data": [],
+                      "type": "include_text"
+                    },
+                    {
+                      "name": "ADRS_HEADER",
+                      "object": "TEXT",
+                      "id": "ADRS",
+                      "language": "SK",
+                      "data": [
+                        ""
+                      ],
+                      "type": "include_text"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "INFO",
+              "is_main": false,
+              "text_elements": [
+                {
+                  "records": [
+                    {
+                      "name": "VBDKA-VKORG",
+                      "value": "D201",
+                      "type": "data"
+                    },
+                    {
+                      "name": "NO_NAME",
+                      "value": "Accusé de réception",
+                      "type": "data"
+                    },
+                    {
+                      "name": "NO_NAME",
+                      "value": "Numéro/Date",
+                      "type": "data"
+                    },
+                    {
+                      "name": "VBDKA-VBELN",
+                      "value": "7020448741",
+                      "type": "data"
+                    },
+                    {
+                      "name": "VBDKA-AUDAT",
+                      "value": "/ 12.07.2023",
+                      "type": "data"
+                    },
+                    {
+                      "name": "NO_NAME",
+                      "value": "Numéro de référence/Date",
+                      "type": "data"
+                    },
+                    {
+                      "name": "VBDKA-BSTKD",
+                      "value": "TEST PRAKASH 01",
+                      "type": "data"
+                    },
+                    {
+                      "name": "VBDKA-BSTDK",
+                      "value": "/ 12.07.2023",
+                      "type": "data"
+                    },
+                    {
+                      "name": "NO_NAME",
+                      "value": "Date de livraison",
+                      "type": "data"
+                    },
+                    {
+                      "name": "VBDKA-LFDAT",
+                      "value": "Day 12.07.2023",
+                      "type": "data"
+                    },
+                    {
+                      "name": "NO_NAME",
+                      "value": "Numéro client",
+                      "type": "data"
+                    },
+                    {
+                      "name": "VBCO3-KUNDE",
+                      "value": "83610",
+                      "type": "data"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "INFO1",
+              "is_main": false,
+              "text_elements": [
+                {
+                  "records": [
+                    {
+                      "name": "STXADDRESS-TDPARGRAPH",
+                      "value": "AS",
+                      "type": "data"
+                    },
+                    {
+                      "name": "STXADDRESS-TYPE",
+                      "value": "1",
+                      "type": "data"
+                    },
+                    {
+                      "name": "STXADDRESS-NUMBER",
+                      "type": "data"
+                    },
+                    {
+                      "name": "STXADDRESS-FROM_COUNT",
+                      "value": "SK",
+                      "type": "data"
+                    },
+                    {
+                      "name": "STXADDRESS-RECEIVER_L",
+                      "type": "data"
+                    },
+                    {
+                      "name": "STXADDRESS-PRIORITY",
+                      "type": "data"
+                    },
+                    {
+                      "name": "STXADDRESS-DELIVERY",
+                      "value": "X",
+                      "type": "data"
+                    },
+                    {
+                      "name": "STXADDRESS-ANZZL",
+                      "value": "10",
+                      "type": "data"
+                    },
+                    {
+                      "name": "STXADDRESS-PERSONNUMB",
+                      "type": "data"
+                    },
+                    {
+                      "name": "STXADDRESS-COUNT_IRL",
+                      "type": "data"
+                    },
+                    {
+                      "name": "STXADDRESS-LANG_COUNT",
+                      "type": "data"
+                    },
+                    {
+                      "name": "STXADDRESS-NO_UPPER",
+                      "type": "data"
+                    },
+                    {
+                      "name": "ADRS1-TITLE_TEXT",
+                      "type": "data"
+                    },
+                    {
+                      "name": "ADRS1-NAME1",
+                      "type": "data"
+                    },
+                    {
+                      "name": "ADRS1-NAME2",
+                      "type": "data"
+                    },
+                    {
+                      "name": "ADRS1-NAME3",
+                      "type": "data"
+                    },
+                    {
+                      "name": "ADRS1-NAME4",
+                      "type": "data"
+                    },
+                    {
+                      "name": "ADRS1-NAME_CO",
+                      "type": "data"
+                    },
+                    {
+                      "name": "ADRS1-STREET",
+                      "type": "data"
+                    },
+                    {
+                      "name": "ADRS1-HOUSE_NUM1",
+                      "type": "data"
+                    },
+                    {
+                      "name": "ADRS1-STR_SUPPL1",
+                      "type": "data"
+                    },
+                    {
+                      "name": "ADRS1-STR_SUPPL2",
+                      "type": "data"
+                    },
+                    {
+                      "name": "ADRS1-STR_SUPPL3",
+                      "type": "data"
+                    },
+                    {
+                      "name": "ADRS1-CITY1",
+                      "type": "data"
+                    },
+                    {
+                      "name": "ADRS1-CITY2",
+                      "type": "data"
+                    },
+                    {
+                      "name": "ADRS1-HOME_CITY",
+                      "type": "data"
+                    },
+                    {
+                      "name": "ADRS1-POST_CODE1",
+                      "type": "data"
+                    },
+                    {
+                      "name": "ADRS1-POST_CODE2",
+                      "type": "data"
+                    },
+                    {
+                      "name": "ADRS1-POST_CODE3",
+                      "type": "data"
+                    },
+                    {
+                      "name": "ADRS1-PO_BOX",
+                      "type": "data"
+                    },
+                    {
+                      "name": "ADRS1-PO_BOX_LOC",
+                      "type": "data"
+                    },
+                    {
+                      "name": "ADRS1-LOCATION",
+                      "type": "data"
+                    },
+                    {
+                      "name": "ADRS1-REGION",
+                      "type": "data"
+                    },
+                    {
+                      "name": "ADRS1-COUNTRY",
+                      "type": "data"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "REPEAT",
+              "is_main": false,
+              "text_elements": [
+                {
+                  "name": "REPEAT",
+                  "records": [
+                    {
+                      "name": "NO_NAME",
+                      "value": "Nouvelle impression",
+                      "type": "data"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,268 @@
+{
+  "documents": [
+    {
+      "header": {
+        "rdiversion": "046A01",
+        "mandt": "100",
+        "tdspoolid": "0000404386",
+        "tdspras": "F",
+        "tdform": "ZASPFO03_SK",
+        "tddevice": "PRINTER",
+        "host": "LT142230",
+        "tdcopies": "1",
+        "tddest": "HA94",
+        "tdprinter": "LZEBS2",
+        "tddataset": "SCRIPT",
+        "tdsuffix1": "  1",
+        "tdsuffix2": "000730271132",
+        "tdimmed": "X",
+        "tdlifetime": "2",
+        "tdsenddate": "00000000",
+        "tdsendtime": "000000",
+        "tdtitle": "Shop Floor Papers",
+        "tdprogram": "Z_PSFCOBJL_SK",
+        "tdscrnpos": "000000000000000",
+        "tdarmod": "1",
+        "ldest": "skwbawpzb04"
+      },
+      "sort": {},
+      "codepage": {
+        "codepage": "4102",
+        "language": "FR"
+      },
+      "pages": [
+        {
+          "name": "PAGE",
+          "windows": [
+            {
+              "name": "MAIN",
+              "is_main": true,
+              "text_elements": [
+                {
+                  "name": "LABEL",
+                  "records": [
+                    {
+                      "name": "W_AUART",
+                      "value": "ZPD2",
+                      "type": "data"
+                    },
+                    {
+                      "name": "W_EMATN",
+                      "value": "73K000001",
+                      "type": "data"
+                    },
+                    {
+                      "name": "W_GAMNG",
+                      "value": "25,000",
+                      "type": "data"
+                    },
+                    {
+                      "name": "W_AUFNR",
+                      "value": "730271132",
+                      "type": "data"
+                    },
+                    {
+                      "name": "NO_NAME",
+                      "value": "-",
+                      "type": "data"
+                    },
+                    {
+                      "name": "W_SZ_LOT",
+                      "value": "000001",
+                      "type": "data"
+                    },
+                    {
+                      "name": "W_CSMAT",
+                      "value": "MATERIAL:",
+                      "type": "data"
+                    },
+                    {
+                      "name": "W_VYRZK",
+                      "value": "VYR.ZAK.:",
+                      "type": "data"
+                    },
+                    {
+                      "name": "NO_NAME",
+                      "value": "TRade name:",
+                      "type": "data"
+                    },
+                    {
+                      "name": "W_MAKTX",
+                      "value": "Omietka Silikonova kmat",
+                      "type": "data"
+                    },
+                    {
+                      "name": "W_MAKTX1",
+                      "value": "R420 S2005-Y50R",
+                      "type": "data"
+                    },
+                    {
+                      "name": "W_MAKTX3",
+                      "value": "Omietka Silikonova kmat",
+                      "type": "data"
+                    },
+                    {
+                      "name": "W_MONTN",
+                      "value": "HMOTN:",
+                      "type": "data"
+                    },
+                    {
+                      "name": "NO_NAME",
+                      "value": ":",
+                      "type": "data"
+                    },
+                    {
+                      "name": "W_QUANT",
+                      "value": "25,000",
+                      "type": "data"
+                    },
+                    {
+                      "name": "W_MEINS",
+                      "value": "KG",
+                      "type": "data"
+                    },
+                    {
+                      "name": "W_DTAVROB",
+                      "value": "DATUM VYROBY:",
+                      "type": "data"
+                    },
+                    {
+                      "name": "NO_NAME",
+                      "value": ":",
+                      "type": "data"
+                    },
+                    {
+                      "name": "W_PDATE",
+                      "value": "17.03.2025",
+                      "type": "data"
+                    },
+                    {
+                      "name": "NO_NAME",
+                      "value": "Legal text",
+                      "type": "data"
+                    },
+                    {
+                      "name": "NO_NAME",
+                      "value": "Weber Terranova Plant Adress",
+                      "type": "data"
+                    },
+                    {
+                      "name": "NO_NAME",
+                      "value": "R+S sentences",
+                      "type": "data"
+                    },
+                    {
+                      "name": "W_TEXT1",
+                      "value": "Tenkovrstvá omietka na povrchovú úpravu",
+                      "type": "data"
+                    },
+                    {
+                      "name": "W_TEXT2",
+                      "value": "fasád  na báze silikónových živíc",
+                      "type": "data"
+                    },
+                    {
+                      "name": "W_TEXT3",
+                      "value": "Obsahuje biocidy: CMIT/MIT (3:1);",
+                      "type": "data"
+                    },
+                    {
+                      "name": "W_TEXT4",
+                      "value": "OIT; Terbutryn.",
+                      "type": "data"
+                    },
+                    {
+                      "name": "W_TEXT5",
+                      "value": "Môže vyvolať alergickú reakciu.",
+                      "type": "data"
+                    },
+                    {
+                      "name": "W_TEXT6",
+                      "value": "Spotrebujte do 12 mesiacov od datumu vyroby",
+                      "type": "data"
+                    },
+                    {
+                      "name": "W_TEXT7",
+                      "value": "Omietka je pripravena na priame použitie. Nanáša sa na napenetrovany",
+                      "type": "data"
+                    },
+                    {
+                      "name": "W_TEXT8",
+                      "value": "podklad. Hrubka vrstvy je dana veľkostou zrna u ryhovanych",
+                      "type": "data"
+                    },
+                    {
+                      "name": "W_TEXT9",
+                      "value": "struktur a 1,5 násobku veľkosti zrna rozrierateľných štruktúr.",
+                      "type": "data"
+                    },
+                    {
+                      "name": "W_TEXT10",
+                      "value": "Pozor! Pri rozprasovaní sa môzu vytvárať nebezpečné respirabilné",
+                      "type": "data"
+                    },
+                    {
+                      "name": "W_TEXT11",
+                      "value": "kvapôčky. Nevdychujte aerosóly ani hmlu.",
+                      "type": "data"
+                    },
+                    {
+                      "name": "W_TEXT12",
+                      "value": "Skodlivy pre vodne organizmy, s dlhodobymi ucinkami.",
+                      "type": "data"
+                    },
+                    {
+                      "name": "W_TEXT13",
+                      "value": "Ak je potrebna lekarska pomoc, majte k dispozicii",
+                      "type": "data"
+                    },
+                    {
+                      "name": "W_TEXT14",
+                      "value": "obal alebo etiketu vyrobku.",
+                      "type": "data"
+                    },
+                    {
+                      "name": "W_TEXT15",
+                      "value": "Uchovajte mimo dosahu deti.",
+                      "type": "data"
+                    },
+                    {
+                      "name": "W_TEXT16",
+                      "value": "Zabrante uvolneniu do zivotneho prostredia.",
+                      "type": "data"
+                    },
+                    {
+                      "name": "W_TEXT17",
+                      "value": "Zneskodnenie obsahu/obalu v sulade s miestnymi/oblastnými/národnými/",
+                      "type": "data"
+                    },
+                    {
+                      "name": "W_TEXT18",
+                      "value": "medzinárodnými nariadeniami.",
+                      "type": "data"
+                    },
+                    {
+                      "name": "W_TEXT19",
+                      "value": "Skladujte v originálnych a dobre uzatvorených",
+                      "type": "data"
+                    },
+                    {
+                      "name": "W_TEXT20",
+                      "value": "obaloch pri teplote od +5 °C do +25 °C.",
+                      "type": "data"
+                    },
+                    {
+                      "name": "I_NBR_PAGE",
+                      "value": "000001",
+                      "type": "data"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

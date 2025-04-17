@@ -1,0 +1,6 @@
+<PageLayouts xmlns="urn:kwsoft:mtext:tonic:dom">
+ <DefaultPageLayout parentRef="Layout\zaspfo03_sk.pageLayout">
+  <PageSize name="Custom" width="10.0cm" height="10.0cm"></PageSize>
+  <RendererMetadata></RendererMetadata>
+ </DefaultPageLayout>
+</PageLayouts>

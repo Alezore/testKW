@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDI>
+  <DOCUMENT>
+    <HEADER>
+      <RDIVERSION>046A01</RDIVERSION>
+      <MANDT>100</MANDT>
+      <TDSPOOLID>0000404386</TDSPOOLID>
+      <TDSPRAS>F</TDSPRAS>
+      <TDFORM>ZASPFO03_SK</TDFORM>
+      <TDDEVICE>PRINTER</TDDEVICE>
+      <HOST>LT142230</HOST>
+      <TDCOPIES>1</TDCOPIES>
+      <TDDEST>HA94</TDDEST>
+      <TDPRINTER>LZEBS2</TDPRINTER>
+      <TDDATASET>SCRIPT</TDDATASET>
+      <TDSUFFIX1>  1</TDSUFFIX1>
+      <TDSUFFIX2>000730271132</TDSUFFIX2>
+      <TDIMMED>X</TDIMMED>
+      <TDLIFETIME>2</TDLIFETIME>
+      <TDSENDDATE>00000000</TDSENDDATE>
+      <TDSENDTIME>000000</TDSENDTIME>
+      <TDTITLE>Shop Floor Papers</TDTITLE>
+      <TDPROGRAM>Z_PSFCOBJL_SK</TDPROGRAM>
+      <TDSCRNPOS>000000000000000</TDSCRNPOS>
+      <TDARMOD>1</TDARMOD>
+      <LDEST>skwbawpzb04</LDEST>
+    </HEADER>
+    <SORT></SORT>
+    <CODEPAGE language="FR">4102</CODEPAGE>
+    <PAGE name="PAGE">
+      <WINDOW name="MAIN" is_main="true">
+        <TEXT_ELEMENT name="LABEL">
+          <W_AUART type="data">ZPD2</W_AUART>
+          <W_EMATN type="data">73K000001</W_EMATN>
+          <W_GAMNG type="data">25,000</W_GAMNG>
+          <W_AUFNR type="data">730271132</W_AUFNR>
+          <NO_NAME type="data">-</NO_NAME>
+          <W_SZ_LOT type="data">000001</W_SZ_LOT>
+          <W_CSMAT type="data">MATERIAL:</W_CSMAT>
+          <W_VYRZK type="data">VYR.ZAK.:</W_VYRZK>
+          <NO_NAME type="data">TRade name:</NO_NAME>
+          <W_MAKTX type="data">Omietka Silikonova kmat</W_MAKTX>
+          <W_MAKTX1 type="data">R420 S2005-Y50R</W_MAKTX1>
+          <W_MAKTX3 type="data">Omietka Silikonova kmat</W_MAKTX3>
+          <W_MONTN type="data">HMOTN:</W_MONTN>
+          <NO_NAME type="data">:</NO_NAME>
+          <W_QUANT type="data">25,000</W_QUANT>
+          <W_MEINS type="data">KG</W_MEINS>
+          <W_DTAVROB type="data">DATUM VYROBY:</W_DTAVROB>
+          <NO_NAME type="data">:</NO_NAME>
+          <W_PDATE type="data">17.03.2025</W_PDATE>
+          <NO_NAME type="data">Legal text</NO_NAME>
+          <NO_NAME type="data">Weber Terranova Plant Adress</NO_NAME>
+          <NO_NAME type="data">R+S sentences</NO_NAME>
+          <W_TEXT1 type="data">Tenkovrstvá omietka na povrchovú úpravu</W_TEXT1>
+          <W_TEXT2 type="data">fasád  na báze silikónových živíc</W_TEXT2>
+          <W_TEXT3 type="data">Obsahuje biocidy: CMIT/MIT (3:1);</W_TEXT3>
+          <W_TEXT4 type="data">OIT; Terbutryn.</W_TEXT4>
+          <W_TEXT5 type="data">Môže vyvolať alergickú reakciu.</W_TEXT5>
+          <W_TEXT6 type="data">Spotrebujte do 12 mesiacov od datumu vyroby</W_TEXT6>
+          <W_TEXT7 type="data">Omietka je pripravena na priame použitie. Nanáša sa na napenetrovany</W_TEXT7>
+          <W_TEXT8 type="data">podklad. Hrubka vrstvy je dana veľkostou zrna u ryhovanych</W_TEXT8>
+          <W_TEXT9 type="data">struktur a 1,5 násobku veľkosti zrna rozrierateľných štruktúr.</W_TEXT9>
+          <W_TEXT10 type="data">Pozor! Pri rozprasovaní sa môzu vytvárať nebezpečné respirabilné</W_TEXT10>
+          <W_TEXT11 type="data">kvapôčky. Nevdychujte aerosóly ani hmlu.</W_TEXT11>
+          <W_TEXT12 type="data">Skodlivy pre vodne organizmy, s dlhodobymi ucinkami.</W_TEXT12>
+          <W_TEXT13 type="data">Ak je potrebna lekarska pomoc, majte k dispozicii</W_TEXT13>
+          <W_TEXT14 type="data">obal alebo etiketu vyrobku.</W_TEXT14>
+          <W_TEXT15 type="data">Uchovajte mimo dosahu deti.</W_TEXT15>
+          <W_TEXT16 type="data">Zabrante uvolneniu do zivotneho prostredia.</W_TEXT16>
+          <W_TEXT17 type="data">Zneskodnenie obsahu/obalu v sulade s miestnymi/oblastnými/národnými/</W_TEXT17>
+          <W_TEXT18 type="data">medzinárodnými nariadeniami.</W_TEXT18>
+          <W_TEXT19 type="data">Skladujte v originálnych a dobre uzatvorených</W_TEXT19>
+          <W_TEXT20 type="data">obaloch pri teplote od +5 °C do +25 °C.</W_TEXT20>
+          <I_NBR_PAGE type="data">000001</I_NBR_PAGE>
+        </TEXT_ELEMENT>
+      </WINDOW>
+    </PAGE>
+  </DOCUMENT>
+</RDI>

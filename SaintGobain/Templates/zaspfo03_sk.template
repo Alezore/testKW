@@ -1,0 +1,524 @@
+<RootPart xmlns="urn:kwsoft:mtext:tonic:dom" id="\library\SaintGobain\Templates\zaspfo03_sk.template" previewImageUri="">
+ <DataDefinition>
+  <ParamDef name="data" ref="\\SaintGobain\Data\zaspfo03_sk.datamodel" dataMappingRef="\\SaintGobain\Data\zaspfo03_sk.mapping" constantDataRef="">
+   <Description></Description>
+   <Input text-prefix="" text-suffix=""></Input>
+   <Output text-prefix="" text-suffix=""></Output>
+  </ParamDef>
+ </DataDefinition>
+ <ModificationRights>
+  <Allowed>
+   <ModificationRight role="_EVERYONE_" operations="INPUT"></ModificationRight>
+  </Allowed>
+  <Denied></Denied>
+ </ModificationRights>
+ <Document>
+  <Section>
+   <Style parentName="zaspfo03_sk"></Style>
+   <Container>
+    <Table>
+     <Columns>
+      <Column>
+       <Style>
+        <ColumnWidth>85366.0mpt</ColumnWidth>
+       </Style>
+      </Column>
+      <Column>
+       <Style>
+        <ColumnWidth>34866.0mpt</ColumnWidth>
+       </Style>
+      </Column>
+      <Column>
+       <Style>
+        <ColumnWidth>45429.0mpt</ColumnWidth>
+       </Style>
+      </Column>
+      <Column>
+       <Style>
+        <ColumnWidth>auto</ColumnWidth>
+       </Style>
+      </Column>
+     </Columns>
+     <Row>
+      <Cell colSpan="2">
+       <Style>
+        <Margin top="0.0cm" right="0.0cm" bottom="0.0cm" left="0.0cm"></Margin>
+        <Padding top="0.0cm" right="0.0cm" bottom="0.0cm" left="0.0cm"></Padding>
+        <Border>
+         <Left width="0.0pt" color="rgb(0,0,0)" style="none"></Left>
+         <Top width="0.0pt" color="rgb(0,0,0)" style="none"></Top>
+         <Right width="500.0mpt" color="rgb(0,0,0)" style="solid"></Right>
+         <Bottom width="500.0mpt" color="rgb(0,0,0)" style="solid"></Bottom>
+        </Border>
+       </Style>
+       <Container>
+        <Par>
+         <Span>
+          <Style>
+           <FontSize>7.0pt</FontSize>
+          </Style>
+          <Text></Text>
+         </Span>
+        </Par>
+        <Par>
+         <Style>
+          <LeftIndent>0.0cm</LeftIndent>
+          <FirstIndent>0.0cm</FirstIndent>
+         </Style>
+         <Span>
+          <Style>
+           <FontSize>7.0pt</FontSize>
+          </Style>
+          <Data>$data.PAGE.WINDOW.TEXT_ELEMENT.W_CSMAT</Data>
+         </Span>
+         <Span>
+          <Style>
+           <FontSize>12.0pt</FontSize>
+          </Style>
+          <Text> </Text>
+          <Data>$data.PAGE.WINDOW.TEXT_ELEMENT.W_EMATN</Data>
+          <Text> </Text>
+         </Span>
+        </Par>
+       </Container>
+      </Cell>
+      <Cell colSpan="2">
+       <Style>
+        <Margin top="0.0cm" right="0.0cm" bottom="0.0cm" left="0.0cm"></Margin>
+        <Border>
+         <Left width="500.0mpt" color="rgb(0,0,0)" style="solid"></Left>
+         <Top width="0.0pt" color="rgb(0,0,0)" style="none"></Top>
+         <Right width="0.0pt" color="rgb(0,0,0)" style="none"></Right>
+         <Bottom width="500.0mpt" color="rgb(0,0,0)" style="solid"></Bottom>
+        </Border>
+       </Style>
+       <Container>
+        <Image type="de.kwsoft.mtext.tonic.barcode">
+         <InlineImageData><![CDATA[<Barcode>
+<Input>$W_AUFNR</Input>
+<TilesizeX>1</TilesizeX>
+<TilesizeY>30</TilesizeY>
+<Code>CODE128</Code>
+</Barcode>]]></InlineImageData>
+         <InlineImageParams>
+          <InlineImageParam name="W_AUFNR"><![CDATA[$data.PAGE.WINDOW.TEXT_ELEMENT.W_AUFNR]]></InlineImageParam>
+         </InlineImageParams>
+         <Style>
+          <Width>4.0cm</Width>
+          <Height>0.5cm</Height>
+          <FillContainerWidth>true</FillContainerWidth>
+          <FillContainerHeight>true</FillContainerHeight>
+          <Stretch>keep_aspect_ratio</Stretch>
+          <HorizontalAlignment>first</HorizontalAlignment>
+         </Style>
+        </Image>
+        <Par>
+         <Span>
+          <Style>
+           <FontSize>9.0pt</FontSize>
+          </Style>
+          <Data>$data.PAGE.WINDOW.TEXT_ELEMENT.W_AUFNR</Data>
+          <Text> </Text>
+          <Text></Text>
+         </Span>
+        </Par>
+       </Container>
+      </Cell>
+     </Row>
+     <Row>
+      <Cell colSpan="4">
+       <Style>
+        <Margin top="0.0cm" right="0.0cm" bottom="0.0cm" left="0.0cm"></Margin>
+        <Border>
+         <Left width="0.0pt" color="rgb(0,0,0)" style="none"></Left>
+         <Top width="500.0mpt" color="rgb(0,0,0)" style="solid"></Top>
+         <Right width="0.0pt" color="rgb(0,0,0)" style="none"></Right>
+         <Bottom width="500.0mpt" color="rgb(0,0,0)" style="solid"></Bottom>
+        </Border>
+       </Style>
+       <Container>
+        <Par>
+         <Span>
+          <Style>
+           <FontSize>25.0pt</FontSize>
+          </Style>
+          <Data>$data.PAGE.WINDOW.TEXT_ELEMENT.W_MAKTX1</Data>
+          <Text> </Text>
+          <Text></Text>
+         </Span>
+        </Par>
+        <Par>
+         <Style>
+          <Align>center</Align>
+         </Style>
+         <Span>
+          <Style>
+           <FontSize>10.0pt</FontSize>
+          </Style>
+          <Data>$data.PAGE.WINDOW.TEXT_ELEMENT.W_MAKTX</Data>
+          <Text> </Text>
+          <Text></Text>
+         </Span>
+        </Par>
+       </Container>
+      </Cell>
+     </Row>
+     <Row>
+      <Cell>
+       <Style>
+        <Margin top="0.0cm" right="0.0cm" bottom="0.0cm" left="0.0cm"></Margin>
+        <Border>
+         <Left width="0.0pt" color="rgb(0,0,0)" style="none"></Left>
+         <Top width="500.0mpt" color="rgb(0,0,0)" style="solid"></Top>
+         <Right width="500.0mpt" color="rgb(0,0,0)" style="solid"></Right>
+         <Bottom width="500.0mpt" color="rgb(0,0,0)" style="solid"></Bottom>
+        </Border>
+       </Style>
+       <Container>
+        <Par>
+         <Span>
+          <Style>
+           <FontSize>7.0pt</FontSize>
+          </Style>
+          <Data>$data.PAGE.WINDOW.TEXT_ELEMENT.W_MONTN</Data>
+          <Text> </Text>
+          <Data>$data.PAGE.WINDOW.TEXT_ELEMENT.W_QUANT</Data>
+          <Text> </Text>
+          <Data>$data.PAGE.WINDOW.TEXT_ELEMENT.W_MEINS</Data>
+          <Text> </Text>
+          <Text></Text>
+         </Span>
+        </Par>
+       </Container>
+      </Cell>
+      <Cell colSpan="3">
+       <Style>
+        <Margin top="0.0cm" right="0.0cm" bottom="0.0cm" left="0.0cm"></Margin>
+        <Border>
+         <Left width="500.0mpt" color="rgb(0,0,0)" style="solid"></Left>
+         <Top width="500.0mpt" color="rgb(0,0,0)" style="solid"></Top>
+         <Right width="0.0pt" color="rgb(0,0,0)" style="none"></Right>
+         <Bottom width="500.0mpt" color="rgb(0,0,0)" style="solid"></Bottom>
+        </Border>
+       </Style>
+       <Container>
+        <Par>
+         <Span>
+          <Style>
+           <FontSize>7.0pt</FontSize>
+          </Style>
+          <Data>$data.PAGE.WINDOW.TEXT_ELEMENT.W_DTAVROB</Data>
+          <Text> </Text>
+          <Data>$data.PAGE.WINDOW.TEXT_ELEMENT.W_PDATE</Data>
+          <Text> </Text>
+          <Text></Text>
+         </Span>
+        </Par>
+       </Container>
+      </Cell>
+     </Row>
+     <Row>
+      <Cell colSpan="3" rowSpan="2">
+       <Style>
+        <Margin top="0.0cm" right="0.0cm" bottom="0.0cm" left="0.0cm"></Margin>
+        <Border>
+         <Left width="0.0pt" color="rgb(0,0,0)" style="none"></Left>
+         <Top width="500.0mpt" color="rgb(0,0,0)" style="solid"></Top>
+         <Right width="500.0mpt" color="rgb(0,0,0)" style="solid"></Right>
+         <Bottom width="0.0pt" color="rgb(0,0,0)" style="none"></Bottom>
+        </Border>
+       </Style>
+       <Container>
+        <Par>
+         <Span>
+          <Style>
+           <FontSize>7.0pt</FontSize>
+          </Style>
+          <Data>$data.PAGE.WINDOW.TEXT_ELEMENT.W_TEXT1</Data>
+          <Text> </Text>
+          <Text></Text>
+         </Span>
+        </Par>
+        <Par>
+         <Span>
+          <Style>
+           <FontSize>7.0pt</FontSize>
+          </Style>
+          <Data>$data.PAGE.WINDOW.TEXT_ELEMENT.W_TEXT2</Data>
+          <Text> </Text>
+          <Text></Text>
+         </Span>
+        </Par>
+        <Par>
+         <Span>
+          <Style>
+           <FontSize>7.0pt</FontSize>
+          </Style>
+          <Data>$data.PAGE.WINDOW.TEXT_ELEMENT.W_TEXT3</Data>
+          <Text> </Text>
+          <Text></Text>
+         </Span>
+        </Par>
+        <Par>
+         <Span>
+          <Style>
+           <FontSize>7.0pt</FontSize>
+          </Style>
+          <Data>$data.PAGE.WINDOW.TEXT_ELEMENT.W_TEXT4</Data>
+          <Text> </Text>
+          <Text></Text>
+         </Span>
+        </Par>
+        <Par>
+         <Span>
+          <Style>
+           <FontSize>7.0pt</FontSize>
+          </Style>
+          <Data>$data.PAGE.WINDOW.TEXT_ELEMENT.W_TEXT5</Data>
+          <Text> </Text>
+          <Text></Text>
+         </Span>
+        </Par>
+        <Par>
+         <Span>
+          <Style>
+           <FontSize>7.0pt</FontSize>
+          </Style>
+          <Data>$data.PAGE.WINDOW.TEXT_ELEMENT.W_TEXT6</Data>
+          <Text></Text>
+         </Span>
+        </Par>
+       </Container>
+      </Cell>
+      <Cell>
+       <Style>
+        <Margin top="0.0cm" right="0.0cm" bottom="0.0cm" left="0.0cm"></Margin>
+        <Border>
+         <Left width="500.0mpt" color="rgb(0,0,0)" style="solid"></Left>
+         <Top width="500.0mpt" color="rgb(0,0,0)" style="solid"></Top>
+         <Right width="0.0pt" color="rgb(0,0,0)" style="none"></Right>
+         <Bottom width="500.0mpt" color="rgb(0,0,0)" style="solid"></Bottom>
+        </Border>
+       </Style>
+       <Container>
+        <Par>
+         <Span>
+          <Style>
+           <FontSize>5.0pt</FontSize>
+          </Style>
+          <Text>Saint-Gobain Construction Product, s r.o.</Text>
+         </Span>
+        </Par>
+        <Par>
+         <Span>
+          <Style>
+           <FontSize>5.0pt</FontSize>
+          </Style>
+          <Text>Division Weber Terranova</Text>
+         </Span>
+        </Par>
+        <Par>
+         <Span>
+          <Style>
+           <FontSize>5.0pt</FontSize>
+          </Style>
+          <Text>Stará Vajnorská 139,831 04  Bratislava</Text>
+         </Span>
+        </Par>
+       </Container>
+      </Cell>
+     </Row>
+     <Row>
+      <Cell>
+       <Style>
+        <Margin top="0.0cm" right="0.0cm" bottom="0.0cm" left="0.0cm"></Margin>
+        <Border>
+         <Left width="500.0mpt" color="rgb(0,0,0)" style="solid"></Left>
+         <Top width="500.0mpt" color="rgb(0,0,0)" style="solid"></Top>
+         <Right width="0.0pt" color="rgb(0,0,0)" style="none"></Right>
+         <Bottom width="0.0pt" color="rgb(0,0,0)" style="none"></Bottom>
+        </Border>
+       </Style>
+       <Container>
+        <Image type="de.kwsoft.mtext.tonic.barcode">
+         <InlineImageData><![CDATA[<Barcode>
+<Input>$W_AUFNR</Input>
+<TilesizeX>1</TilesizeX>
+<TilesizeY>30</TilesizeY>
+<Code>CODE128</Code>
+</Barcode>]]></InlineImageData>
+         <InlineImageParams>
+          <InlineImageParam name="W_AUFNR"><![CDATA[$data.PAGE.WINDOW.TEXT_ELEMENT.W_AUFNR]]></InlineImageParam>
+         </InlineImageParams>
+         <Style>
+          <WrapText>after</WrapText>
+          <Width>3.5cm</Width>
+          <Height>0.7cm</Height>
+          <FillContainerWidth>true</FillContainerWidth>
+          <FillContainerHeight>true</FillContainerHeight>
+          <Stretch>keep_aspect_ratio</Stretch>
+          <HorizontalAlignment>first</HorizontalAlignment>
+         </Style>
+        </Image>
+        <Par>
+         <Span>
+          <Style>
+           <FontSize>7.0pt</FontSize>
+          </Style>
+          <Data>$data.PAGE.WINDOW.TEXT_ELEMENT.W_AUFNR</Data>
+         </Span>
+         <Span>
+          <Style>
+           <FontSize>7.0pt</FontSize>
+          </Style>
+          <Text> </Text>
+         </Span>
+        </Par>
+       </Container>
+      </Cell>
+     </Row>
+    </Table>
+    <Par>
+     <Span>
+      <Style>
+       <FontSize>7.0pt</FontSize>
+      </Style>
+      <Data>$data.PAGE.WINDOW.TEXT_ELEMENT.W_TEXT7</Data>
+      <Text> </Text>
+      <Text></Text>
+     </Span>
+    </Par>
+    <Par>
+     <Span>
+      <Style>
+       <FontSize>7.0pt</FontSize>
+      </Style>
+      <Data>$data.PAGE.WINDOW.TEXT_ELEMENT.W_TEXT8</Data>
+      <Text> </Text>
+      <Text></Text>
+     </Span>
+    </Par>
+    <Par>
+     <Span>
+      <Style>
+       <FontSize>7.0pt</FontSize>
+      </Style>
+      <Data>$data.PAGE.WINDOW.TEXT_ELEMENT.W_TEXT9</Data>
+      <Text> </Text>
+      <Text></Text>
+     </Span>
+    </Par>
+    <Par>
+     <Span>
+      <Style>
+       <FontSize>7.0pt</FontSize>
+      </Style>
+      <Data>$data.PAGE.WINDOW.TEXT_ELEMENT.W_TEXT10</Data>
+      <Text> </Text>
+      <Text></Text>
+     </Span>
+    </Par>
+    <Par>
+     <Span>
+      <Style>
+       <FontSize>7.0pt</FontSize>
+      </Style>
+      <Data>$data.PAGE.WINDOW.TEXT_ELEMENT.W_TEXT11</Data>
+      <Text> </Text>
+      <Text></Text>
+     </Span>
+    </Par>
+    <Par>
+     <Span>
+      <Style>
+       <FontSize>7.0pt</FontSize>
+      </Style>
+      <Data>$data.PAGE.WINDOW.TEXT_ELEMENT.W_TEXT12</Data>
+      <Text> </Text>
+      <Text></Text>
+     </Span>
+    </Par>
+    <Par>
+     <Span>
+      <Style>
+       <FontSize>7.0pt</FontSize>
+      </Style>
+      <Data>$data.PAGE.WINDOW.TEXT_ELEMENT.W_TEXT13</Data>
+      <Text> </Text>
+      <Text></Text>
+     </Span>
+    </Par>
+    <Par>
+     <Span>
+      <Style>
+       <FontSize>7.0pt</FontSize>
+      </Style>
+      <Data>$data.PAGE.WINDOW.TEXT_ELEMENT.W_TEXT14</Data>
+      <Text> </Text>
+      <Text></Text>
+     </Span>
+    </Par>
+    <Par>
+     <Span>
+      <Style>
+       <FontSize>7.0pt</FontSize>
+      </Style>
+      <Data>$data.PAGE.WINDOW.TEXT_ELEMENT.W_TEXT15</Data>
+      <Text> </Text>
+      <Text></Text>
+     </Span>
+    </Par>
+    <Par>
+     <Span>
+      <Style>
+       <FontSize>7.0pt</FontSize>
+      </Style>
+      <Data>$data.PAGE.WINDOW.TEXT_ELEMENT.W_TEXT16</Data>
+      <Text> </Text>
+      <Text></Text>
+     </Span>
+    </Par>
+    <Par>
+     <Span>
+      <Style>
+       <FontSize>7.0pt</FontSize>
+      </Style>
+      <Data>$data.PAGE.WINDOW.TEXT_ELEMENT.W_TEXT17</Data>
+      <Text> </Text>
+      <Text></Text>
+     </Span>
+    </Par>
+    <Par>
+     <Span>
+      <Style>
+       <FontSize>7.0pt</FontSize>
+      </Style>
+      <Data>$data.PAGE.WINDOW.TEXT_ELEMENT.W_TEXT18</Data>
+      <Text> </Text>
+      <Text></Text>
+     </Span>
+    </Par>
+    <Par>
+     <Span>
+      <Style>
+       <FontSize>7.0pt</FontSize>
+      </Style>
+      <Data>$data.PAGE.WINDOW.TEXT_ELEMENT.W_TEXT19</Data>
+      <Text> </Text>
+      <Text></Text>
+     </Span>
+    </Par>
+    <Par>
+     <Span>
+      <Style>
+       <FontSize>7.0pt</FontSize>
+      </Style>
+      <Data>$data.PAGE.WINDOW.TEXT_ELEMENT.W_TEXT20</Data>
+      <Text> </Text>
+      <Text></Text>
+     </Span>
+    </Par>
+   </Container>
+  </Section>
+ </Document>
+</RootPart>

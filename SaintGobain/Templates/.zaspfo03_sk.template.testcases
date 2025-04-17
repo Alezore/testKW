@@ -1,0 +1,397 @@
+<TestCases xmlns="urn:kwsoft:mtext:tonic:dom" activeTestCase="testcase">
+ <TestCase name="testcase" includeInRegressionTool="false">
+  <Root base="SaintGobin">
+   <RootPartInstance partIndex="0">
+    <Data>
+     <DataNode name="data">
+      <Value><![CDATA[string:]]></Value>
+      <DataNode name="HEADER">
+       <Value><![CDATA[string:]]></Value>
+       <DataNode name="RDIVERSION" valueChanged="fromDataSource">
+        <Value><![CDATA[string:046A01]]></Value>
+       </DataNode>
+       <DataNode name="MANDT" valueChanged="fromDataSource">
+        <Value><![CDATA[string:100]]></Value>
+       </DataNode>
+       <DataNode name="TDSPOOLID" valueChanged="fromDataSource">
+        <Value><![CDATA[string:0000404386]]></Value>
+       </DataNode>
+       <DataNode name="TDSPRAS" valueChanged="fromDataSource">
+        <Value><![CDATA[string:F]]></Value>
+       </DataNode>
+       <DataNode name="TDFORM" valueChanged="fromDataSource">
+        <Value><![CDATA[string:ZASPFO03_SK]]></Value>
+       </DataNode>
+       <DataNode name="TDDEVICE" valueChanged="fromDataSource">
+        <Value><![CDATA[string:PRINTER]]></Value>
+       </DataNode>
+       <DataNode name="HOST" valueChanged="fromDataSource">
+        <Value><![CDATA[string:LT142230]]></Value>
+       </DataNode>
+       <DataNode name="TDCOPIES" valueChanged="fromDataSource">
+        <Value><![CDATA[string:1]]></Value>
+       </DataNode>
+       <DataNode name="TDDEST" valueChanged="fromDataSource">
+        <Value><![CDATA[string:HA94]]></Value>
+       </DataNode>
+       <DataNode name="TDPRINTER" valueChanged="fromDataSource">
+        <Value><![CDATA[string:LZEBS2]]></Value>
+       </DataNode>
+       <DataNode name="TDDATASET" valueChanged="fromDataSource">
+        <Value><![CDATA[string:SCRIPT]]></Value>
+       </DataNode>
+       <DataNode name="TDSUFFIX1" valueChanged="fromDataSource">
+        <Value><![CDATA[string:1]]></Value>
+       </DataNode>
+       <DataNode name="TDSUFFIX2" valueChanged="fromDataSource">
+        <Value><![CDATA[string:000730271132]]></Value>
+       </DataNode>
+       <DataNode name="TDIMMED" valueChanged="fromDataSource">
+        <Value><![CDATA[string:X]]></Value>
+       </DataNode>
+       <DataNode name="TDLIFETIME" valueChanged="fromDataSource">
+        <Value><![CDATA[string:2]]></Value>
+       </DataNode>
+       <DataNode name="TDSENDDATE" valueChanged="fromDataSource">
+        <Value><![CDATA[string:00000000]]></Value>
+       </DataNode>
+       <DataNode name="TDSENDTIME" valueChanged="fromDataSource">
+        <Value><![CDATA[string:000000]]></Value>
+       </DataNode>
+       <DataNode name="TDTITLE" valueChanged="fromDataSource">
+        <Value><![CDATA[string:Shop Floor Papers]]></Value>
+       </DataNode>
+       <DataNode name="TDPROGRAM" valueChanged="fromDataSource">
+        <Value><![CDATA[string:Z_PSFCOBJL_SK]]></Value>
+       </DataNode>
+       <DataNode name="TDSCRNPOS" valueChanged="fromDataSource">
+        <Value><![CDATA[string:000000000000000]]></Value>
+       </DataNode>
+       <DataNode name="TDARMOD" valueChanged="fromDataSource">
+        <Value><![CDATA[string:1]]></Value>
+       </DataNode>
+       <DataNode name="LDEST" valueChanged="fromDataSource">
+        <Value><![CDATA[string:skwbawpzb04]]></Value>
+       </DataNode>
+      </DataNode>
+      <DataNode name="SORT" valueChanged="fromDataSource">
+       <Value><![CDATA[string:]]></Value>
+      </DataNode>
+      <DataNode name="CODEPAGE" valueChanged="fromDataSource">
+       <Value><![CDATA[string:4102]]></Value>
+       <DataNode name="language" valueChanged="fromDataSource">
+        <Value><![CDATA[string:FR]]></Value>
+       </DataNode>
+      </DataNode>
+      <DataNode name="PAGE">
+       <Value><![CDATA[string:]]></Value>
+       <DataNode name="name" valueChanged="fromDataSource">
+        <Value><![CDATA[string:PAGE]]></Value>
+       </DataNode>
+       <DataNode name="WINDOW">
+        <Value><![CDATA[string:]]></Value>
+        <DataNode name="name" valueChanged="fromDataSource">
+         <Value><![CDATA[string:MAIN]]></Value>
+        </DataNode>
+        <DataNode name="is_main" valueChanged="fromDataSource">
+         <Value><![CDATA[string:true]]></Value>
+        </DataNode>
+        <DataNode name="TEXT_ELEMENT">
+         <Value><![CDATA[string:]]></Value>
+         <DataNode name="name" valueChanged="fromDataSource">
+          <Value><![CDATA[string:LABEL]]></Value>
+         </DataNode>
+         <DataNode name="W_AUART" valueChanged="fromDataSource">
+          <Value><![CDATA[string:ZPD2]]></Value>
+          <DataNode name="type" valueChanged="fromDataSource">
+           <Value><![CDATA[string:data]]></Value>
+          </DataNode>
+         </DataNode>
+         <DataNode name="W_EMATN" valueChanged="fromDataSource">
+          <Value><![CDATA[string:73K000001]]></Value>
+          <DataNode name="type" valueChanged="fromDataSource">
+           <Value><![CDATA[string:data]]></Value>
+          </DataNode>
+         </DataNode>
+         <DataNode name="W_GAMNG" valueChanged="fromDataSource">
+          <Value><![CDATA[string:25,000]]></Value>
+          <DataNode name="type" valueChanged="fromDataSource">
+           <Value><![CDATA[string:data]]></Value>
+          </DataNode>
+         </DataNode>
+         <DataNode name="W_AUFNR" valueChanged="fromDataSource">
+          <Value><![CDATA[string:730271132]]></Value>
+          <DataNode name="type" valueChanged="fromDataSource">
+           <Value><![CDATA[string:data]]></Value>
+          </DataNode>
+         </DataNode>
+         <DataNode name="NO_NAME" valueChanged="fromDataSource">
+          <Value><![CDATA[string:-]]></Value>
+          <DataNode name="type" valueChanged="fromDataSource">
+           <Value><![CDATA[string:data]]></Value>
+          </DataNode>
+         </DataNode>
+         <DataNode name="W_SZ_LOT" valueChanged="fromDataSource">
+          <Value><![CDATA[string:000001]]></Value>
+          <DataNode name="type" valueChanged="fromDataSource">
+           <Value><![CDATA[string:data]]></Value>
+          </DataNode>
+         </DataNode>
+         <DataNode name="W_CSMAT" valueChanged="fromDataSource">
+          <Value><![CDATA[string:MATERIAL:]]></Value>
+          <DataNode name="type" valueChanged="fromDataSource">
+           <Value><![CDATA[string:data]]></Value>
+          </DataNode>
+         </DataNode>
+         <DataNode name="W_VYRZK" valueChanged="fromDataSource">
+          <Value><![CDATA[string:VYR.ZAK.:]]></Value>
+          <DataNode name="type" valueChanged="fromDataSource">
+           <Value><![CDATA[string:data]]></Value>
+          </DataNode>
+         </DataNode>
+         <DataNode name="NO_NAME" valueChanged="fromDataSource">
+          <Value><![CDATA[string:TRade name:]]></Value>
+          <DataNode name="type" valueChanged="fromDataSource">
+           <Value><![CDATA[string:data]]></Value>
+          </DataNode>
+         </DataNode>
+         <DataNode name="W_MAKTX" valueChanged="fromDataSource">
+          <Value><![CDATA[string:Omietka Silikonova kmat]]></Value>
+          <DataNode name="type" valueChanged="fromDataSource">
+           <Value><![CDATA[string:data]]></Value>
+          </DataNode>
+         </DataNode>
+         <DataNode name="W_MAKTX1" valueChanged="fromDataSource">
+          <Value><![CDATA[string:R420 S2005-Y50R]]></Value>
+          <DataNode name="type" valueChanged="fromDataSource">
+           <Value><![CDATA[string:data]]></Value>
+          </DataNode>
+         </DataNode>
+         <DataNode name="W_MAKTX3" valueChanged="fromDataSource">
+          <Value><![CDATA[string:Omietka Silikonova kmat]]></Value>
+          <DataNode name="type" valueChanged="fromDataSource">
+           <Value><![CDATA[string:data]]></Value>
+          </DataNode>
+         </DataNode>
+         <DataNode name="W_MONTN" valueChanged="fromDataSource">
+          <Value><![CDATA[string:HMOTN:]]></Value>
+          <DataNode name="type" valueChanged="fromDataSource">
+           <Value><![CDATA[string:data]]></Value>
+          </DataNode>
+         </DataNode>
+         <DataNode name="NO_NAME" valueChanged="fromDataSource">
+          <Value><![CDATA[string::]]></Value>
+          <DataNode name="type" valueChanged="fromDataSource">
+           <Value><![CDATA[string:data]]></Value>
+          </DataNode>
+         </DataNode>
+         <DataNode name="W_QUANT" valueChanged="fromDataSource">
+          <Value><![CDATA[string:25,000]]></Value>
+          <DataNode name="type" valueChanged="fromDataSource">
+           <Value><![CDATA[string:data]]></Value>
+          </DataNode>
+         </DataNode>
+         <DataNode name="W_MEINS" valueChanged="fromDataSource">
+          <Value><![CDATA[string:KG]]></Value>
+          <DataNode name="type" valueChanged="fromDataSource">
+           <Value><![CDATA[string:data]]></Value>
+          </DataNode>
+         </DataNode>
+         <DataNode name="W_DTAVROB" valueChanged="fromDataSource">
+          <Value><![CDATA[string:DATUM VYROBY:]]></Value>
+          <DataNode name="type" valueChanged="fromDataSource">
+           <Value><![CDATA[string:data]]></Value>
+          </DataNode>
+         </DataNode>
+         <DataNode name="NO_NAME" valueChanged="fromDataSource">
+          <Value><![CDATA[string::]]></Value>
+          <DataNode name="type" valueChanged="fromDataSource">
+           <Value><![CDATA[string:data]]></Value>
+          </DataNode>
+         </DataNode>
+         <DataNode name="W_PDATE" valueChanged="fromDataSource">
+          <Value><![CDATA[string:17.03.2025]]></Value>
+          <DataNode name="type" valueChanged="fromDataSource">
+           <Value><![CDATA[string:data]]></Value>
+          </DataNode>
+         </DataNode>
+         <DataNode name="NO_NAME" valueChanged="fromDataSource">
+          <Value><![CDATA[string:Legal text]]></Value>
+          <DataNode name="type" valueChanged="fromDataSource">
+           <Value><![CDATA[string:data]]></Value>
+          </DataNode>
+         </DataNode>
+         <DataNode name="NO_NAME" valueChanged="fromDataSource">
+          <Value><![CDATA[string:Weber Terranova Plant Adress]]></Value>
+          <DataNode name="type" valueChanged="fromDataSource">
+           <Value><![CDATA[string:data]]></Value>
+          </DataNode>
+         </DataNode>
+         <DataNode name="NO_NAME" valueChanged="fromDataSource">
+          <Value><![CDATA[string:R+S sentences]]></Value>
+          <DataNode name="type" valueChanged="fromDataSource">
+           <Value><![CDATA[string:data]]></Value>
+          </DataNode>
+         </DataNode>
+         <DataNode name="W_TEXT1" valueChanged="fromDataSource">
+          <Value><![CDATA[string:Tenkovrstvá omietka na povrchovú úpravu]]></Value>
+          <DataNode name="type" valueChanged="fromDataSource">
+           <Value><![CDATA[string:data]]></Value>
+          </DataNode>
+         </DataNode>
+         <DataNode name="W_TEXT2" valueChanged="fromDataSource">
+          <Value><![CDATA[string:fasád na báze silikónových živíc]]></Value>
+          <DataNode name="type" valueChanged="fromDataSource">
+           <Value><![CDATA[string:data]]></Value>
+          </DataNode>
+         </DataNode>
+         <DataNode name="W_TEXT3" valueChanged="fromDataSource">
+          <Value><![CDATA[string:Obsahuje biocidy: CMIT/MIT (3:1);]]></Value>
+          <DataNode name="type" valueChanged="fromDataSource">
+           <Value><![CDATA[string:data]]></Value>
+          </DataNode>
+         </DataNode>
+         <DataNode name="W_TEXT4" valueChanged="fromDataSource">
+          <Value><![CDATA[string:OIT; Terbutryn.]]></Value>
+          <DataNode name="type" valueChanged="fromDataSource">
+           <Value><![CDATA[string:data]]></Value>
+          </DataNode>
+         </DataNode>
+         <DataNode name="W_TEXT5" valueChanged="fromDataSource">
+          <Value><![CDATA[string:Môže vyvolať alergickú reakciu.]]></Value>
+          <DataNode name="type" valueChanged="fromDataSource">
+           <Value><![CDATA[string:data]]></Value>
+          </DataNode>
+         </DataNode>
+         <DataNode name="W_TEXT6" valueChanged="fromDataSource">
+          <Value><![CDATA[string:Spotrebujte do 12 mesiacov od datumu vyroby]]></Value>
+          <DataNode name="type" valueChanged="fromDataSource">
+           <Value><![CDATA[string:data]]></Value>
+          </DataNode>
+         </DataNode>
+         <DataNode name="W_TEXT7" valueChanged="fromDataSource">
+          <Value><![CDATA[string:Omietka je pripravena na priame použitie. Nanáša sa na napenetrovany]]></Value>
+          <DataNode name="type" valueChanged="fromDataSource">
+           <Value><![CDATA[string:data]]></Value>
+          </DataNode>
+         </DataNode>
+         <DataNode name="W_TEXT8" valueChanged="fromDataSource">
+          <Value><![CDATA[string:podklad. Hrubka vrstvy je dana veľkostou zrna u ryhovanych]]></Value>
+          <DataNode name="type" valueChanged="fromDataSource">
+           <Value><![CDATA[string:data]]></Value>
+          </DataNode>
+         </DataNode>
+         <DataNode name="W_TEXT9" valueChanged="fromDataSource">
+          <Value><![CDATA[string:struktur a 1,5 násobku veľkosti zrna rozrierateľných štruktúr.]]></Value>
+          <DataNode name="type" valueChanged="fromDataSource">
+           <Value><![CDATA[string:data]]></Value>
+          </DataNode>
+         </DataNode>
+         <DataNode name="W_TEXT10" valueChanged="fromDataSource">
+          <Value><![CDATA[string:Pozor! Pri rozprasovaní sa môzu vytvárať nebezpečné respirabilné]]></Value>
+          <DataNode name="type" valueChanged="fromDataSource">
+           <Value><![CDATA[string:data]]></Value>
+          </DataNode>
+         </DataNode>
+         <DataNode name="W_TEXT11" valueChanged="fromDataSource">
+          <Value><![CDATA[string:kvapôčky. Nevdychujte aerosóly ani hmlu.]]></Value>
+          <DataNode name="type" valueChanged="fromDataSource">
+           <Value><![CDATA[string:data]]></Value>
+          </DataNode>
+         </DataNode>
+         <DataNode name="W_TEXT12" valueChanged="fromDataSource">
+          <Value><![CDATA[string:Skodlivy pre vodne organizmy, s dlhodobymi ucinkami.]]></Value>
+          <DataNode name="type" valueChanged="fromDataSource">
+           <Value><![CDATA[string:data]]></Value>
+          </DataNode>
+         </DataNode>
+         <DataNode name="W_TEXT13" valueChanged="fromDataSource">
+          <Value><![CDATA[string:Ak je potrebna lekarska pomoc, majte k dispozicii]]></Value>
+          <DataNode name="type" valueChanged="fromDataSource">
+           <Value><![CDATA[string:data]]></Value>
+          </DataNode>
+         </DataNode>
+         <DataNode name="W_TEXT14" valueChanged="fromDataSource">
+          <Value><![CDATA[string:obal alebo etiketu vyrobku.]]></Value>
+          <DataNode name="type" valueChanged="fromDataSource">
+           <Value><![CDATA[string:data]]></Value>
+          </DataNode>
+         </DataNode>
+         <DataNode name="W_TEXT15" valueChanged="fromDataSource">
+          <Value><![CDATA[string:Uchovajte mimo dosahu deti.]]></Value>
+          <DataNode name="type" valueChanged="fromDataSource">
+           <Value><![CDATA[string:data]]></Value>
+          </DataNode>
+         </DataNode>
+         <DataNode name="W_TEXT16" valueChanged="fromDataSource">
+          <Value><![CDATA[string:Zabrante uvolneniu do zivotneho prostredia.]]></Value>
+          <DataNode name="type" valueChanged="fromDataSource">
+           <Value><![CDATA[string:data]]></Value>
+          </DataNode>
+         </DataNode>
+         <DataNode name="W_TEXT17" valueChanged="fromDataSource">
+          <Value><![CDATA[string:Zneskodnenie obsahu/obalu v sulade s miestnymi/oblastnými/národnými/]]></Value>
+          <DataNode name="type" valueChanged="fromDataSource">
+           <Value><![CDATA[string:data]]></Value>
+          </DataNode>
+         </DataNode>
+         <DataNode name="W_TEXT18" valueChanged="fromDataSource">
+          <Value><![CDATA[string:medzinárodnými nariadeniami.]]></Value>
+          <DataNode name="type" valueChanged="fromDataSource">
+           <Value><![CDATA[string:data]]></Value>
+          </DataNode>
+         </DataNode>
+         <DataNode name="W_TEXT19" valueChanged="fromDataSource">
+          <Value><![CDATA[string:Skladujte v originálnych a dobre uzatvorených]]></Value>
+          <DataNode name="type" valueChanged="fromDataSource">
+           <Value><![CDATA[string:data]]></Value>
+          </DataNode>
+         </DataNode>
+         <DataNode name="W_TEXT20" valueChanged="fromDataSource">
+          <Value><![CDATA[string:obaloch pri teplote od +5 °C do +25 °C.]]></Value>
+          <DataNode name="type" valueChanged="fromDataSource">
+           <Value><![CDATA[string:data]]></Value>
+          </DataNode>
+         </DataNode>
+         <DataNode name="I_NBR_PAGE" valueChanged="fromDataSource">
+          <Value><![CDATA[string:000001]]></Value>
+          <DataNode name="type" valueChanged="fromDataSource">
+           <Value><![CDATA[string:data]]></Value>
+          </DataNode>
+         </DataNode>
+        </DataNode>
+       </DataNode>
+      </DataNode>
+     </DataNode>
+     <DataNode name="Metadata">
+      <Value><![CDATA[string:]]></Value>
+      <DataNode name="State" valueChanged="fromDataSource">
+       <Value><![CDATA[string:Created]]></Value>
+      </DataNode>
+      <DataNode name="ValidationState" valueChanged="manually">
+       <Value><![CDATA[string:OK]]></Value>
+      </DataNode>
+      <DataNode name="Editor">
+       <Value><![CDATA[string:]]></Value>
+       <DataNode name="DefaultDocumentName" valueChanged="fromDataSource">
+        <Value><![CDATA[string:]]></Value>
+       </DataNode>
+       <DataNode name="DefaultDocumentDescription" valueChanged="fromDataSource">
+        <Value><![CDATA[string:]]></Value>
+       </DataNode>
+      </DataNode>
+      <DataNode name="DocumentLanguage" valueChanged="fromDataSource">
+       <Value><![CDATA[string:]]></Value>
+      </DataNode>
+      <DataNode name="InitialDataBinding" valueChanged="fromDataSource">
+       <Value><![CDATA[string:\library\SaintGobain\Templates\zaspfo03_sk.template]]></Value>
+      </DataNode>
+     </DataNode>
+    </Data>
+   </RootPartInstance>
+  </Root>
+  <DataSourceProperties>
+   <Property value="\\SaintGobain\Data\etiquette_slovaque.rdi.xml" name="data.FILE_NAME"></Property>
+  </DataSourceProperties>
+ </TestCase>
+</TestCases>

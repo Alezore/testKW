@@ -1,0 +1,5 @@
+<StyleCollection xmlns="urn:kwsoft:mtext:tonic:dom">
+ <SectionStyle name="zaspfo03_sk">
+  <PageLayouts parentRef="Layout\zaspfo03_sk.pageLayouts"></PageLayouts>
+ </SectionStyle>
+</StyleCollection>

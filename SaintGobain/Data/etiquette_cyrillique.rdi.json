@@ -1,0 +1,258 @@
+{
+  "documents": [
+    {
+      "header": {
+        "rdiversion": "046A01",
+        "mandt": "100",
+        "tdspoolid": "0000495670",
+        "tdspras": "F",
+        "tdform": "ZASPFO03_SK",
+        "tddevice": "PRINTER",
+        "host": "LT196882",
+        "tdcopies": "1",
+        "tddest": "HA94",
+        "tdprinter": "LZEBS2",
+        "tddataset": "SCRIPT",
+        "tdsuffix1": "  1",
+        "tdsuffix2": "000730271161",
+        "tdimmed": "X",
+        "tdlifetime": "2",
+        "tdsenddate": "00000000",
+        "tdsendtime": "000000",
+        "tdtitle": "Shop Floor Papers",
+        "tdprogram": "Z_PSFCOBJL_SK",
+        "tdscrnpos": "000000000000000",
+        "tdarmod": "1",
+        "ldest": "skwbawpzb04"
+      },
+      "sort": {},
+      "codepage": {
+        "codepage": "4102",
+        "language": "FR"
+      },
+      "pages": [
+        {
+          "name": "PAGE",
+          "windows": [
+            {
+              "name": "MAIN",
+              "is_main": true,
+              "text_elements": [
+                {
+                  "name": "LABEL",
+                  "records": [
+                    {
+                      "name": "W_AUART",
+                      "value": "ZPD1",
+                      "type": "data"
+                    },
+                    {
+                      "name": "W_EMATN",
+                      "value": "731912001",
+                      "type": "data"
+                    },
+                    {
+                      "name": "W_GAMNG",
+                      "value": "1.800,000",
+                      "type": "data"
+                    },
+                    {
+                      "name": "W_AUFNR",
+                      "value": "730271161",
+                      "type": "data"
+                    },
+                    {
+                      "name": "NO_NAME",
+                      "value": "-",
+                      "type": "data"
+                    },
+                    {
+                      "name": "W_SZ_LOT",
+                      "value": "000003",
+                      "type": "data"
+                    },
+                    {
+                      "name": "W_CSMAT",
+                      "value": "MATERIAL:",
+                      "type": "data"
+                    },
+                    {
+                      "name": "W_VYRZK",
+                      "value": "VYR.ZAK.:",
+                      "type": "data"
+                    },
+                    {
+                      "name": "NO_NAME",
+                      "value": "TRade name:",
+                      "type": "data"
+                    },
+                    {
+                      "name": "W_MAKTX",
+                      "value": "R980 BI00 weberpas aquabal 1,5 roz 25kg",
+                      "type": "data"
+                    },
+                    {
+                      "name": "W_MAKTX1",
+                      "value": "R980",
+                      "type": "data"
+                    },
+                    {
+                      "name": "W_MAKTX2",
+                      "value": "BI00",
+                      "type": "data"
+                    },
+                    {
+                      "name": "W_MAKTX3",
+                      "value": "weberpas aquabal 1,5 roz 25kg",
+                      "type": "data"
+                    },
+                    {
+                      "name": "W_MONTN",
+                      "value": "HMOTN:",
+                      "type": "data"
+                    },
+                    {
+                      "name": "NO_NAME",
+                      "value": ":",
+                      "type": "data"
+                    },
+                    {
+                      "name": "W_QUANT",
+                      "value": "25,000",
+                      "type": "data"
+                    },
+                    {
+                      "name": "W_MEINS",
+                      "value": "KG",
+                      "type": "data"
+                    },
+                    {
+                      "name": "W_DTAVROB",
+                      "value": "DATUM VYROBY:",
+                      "type": "data"
+                    },
+                    {
+                      "name": "NO_NAME",
+                      "value": ":",
+                      "type": "data"
+                    },
+                    {
+                      "name": "W_PDATE",
+                      "value": "24.03.2025",
+                      "type": "data"
+                    },
+                    {
+                      "name": "NO_NAME",
+                      "value": "Legal text",
+                      "type": "data"
+                    },
+                    {
+                      "name": "NO_NAME",
+                      "value": "Weber Terranova Plant Adress",
+                      "type": "data"
+                    },
+                    {
+                      "name": "NO_NAME",
+                      "value": "R+S sentences",
+                      "type": "data"
+                    },
+                    {
+                      "name": "W_TEXT1",
+                      "value": "Spotrebujte do 12 mesiacov",
+                      "type": "data"
+                    },
+                    {
+                      "name": "W_TEXT2",
+                      "value": "od datumu vyroby",
+                      "type": "data"
+                    },
+                    {
+                      "name": "W_TEXT4",
+                      "value": "Obsahuje biocidy: BIT; CMIT/MIT (3:1).",
+                      "type": "data"
+                    },
+                    {
+                      "name": "W_TEXT5",
+                      "value": "Moze vyvolat alergicku reakciu.",
+                      "type": "data"
+                    },
+                    {
+                      "name": "W_EAN11",
+                      "value": "8581550469308",
+                      "type": "data"
+                    },
+                    {
+                      "name": "W_TEXT7",
+                      "value": "Хидрофилна мазилка aquaBalance за повърхностна обработка на фасади.",
+                      "type": "data"
+                    },
+                    {
+                      "name": "W_TEXT9",
+                      "value": "Omietka je pripravena na priame pouzitie. Nanasa sa na napenetrovany",
+                      "type": "data"
+                    },
+                    {
+                      "name": "W_TEXT10",
+                      "value": "podklad, ktory musi zodpovedat platnym normam.",
+                      "type": "data"
+                    },
+                    {
+                      "name": "W_TEXT11",
+                      "value": "Chrante pred priamym slnecnym svetlom.",
+                      "type": "data"
+                    },
+                    {
+                      "name": "W_TEXT13",
+                      "value": "Teplota podkladu a vzduchu nesmie klesnut pod +5°C",
+                      "type": "data"
+                    },
+                    {
+                      "name": "W_TEXT14",
+                      "value": "a nesmie byt vyssia ako 25°C.",
+                      "type": "data"
+                    },
+                    {
+                      "name": "W_TEXT15",
+                      "value": "Skladujte v originalnych a dobre uzatvorenych",
+                      "type": "data"
+                    },
+                    {
+                      "name": "W_TEXT16",
+                      "value": "obaloch pri teplote od +5 °C do +25 °C.",
+                      "type": "data"
+                    },
+                    {
+                      "name": "W_TEXT17",
+                      "value": "Ak je potrebná lekarska pomoc, majte k dispozicii",
+                      "type": "data"
+                    },
+                    {
+                      "name": "W_TEXT18",
+                      "value": "obal alebo etiketu vyrobku.",
+                      "type": "data"
+                    },
+                    {
+                      "name": "W_TEXT19",
+                      "value": "Uchovavajte mimo dosahu deti.",
+                      "type": "data"
+                    },
+                    {
+                      "name": "W_TEXT20",
+                      "value": "Pred pouzitim si precitajte etiketu.",
+                      "type": "data"
+                    },
+                    {
+                      "name": "I_NBR_PAGE",
+                      "value": "000001",
+                      "type": "data"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

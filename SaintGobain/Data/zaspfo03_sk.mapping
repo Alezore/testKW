@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Mapping alwaysAddRootElement="true">
+   <DataModel root-path="">\\SaintGobain\Data\zaspfo03_sk.datamodel</DataModel>
+   <Rules>
+      <Rule copySubtree="true" name="/zaspfo03_sk" xpath="/RDI/DOCUMENT"/>
+   </Rules>
+   <Params/>
+   <Namespaces/>
+</Mapping>

@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDI>
+  <DOCUMENT>
+    <HEADER>
+      <RDIVERSION>046A01</RDIVERSION>
+      <MANDT>216</MANDT>
+      <TDSPOOLID>0000149201</TDSPOOLID>
+      <TDSPRAS>F</TDSPRAS>
+      <TDFORM>Z_RVORDER01_SK</TDFORM>
+      <TDDEVICE>PRINTER</TDDEVICE>
+      <HOST>LT058303</HOST>
+      <TDCOPIES>1</TDCOPIES>
+      <TDDEST>TMEL</TDDEST>
+      <TDPRINTER>POST2</TDPRINTER>
+      <TDDATASET>SCRIPT</TDDATASET>
+      <TDSUFFIX1>TMEL</TDSUFFIX1>
+      <TDSUFFIX2>S6634826</TDSUFFIX2>
+      <TDIMMED>X</TDIMMED>
+      <TDLIFETIME>8</TDLIFETIME>
+      <TDSENDDATE>00000000</TDSENDDATE>
+      <TDSENDTIME>000000</TDSENDTIME>
+      <TDPROGRAM>Z_RVADOR01_SK</TDPROGRAM>
+      <TDSCRNPOS>000000000000000</TDSCRNPOS>
+      <TDCOVTITLE>7020448741 TMEL 20230712 162851</TDCOVTITLE>
+      <TDRECEIVER>S6634826</TDRECEIVER>
+      <TDARMOD>1</TDARMOD>
+      <LDEST>MAIL</LDEST>
+    </HEADER>
+    <SORT></SORT>
+    <CODEPAGE language="FR">4102</CODEPAGE>
+    <PAGE name="FIRST">
+      <WINDOW name="MAIN" is_main="true">
+        <TEXT_ELEMENT name="HEADER_DATA">
+          <VBDKA-BUKRS_VF type="data">D000</VBDKA-BUKRS_VF>
+          <VBDKA-VSBED type="data">EN</VBDKA-VSBED>
+          <VBDKA-VBTYP type="data">C</VBDKA-VBTYP>
+          <VBDKA-VKORG type="data">D201</VBDKA-VKORG>
+          <VBDKA-ERDAT type="data">12.07.2023</VBDKA-ERDAT>
+          <VBDKA-BRGEW type="data">1.200</VBDKA-BRGEW>
+          <VBDKA-NTGEW type="data">1.200</VBDKA-NTGEW>
+          <W_BRGEW_C type="data">1.200,000</W_BRGEW_C>
+          <W_NTGEW type="data">1.200,000</W_NTGEW>
+          <VBDKA-NTGEW type="data">1.200</VBDKA-NTGEW>
+          <VBDKA-GEWEI type="data">KG</VBDKA-GEWEI>
+          <VBDKA-BSTNK type="data">TEST PRAKASH 01</VBDKA-BSTNK>
+          <NAST-KSCHL type="data">ZBAO</NAST-KSCHL>
+          <VBDKA-SPART type="data">10</VBDKA-SPART>
+          <LV_FLAG_D201 type="data">X</LV_FLAG_D201>
+        </TEXT_ELEMENT>
+      </WINDOW>
+      <WINDOW name="DESTI" is_main="false">
+        <TEXT_ELEMENT>
+          <MODE type="data">M</MODE>
+        </TEXT_ELEMENT>
+      </WINDOW>
+      <WINDOW name="MAIN" is_main="false">
+        <TEXT_ELEMENT name="CUSTOMER_ADRESSE">
+          <TBL_ADRESSE-NAME1 type="data">COMMERCE EW s.r.o.</TBL_ADRESSE-NAME1>
+          <TBL_ADRESSE-STREET type="data">Masarykova 16</TBL_ADRESSE-STREET>
+          <TBL_ADRESSE-POST_CODE1 type="data">080 01</TBL_ADRESSE-POST_CODE1>
+          <TBL_ADRESSE-CITY1 type="data">Prešov</TBL_ADRESSE-CITY1>
+          <W_PAYS type="data">Slovakia</W_PAYS>
+          <TBL_ADRESSE-LANGU type="data">SK</TBL_ADRESSE-LANGU>
+          <W_LA_DO type="data">SK</W_LA_DO>
+          <TBL_ADRESSE-NAME2 type="data">právny nástupca BERGERAC</TBL_ADRESSE-NAME2>
+          <W_AGREGION_TEXT type="data">Prešovský kraj</W_AGREGION_TEXT>
+          <W_PAYS_REF type="data">SK</W_PAYS_REF>
+          <W_AGREGION type="data">07</W_AGREGION>
+          <TBL_ADRESSE-COUNTRY type="data">SK</TBL_ADRESSE-COUNTRY>
+        </TEXT_ELEMENT>
+        <TEXT_ELEMENT name="SHIPPED_ADRESSE">
+          <TBL_ADRESSE-NAME1 type="data">COMMERCE EW s.r.o.</TBL_ADRESSE-NAME1>
+          <TBL_ADRESSE-STREET type="data">Masarykova 16</TBL_ADRESSE-STREET>
+          <TBL_ADRESSE-POST_CODE1 type="data">080 01</TBL_ADRESSE-POST_CODE1>
+          <TBL_ADRESSE-CITY1 type="data">Prešov</TBL_ADRESSE-CITY1>
+          <W_PAYS type="data">Slovakia</W_PAYS>
+          <W_WEREGION_TEXT type="data">Prešovský kraj</W_WEREGION_TEXT>
+          <TBL_ADRESSE-TRANSPZONE type="data">D3300</TBL_ADRESSE-TRANSPZONE>
+          <W_WEREGION type="data">07</W_WEREGION>
+          <TBL_ADRESSE-NAME2 type="data">právny nástupca BERGERAC</TBL_ADRESSE-NAME2>
+          <TBL_ADRESSE-TEL_NUMBER type="data">051 7593080</TBL_ADRESSE-TEL_NUMBER>
+          <TBL_ADRESSE-COUNTRY type="data">SK</TBL_ADRESSE-COUNTRY>
+        </TEXT_ELEMENT>
+        <TEXT_ELEMENT name="BILL_TO_ADRESSE">
+          <TBL_ADRESSE-NAME1 type="data">COMMERCE EW s.r.o.</TBL_ADRESSE-NAME1>
+          <TBL_ADRESSE-STREET type="data">Masarykova 16</TBL_ADRESSE-STREET>
+          <TBL_ADRESSE-POST_CODE1 type="data">080 01</TBL_ADRESSE-POST_CODE1>
+          <TBL_ADRESSE-CITY1 type="data">Prešov</TBL_ADRESSE-CITY1>
+          <W_PAYS type="data">Slovakia</W_PAYS>
+          <W_WEREGION_TEXT type="data">Prešovský kraj</W_WEREGION_TEXT>
+          <TBL_ADRESSE-TRANSPZONE type="data">D3300</TBL_ADRESSE-TRANSPZONE>
+          <W_WEREGION type="data">07</W_WEREGION>
+          <TBL_ADRESSE-NAME2 type="data">právny nástupca BERGERAC</TBL_ADRESSE-NAME2>
+          <TBL_ADRESSE-TEL_NUMBER type="data">051 7593080</TBL_ADRESSE-TEL_NUMBER>
+          <TBL_ADRESSE-COUNTRY type="data">SK</TBL_ADRESSE-COUNTRY>
+        </TEXT_ELEMENT>
+        <TEXT_ELEMENT name="FOOTER_ADRESSE">
+          <TBL_ADRESSE-NAME1 type="data">Saint-Gobain Construction Products s.r.o</TBL_ADRESSE-NAME1>
+          <TBL_ADRESSE-STREET type="data">Stará Vajnorská 139</TBL_ADRESSE-STREET>
+          <TBL_ADRESSE-CITY1 type="data">Bratislava</TBL_ADRESSE-CITY1>
+          <TBL_ADRESSE-POST_CODE1 type="data">831 04</TBL_ADRESSE-POST_CODE1>
+          <TBL_ADRESSE-TEL_NUMBER type="data">+ 421 2 444 53 022</TBL_ADRESSE-TEL_NUMBER>
+          <TBL_ADRESSE-COUNTRY type="data">SK</TBL_ADRESSE-COUNTRY>
+          <W_T001_BUTXT type="data">SG Construction Products</W_T001_BUTXT>
+          <W_T001_STCEG type="data">SK2020339761</W_T001_STCEG>
+          <W_ICO type="data">31389139</W_ICO>
+          <W_DIC type="data">2020339761</W_DIC>
+          <W_REGIS type="data">Obchodný register Okresného súdu v BA1, vložka c.8410/B odd. sro</W_REGIS>
+          <TBL_ADRESSE_TVKO-STREET type="data">Stará Vajnorská</TBL_ADRESSE_TVKO-STREET>
+          <TBL_ADRESSE_TVKO-CITY1 type="data">Bratislava</TBL_ADRESSE_TVKO-CITY1>
+          <TBL_ADRESSE_TVKO-HOUSE_NUM1 type="data">139</TBL_ADRESSE_TVKO-HOUSE_NUM1>
+          <TBL_ADRESSE_TVKO-POST_CODE1 type="data">831 04</TBL_ADRESSE_TVKO-POST_CODE1>
+          <TBL_ADRESSE_TVKO-COUNTRY type="data">SK</TBL_ADRESSE_TVKO-COUNTRY>
+          <TBL_ADRESSE_TVKO-TEL_NUMBER type="data">+421 2 444 530 22</TBL_ADRESSE_TVKO-TEL_NUMBER>
+          <W_VKORG_VTEXT type="data">SK - Weber</W_VKORG_VTEXT>
+        </TEXT_ELEMENT>
+        <TEXT_ELEMENT name="FAX_MAIL">
+          <W_MAIL_RECIPIENT type="data">prakash.bhairi@saint-gobain.com,souhail.samadi@ext.saint-gobain.com</W_MAIL_RECIPIENT>
+          <W_MAIL_SUBJECT type="data">Sales order confirmation Saint-Gobain construction products ( 7020448741 )</W_MAIL_SUBJECT>
+          <W_AR_SUBJECT type="data">Sales order confirmation Saint-Gobain construction products ( 7020448741 )</W_AR_SUBJECT>
+          <W_MAIL_TEXT type="data">Please find attached sales order number 7020448741</W_MAIL_TEXT>
+        </TEXT_ELEMENT>
+        <TEXT_ELEMENT name="FAX_MAIL">
+          <W_MAIL_TEXT type="data">|</W_MAIL_TEXT>
+        </TEXT_ELEMENT>
+        <TEXT_ELEMENT name="FAX_MAIL">
+          <W_MAIL_TEXT type="data">Regards,</W_MAIL_TEXT>
+        </TEXT_ELEMENT>
+        <TEXT_ELEMENT name="FAX_MAIL">
+          <W_MAIL_TEXT type="data">|</W_MAIL_TEXT>
+        </TEXT_ELEMENT>
+        <TEXT_ELEMENT name="FAX_MAIL">
+          <W_MAIL_TEXT type="data">Saint-Gobain Construction Products s.r.o.</W_MAIL_TEXT>
+        </TEXT_ELEMENT>
+        <TEXT_ELEMENT name="FAX_MAIL">
+          <W_MAIL_TEXT type="data">Stara Vajnorska 139,</W_MAIL_TEXT>
+        </TEXT_ELEMENT>
+        <TEXT_ELEMENT name="FAX_MAIL">
+          <W_MAIL_TEXT type="data">SK- 831 04 Bratislava</W_MAIL_TEXT>
+        </TEXT_ELEMENT>
+        <TEXT_ELEMENT name="HEADER_DATA_1">
+          <W_FDATE type="data">1</W_FDATE>
+          <W_LANGUE type="data">SK</W_LANGUE>
+          <W_LANGU type="data">SK</W_LANGU>
+          <W_EXNAME1 type="data">MAG-ISOVER K.K.</W_EXNAME1>
+          <W_EXSTREET type="data">麹町3丁目7番地（サンゴバンビル）</W_EXSTREET>
+          <W_EXPOST_CODE1 type="data">1020083</W_EXPOST_CODE1>
+          <W_EXCITY1 type="data">千代田区</W_EXCITY1>
+          <W_VKGRP type="data">SKE</W_VKGRP>
+        </TEXT_ELEMENT>
+        <TEXT_ELEMENT name="HEADER_DATA_2">
+          <W_BZTXT type="data">SK-W. Vichodosloven.</W_BZTXT>
+          <W_WAERK type="data">EUR</W_WAERK>
+          <W_LIB_DIV type="data">WEBER KOSICE</W_LIB_DIV>
+          <W_WERKS type="data">D208</W_WERKS>
+          <VBDKA-NETWR type="data">600,00</VBDKA-NETWR>
+          <W_VTWEG type="data">D1</W_VTWEG>
+          <W_INCOTERM type="data">EXW</W_INCOTERM>
+          <W_VSBED_TEXT type="data">Vlastný odber zák.</W_VSBED_TEXT>
+          <W_TVA2 type="data">0,00</W_TVA2>
+          <W_ZAKLAD_DPH type="data">0,00</W_ZAKLAD_DPH>
+          <W_CIASTKA_DPH type="data">0,00</W_CIASTKA_DPH>
+          <W_ZAKLAD_DPH2 type="data">0,00</W_ZAKLAD_DPH2>
+          <W_TVA1 type="data">0,00</W_TVA1>
+          <W_CIASTKA_DPH2 type="data">0,00</W_CIASTKA_DPH2>
+          <W_SPOLU type="data">0,00</W_SPOLU>
+          <W_SPOLU2 type="data">0,00</W_SPOLU2>
+          <W_SPOLU_TOT type="data">0,00</W_SPOLU_TOT>
+          <W_LPRIO1 type="data">00</W_LPRIO1>
+          <W_VKBUR_TEXT type="data">SK - Weber Kosice</W_VKBUR_TEXT>
+          <W_STCEG type="data">SK2020517961</W_STCEG>
+          <VBDKA-AUDAT type="data">12.07.2023</VBDKA-AUDAT>
+          <VBDKA-ERDAT type="data">12.07.2023</VBDKA-ERDAT>
+          <VBDKA-BSTKD type="data">TEST PRAKASH 01</VBDKA-BSTKD>
+          <VBDKA-BSTDK type="data">12.07.2023</VBDKA-BSTDK>
+          <VBDKA-VKGRP_BEZ type="data">SK - Weber Kosice</VBDKA-VKGRP_BEZ>
+          <W_KUNRG type="data">83610</W_KUNRG>
+          <W_VKBUR_TEL type="data">+421 55 799 82 74</W_VKBUR_TEL>
+          <W_PSTYV1 type="data">ZAN</W_PSTYV1>
+          <W_KUNAG type="data">83610</W_KUNAG>
+          <W_STCD2 type="data">17077826</W_STCD2>
+          <W_TEXT_ROUTE type="data">Osobný odber</W_TEXT_ROUTE>
+          <W_ROUTE type="data">Z99999</W_ROUTE>
+          <W_MANUAL_CHARGES type="data">0,00</W_MANUAL_CHARGES>
+          <W_DELIV_CHARGES type="data">0,00</W_DELIV_CHARGES>
+        </TEXT_ELEMENT>
+        <TEXT_ELEMENT name="HEADER_DATA_3">
+          <W_AUART type="data">ZDS1</W_AUART>
+          <VBDKA-VKBUR type="data">D208</VBDKA-VKBUR>
+          <VBDKA-KUNNR type="data">83610</VBDKA-KUNNR>
+          <VBDKA-ERNAM type="data">S6634826</VBDKA-ERNAM>
+          <W_VTEXT type="data">Platba ihned (Proforma + Cash)</W_VTEXT>
+          <W_VDATU type="data">12.07.2023</W_VDATU>
+          <W_NAME1 type="data">Saint-Gobain Construction Products s.r.o</W_NAME1>
+          <W_STREET type="data">Stará Vajnorská 139</W_STREET>
+          <W_POSTCD type="data">831 04</W_POSTCD>
+          <W_CITY1 type="data">Bratislava</W_CITY1>
+          <W_TELNBR type="data">+ 421 2 444 53 022</W_TELNBR>
+          <W_ERNAME type="data">SAMADI</W_ERNAME>
+          <T001-STCEG type="data">SK2020339761</T001-STCEG>
+          <W_STCD1 type="data">2020517961</W_STCD1>
+          <W_NAME_TEXT type="data">Souhail SAMADI</W_NAME_TEXT>
+          <W_BANK_NAME type="data">Citibank Europe plc</W_BANK_NAME>
+          <W_BANK_SWIFT type="data">CITISKBA</W_BANK_SWIFT>
+          <W_BANK_CODE type="data">8130</W_BANK_CODE>
+          <W_BANK_BANKS type="data">SK</W_BANK_BANKS>
+          <W_BANK_STRAS type="data">Mlynské nivy 43</W_BANK_STRAS>
+          <W_BANK_IBAN type="data">SK3881300000002012070005</W_BANK_IBAN>
+          <W_BANK_ORT01 type="data">Bratislava 825 01</W_BANK_ORT01>
+          <W_BANK_ACCOUNT type="data">2012070005</W_BANK_ACCOUNT>
+        </TEXT_ELEMENT>
+        <TEXT_ELEMENT name="ITEM_DATA">
+          <VBDPA-POSNR type="data">000010</VBDPA-POSNR>
+          <VBDPA-MATNR type="data">734000072</VBDPA-MATNR>
+          <VBDPA-ARKTX type="data">401P webertherm KPS  25kg</VBDPA-ARKTX>
+          <W_VRKME1 type="data">KG</W_VRKME1>
+          <W_KOEIN type="data">EUR</W_KOEIN>
+          <W_MEINS type="data">KG</W_MEINS>
+          <W_KLMENG type="data">1.200,000</W_KLMENG>
+          <W_Q_UV type="data">1.200,000</W_Q_UV>
+          <W_KWERT type="data">0,00</W_KWERT>
+          <W_Q_UV_C type="data">1.200,000</W_Q_UV_C>
+          <W_KWERT_C type="data">0,00</W_KWERT_C>
+          <VBDPA-VRKME type="data">KG</VBDPA-VRKME>
+          <W_KMEIN type="data">KG</W_KMEIN>
+          <KOMVD-KBETR type="data">0,50</KOMVD-KBETR>
+          <VBDPA-KWMENG type="data">1.200</VBDPA-KWMENG>
+          <W_KWMENG_C type="data">1.200,000</W_KWMENG_C>
+          <W_ZMENG type="data">0,000</W_ZMENG>
+          <W_ZIEME type="data">KG</W_ZIEME>
+          <W_PSTYV type="data">ZAN</W_PSTYV>
+          <W_MATNR type="data">734000072</W_MATNR>
+          <W_STAWN type="data">38245090</W_STAWN>
+          <W_MONTANT_TRANSPORT type="data">0,00</W_MONTANT_TRANSPORT>
+          <W_CLASSIFICATION type="data">000</W_CLASSIFICATION>
+          <W_BRGEW type="data">1.200,00</W_BRGEW>
+          <W_BRGEW_C type="data">1.200,000</W_BRGEW_C>
+          <W_REQ_DATE type="data">12.07.2023</W_REQ_DATE>
+          <W_CONF_DATE type="data">12.07.2023</W_CONF_DATE>
+          <W_NTGEW_C type="data">1.200,000</W_NTGEW_C>
+          <VBDPA-GEWEI type="data">KG</VBDPA-GEWEI>
+          <W_VRKME1_C type="data">KG</W_VRKME1_C>
+          <VBDPA-MATKL type="data">ZT05000</VBDPA-MATKL>
+          <W_TOT_DNT_C type="data">600,00</W_TOT_DNT_C>
+          <W_TOT_NET_C type="data">1.200,00</W_TOT_NET_C>
+          <W_KZWI1 type="data">600,00</W_KZWI1>
+          <W_KZWI2 type="data">0,00</W_KZWI2>
+          <W_KZWI5 type="data">600,00</W_KZWI5>
+          <VBDPA-NETPR type="data">0,50</VBDPA-NETPR>
+          <VBDPA-NETWR type="data">600,00</VBDPA-NETWR>
+          <KOMP-NETWR type="data">600,00</KOMP-NETWR>
+          <KOMP-MWSBP type="data">120,00</KOMP-MWSBP>
+          <W_Q_UV_SK type="data">1,200</W_Q_UV_SK>
+          <KOMP-KZWI3 type="data">0,00</KOMP-KZWI3>
+          <KOMP-KZWI4 type="data">0,00</KOMP-KZWI4>
+          <W_KZWI3 type="data">600,00</W_KZWI3>
+          <W_PRIX_UNIT type="data">0,50</W_PRIX_UNIT>
+          <W_PRICE_LIST type="data">0,50</W_PRICE_LIST>
+          <W_DISCOUNT type="data">0,00</W_DISCOUNT>
+          <W_PRIX_UNIT_3 type="data">0,500</W_PRIX_UNIT_3>
+          <W_PRICE_LIST_3 type="data">0,500</W_PRICE_LIST_3>
+          <W_PRICE_KMEIN type="data">KG</W_PRICE_KMEIN>
+          <W_PRICE_WAERS type="data">EUR</W_PRICE_WAERS>
+          <W_WAERS type="data">EUR</W_WAERS>
+          <W_PRIX_UNIT_MES type="data">KG</W_PRIX_UNIT_MES>
+          <W_PRIX_UNIT_EXT type="data">KG</W_PRIX_UNIT_EXT>
+          <W_DISCOUNT2 type="data">0,00</W_DISCOUNT2>
+        </TEXT_ELEMENT>
+        <TEXT_ELEMENT name="TOTAL_VOLUM">
+          <W_TOTAL_VOLUM_C type="data">0,000</W_TOTAL_VOLUM_C>
+          <W_MANUAL_CHARGES type="data">0,00</W_MANUAL_CHARGES>
+          <W_DELIV_CHARGES type="data">0,00</W_DELIV_CHARGES>
+          <W_NET_VALUE type="data">600,00</W_NET_VALUE>
+        </TEXT_ELEMENT>
+        <TEXT_ELEMENT name="TOTAL">
+          <W_TAUX_TVA type="data">20,00</W_TAUX_TVA>
+          <W_MONT_TVA type="data">120,00</W_MONT_TVA>
+          <W_ROUND type="data">0,00</W_ROUND>
+          <F_DISCOUNT type="data">X</F_DISCOUNT>
+          <F_VRKME type="data">X</F_VRKME>
+          <W_SKTO_NET type="data">600,00</W_SKTO_NET>
+          <W_SKTO_VAT type="data">1,20</W_SKTO_VAT>
+          <W_SKTO_TOT type="data">720,00</W_SKTO_TOT>
+          <W_ZPRZ1 type="data">0,000</W_ZPRZ1>
+          <W_TOTAL_EURO type="data">21.690,72</W_TOTAL_EURO>
+          <W_TOTAL_DUE type="data">720,00</W_TOTAL_DUE>
+          <W_EXCHANGE_RATE type="data">/30,12600</W_EXCHANGE_RATE>
+          <W_WAERK_2 type="data">SKK</W_WAERK_2>
+          <F_TRANSPORT type="data">X</F_TRANSPORT>
+          <W_NET_VALUE type="data">600,00</W_NET_VALUE>
+        </TEXT_ELEMENT>
+      </WINDOW>
+      <WINDOW name="ADDRESS" is_main="false">
+        <TEXT_ELEMENT>
+          <ADRS_SENDER object="TEXT" id="ADRS" language="FR" type="include_text">
+            <DATA>IDES Holding AG, Postfach 16 05 29, D-60070 Frankfurt/M</DATA>
+            <DATA>___________________________________</DATA>
+            <DATA></DATA>
+          </ADRS_SENDER>
+          <STXADDRESS-TDPARGRAPH type="data">AS</STXADDRESS-TDPARGRAPH>
+          <STXADDRESS-TYPE type="data">1</STXADDRESS-TYPE>
+          <STXADDRESS-NUMBER type="data">0000175142</STXADDRESS-NUMBER>
+          <STXADDRESS-FROM_COUNT type="data">SK</STXADDRESS-FROM_COUNT>
+          <STXADDRESS-RECEIVER_L type="data"></STXADDRESS-RECEIVER_L>
+          <STXADDRESS-PRIORITY type="data"></STXADDRESS-PRIORITY>
+          <STXADDRESS-DELIVERY type="data"></STXADDRESS-DELIVERY>
+          <STXADDRESS-ANZZL type="data">10</STXADDRESS-ANZZL>
+          <STXADDRESS-PERSONNUMB type="data"></STXADDRESS-PERSONNUMB>
+          <STXADDRESS-COUNT_IRL type="data"></STXADDRESS-COUNT_IRL>
+          <STXADDRESS-LANG_COUNT type="data"></STXADDRESS-LANG_COUNT>
+          <STXADDRESS-NO_UPPER type="data"></STXADDRESS-NO_UPPER>
+          <ADRS1-TITLE_TEXT type="data"></ADRS1-TITLE_TEXT>
+          <ADRS1-NAME1 type="data">COMMERCE EW s.r.o.</ADRS1-NAME1>
+          <ADRS1-NAME2 type="data">právny nástupca BERGERAC</ADRS1-NAME2>
+          <ADRS1-NAME3 type="data"></ADRS1-NAME3>
+          <ADRS1-NAME4 type="data"></ADRS1-NAME4>
+          <ADRS1-NAME_CO type="data"></ADRS1-NAME_CO>
+          <ADRS1-STREET type="data">Masarykova 16</ADRS1-STREET>
+          <ADRS1-HOUSE_NUM1 type="data"></ADRS1-HOUSE_NUM1>
+          <ADRS1-STR_SUPPL1 type="data"></ADRS1-STR_SUPPL1>
+          <ADRS1-STR_SUPPL2 type="data"></ADRS1-STR_SUPPL2>
+          <ADRS1-STR_SUPPL3 type="data"></ADRS1-STR_SUPPL3>
+          <ADRS1-CITY1 type="data">Prešov</ADRS1-CITY1>
+          <ADRS1-CITY2 type="data"></ADRS1-CITY2>
+          <ADRS1-HOME_CITY type="data"></ADRS1-HOME_CITY>
+          <ADRS1-POST_CODE1 type="data">080 01</ADRS1-POST_CODE1>
+          <ADRS1-POST_CODE2 type="data"></ADRS1-POST_CODE2>
+          <ADRS1-POST_CODE3 type="data"></ADRS1-POST_CODE3>
+          <ADRS1-PO_BOX type="data"></ADRS1-PO_BOX>
+          <ADRS1-PO_BOX_LOC type="data"></ADRS1-PO_BOX_LOC>
+          <ADRS1-LOCATION type="data"></ADRS1-LOCATION>
+          <ADRS1-REGION type="data">07</ADRS1-REGION>
+          <ADRS1-COUNTRY type="data">SK</ADRS1-COUNTRY>
+        </TEXT_ELEMENT>
+      </WINDOW>
+      <WINDOW name="FOOTER" is_main="false">
+        <TEXT_ELEMENT>
+          <ADRS_FOOTER object="TEXT" id="ADRS" language="SK" type="include_text">
+            <DATA>16 Travel Street; Foster City, CA 90123.  Telephone: 1-800-fly-fast.Board of Directors: Thomas Schmidt · Sharon Bishop · Chantal Willemin · Sigeruh Takahashi  -- Incorporated in Delaware.</DATA>
+          </ADRS_FOOTER>
+        </TEXT_ELEMENT>
+      </WINDOW>
+      <WINDOW name="HEADER" is_main="false">
+        <TEXT_ELEMENT>
+          <ADRS_HEADER_LOGO_BMON object="TEXT" id="ADRS" language="EN" type="include_text"></ADRS_HEADER_LOGO_BMON>
+          <ADRS_HEADER object="TEXT" id="ADRS" language="SK" type="include_text">
+            <DATA></DATA>
+          </ADRS_HEADER>
+        </TEXT_ELEMENT>
+      </WINDOW>
+      <WINDOW name="INFO" is_main="false">
+        <TEXT_ELEMENT>
+          <VBDKA-VKORG type="data">D201</VBDKA-VKORG>
+          <NO_NAME type="data">Accusé de réception</NO_NAME>
+          <NO_NAME type="data">Numéro/Date</NO_NAME>
+          <VBDKA-VBELN type="data">7020448741</VBDKA-VBELN>
+          <VBDKA-AUDAT type="data">/ 12.07.2023</VBDKA-AUDAT>
+          <NO_NAME type="data">Numéro de référence/Date</NO_NAME>
+          <VBDKA-BSTKD type="data">TEST PRAKASH 01</VBDKA-BSTKD>
+          <VBDKA-BSTDK type="data">/ 12.07.2023</VBDKA-BSTDK>
+          <NO_NAME type="data">Date de livraison</NO_NAME>
+          <VBDKA-LFDAT type="data">Day 12.07.2023</VBDKA-LFDAT>
+          <NO_NAME type="data">Numéro client</NO_NAME>
+          <VBCO3-KUNDE type="data">83610</VBCO3-KUNDE>
+        </TEXT_ELEMENT>
+      </WINDOW>
+      <WINDOW name="INFO1" is_main="false">
+        <TEXT_ELEMENT>
+          <STXADDRESS-TDPARGRAPH type="data">AS</STXADDRESS-TDPARGRAPH>
+          <STXADDRESS-TYPE type="data">1</STXADDRESS-TYPE>
+          <STXADDRESS-NUMBER type="data"></STXADDRESS-NUMBER>
+          <STXADDRESS-FROM_COUNT type="data">SK</STXADDRESS-FROM_COUNT>
+          <STXADDRESS-RECEIVER_L type="data"></STXADDRESS-RECEIVER_L>
+          <STXADDRESS-PRIORITY type="data"></STXADDRESS-PRIORITY>
+          <STXADDRESS-DELIVERY type="data">X</STXADDRESS-DELIVERY>
+          <STXADDRESS-ANZZL type="data">10</STXADDRESS-ANZZL>
+          <STXADDRESS-PERSONNUMB type="data"></STXADDRESS-PERSONNUMB>
+          <STXADDRESS-COUNT_IRL type="data"></STXADDRESS-COUNT_IRL>
+          <STXADDRESS-LANG_COUNT type="data"></STXADDRESS-LANG_COUNT>
+          <STXADDRESS-NO_UPPER type="data"></STXADDRESS-NO_UPPER>
+          <ADRS1-TITLE_TEXT type="data"></ADRS1-TITLE_TEXT>
+          <ADRS1-NAME1 type="data"></ADRS1-NAME1>
+          <ADRS1-NAME2 type="data"></ADRS1-NAME2>
+          <ADRS1-NAME3 type="data"></ADRS1-NAME3>
+          <ADRS1-NAME4 type="data"></ADRS1-NAME4>
+          <ADRS1-NAME_CO type="data"></ADRS1-NAME_CO>
+          <ADRS1-STREET type="data"></ADRS1-STREET>
+          <ADRS1-HOUSE_NUM1 type="data"></ADRS1-HOUSE_NUM1>
+          <ADRS1-STR_SUPPL1 type="data"></ADRS1-STR_SUPPL1>
+          <ADRS1-STR_SUPPL2 type="data"></ADRS1-STR_SUPPL2>
+          <ADRS1-STR_SUPPL3 type="data"></ADRS1-STR_SUPPL3>
+          <ADRS1-CITY1 type="data"></ADRS1-CITY1>
+          <ADRS1-CITY2 type="data"></ADRS1-CITY2>
+          <ADRS1-HOME_CITY type="data"></ADRS1-HOME_CITY>
+          <ADRS1-POST_CODE1 type="data"></ADRS1-POST_CODE1>
+          <ADRS1-POST_CODE2 type="data"></ADRS1-POST_CODE2>
+          <ADRS1-POST_CODE3 type="data"></ADRS1-POST_CODE3>
+          <ADRS1-PO_BOX type="data"></ADRS1-PO_BOX>
+          <ADRS1-PO_BOX_LOC type="data"></ADRS1-PO_BOX_LOC>
+          <ADRS1-LOCATION type="data"></ADRS1-LOCATION>
+          <ADRS1-REGION type="data"></ADRS1-REGION>
+          <ADRS1-COUNTRY type="data"></ADRS1-COUNTRY>
+        </TEXT_ELEMENT>
+      </WINDOW>
+      <WINDOW name="REPEAT" is_main="false">
+        <TEXT_ELEMENT name="REPEAT">
+          <NO_NAME type="data">Nouvelle impression</NO_NAME>
+        </TEXT_ELEMENT>
+      </WINDOW>
+    </PAGE>
+  </DOCUMENT>
+</RDI>

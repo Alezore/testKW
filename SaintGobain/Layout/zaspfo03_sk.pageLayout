@@ -1,0 +1,10 @@
+<PageLayout xmlns="urn:kwsoft:mtext:tonic:dom">
+ <PageSize name="Custom" width="10.0cm" height="10.0cm"></PageSize>
+ <RendererMetadata></RendererMetadata>
+ <Region name="Body">
+  <Left distance="0.0mpt" anchorSide="same"></Left>
+  <Top distance="0.0mpt" anchorSide="same"></Top>
+  <Right distance="0.0mpt" anchorSide="same"></Right>
+  <Bottom distance="0.0mpt" anchorSide="same"></Bottom>
+ </Region>
+</PageLayout>

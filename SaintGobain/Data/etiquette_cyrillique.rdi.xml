@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDI>
+  <DOCUMENT>
+    <HEADER>
+      <RDIVERSION>046A01</RDIVERSION>
+      <MANDT>100</MANDT>
+      <TDSPOOLID>0000495670</TDSPOOLID>
+      <TDSPRAS>F</TDSPRAS>
+      <TDFORM>ZASPFO03_SK</TDFORM>
+      <TDDEVICE>PRINTER</TDDEVICE>
+      <HOST>LT196882</HOST>
+      <TDCOPIES>1</TDCOPIES>
+      <TDDEST>HA94</TDDEST>
+      <TDPRINTER>LZEBS2</TDPRINTER>
+      <TDDATASET>SCRIPT</TDDATASET>
+      <TDSUFFIX1>  1</TDSUFFIX1>
+      <TDSUFFIX2>000730271161</TDSUFFIX2>
+      <TDIMMED>X</TDIMMED>
+      <TDLIFETIME>2</TDLIFETIME>
+      <TDSENDDATE>00000000</TDSENDDATE>
+      <TDSENDTIME>000000</TDSENDTIME>
+      <TDTITLE>Shop Floor Papers</TDTITLE>
+      <TDPROGRAM>Z_PSFCOBJL_SK</TDPROGRAM>
+      <TDSCRNPOS>000000000000000</TDSCRNPOS>
+      <TDARMOD>1</TDARMOD>
+      <LDEST>skwbawpzb04</LDEST>
+    </HEADER>
+    <SORT></SORT>
+    <CODEPAGE language="FR">4102</CODEPAGE>
+    <PAGE name="PAGE">
+      <WINDOW name="MAIN" is_main="true">
+        <TEXT_ELEMENT name="LABEL">
+          <W_AUART type="data">ZPD1</W_AUART>
+          <W_EMATN type="data">731912001</W_EMATN>
+          <W_GAMNG type="data">1.800,000</W_GAMNG>
+          <W_AUFNR type="data">730271161</W_AUFNR>
+          <NO_NAME type="data">-</NO_NAME>
+          <W_SZ_LOT type="data">000003</W_SZ_LOT>
+          <W_CSMAT type="data">MATERIAL:</W_CSMAT>
+          <W_VYRZK type="data">VYR.ZAK.:</W_VYRZK>
+          <NO_NAME type="data">TRade name:</NO_NAME>
+          <W_MAKTX type="data">R980 BI00 weberpas aquabal 1,5 roz 25kg</W_MAKTX>
+          <W_MAKTX1 type="data">R980</W_MAKTX1>
+          <W_MAKTX2 type="data">BI00</W_MAKTX2>
+          <W_MAKTX3 type="data">weberpas aquabal 1,5 roz 25kg</W_MAKTX3>
+          <W_MONTN type="data">HMOTN:</W_MONTN>
+          <NO_NAME type="data">:</NO_NAME>
+          <W_QUANT type="data">25,000</W_QUANT>
+          <W_MEINS type="data">KG</W_MEINS>
+          <W_DTAVROB type="data">DATUM VYROBY:</W_DTAVROB>
+          <NO_NAME type="data">:</NO_NAME>
+          <W_PDATE type="data">24.03.2025</W_PDATE>
+          <NO_NAME type="data">Legal text</NO_NAME>
+          <NO_NAME type="data">Weber Terranova Plant Adress</NO_NAME>
+          <NO_NAME type="data">R+S sentences</NO_NAME>
+          <W_TEXT1 type="data">Spotrebujte do 12 mesiacov</W_TEXT1>
+          <W_TEXT2 type="data">od datumu vyroby</W_TEXT2>
+          <W_TEXT4 type="data">Obsahuje biocidy: BIT; CMIT/MIT (3:1).</W_TEXT4>
+          <W_TEXT5 type="data">Moze vyvolat alergicku reakciu.</W_TEXT5>
+          <W_EAN11 type="data">8581550469308</W_EAN11>
+          <W_TEXT7 type="data">Хидрофилна мазилка aquaBalance за повърхностна обработка на фасади.</W_TEXT7>
+          <W_TEXT9 type="data">Omietka je pripravena na priame pouzitie. Nanasa sa na napenetrovany</W_TEXT9>
+          <W_TEXT10 type="data">podklad, ktory musi zodpovedat platnym normam.</W_TEXT10>
+          <W_TEXT11 type="data">Chrante pred priamym slnecnym svetlom.</W_TEXT11>
+          <W_TEXT13 type="data">Teplota podkladu a vzduchu nesmie klesnut pod +5°C</W_TEXT13>
+          <W_TEXT14 type="data">a nesmie byt vyssia ako 25°C.</W_TEXT14>
+          <W_TEXT15 type="data">Skladujte v originalnych a dobre uzatvorenych</W_TEXT15>
+          <W_TEXT16 type="data">obaloch pri teplote od +5 °C do +25 °C.</W_TEXT16>
+          <W_TEXT17 type="data">Ak je potrebná lekarska pomoc, majte k dispozicii</W_TEXT17>
+          <W_TEXT18 type="data">obal alebo etiketu vyrobku.</W_TEXT18>
+          <W_TEXT19 type="data">Uchovavajte mimo dosahu deti.</W_TEXT19>
+          <W_TEXT20 type="data">Pred pouzitim si precitajte etiketu.</W_TEXT20>
+          <I_NBR_PAGE type="data">000001</I_NBR_PAGE>
+        </TEXT_ELEMENT>
+      </WINDOW>
+    </PAGE>
+  </DOCUMENT>
+</RDI>
